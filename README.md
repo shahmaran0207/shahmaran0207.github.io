@@ -1,3 +1,5 @@
+# 박정은 - 포트폴리오
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -5,14 +7,14 @@
     <title>박정은 - 포트폴리오</title>
     <style>
 @font-face {
-    font-family: 'Yanolja Yache';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.0/YanoljaYache.woff') format('woff');
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.0/TmonMonsori.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Yanolja Yache', Arial, sans-serif;
+    font-family: 'TmonMonsori', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -20,132 +22,127 @@ body {
     color: #333;
 }
 
+header {
+    background: #004080;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+}
 
-        header {
-            background: #004080;
-            color: #fff;
-            padding: 1rem 0;
-            width: 100%;
-        }
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
 
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 auto;
-            padding: 0 2rem;
-            width: 100%;
-        }
+header h1 {
+    margin: 0;
+}
 
-        header h1 {
-            margin: 0;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
+nav ul li {
+    margin-left: 1rem;
+}
 
-        nav ul li {
-            margin-left: 1rem;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+section {
+    padding: 2rem 0;
+    width: 100%;
+}
 
-        section {
-            padding: 2rem 0;
-            width: 100%;
-        }
+section .container {
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+    width: 100%;
+}
 
-        section .container {
-            margin: 0 auto;
-            padding: 0 2rem;
-            text-align: center;
-            width: 100%;
-        }
+#about, #skills, #contact {
+    background: #e6f2ff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-        #about, #skills, #contact {
-            background: #e6f2ff;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
-            border-radius: 20px;
-            width: 100%;
-            box-sizing: border-box;
-        }
+h2 {
+    color: #004080;
+}
 
-        h2 {
-            color: #004080;
-        }
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-        #skills ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+#skills ul li {
+    margin: 10px;
+}
 
-        #skills ul li {
-            margin: 10px;
-        }
+#skills ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
-        #skills ul li img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
+#projects {
+    background: #e6f2ff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-        #projects {
-            background: #e6f2ff;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
-            border-radius: 20px;
-            width: 100%;
-            box-sizing: border-box;
-        }
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-        .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+.project {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+    border-radius: 15px;
+    width: 30%;
+    box-sizing: border-box;
+}
 
-        .project {
-            background: #fff;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
-            border-radius: 15px;
-            width: 30%;
-            box-sizing: border-box;
-        }
+.project h3 {
+    color: #004080;
+}
 
-        .project h3 {
-            color: #004080;
-        }
+footer {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
 
-        footer {
-            background: #004080;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            width: 100%;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .contain {
-            text-align: center;
-        }
-    </style>
+footer p {
+    margin: 0;
+}
+</style>
 </head>
 <body>
 
