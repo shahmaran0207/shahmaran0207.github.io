@@ -36,7 +36,7 @@
 </head>
 <body>
     <div class="half-screen white-background">
-        <div>프론트엔드 개발자<br>유시온 입니다.<br>2021-2023 portfolio</div>
+        <div>프론트엔드 개발자<br>박정은 입니다.<br>2021-2023 portfolio</div>
     </div>
     <div class="half-screen black-background">
         <div>프론트엔드 개발자<br>유시온 입니다.<br>2021-2023 portfolio</div>
