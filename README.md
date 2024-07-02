@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +9,12 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff;
+            color: #333;
         }
 
         header {
-            background: #333;
+            background: #004080;
             color: #fff;
             padding: 1rem 0;
         }
@@ -58,10 +58,10 @@
         }
 
         #about, #skills, #projects, #contact {
-            background: #fff;
+            background: #e6f2ff;
             margin-bottom: 2rem;
             padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
         }
 
         #skills ul {
@@ -70,7 +70,7 @@
         }
 
         #skills ul li {
-            background: #e4e4e4;
+            background: #cce0ff;
             margin-bottom: 10px;
             padding: 10px;
             border-radius: 5px;
@@ -80,8 +80,12 @@
             margin-bottom: 2rem;
         }
 
+        .project h3 {
+            color: #004080;
+        }
+
         footer {
-            background: #333;
+            background: #004080;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
