@@ -4,14 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박정은 - 포트폴리오</title>
     <style>
-@font-face {
-  font-family: 'TmonMonsori';
-  src: url('TmonMonsori.ttf.ttf') format('truetype');
-}
-
-.tmon-font {
-  font-family: 'TmonMonsori', sans-serif; /* 폰트 적용 */
-}
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('TmonMonsori.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
         body {
             font-family: 'TmonMonsori', Arial, sans-serif;
@@ -148,7 +146,7 @@
 
 <header>
     <div class="container">
-        <h1>끊임없이 발전하는 백엔드 개발자 <br>-박정은-</h1>
+        <h1>박정은</h1>
         <br>
         <nav>
             <ul>
