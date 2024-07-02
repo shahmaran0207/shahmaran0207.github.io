@@ -10838,7 +10838,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .text-white-75 {
@@ -10852,6 +10852,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+  margin-bottom: 10px;
 }
 
 hr.divider {
