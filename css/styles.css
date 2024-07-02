@@ -182,7 +182,9 @@ address {
   font-style: normal;
   line-height: inherit;
 }
-
+.btn-xl {
+  font-size: 1.5rem; /* 원하는 크기로 조정 가능 */
+}
 ol,
 ul {
   padding-left: 2rem;
