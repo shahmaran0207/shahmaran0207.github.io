@@ -148,7 +148,8 @@
 
 <header>
     <div class="container">
-        <h1>박정은</h1>
+        <h1>끊임없이 발전하는 백엔드 개발자 <br>-박정은-</h1>
+        <br>
         <nav>
             <ul>
                 <li><a href="#about">About me</a></li>
