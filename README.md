@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박정은 - 포트폴리오</title>
     <style>
-        @font-face {
-            font-family: 'TmonMonsori';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.0/TmonMonsori.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('TmonMonsori.ttf.ttf') format('truetype');
+}
+
+.tmon-font {
+  font-family: 'TmonMonsori', sans-serif; /* 폰트 적용 */
+}
 
         body {
             font-family: 'TmonMonsori', Arial, sans-serif;
