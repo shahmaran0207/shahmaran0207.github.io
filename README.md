@@ -132,7 +132,7 @@
     <div class="container">
         <h2>기술</h2>
         <ul>
-            <li><img src="https://via.placeholder.com/50?text=HTML" alt="HTML"></li>
+            <li><img src="github.png" alt="HTML"></li>
             <li><img src="https://via.placeholder.com/50?text=CSS" alt="CSS"></li>
             <li><img src="https://via.placeholder.com/50?text=JS" alt="JavaScript"></li>
             <li><img src="https://via.placeholder.com/50?text=React" alt="React"></li>
