@@ -1,5 +1,3 @@
-# 박정은의 포트폴리오
-
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -52,6 +50,7 @@
         max-width: 1100px;
         margin: 0 auto;
         padding: 0 2rem;
+        text-align: center;
     }
 
     #about, #skills, #projects, #contact {
