@@ -58,7 +58,7 @@
         margin-bottom: 2rem;
         padding: 2rem;
         box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
-        border-radius: 15px;
+        border-radius: 20px; /* 값을 20px로 변경 */
     }
 
     h2 {
