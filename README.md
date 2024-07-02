@@ -1,111 +1,140 @@
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f8ff;
-        color: #333;
-    }
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박정은 - 포트폴리오</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
 
-    header {
-        background: #004080;
-        color: #fff;
-        padding: 1rem 0;
-    }
+        header {
+            background: #004080;
+            color: #fff;
+            padding: 1rem 0;
+        }
 
-    header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    header h1 {
-        margin: 0;
-    }
+        header h1 {
+            margin: 0;
+        }
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
 
-    nav ul li {
-        margin-left: 1rem;
-    }
+        nav ul li {
+            margin-left: 1rem;
+        }
 
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-    }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-    section {
-        padding: 2rem 0;
-    }
+        section {
+            padding: 2rem 0;
+            width: 100%;
+        }
 
-    section .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        text-align: center;
-    }
+        section .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
 
-    #about, #skills, #projects, #contact {
-        background: #e6f2ff;
-        margin-bottom: 2rem;
-        padding: 2rem;
-        box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
-        border-radius: 20px; /* 값을 20px로 변경 */
-    }
+        #about, #skills, #contact {
+            background: #e6f2ff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+            border-radius: 20px;
+        }
 
-    h2 {
-        color: #004080;
-    }
+        h2 {
+            color: #004080;
+        }
 
-    #skills ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-    #skills ul li {
-        margin: 10px;
-    }
+        #skills ul li {
+            margin: 10px;
+        }
 
-    #skills ul li img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
+        #skills ul li img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
 
-    .project {
-        margin-bottom: 2rem;
-    }
+        #projects {
+            background: #e6f2ff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+            border-radius: 20px;
+        }
 
-    .project h3 {
-        color: #004080;
-    }
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-    footer {
-        background: #004080;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-    }
+        .project {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+            border-radius: 15px;
+            width: 30%;
+            box-sizing: border-box;
+        }
 
-    footer p {
-        margin: 0;
-    }
+        .project h3 {
+            color: #004080;
+        }
 
-    .contain {
-        text-align: center;
-    }
-</style>
+        footer {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contain {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
 <header>
     <div class="container">
@@ -145,15 +174,32 @@
 <section id="projects">
     <div class="container">
         <h2>프로젝트</h2>
-        <div class="project">
-            <h3>프로젝트 1</h3>
-            <p>프로젝트 1에 대한 설명입니다.</p>
+        <div class="project-container">
+            <div class="project">
+                <h3>프로젝트 1</h3>
+                <p>프로젝트 1에 대한 설명입니다.</p>
+            </div>
+            <div class="project">
+                <h3>프로젝트 2</h3>
+                <p>프로젝트 2에 대한 설명입니다.</p>
+            </div>
+            <div class="project">
+                <h3>프로젝트 3</h3>
+                <p>프로젝트 3에 대한 설명입니다.</p>
+            </div>
+            <div class="project">
+                <h3>프로젝트 4</h3>
+                <p>프로젝트 4에 대한 설명입니다.</p>
+            </div>
+            <div class="project">
+                <h3>프로젝트 5</h3>
+                <p>프로젝트 5에 대한 설명입니다.</p>
+            </div>
+            <div class="project">
+                <h3>프로젝트 6</h3>
+                <p>프로젝트 6에 대한 설명입니다.</p>
+            </div>
         </div>
-        <div class="project">
-            <h3>프로젝트 2</h3>
-            <p>프로젝트 2에 대한 설명입니다.</p>
-        </div>
-        <!-- 더 많은 프로젝트를 추가할 수 있습니다 -->
     </div>
 </section>
 
@@ -170,3 +216,6 @@
         <p>&copy; 2024 박정은. All rights reserved.</p>
     </div>
 </footer>
+
+</body>
+</html>
