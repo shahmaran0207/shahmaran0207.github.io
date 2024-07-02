@@ -6,7 +6,7 @@
     <style>
         @font-face {
             font-family: 'TmonMonsori';
-            src: url('TmonMonsori.ttf.ttf') format('truetype');
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.0/TmonMonsori.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
