@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -18,15 +17,16 @@
             background: #004080;
             color: #fff;
             padding: 1rem 0;
+            width: 100%;
         }
 
         header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
+            width: 100%;
         }
 
         header h1 {
@@ -54,10 +54,10 @@
         }
 
         section .container {
-            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
             text-align: center;
+            width: 100%;
         }
 
         #about, #skills, #contact {
@@ -66,6 +66,8 @@
             padding: 2rem;
             box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
             border-radius: 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         h2 {
@@ -96,6 +98,8 @@
             padding: 2rem;
             box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
             border-radius: 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .project-container {
@@ -123,6 +127,7 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+            width: 100%;
         }
 
         footer p {
