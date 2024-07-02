@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -67,13 +68,18 @@
         #skills ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         #skills ul li {
-            background: #cce0ff;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
+            margin: 10px;
+        }
+
+        #skills ul li img {
+            width: 50px;
+            height: 50px;
         }
 
         .project {
@@ -114,7 +120,7 @@
     <section id="about">
         <div class="container">
             <h2>소개</h2>
-            <p>안녕하세요, 저는 웹 개발자 홍길동입니다. 다양한 웹 애플리케이션과 사이트를 개발한 경험이 있습니다.</p>
+            <p>백엔드 개발자 박정은입니다. <br>다양한 데이터 분석 경험 및 웹사이트 제작 경험이 있습니다.</p>
         </div>
     </section>
 
@@ -122,11 +128,11 @@
         <div class="container">
             <h2>기술</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
+                <li><img src="https://via.placeholder.com/50?text=HTML" alt="HTML"></li>
+                <li><img src="https://via.placeholder.com/50?text=CSS" alt="CSS"></li>
+                <li><img src="https://via.placeholder.com/50?text=JS" alt="JavaScript"></li>
+                <li><img src="https://via.placeholder.com/50?text=React" alt="React"></li>
+                <li><img src="https://via.placeholder.com/50?text=Node.js" alt="Node.js"></li>
                 <!-- 더 많은 기술을 추가할 수 있습니다 -->
             </ul>
         </div>
@@ -150,14 +156,14 @@
     <section id="contact">
         <div class="container">
             <h2>연락처</h2>
-            <p>이메일: example@example.com</p>
-            <p>전화번호: 010-1234-5678</p>
+            <p>이메일: shahmaran0207@naver.com</p>
+            <p>전화번호: 010-8517-1179</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 홍길동. All rights reserved.</p>
+            <p>&copy; 2024 박정은. All rights reserved.</p>
         </div>
     </footer>
 </body>
