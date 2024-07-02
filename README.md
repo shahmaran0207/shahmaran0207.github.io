@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>유시온 포트폴리오</title>
+    <title>박정은 포트폴리오</title>
     <style>
         body {
             margin: 0;
@@ -16,7 +16,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 1;
+            width: 100%;
             font-size: 2rem;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -25,10 +25,12 @@
         .white-background {
             background-color: white;
             color: black;
+            flex: 1;
         }
         .black-background {
             background-color: black;
             color: white;
+            flex: 1;
         }
     </style>
 </head>
