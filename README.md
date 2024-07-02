@@ -100,12 +100,16 @@
         footer p {
             margin: 0;
         }
+
+        .contain{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>홍길동</h1>
+            <h1>박정은</h1>
             <nav>
                 <ul>
                     <li><a href="#about">소개</a></li>
