@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유시온 포트폴리오</title>
     <style>
         body {
             margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             height: 100vh;
+            width: 100vw;
         }
         .half-screen {
             display: flex;
@@ -17,6 +20,8 @@
             flex: 1;
             font-size: 2rem;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .white-background {
             background-color: white;
@@ -27,7 +32,6 @@
             color: white;
         }
     </style>
-    <title>Portfolio</title>
 </head>
 <body>
     <div class="half-screen white-background">
