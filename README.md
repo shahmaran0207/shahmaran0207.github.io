@@ -61,6 +61,10 @@
         border-radius: 15px;
     }
 
+    h2 {
+        color: #004080;
+    }
+
     #skills ul {
         list-style: none;
         padding: 0;
