@@ -4,8 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박정은 - 포트폴리오</title>
     <style>
+        @font-face {
+            font-family: 'Yanolja Yache';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.0/YanoljaYache.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Yanolja Yache', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -162,6 +169,14 @@
     </div>
 </section>
 
+<section id="contact">
+    <div class="container">
+        <h2>연락처</h2>
+        <p>이메일: shahmaran0207@naver.com</p>
+        <p>전화번호: 010-8517-1179</p>
+    </div>
+</section>
+
 <section id="skills">
     <div class="container">
         <h2>기술</h2>
@@ -205,14 +220,6 @@
                 <p>프로젝트 6에 대한 설명입니다.</p>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2>연락처</h2>
-        <p>이메일: shahmaran0207@naver.com</p>
-        <p>전화번호: 010-8517-1179</p>
     </div>
 </section>
 
