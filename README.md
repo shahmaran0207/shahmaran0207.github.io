@@ -58,6 +58,7 @@
         margin-bottom: 2rem;
         padding: 2rem;
         box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+        border-radius: 15px;
     }
 
     #skills ul {
@@ -75,6 +76,7 @@
     #skills ul li img {
         width: 50px;
         height: 50px;
+        border-radius: 50%;
     }
 
     .project {
