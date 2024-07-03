@@ -1285,6 +1285,102 @@ progress {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+
+  .custom-div {
+    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+    max-width: 800px; /* 원하는 최대 가로 크기 설정 */
+    margin: auto; /* 가운데 정렬 */
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
+}
+.custom-item {
+  width: 48%; /* 아이템 간의 여백을 위해 48%로 설정 */
+  max-width: 48%; /* 최대 너비 설정 */
+  box-sizing: border-box; /* 패딩과 보더를 포함한 너비 계산 */
+}
+
+.custom-line-height h3 {
+  line-height: 1.5; /* 원하는 줄 간격으로 설정하세요 */
+}
+
+@media (max-width: 767px) {
+  .custom-item {
+      width: 100%; /* 작은 화면에서는 100% 너비 */
+      max-width: 100%; /* 작은 화면에서는 최대 100% 너비 */
+  }
+}
+
+.custom-item {
+  flex: 0 0 48%; /* 아이템 간의 여백을 위해 48%로 설정 */
+  max-width: 48%;
+}
+
+@media (max-width: 767px) {
+  .custom-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+
+.page-section#services .custom-div-2 {
+  background-color: #6c757d80; /* 더 진한 회색 계열 배경색으로 상자 배경색 설정 */
+}
+
+.page-section#services h3,
+.page-section#services .text-white {
+  color: #ffc107; /* 주황색 헤더와 텍스트를 사용하여 눈에 띄게 설정 */
+}
+
+.custom-div-2 {
+  width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+  max-width: 800px; /* 원하는 최대 가로 크기 설정 */
+  margin: auto; /* 가운데 정렬 */
+  border-radius: 2rem;
+  background-color: rgba(244, 98, 58);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
+}
+
+.custom-div-2 .text-primary {
+    color: orange; /* 헤더의 텍스트를 주황색으로 설정 */
+}
+
+
+.custom-certificate-width {
+  max-width: 500px; /* Adjust this value as needed */
+}
+
+@media (min-width: 992px) {
+  .custom-certificate-width {
+      max-width: 450px; /* Adjust this value as needed */
+  }
+}
+
+
+.h4 {
+    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
+}
+
+.tmon-monso-r {
+    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
+}
+
+
+  .custom-div {
+    width: 100%;
+    max-width: 350px; /* 원하는 최대 크기로 조정 */
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -1740,6 +1836,12 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+
+#aboutme{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 .table {
   --bs-table-color: var(--bs-body-color);
   --bs-table-bg: transparent;
@@ -10840,6 +10942,7 @@ body {
 .page-section {
   padding: 4rem 0;
 }
+
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
