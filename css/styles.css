@@ -1297,6 +1297,10 @@ progress {
     flex-wrap: wrap;
 }
 
+a:hover {
+  color: red; /* 원하는 색상으로 변경 가능 */
+}
+
 .custom-width {
     display: flex;
     flex-direction: column;
