@@ -1302,6 +1302,42 @@ progress {
     flex-direction: column;
 }
 
+.footer-height {
+  height: 100px; /* Adjust this value as needed */
+}
+
+.portfolio-modal .modal-content {
+  background-color: transparent;
+  border: none;
+
+}
+
+.portfolio-modal .modal-body {
+  position: relative;
+  padding: 0;
+  text-align: center;
+
+  
+}
+.portfolio-modal .img-fluid {
+  margin-bottom: 20px;
+
+}
+.description-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+.description-box h2 {
+  text-align: center;
+  margin-top: 0;
+}
 
 
   .custom-div {
