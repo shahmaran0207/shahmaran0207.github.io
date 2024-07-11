@@ -1298,7 +1298,7 @@ progress {
 }
 
 a:hover {
-  color: red; /* 원하는 색상으로 변경 가능 */
+  color: red;
 }
 
 .custom-width {
@@ -1307,7 +1307,7 @@ a:hover {
 }
 
 .footer-height {
-  height: 100px; /* Adjust this value as needed */
+  height: 100px;
 }
 
 .portfolio-modal .modal-content {
@@ -1345,9 +1345,9 @@ a:hover {
 
 
   .custom-div {
-    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
-    max-width: 800px; /* 원하는 최대 가로 크기 설정 */
-    margin: auto; /* 가운데 정렬 */
+    width: 100%; 
+    max-width: 800px; 
+    margin: auto; 
     border-radius: 2rem;
     flex-grow: 1;
     flex: 1;
@@ -1357,27 +1357,27 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
+    font-family: 'TmonMonsori', sans-serif; 
 }
 .custom-item {
-  width: 48%; /* 아이템 간의 여백을 위해 48%로 설정 */
-  max-width: 48%; /* 최대 너비 설정 */
-  box-sizing: border-box; /* 패딩과 보더를 포함한 너비 계산 */
+  width: 48%; 
+  max-width: 48%; 
+  box-sizing: border-box; 
 }
 
 .custom-line-height h3 {
-  line-height: 1.5; /* 원하는 줄 간격으로 설정하세요 */
+  line-height: 1.5; 
 }
 
 @media (max-width: 767px) {
   .custom-item {
-      width: 100%; /* 작은 화면에서는 100% 너비 */
-      max-width: 100%; /* 작은 화면에서는 최대 100% 너비 */
+      width: 100%; 
+      max-width: 100%; 
   }
 }
 
 .custom-item {
-  flex: 0 0 48%; /* 아이템 간의 여백을 위해 48%로 설정 */
+  flex: 0 0 48%; 
   max-width: 48%;
 }
 
