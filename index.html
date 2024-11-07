@@ -7,21 +7,13 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>박정은 - Portfolio</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts (removed since we are using custom font) -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" /> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" /> -->
-    <!-- SimpleLightbox plugin CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="..." crossorigin="anonymous" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Custom font CSS-->
     <style>
         @font-face {
             font-family: 'Tmon';
@@ -224,19 +216,14 @@
                         </div>
                     </div>
                     
-                    
-                
-                    <!-- Add some space between the cards and the button -->
                     <div class="my-5"></div>
                 
-                    <!-- Button with reduced size -->
                     <a class="btn btn-light btn-xl" href="#services" style="font-size: 1.5rem; width: 20%;">기술 스택 확인!</a>
                 </div>
                 
     </div>
 </section>
 
-<!-- Skills Section -->
 <section class="page-section d-flex align-items-center justify-content-center" id="services" style="min-height: 100vh;">
     <div class="container px-4 px-lg-5 ">
         <div class="col-lg-12 text-center">
@@ -244,7 +231,6 @@
 
         <hr class="divider" />
         <div class="row row-cols-1 row-cols-md-2 gx-4 gx-lg-5 justify-content-center">
-            <!-- Back-end Section -->
             <div class="col mb-5">
                 <div class="text-center">
                     <div class="mt-5 p-4 rounded shadow custom-div-2">
@@ -263,7 +249,6 @@
                 </div>
             </div>
 
-            <!-- Development Section -->
             <div class="col mb-5">
                 <div class="text-center">
                     <div class="mt-5 p-4 rounded shadow custom-div-2">
@@ -281,7 +266,6 @@
                 </div>
             </div>
 
-            <!-- Front-end Section -->
             <div class="col mb-5">
                 <div class="text-center">
                     <div class="mt-5 p-4 rounded shadow custom-div-2">
@@ -313,12 +297,11 @@
             </div>
         </div>
     </div>
+    </div>
 </section>
 
 
 
-
-    <!-- Portfolio -->
     <div id="portfolio">
         <div class="container-fluid p-0">
             <div class="row g-0">
@@ -450,6 +433,15 @@
                         <img class="img-fluid" src="memoapplication.png" alt="..." style="height: 378px;" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Memo Application</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="#portfolioModal16" data-toggle="modal">
+                        <img class="img-fluid" src="movie.png" alt="..." style="height: 378px;" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">Movie Infinite Scroll</div>
                         </div>
                     </a>
                 </div>
@@ -906,6 +898,37 @@
     </div>
     
 </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog"
+         aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img class="img-fluid" src="movie.png" alt="..." style="width: 600px;" />
+                    <div class="description-box">
+                        <h2>Movie Infinite Scroll</h2>
+                        <p class="item-intro text-muted" style="text-align: center;">리액트를 통해 무한스크롤 사이트입니다. <br>
+                            정해진 영화 목록이 전부 나오기 전까지 아래로 스크롤을 내리면 영화 목록이 무한히 나옵니다.
+                        </p>
+                        <hr>
+                        <h6 style="text-align: center;">주요 기능: Movie Infinite Scroll</h6>
+                        <h6 style="text-align: center;">GitHub: <a
+                                href=https://github.com/shahmaran0207/Infinite-Scroll.gitn>https://github.com/shahmaran0207/Infinite-Scroll.git</a>
+                        </h6>
+                        <h6 style="text-align: center;">URL: <a
+                                href=https://tranquil-pixie-a55e46.netlify.app/>https://tranquil-pixie-a55e46.netlify.app/</a>
+                        </h6>
+                        <h6 style="text-align: center;">Back-end: React</h6>
+                        <h6 style="text-align: center;">My-Role: Movie Infinite Scroll 제작</h6>
+
+
+                    </div>
+                    <button class="btn btn-primary mt-3" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
