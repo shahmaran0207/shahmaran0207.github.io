@@ -27,13 +27,6 @@ h3{
   }
 }
 
-@font-face {
-  font-family: 'Tmon';
-  src: url('Tmon.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .custom-width {
   flex: 0 0 75%;
   max-width: 75%;
@@ -56,9 +49,19 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.2;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #333;
+}
+
+#skill-title1, #skill-title2, #skill-title3, #skill-title4 {
+  font-size: 2rem; /* 원하는 크기에 맞게 조절 */
 }
 
 h4, .h4 {
@@ -113,6 +116,9 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
+
+
+
 
 a > code {
   color: inherit;
@@ -237,7 +243,7 @@ progress {
 
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1820px;
   }
 }
 .row {
@@ -461,62 +467,183 @@ progress {
     margin-top: 0;
   }
 
-  .custom-div {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 2rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    font-family: 'TmonMonsori', sans-serif;
+
+  .page-section {
+    position: relative;
+    padding-top: 50px;
   }
 
-  .custom-line-height h3 {
-    line-height: 1.5;
+  .page-section h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
   }
+  #portfolio .portfolio-box img {
+    width: 100%; /* 이미지의 너비를 부모 요소에 맞게 조정 */
+    height: 500px; /* 고정된 높이 설정 */
+    object-fit: cover; /* 이미지의 비율을 유지하면서 크기를 맞춤 */
+  }
+
+  @media (max-width: 768px) {
+    #portfolio .col-lg-6 {
+      width: 100%; /* 작은 화면에서는 한 줄에 하나씩 표시 */
+    }
+  }
+
+
+  .divider {
+    width: 50%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+
 
   .page-section#services .custom-div-2 {
     background-color: #6c757d80; /* 더 진한 회색 계열 배경색으로 상자 배경색 설정 */
   }
 
-  .page-section#services h3,
-  .page-section#services .text-white {
-    color: #ffc107; /* 주황색 헤더와 텍스트를 사용하여 눈에 띄게 설정 */
+  /* 공통 박스 스타일 */
+  .custom-box {
+    width: 100%;                /* 화면 너비의 95%를 차지 */
+    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    margin: 0 auto;            /* 중앙 정렬 */
+    padding: 60px 80px;        /* 좌우 패딩을 동일하게 설정 */
+    box-sizing: border-box;    /* 패딩을 포함한 전체 박스 크기 유지 */
   }
 
-  .custom-div-2 {
-    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
-    max-width: 800px; /* 원하는 최대 가로 크기 설정 */
-    border-radius: 2rem;
-    background-color: rgba(244, 98, 58);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
-  }
-
-  .custom-div-2 .text-primary {
-    color: orange; /* 헤더의 텍스트를 주황색으로 설정 */
-  }
-
-  .h4 {
-    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
-  }
-
-  .tmon-monso-r {
-    font-family: 'TmonMonsori', sans-serif; /* 티몬 몬소리체 설정 */
-  }
-
+  /* 커스텀 박스 스타일 */
   .custom-div {
     width: 100%;
-    max-width: 350px; /* 원하는 최대 크기로 조정 */
-    border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
+    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    background-color: #fff;
+    padding: 60px 80px;        /* 좌우 패딩 동일하게 설정 */
+    margin: 0 auto;            /* 중앙 정렬 */
+    box-sizing: border-box;
+  }
+
+  /* awards-box 스타일 */
+  #awards-box {
+    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    box-sizing: border-box;
+  }
+
+  /* custom-div3 스타일 */
+  .custom-div3 {
+    width: 100%;
+    max-width: 1600px;         /* 최대 너비를 1800px로 확대 */
+    background-color: #fff;
+    padding: 60px 80px;        /* 좌우 패딩 동일하게 설정 */
+    margin: 0 auto;            /* 중앙 정렬 */
+    box-sizing: border-box;
+  }
+
+  /* International activity 이미지 컨테이너 스타일 */
+  .image-containera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;          /* 좌우에 40px 패딩 추가 */
+    box-sizing: border-box;   /* 패딩을 포함한 전체 박스 크기 유지 */
+  }
+
+  /* 이미지와 텍스트 블록 스타일 */
+  .image-containera .mb-4 {
+    flex: 1 1 calc(25% - 50px); /* 각 항목의 너비를 동적으로 조정 (4열 레이아웃) */
+    max-width: 250px;           /* 최대 너비 제한 */
+    text-align: center;         /* 텍스트 중앙 정렬 */
+  }
+
+
+  /* 이미지 컨테이너 스타일 */
+  .image-container,
+  .image-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;                /* 화면 너비의 95%를 차지 */
+    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    margin: 0 auto;            /* 중앙 정렬 */
+    gap: 180px;                /* 이미지 간 간격 */
+    padding: 0 20px;           /* 좌우 여백 확보 */
+  }
+
+
+
+  .image-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40px;
+    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    gap: 180px;                /* 이미지 간 간격 */
+  }
+
+  /* custom-div-2 스타일 */
+  .custom-div-2 {
+    background-color: #f4623a;
+    color: white;
+    padding: 60px 80px;        /* 좌우 패딩 동일하게 설정 */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;            /* 중앙 정렬 */
+  }
+
+  /* 이미지 및 아이콘 크기 설정 */
+  .image-container img,
+  .image-container i {
+    width: 150px;              /* 이미지와 아이콘 크기 확대 */
+    height: auto;
+    font-size: 150px;
+  }
+
+  /* 큰 화면에 대한 미디어 쿼리 */
+  @media (min-width: 1600px) {
+    .custom-box,
+    .custom-div,
+    #awards-box,
+    .custom-div3 {
+      max-width: 1600px;       /* 큰 화면에서 최대 너비를 1800px로 설정 */
+    }
+  }
+
+  h2, button {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 2rem;  /* 원하는 사이즈로 조정 */
+    font-weight: 600; /* 두께 설정 (예: 400, 500, 600, 700 등) */
+  }
+
+  h1.text-primary {
+    font-size: 2rem; /* 원하는 크기로 조정 (예: 1rem, 14px 등) */
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: 'Noto Sans', sans-serif; /* 얇은 느낌의 폰트 (Google Fonts) */
+    font-weight: 300;                    /* 얇은 폰트 굵기 */
+    font-size: 24px;                     /* 원하는 글자 크기로 조정 가능 */
+  }
+
+  /* 모달 중앙 정렬 + 아래로 이동 */
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%; /* 화면 크기에 맞게 조절 */
+    padding-top: 100px;
+  }
+
+  /* 모달 외부 배경이 스크롤 되지 않게 설정 */
+  .modal.fade .modal-dialog {
+    transform: translate(0, 0); /* 모달이 중앙에 위치하도록 */
+  }
+
+  .modal-open {
+    overflow: hidden; /* 모달이 열리면 배경이 스크롤되지 않도록 함 */
+  }
+  h2.text-primary {
+    font-size: 1.7rem; /* 원하는 크기로 조정 (예: 1rem, 14px 등) */
+    font-weight: bold;
   }
 
   .col-lg-6 {
@@ -597,10 +724,7 @@ progress {
   }
 }
 
-#aboutme{
-  margin-left: 150px;
-  margin-right: 150px;
-}
+
 
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
@@ -633,7 +757,6 @@ progress {
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -648,7 +771,6 @@ progress {
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-  font-family: var(--bs-btn-font-family);
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
@@ -1380,13 +1502,11 @@ hr.divider-light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
