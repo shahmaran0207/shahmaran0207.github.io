@@ -65,7 +65,7 @@ body.modal-open {
   position: fixed; /* 고정 위치 */
   top: 50%; /* 세로 중앙 */
   left: 50%; /* 가로 중앙 */
-  transform: translate(-50%, -9.5%); /* 중앙으로 이동 */
+  transform: translate(-50%, -12%); /* 중앙으로 이동 */
 }
 .portfolio-title {
   font-size: 35px; /* h1 글자 크기를 절반으로 줄임 */
@@ -93,7 +93,7 @@ body.modal-open {
 .span-group {
   display: flex; /* 두 span을 가로로 나란히 배치 */
   gap: 10px; /* 두 span 사이의 간격 */
-  margin-bottom: 15px; /* 그룹 간 간격 */
+  margin-bottom: 5px; /* 그룹 간 간격 */
   align-items: center; /* 두 span의 세로 정렬 */
   margin-left: 120px;
 }
