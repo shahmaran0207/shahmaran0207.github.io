@@ -53,6 +53,69 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+body.modal-open {
+  overflow: hidden; /* 모달이 열릴 때 스크롤 막기 */
+}
+
+.modal-body {
+  display: flex; /* 내부 정렬을 위해 flex 사용 */
+  flex-direction: column; /* 수직 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  position: fixed; /* 고정 위치 */
+  top: 50%; /* 세로 중앙 */
+  left: 50%; /* 가로 중앙 */
+  transform: translate(-50%, -9.5%); /* 중앙으로 이동 */
+}
+.portfolio-title {
+  font-size: 35px; /* h1 글자 크기를 절반으로 줄임 */
+  color: white;  /* h1 글자 색상을 흰색으로 설정 */
+}
+
+.portfolio-subtitle {
+  font-size: 20px;         /* h2 글자 크기를 절반으로 줄임 */
+  font-weight: normal;    /* h1에 비해 굵기를 절반으로 설정 */
+}
+.description-box {
+  text-align: left;
+  padding-top: 10px;
+  margin-top: 20px; /* 사진과 설명 간 간격 조정 */
+  max-width: 1200px; /* 최대 너비 설정 */
+  width: 100%;
+}
+
+.description-box h1 {
+  text-align: center;  /* h1 태그 가운데 정렬 */
+  margin: 0 auto;      /* 수평으로 가운데 정렬 (필요한 경우) */
+}
+
+
+.span-group {
+  display: flex; /* 두 span을 가로로 나란히 배치 */
+  gap: 10px; /* 두 span 사이의 간격 */
+  margin-bottom: 15px; /* 그룹 간 간격 */
+  align-items: center; /* 두 span의 세로 정렬 */
+  margin-left: 120px;
+}
+
+.span-group span:first-child {
+  font-weight: bold; /* 첫 번째 span은 강조 */
+  font-size: 1.25em;
+  min-width: 120px; /* 첫 번째 span의 최소 너비 */
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.span-group span:last-child {
+  font-weight: 300; /* 두 번째 span은 가벼운 글씨체 */
+  font-size: 1.2em;
+  font-family: 'Pretendard', sans-serif;
+}
+
+img.img-fluid {
+  max-width: 100%; /* 이미지의 최대 너비를 부모 크기로 제한 */
+  height: auto; /* 비율 유지 */
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -480,7 +543,7 @@ progress {
   }
   #portfolio .portfolio-box img {
     width: 100%; /* 이미지의 너비를 부모 요소에 맞게 조정 */
-    height: 500px; /* 고정된 높이 설정 */
+    height: 600px; /* 고정된 높이 설정 */
     object-fit: cover; /* 이미지의 비율을 유지하면서 크기를 맞춤 */
   }
 
@@ -515,7 +578,7 @@ progress {
   /* 커스텀 박스 스타일 */
   .custom-div {
     width: 100%;
-    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    max-width: 1200px;         /* 최대 너비를 1600px로 확대 */
     background-color: #fff;
     padding: 60px 80px;        /* 좌우 패딩 동일하게 설정 */
     margin: 0 auto;            /* 중앙 정렬 */
@@ -555,27 +618,40 @@ progress {
   }
 
 
-  /* 이미지 컨테이너 스타일 */
   .image-container,
   .image-container3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;                /* 화면 너비의 95%를 차지 */
-    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
-    margin: 0 auto;            /* 중앙 정렬 */
-    gap: 180px;                /* 이미지 간 간격 */
-    padding: 0 20px;           /* 좌우 여백 확보 */
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 180px;
+    padding: 0 20px;
   }
 
+  @media (max-width: 1200px) {
+    .image-container,
+    .image-container3 {
+      gap: 120px; /* 작은 화면에서는 간격 축소 */
+      padding: 0 10px; /* 여백 축소 */
+    }
+  }
 
+  @media (max-width: 720px) {
+    .image-container,
+    .image-container3 {
+      flex-direction: column; /* 작은 화면에서는 수직 정렬 */
+      gap: 40px; /* 이미지 간 간격 더 축소 */
+    }
+  }
 
   .image-container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 40px;
-    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    max-width: 1800px;         /* 최대 너비를 1600px로 확대 */
     gap: 180px;                /* 이미지 간 간격 */
   }
 
@@ -603,8 +679,14 @@ progress {
     .custom-div,
     #awards-box,
     .custom-div3 {
-      max-width: 1600px;       /* 큰 화면에서 최대 너비를 1800px로 설정 */
+      max-width: 1500px;       /* 큰 화면에서 최대 너비를 1800px로 설정 */
     }
+  }
+
+  p {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: normal;
+    color: black;
   }
 
   h2, button {
@@ -1447,11 +1529,6 @@ progress {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
-}
-
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
@@ -1557,7 +1634,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../../html/assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
