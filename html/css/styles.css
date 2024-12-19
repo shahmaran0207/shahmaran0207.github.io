@@ -304,6 +304,8 @@ progress {
   margin-left: auto;
 }
 
+
+
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1820px;
@@ -587,7 +589,7 @@ progress {
 
   /* awards-box 스타일 */
   #awards-box {
-    max-width: 1600px;         /* 최대 너비를 1600px로 확대 */
+    max-width: 1200px;         /* 최대 너비를 1600px로 확대 */
     box-sizing: border-box;
   }
 
@@ -617,6 +619,10 @@ progress {
     text-align: center;         /* 텍스트 중앙 정렬 */
   }
 
+  .image-container11 {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
 
   .image-container,
   .image-container3 {
@@ -624,7 +630,7 @@ progress {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     gap: 180px;
     padding: 0 20px;
@@ -651,12 +657,13 @@ progress {
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 40px;
-    max-width: 1800px;         /* 최대 너비를 1600px로 확대 */
-    gap: 180px;                /* 이미지 간 간격 */
+    max-width: 1200px;
+    gap: 180px;
   }
 
   /* custom-div-2 스타일 */
   .custom-div-2 {
+    flex-wrap: wrap;
     background-color: #f4623a;
     color: white;
     padding: 60px 80px;        /* 좌우 패딩 동일하게 설정 */
@@ -680,6 +687,7 @@ progress {
     #awards-box,
     .custom-div3 {
       max-width: 1500px;       /* 큰 화면에서 최대 너비를 1800px로 설정 */
+      flex-wrap: wrap;
     }
   }
 
