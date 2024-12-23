@@ -27,11 +27,6 @@ h3{
   }
 }
 
-.custom-width {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
 body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
@@ -123,10 +118,6 @@ h1 {
   color: #333;
 }
 
-#skill-title1, #skill-title2, #skill-title3, #skill-title4 {
-  font-size: 2rem; /* 원하는 크기에 맞게 조절 */
-}
-
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
@@ -172,16 +163,13 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: red;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
-
-
-
 
 a > code {
   color: inherit;
@@ -262,10 +250,6 @@ legend + * {
   -webkit-appearance: button;
 }
 
-output {
-  display: inline-block;
-}
-
 iframe {
   border: 0;
 }
@@ -327,10 +311,6 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-}
-
-.col {
-  flex: 1 0 0%;
 }
 
 .row-cols-auto > * {
@@ -408,11 +388,6 @@ progress {
     width: 16.6666666667%;
   }
 
-  .col-sm-6 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-
 }
 @media (min-width: 768px) {
   .row-cols-md-auto > * {
@@ -442,11 +417,6 @@ progress {
   .row-cols-md-6 > * {
     flex: 0 0 auto;
     width: 16.6666666667%;
-  }
-
-  .col-md-6 {
-    flex: 0 0 auto;
-    width: 50%;
   }
 
 }
@@ -490,14 +460,6 @@ progress {
     flex-wrap: wrap;
   }
 
-  a:hover {
-    color: red;
-  }
-
-  .custom-width {
-    display: flex;
-    flex-direction: column;
-  }
 
   .footer-height {
     height: 100px;
@@ -555,17 +517,11 @@ progress {
     }
   }
 
-
   .divider {
     width: 50%;
     height: 2px;
     background-color: #ffffff;
     margin: 0 auto;
-  }
-
-
-  .page-section#services .custom-div-2 {
-    background-color: #6c757d80; /* 더 진한 회색 계열 배경색으로 상자 배경색 설정 */
   }
 
   /* 공통 박스 스타일 */
@@ -662,16 +618,6 @@ progress {
   }
 
   /* custom-div-2 스타일 */
-  .custom-div-2 {
-    flex-wrap: wrap;
-    background-color: #f4623a;
-    color: white;
-    padding: 60px 80px;        /* 좌우 패딩 동일하게 설정 */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;            /* 중앙 정렬 */
-  }
-
   /* 이미지 및 아이콘 크기 설정 */
   .image-container img,
   .image-container i {
@@ -814,8 +760,6 @@ progress {
   }
 }
 
-
-
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
@@ -847,31 +791,14 @@ progress {
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-size: 1rem;
-  --bs-btn-font-weight: 400;
-  --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
-  --bs-btn-bg: transparent;
-  --bs-btn-border-width: 1px;
-  --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 0.375rem;
-  --bs-btn-hover-border-color: transparent;
-  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  --bs-btn-disabled-opacity: 0.65;
-  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
-  display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
   font-size: var(--bs-btn-font-size);
-  font-weight: var(--bs-btn-font-weight);
-  line-height: var(--bs-btn-line-height);
   color: var(--bs-btn-color);
   text-align: center;
-  text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -908,18 +835,10 @@ progress {
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #f4623a;
-  --bs-btn-border-color: #f4623a;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #cf5331;
-  --bs-btn-hover-border-color: #c34e2e;
-  --bs-btn-focus-shadow-rgb: 246, 122, 88;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #c34e2e;
-  --bs-btn-active-border-color: #b74a2c;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #f4623a;
-  --bs-btn-disabled-border-color: #f4623a;
 }
 
 .fade {
@@ -1481,10 +1400,6 @@ progress {
   margin-bottom: 0.5rem;
 }
 
-.mt-0 {
-  margin-top: 0;
-}
-
 .mt-3 {
   margin-top: 1rem !important;
 }
@@ -1495,10 +1410,6 @@ progress {
 
 .mb-0 {
   margin-bottom: 0;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .ms-auto {
@@ -1516,11 +1427,6 @@ progress {
 .py-3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-5 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .text-center {

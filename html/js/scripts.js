@@ -2,15 +2,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
+        if (!navbarCollapsible) return;
+
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     navbarShrink();
@@ -40,9 +38,10 @@ window.addEventListener('DOMContentLoaded', event => {
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
     });
-
 });
 
+
+<!-- 각 포트폴리오를 열었을때 배경의 스크롤을 방지하기 위한 코드 -->
 $('#portfolioModal2').on('shown.bs.modal', function () {
     $('body').addClass('modal-open');
 });
