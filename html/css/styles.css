@@ -288,8 +288,6 @@ progress {
   margin-left: auto;
 }
 
-
-
 @media (min-width: 1400px) {
 }
 .row {
@@ -456,7 +454,6 @@ progress {
     display: flex;
     flex-wrap: wrap;
   }
-
 
   .footer-height {
     height: 100px;
