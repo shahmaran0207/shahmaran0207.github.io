@@ -291,9 +291,6 @@ progress {
 
 
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1820px;
-  }
 }
 .row {
   --bs-gutter-x: 1.5rem;
@@ -466,6 +463,7 @@ progress {
   }
 
   .portfolio-modal .modal-content {
+    margin-top: 80px;
     background-color: transparent;
     border: none;
   }
@@ -1391,10 +1389,6 @@ progress {
   align-self: flex-end;
 }
 
-.align-self-baseline {
-  align-self: baseline;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1469,10 +1463,6 @@ body {
 
 .page-section {
   padding: 4rem 0;
-}
-
-.text-white-75 {
-  color: rgba(255, 255, 255, 0.75);
 }
 
 hr.divider {
@@ -1555,6 +1545,7 @@ header.masthead {
   background-size: cover;
 }
 
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -1593,4 +1584,36 @@ header.masthead {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.portfolio-button {
+  background-color: transparent; /* 배경색 없애기 */
+  color: white; /* 글자색을 h2와 동일하게 */
+  border: 2px solid #fff; /* 버튼 테두리 흰색 굵은 선 */
+  padding: 10px 20px; /* 버튼 안의 패딩 */
+  font-size: 1.5rem; /* 폰트 크기 조정 */
+  cursor: pointer; /* 클릭 가능한 스타일 */
+  text-align: center;
+}
+
+.portfolio-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* 마우스 오버 시 배경색 효과 */
+}
+
+/* 이미지 안에서 버튼을 중앙 정렬 */
+.portfolio-box-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 이미지 중앙으로 위치 */
+  text-align: center; /* 버튼을 중앙에 정렬 */
+}
+
+.project-name {
+  display: inline-block; /* 버튼들이 가로로 배치되도록 */
+}
+
+.portfolio-title, .portfolio-subtitle {
+  font-size: 2rem; /* 제목 글자 크기 조정 */
+  color: #fff; /* 글자 색 */
 }

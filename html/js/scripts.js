@@ -177,3 +177,14 @@ $('#portfolioModal18').on('shown.bs.modal', function () {
 $('#portfolioModal18').on('hidden.bs.modal', function () {
     $('body').removeClass('modal-open');
 });
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > $('#aboutme-container').offset().top) {
+            $('#aboutme-container').addClass('sticky');
+        } else {
+            $('#aboutme-container').removeClass('sticky');
+        }
+    });
+});
