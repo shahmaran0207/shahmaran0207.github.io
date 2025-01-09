@@ -110,7 +110,7 @@
 <div class="wrapper">
     <!-- header - header 파트 -->
     <div>
-        <div id="header-container" class="section fixed"></div>
+        <div id="header-container" class="section layer"></div>
     </div>
     <!-- AboutMe - 개인의 교육, 수상목록, 자격증 등에 관한 파트 -->
     <div id="aboutme-container" class="section layer"></div>
@@ -151,7 +151,7 @@
         // 4초 후 스크롤 활성화
         setTimeout(function () {
             $('body').css('overflow', 'auto');
-        }, 4000);
+        }, 4700);
 
         // 기존 로드 코드
         $('#aboutme-container').load('/html/AboutMe.html');
@@ -179,8 +179,6 @@
             });
         });
 
-
-        // Sidebar 및 고정 아이콘 표시 여부 조정
         $(window).on('scroll', function () {
             var scrollPosition = $(window).scrollTop();
             var headerHeight = $('#header-container').outerHeight();
