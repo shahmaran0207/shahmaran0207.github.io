@@ -15,22 +15,22 @@
 body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
 }
 
 h3{
-  font-size: 1.5rem;
+  font-family: 'Noto Sans', sans-serif; /* 얇은 느낌의 폰트 (Google Fonts) */
+  font-weight: 300;                    /* 얇은 폰트 굵기 */
+  font-size: 24px;                     /* 원하는 글자 크기로 조정 가능 */
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
-}
-
-body {
-  margin: 0;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 hr {
@@ -62,6 +62,7 @@ body.modal-open {
   left: 50%; /* 가로 중앙 */
   transform: translate(-50%, -12%); /* 중앙으로 이동 */
 }
+
 .portfolio-title {
   font-size: 35px; /* h1 글자 크기를 절반으로 줄임 */
   color: white;  /* h1 글자 색상을 흰색으로 설정 */
@@ -83,7 +84,6 @@ body.modal-open {
   text-align: center;  /* h1 태그 가운데 정렬 */
   margin: 0 auto;      /* 수평으로 가운데 정렬 (필요한 경우) */
 }
-
 
 .span-group {
   display: flex; /* 두 span을 가로로 나란히 배치 */
@@ -179,8 +179,7 @@ figure {
   margin: 0 0 1rem;
 }
 
-img,
-svg {
+img, svg {
   vertical-align: middle;
 }
 
@@ -272,12 +271,9 @@ progress {
   height: auto;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
+.container, .container-fluid,
+.container-xxl,.container-xl,
+.container-lg,.container-md,
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -343,13 +339,11 @@ progress {
   width: 16.6666666667%;
 }
 
-.g-0,
-.gx-0 {
+.g-0,.gx-0 {
   --bs-gutter-x: 0;
 }
 
-.g-0,
-.gy-0 {
+.g-0,.gy-0 {
   --bs-gutter-y: 0;
 }
 
@@ -602,7 +596,7 @@ progress {
     justify-content: center;
     margin-left: 40px;
     max-width: 1200px;
-    gap: 180px;
+    gap: 150px;
   }
 
   .image-container img,
@@ -637,12 +631,6 @@ progress {
   h1.text-primary {
     font-size: 2rem; /* 원하는 크기로 조정 (예: 1rem, 14px 등) */
     font-weight: bold;
-  }
-
-  h3 {
-    font-family: 'Noto Sans', sans-serif; /* 얇은 느낌의 폰트 (Google Fonts) */
-    font-weight: 300;                    /* 얇은 폰트 굵기 */
-    font-size: 24px;                     /* 원하는 글자 크기로 조정 가능 */
   }
 
   .modal-dialog {
@@ -843,9 +831,6 @@ progress {
 .btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
 }
 
 .navbar-text a,
@@ -1209,11 +1194,6 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
-body {
-  width: 100%;
-  height: 100%;
-}
-
 .page-section {
   padding: 4rem 0;
 }
@@ -1230,20 +1210,6 @@ hr.divider-light {
   background-color: #fff;
 }
 
-#mainNav {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
-  transition: background-color 0.2s ease;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    box-shadow: none;
-    background-color: transparent;
-  }
-
-}
-
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -1253,7 +1219,6 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
-
 
 @media (min-width: 992px) {
   header.masthead {
