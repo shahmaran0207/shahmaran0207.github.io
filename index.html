@@ -21,81 +21,153 @@
             font-family: 'Pretendard', sans-serif;
             font-weight: bold;
         }
+
+        #sidebar-container {
+            position: fixed;
+            left: 20px;
+            top: 10%;
+            z-index: 1000;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 26px;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+            pointer-events: auto;
+        }
+
+        .sidebar-nav a.inactive {
+            opacity: 0.3;
+        }
+
+
+        .sidebar-nav a:hover {
+            color: #000000; /* 호버 시 색상 변경 */
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .sidebar-nav a.inactive {
+            opacity: 0.3; /* 섹션이 화면에 보이지 않으면 불투명도 적용 */
+        }
+
+        .sidebar-nav a.active {
+            opacity: 1; /* 섹션이 화면에 보이면 불투명도를 1로 설정 */
+            pointer-events: auto;  /* 활성화된 섹션만 클릭 가능 */
+        }
+
+        #fixed-icons {
+            display: none; /* 초기에는 숨김 상태 */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #fixed-icons a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+            background-color: white;  /* 기본 배경색 */
+            color: #f4623a;  /* 기본 글씨색 */
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        #fixed-icons a:hover {
+            background-color: #f8f9fa;  /* 호버 시 배경색 */
+            color: #f4623a;  /* 호버 시 글씨색 */
+        }
+
+        #fixed-icons.inverse-icons a {
+            background-color: #f4623a; /* 반전된 배경색 */
+            color: white; /* 반전된 글씨색 */
+        }
+
+        #fixed-icons.inverse-icons a:hover {
+            background-color: #d84315; /* 반전된 호버 배경색 */
+            color: #ffffff; /* 반전된 호버 글씨색 */
+        }
     </style>
 </head>
 
 <body id="page-top">
-
 <div class="wrapper">
     <!-- header - header 파트 -->
-        <div>
-            <div id="header-container" class="section fixed"></div>
-        </div>
-        <!-- AboutMe - 개인의 교육, 수상목록, 자격증 등에 관한 파트 -->
-        <div id="aboutme-container" class="section layer"></div>
-
-        <!-- Skills - 다룰 수 있는 기술 파트 -->
-        <div id="Skills-container"></div>
-
-        <!-- Portfolio - 포트폴리오의 대략적인 정보에 관한 정보 파트 -->
-        <div id="Portfolio-container"></div>
-
-        <!-- Portfolio Detail - 포트폴리오의 세부적인 내용에 관한 파트 -->
-        <div id="Portfolio-detail-container"></div>
-
-        <!-- footer - footer 파트 -->
-        <div id="footer-container"></div>
-        <!-- Left Sidebar Navigation -->
-        <div id="sidebar-container">
-            <ul class="sidebar-nav">
-                <li><a href="#aboutme-container">About Me</a></li>
-                <li><a href="#Skills-container">Skills</a></li>
-                <li><a href="#Portfolio-container">Portfolio</a></li>
-            </ul>
-        </div>
-
-        <div id="fixed-icons">
-            <a href="mailto:shahmaran0207@naver.com" title="메일 보내기"><i class="bi bi-envelope"></i></a>
-            <a href="https://github.com/shahmaran0207" title="GITHUB 주소로 이동"><i class="bi bi-github"></i></a>
-            <a href="#page-top" title="위로가기"><i class="bi bi-arrow-up-circle"></i></a>
-        </div>
+    <div>
+        <div id="header-container" class="section fixed"></div>
     </div>
+    <!-- AboutMe - 개인의 교육, 수상목록, 자격증 등에 관한 파트 -->
+    <div id="aboutme-container" class="section layer"></div>
+
+    <!-- Skills - 다룰 수 있는 기술 파트 -->
+    <div id="Skills-container"></div>
+
+    <!-- Portfolio - 포트폴리오의 대략적인 정보에 관한 정보 파트 -->
+    <div id="Portfolio-container"></div>
+
+    <!-- Portfolio Detail - 포트폴리오의 세부적인 내용에 관한 파트 -->
+    <div id="Portfolio-detail-container"></div>
+
+    <!-- footer - footer 파트 -->
+    <div id="footer-container"></div>
+    <!-- Left Sidebar Navigation -->
+    <div id="sidebar-container">
+        <ul class="sidebar-nav">
+            <li><a href="#aboutme-container">About Me</a></li>
+            <li><a href="#Skills-container">Skills</a></li>
+            <li><a href="#Portfolio-container">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div id="fixed-icons">
+        <a href="mailto:shahmaran0207@naver.com" title="메일 보내기"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/shahmaran0207" title="GITHUB 주소로 이동"><i class="bi bi-github"></i></a>
+        <a href="#page-top" title="위로가기"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
+        // 초기 스크롤 비활성화
+        $('body').css('overflow', 'hidden');
+
+        // 4초 후 스크롤 활성화
+        setTimeout(function () {
+            $('body').css('overflow', 'auto');
+        }, 4000);
+
+        // 기존 로드 코드
         $('#aboutme-container').load('/html/AboutMe.html');
-    });
-
-    $(document).ready(function() {
         $('#Skills-container').load('/html/Skills.html');
-    });
-
-    $(document).ready(function() {
         $('#Portfolio-container').load('/html/Portfolio.html');
-    });
-
-    $(document).ready(function() {
         $('#Portfolio-detail-container').load('/html/Portfolio-Details.html');
-    });
-    $(document).ready(function() {
         $('#footer-container').load('/html/Footer.html');
-    });
-    $(document).ready(function() {
         $('#header-container').load('/html/Header.html');
-    });
 
-    $(document).ready(function() {
-        // 각 섹션의 위치를 감지하여 스크롤 이벤트에 맞게 활성화되는 링크 수정
-        $(window).on('scroll', function() {
+        // 스크롤 이벤트 로직
+        $(window).on('scroll', function () {
             var scrollPosition = $(window).scrollTop();
-
-            // 각 섹션의 아이디를 배열로 저장
             var sections = ['#header-container', '#aboutme-container', '#Skills-container', '#Portfolio-container', '#Portfolio-detail-container', '#footer-container'];
 
-            // 각 섹션에 대해 순차적으로 확인
-            sections.forEach(function(section) {
+            sections.forEach(function (section) {
                 var sectionOffset = $(section).offset().top;
                 var sectionHeight = $(section).outerHeight();
                 var sectionLink = $('a[href="' + section + '"]');
@@ -107,102 +179,36 @@
                 }
             });
         });
-    });
-    $(document).ready(function () {
+
+
+        // Sidebar 및 고정 아이콘 표시 여부 조정
         $(window).on('scroll', function () {
             var scrollPosition = $(window).scrollTop();
-            var headerHeight = $('#header-container').outerHeight(); // header 높이 가져오기
+            var headerHeight = $('#header-container').outerHeight();
+            var skillsOffset = $('#Skills-container').offset().top;
+            var skillsHeight = $('#Skills-container').outerHeight();
 
             if (scrollPosition < headerHeight) {
-                $('#sidebar-container').fadeOut(); // header 안에 있으면 숨기기
+                $('#sidebar-container').fadeOut();
+                $('#fixed-icons').fadeOut();
             } else {
-                $('#sidebar-container').fadeIn(); // header를 벗어나면 보이기
+                $('#sidebar-container').fadeIn();
+                $('#fixed-icons').fadeIn();
+            }
+
+            if (scrollPosition >= skillsOffset && scrollPosition < skillsOffset + skillsHeight) {
+                $('#fixed-icons').addClass('inverse-icons');
+            } else {
+                $('#fixed-icons').removeClass('inverse-icons');
             }
         });
     });
 
 
 </script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 <script src="./html/js/scripts.js"></script>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-
-<style>
-
-    #sidebar-container {
-        position: fixed;
-        left: 20px;
-        top: 10%;
-        z-index: 1000;
-    }
-
-    .sidebar-nav {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .sidebar-nav li {
-        margin-bottom: 15px;
-    }
-
-    .sidebar-nav a {
-        text-decoration: none;
-        color: #333;
-        font-size: 26px;
-        font-weight: bold;
-        transition: opacity 0.3s ease;
-        pointer-events: none;  /* 기본적으로 클릭 불가능 */
-    }
-
-    .sidebar-nav a:hover {
-        color: #f4623a; /* 호버 시 색상 변경 */
-    }
-
-    .sidebar-nav a.inactive {
-        opacity: 0.3; /* 섹션이 화면에 보이지 않으면 불투명도 적용 */
-    }
-
-    .sidebar-nav a.active {
-        opacity: 1; /* 섹션이 화면에 보이면 불투명도를 1로 설정 */
-        pointer-events: auto;  /* 활성화된 섹션만 클릭 가능 */
-    }
-
-
-    #fixed-icons {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #fixed-icons a {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 24px;
-        background-color: white;  /* 배경을 흰색으로 설정 */
-        color: #f4623a;  /* 아이콘 색상 주황색 */
-        padding: 10px;  /* 더 큰 여백으로 크기 확대 */
-        border-radius: 50%;  /* 완전한 원형 */
-        text-decoration: none;  /* 링크 밑줄 제거 */
-        transition: background-color 0.3s ease;
-    }
-
-    #fixed-icons a:hover {
-        background-color: #f8f9fa;  /* 호버 시 배경색 밝은 회색 */
-        color: #f4623a;  /* 호버 시 아이콘 색상 변경 */
-    }
-
-    #fixed-icons a {
-        padding: 15px;  /* 여백을 더 크게 설정하여 배경을 더 둥글게 */
-    }
-
-</style>
 </html>

@@ -1,3 +1,105 @@
+<script>
+  // option들을 가져옴
+  const options = document.querySelectorAll('.option');
+
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      // 'selected' 클래스 제거
+      document.querySelector('.option.selected').classList.remove('selected');
+      // 클릭된 option에 'selected' 클래스 추가
+      option.classList.add('selected');
+    });
+  });
+
+  // 옵션 클릭 이벤트
+  document.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', function () {
+      // 선택된 option 클래스 제거 및 추가
+      document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+      this.classList.add('selected');
+
+      // 선택된 값 가져오기
+      const selectedValue = this.getAttribute('data-value');
+
+      // portfolio-item 필터링
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      portfolioItems.forEach(item => {
+        // 해당 옵션에 맞는 포트폴리오 항목만 보이도록 설정
+        if (selectedValue === 'all' || item.classList.contains(selectedValue)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // 모달의 data-target 동적 변경 (선택된 옵션에 맞는 모달만 보이도록 설정)
+      const modals = {
+        all: '#portfolioModalAll',
+        option1: '#portfolioModalOption1',
+        option2: '#portfolioModalOption2',
+      };
+
+      // 모든 모달 숨기기
+      document.querySelectorAll('.modal').forEach(modal => {
+        $(modal).modal('hide');
+      });
+
+      // 선택된 옵션에 해당하는 모달 보이기
+      $(modals[selectedValue]).modal('show');
+    });
+  });
+
+  // 초기화 시 선택된 옵션에 맞는 포트폴리오 항목만 보이도록 설정
+  document.querySelector('.option.selected').click();
+</script>
+
+
+<style>
+  /* 컨테이너 */
+  .selector-container {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 끝으로 정렬 */
+    margin: 20px 0;
+    padding-right: 10px;
+  }
+
+  /* 가로 타원형 */
+  .selector {
+    display: flex;
+    align-items: center;
+    background-color: #f4623a;
+    border-radius: 30px;
+    padding: 5px;
+    width: auto; /* 크기를 내용에 맞게 조정 */
+    justify-content: space-around;
+  }
+
+  /* 선택지 */
+  .option {
+    text-align: center;
+    font-size: 14px;
+    color: white; /* 기본 글자 색은 흰색 */
+    background-color: #f4623a; /* 타원 배경은 빨간색 */
+    border-radius: 50px; /* 큰 타원형 */
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: bold; /* 볼드체 */
+  }
+
+
+  /* 선택된 옵션 */
+  .option.selected {
+    background-color: white; /* 선택된 작은 타원의 배경은 흰색 */
+    color: #f4623a; /* 선택된 글자 색은 빨간색 */
+    border-radius: 20px; /* 작은 타원형 */
+  }
+
+
+</style>
+
 <div id="portfolio">
   <!-- 제목 -->
   <div class="d-flex align-items-center justify-content-center" style="min-height: 10vh; flex-direction: column; margin-top: 0; margin-bottom: 0;">
@@ -5,10 +107,19 @@
     <hr class="divider" style="border-top: 2px solid #f4623a; width: 10%; margin: 0 auto;">
   </div>
 
+  <div class="selector-container">
+    <div class="selector">
+      <div class="option selected" data-value="all">ALL</div>
+      <div class="option" data-value="option1">Team</div>
+      <div class="option" data-value="option2">Single</div>
+    </div>
+  </div>
+
+
   <!-- 포트폴리오 - 졸업작품 -->
   <div class="container-fluid p-0">
     <div class="row g-0">
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option1">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/final.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -24,9 +135,8 @@
         </a>
       </div>
 
-
       <!-- 포트폴리오 - 범죄율과 신고율의 상관관계 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option1">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/png.jpg" alt="..." />
           <div class="portfolio-box-caption">
@@ -42,7 +152,7 @@
       </div>
 
       <!-- 포트폴리오 - 지역별 신용카드 예측 프로젝트 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option1">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/credit.jpg" alt="..." />
           <div class="portfolio-box-caption">
@@ -58,7 +168,7 @@
       </div>
 
       <!-- 포트폴리오 - 인생네컷 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/four.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -75,7 +185,7 @@
       </div>
 
       <!-- 포트폴리오 - 청소년 범죄율 분석 및 예측 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option1">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/crime.jpg" alt="..." />
           <div class="portfolio-box-caption">
@@ -92,7 +202,7 @@
 
 
       <!-- 포트폴리오 - 국비지원 과정 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/kg.jpg" alt="..." />
           <div class="portfolio-box-caption">
@@ -109,7 +219,7 @@
 
 
       <!-- 포트폴리오 - 국비지원 과정 2번째 프로젝트 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option1">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/pet.jpg" alt="..." />
           <div class="portfolio-box-caption">
@@ -126,7 +236,7 @@
 
 
       <!-- 포트폴리오 - 국비지원 과정 첫 번째 프로젝트 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option1">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/smart.jpg" alt="..." />
           <div class="portfolio-box-caption">
@@ -142,7 +252,7 @@
       </div>
 
       <!-- 포트폴리오 - 수박게임 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/수박게임.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -158,7 +268,7 @@
         </a>
       </div>
       <!-- 포트폴리오 - 슈팅게임(Unity) -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/슈팅게임.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -175,7 +285,7 @@
       </div>
 
       <!-- 포트폴리오 - 리듬게임 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/리듬게임.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -191,7 +301,7 @@
       </div>
 
       <!-- 포트폴리오 - todolist -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/todolist.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -208,7 +318,7 @@
       </div>
 
       <!-- 포트폴리오 - 슈팅게임(JavaScript) -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/자바슈팅.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -225,7 +335,7 @@
       </div>
 
       <!-- 포트폴리오 - memoapplication -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/memoapplication.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -241,7 +351,7 @@
       </div>
 
       <!-- 포트폴리오 - Infinite Scroll -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/movie.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -258,7 +368,7 @@
       </div>
 
       <!-- 포트폴리오 - 채팅 사이트 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <a class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/chatting.png" alt="..." />
           <div class="portfolio-box-caption">
@@ -274,7 +384,7 @@
       </div>
 
       <!-- 포트폴리오 - 환율 계산 사이트 -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 portfolio-item option2">
         <div class="portfolio-box" href="#" data-toggle="modal">
           <img class="img-fluid" src="../html/assets/img/portfolio/exchange.png" alt="..." />
           <div class="portfolio-box-caption">
