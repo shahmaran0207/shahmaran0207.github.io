@@ -11,17 +11,10 @@
       </div>
     </div>
   </div>
-
-  <!-- 왼쪽 귀퉁이에 링크 추가 -->
   <a href="#top" style="margin-left: 10px; margin-top: 10px" class="scroll-to-top">박정은's Portfolio</a>
 </header>
 
-<!-- 구글 웹 폰트 링크 (Noto Sans KR) -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-
-<style>
-
-</style>
 
 <style>
   body {
@@ -66,7 +59,7 @@
     font-size: 3.5rem;
     font-weight: bold;
     opacity: 0;
-    white-space: nowrap; /* 줄바꿈 방지 */
+    white-space: nowrap;
     animation: fadeInUp 2s ease-out 0.3s forwards, moveUpAfterFadeOut2 1.2s ease-in-out 3.3s forwards;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
@@ -74,7 +67,7 @@
   .main-title {
     font-size: 8em;
     margin-bottom: 25px;
-    white-space: nowrap; /* 줄바꿈 방지 */
+    white-space: nowrap;
     opacity: 0;
     animation: fadeInUp 2s ease-out 0s forwards, moveUpAfterFadeOut3 1.2s ease-in-out 3.3s forwards;
   }
@@ -83,11 +76,11 @@
   @keyframes slideUpFromBottom {
     0% {
       opacity: 0;
-      transform: translateY(100%); /* 아래쪽에 위치 */
+      transform: translateY(100%);
     }
     100% {
       opacity: 1;
-      transform: translateY(70px); /* 제자리로 올라옴 */
+      transform: translateY(70px);
     }
   }
 
@@ -151,18 +144,18 @@
     }
     100% {
       transform: translateY(-340px);
-      font-size: 4.5rem; /* 끝날 때 작은 글씨 크기 */
+      font-size: 4.5rem;
     }
   }
 
   @keyframes moveUpAfterFadeOut {
     0% {
       transform: translateY(70px);
-      font-size: 15rem; /* 시작 시 큰 글씨 크기 */
+      font-size: 15rem;
     }
     100% {
       transform: translateY(-260px);
-      font-size: 9rem; /* 끝날 때 작은 글씨 크기 */
+      font-size: 9rem;
     }
   }
 
@@ -196,7 +189,7 @@
     z-index: 999;
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold; /* 굵게 */
+    font-weight: bold; 
   }
 
   .scroll-to-top:hover {
