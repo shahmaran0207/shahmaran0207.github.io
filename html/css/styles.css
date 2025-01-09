@@ -21,9 +21,9 @@ body {
 }
 
 h3{
-  font-family: 'Noto Sans', sans-serif; /* 얇은 느낌의 폰트 (Google Fonts) */
-  font-weight: 300;                    /* 얇은 폰트 굵기 */
-  font-size: 24px;                     /* 원하는 글자 크기로 조정 가능 */
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 
@@ -223,6 +223,7 @@ legend {
     font-size: 1.5rem;
   }
 }
+
 legend + * {
   clear: left;
 }
@@ -284,8 +285,6 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 1400px) {
-}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -407,8 +406,8 @@ progress {
     flex: 0 0 auto;
     width: 16.6666666667%;
   }
-
 }
+
 @media (min-width: 992px) {
   .row-cols-lg-auto > * {
     flex: 0 0 auto;
