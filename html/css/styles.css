@@ -53,24 +53,24 @@ body.modal-open {
 }
 
 .modal-body {
-  display: flex; /* 내부 정렬을 위해 flex 사용 */
-  flex-direction: column; /* 수직 정렬 */
-  align-items: center; /* 가로 중앙 정렬 */
-  justify-content: center; /* 세로 중앙 정렬 */
-  position: fixed; /* 고정 위치 */
-  top: 50%; /* 세로 중앙 */
-  left: 50%; /* 가로 중앙 */
-  transform: translate(-50%, -12%); /* 중앙으로 이동 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -12%);
 }
 
 .portfolio-title {
-  font-size: 35px; /* h1 글자 크기를 절반으로 줄임 */
-  color: white;  /* h1 글자 색상을 흰색으로 설정 */
+  font-size: 35px;
+  color: white;
 }
 
 .portfolio-subtitle {
-  font-size: 20px;         /* h2 글자 크기를 절반으로 줄임 */
-  font-weight: normal;    /* h1에 비해 굵기를 절반으로 설정 */
+  font-size: 20px;
+  font-weight: normal;
 }
 .description-box {
   text-align: left;
@@ -86,10 +86,10 @@ body.modal-open {
 }
 
 .span-group {
-  display: flex; /* 두 span을 가로로 나란히 배치 */
-  gap: 10px; /* 두 span 사이의 간격 */
-  margin-bottom: 5px; /* 그룹 간 간격 */
-  align-items: center; /* 두 span의 세로 정렬 */
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+  align-items: center;
   margin-left: 120px;
 }
 
@@ -830,12 +830,6 @@ progress {
 .btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-.navbar-text a,
-.navbar-text a:hover,
-.navbar-text a:focus {
-  color: var(--bs-navbar-active-color);
 }
 
 .card > hr {
