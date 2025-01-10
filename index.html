@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="./html/css/styles.css" rel="stylesheet" />
     <style>
+
         .custom-font {
             font-family: 'Pretendard', sans-serif;
             font-weight: bold;
@@ -64,23 +65,22 @@
         }
 
         #fixed-icons {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            flex-direction: column;
+            display: flex;
+            flex-direction: column; /* 가로 -> 세로 정렬 */
             align-items: center;
+            gap: 15px; /* 아이콘 간의 간격 */
+            position: fixed;
+            bottom: 20px; /* 화면 아래와의 여백 */
+            right: 20px; /* 화면 오른쪽과의 여백 */
+            z-index: 1000;
         }
 
         #fixed-icons a {
-            display: block;
-            margin-bottom: 10px;
             font-size: 24px;
             background-color: white;
             color: #f4623a;
-            padding: 15px;
-            border-radius: 50%;
+            padding: 20px; /* 둥근 모양을 위해 padding 증가 */
+            border-radius: 50%; /* 완전 둥근 형태 */
             text-decoration: none;
             transition: all 0.3s ease;
         }
@@ -98,6 +98,9 @@
         #fixed-icons.inverse-icons a:hover {
             background-color: #d84315;
             color: #ffffff;
+        #sidebar-container,
+        #fixed-icons {
+            display: none; /* 초기 상태에서 숨김 */
         }
     </style>
 </head>
@@ -157,31 +160,14 @@
         $('#footer-container').load('/html/Footer.html');
         $('#header-container').load('/html/Header.html');
 
-        // 스크롤 이벤트 로직
-        $(window).on('scroll', function () {
-            var scrollPosition = $(window).scrollTop();
-            var sections = ['#header-container', '#aboutme-container', '#Skills-container', '#Portfolio-container', '#Portfolio-detail-container', '#footer-container'];
-
-            sections.forEach(function (section) {
-                var sectionOffset = $(section).offset().top;
-                var sectionHeight = $(section).outerHeight();
-                var sectionLink = $('a[href="' + section + '"]');
-
-                if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
-                    sectionLink.removeClass('inactive').addClass('active');
-                } else {
-                    sectionLink.removeClass('active').addClass('inactive');
-                }
-            });
-        });
-
-        $(window).on('scroll', function () {
+        function updateSidebarAndIconsVisibility() {
             var scrollPosition = $(window).scrollTop();
             var headerHeight = $('#header-container').outerHeight();
-            var skillsOffset = $('#Skills-container').offset().top;
-            var skillsHeight = $('#Skills-container').outerHeight();
+            var footerOffset = $('#footer-container').offset().top;
+            var windowHeight = $(window).height();
 
-            if (scrollPosition < headerHeight) {
+            // 사이드바 및 고정 아이콘 표시/숨김 로직
+            if (scrollPosition < headerHeight || scrollPosition + windowHeight > footerOffset) {
                 $('#sidebar-container').fadeOut();
                 $('#fixed-icons').fadeOut();
             } else {
@@ -189,15 +175,53 @@
                 $('#fixed-icons').fadeIn();
             }
 
+            var skillsOffset = $('#Skills-container').offset().top;
+            var skillsHeight = $('#Skills-container').outerHeight();
+
+            // 아이콘 색상 반전 로직
             if (scrollPosition >= skillsOffset && scrollPosition < skillsOffset + skillsHeight) {
                 $('#fixed-icons').addClass('inverse-icons');
             } else {
                 $('#fixed-icons').removeClass('inverse-icons');
             }
-        });
-    });
+        }
 
+        function updateSidebarHighlight() {
+            var scrollPosition = $(window).scrollTop();
+            var sections = [
+                { id: '#aboutme-container', link: 'a[href="#aboutme-container"]' },
+                { id: '#Skills-container', link: 'a[href="#Skills-container"]' },
+                { id: '#Portfolio-container', link: 'a[href="#Portfolio-container"]' }
+            ];
+
+            sections.forEach(function (section) {
+                var offsetTop = $(section.id).offset().top;
+                var offsetHeight = $(section.id).outerHeight();
+
+                if (scrollPosition >= offsetTop - 50 && scrollPosition < offsetTop + offsetHeight - 50) {
+                    $(section.link).addClass('active').removeClass('inactive');
+                } else {
+                    $(section.link).addClass('inactive').removeClass('active');
+                }
+            });
+        }
+
+        // 초기 상태에서 사이드바 및 아이콘 숨김 처리
+        $('#sidebar-container').hide();
+        $('#fixed-icons').hide();
+
+        // 초기 4.7초 후 사이드바 및 아이콘 표시, 스크롤 이벤트 등록
+        setTimeout(function () {
+            updateSidebarAndIconsVisibility();
+            updateSidebarHighlight();
+            $(window).on('scroll', function () {
+                updateSidebarAndIconsVisibility();
+                updateSidebarHighlight();
+            });
+        }, 4700);
+    });
 </script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
