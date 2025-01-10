@@ -99,10 +99,50 @@
         #fixed-icons.inverse-icons a:hover {
             background-color: #d84315;
             color: #ffffff;
-        #sidebar-container,
-        #fixed-icons {
-            display: none; /* 초기 상태에서 숨김 */
+
+            #sidebar-container,
+            #fixed-icons {
+                display: none; /* 초기 상태에서 숨김 */
+            }
         }
+
+        #fixed-icons a:hover::after {
+            display: block; /* 호버 시 텍스트 박스 표시 */
+        }
+
+        #fixed-icons a::after {
+            content: attr(data-text); /* data-text 속성의 내용 표시 */
+            position: absolute; /* 아이콘의 왼쪽에 배치 */
+            right: 100%; /* 아이콘 왼쪽에 텍스트 박스 위치 */
+            top: 50%; /* 수직 중앙 정렬 */
+            transform: translateY(-50%); /* 수직 중앙 정렬 */
+            margin-right: 15px; /* 아이콘과 텍스트 박스 사이의 여백 */
+            padding: 10px 15px; /* 텍스트 박스의 패딩 */
+            font-size: 14px; /* 텍스트 크기 */
+            font-weight: bold; /* 글자 두께 */
+            background-color: white; /* 기본 배경색 */
+            color: #f4623a; /* 기본 텍스트 색상 */
+            border-radius: 10px; /* 텍스트 박스 모서리 둥글게 */
+            display: none; /* 기본적으로 텍스트 박스는 보이지 않음 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+            white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+            box-sizing: border-box; /* 패딩을 포함한 너비 계산 */
+            min-width: 70px; /* 최소 너비 설정 */
+            max-width: 150px; /* 최대 너비 설정 */
+        }
+
+        #fixed-icons.inverse-icons a:hover::after {
+            background-color: #f4623a; /* 배경색이 반전됨 */
+            color: white; /* 텍스트 색상도 반전됨 */
+        }
+
+        #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
+            font-size: 16px; /* 텍스트 크기 조정 */
+            padding: 15px 20px; /* 텍스트 박스의 패딩 조정 */
+            min-width: 100px; /* 최소 너비 설정 */
+            max-width: 2000px; /* 최대 너비 설정 */
+        }
+
     </style>
 </head>
 
@@ -136,9 +176,9 @@
     </div>
 
     <div id="fixed-icons">
-        <a href="mailto:shahmaran0207@naver.com" title="메일 보내기"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/shahmaran0207" title="GITHUB 주소로 이동"><i class="bi bi-github"></i></a>
-        <a href="#page-top" title="위로가기"><i class="bi bi-arrow-up-circle"></i></a>
+        <a href="mailto:shahmaran0207@naver.com" title="메일 보내기" data-text="shahmaran0207@naver.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/shahmaran0207" title="GITHUB 주소로 이동" data-text="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#page-top" title="위로가기" data-text="위로가기"><i class="bi bi-arrow-up-circle"></i></a>
     </div>
 </div>
 </body>
