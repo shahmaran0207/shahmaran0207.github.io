@@ -125,12 +125,14 @@
     }
 
     #fixed-icons a {
-        font-size: 24px;
+        font-size: 32px; /* 아이콘 크기 증가 */
         background-color: white;
         color: #373737;
-        padding: 20px;
-        border-radius: 50%;
-
+        width: 32px; /* 동일한 width, height 설정 */
+        height: 32px;
+        display: flex; /* 아이콘을 가운데 정렬 */
+        padding: 20px; /* 기존 타원 형태 유지 */
+        border-radius: 50%; /* 둥근 모양 유지 */
         text-decoration: none;
         transition: all 0.3s ease;
     }
@@ -141,23 +143,15 @@
         transform: scale(1.25);
     }
 
-
-
     #fixed-icons.inverse-icons a:hover {
         background-color: #373737;
         color: #ffffff;
-
-        #sidebar-container,
-        #fixed-icons {
-            display: none;
-        }
     }
 
     i {
-        font-size: 1.5rem; /* 아이콘 크기 */
+        font-size: 2rem; /* 아이콘 크기 증가 */
         line-height: 1;   /* 비율 고정 */
     }
-
 
     #fixed-icons a:hover::after {
         display: block;
@@ -182,11 +176,6 @@
         box-sizing: border-box;
         min-width: 70px;
         max-width: 150px;
-    }
-
-    #fixed-icons.inverse-icons a:hover::after {
-        background-color: #f4623a;
-        color: white;
     }
 
     #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
