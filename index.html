@@ -5,6 +5,7 @@
     <link rel="icon" href="./html/assets/favicon.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="./html/css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 </head>
 
@@ -37,8 +38,8 @@
             <div style="align-self: stretch; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
                 <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 80px; display: flex">
                     <div style="flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
-                        <div style="text-align: center; color: white; font-size: 64px; font-family: Pretendard; font-weight: 700; line-height: 96px; word-wrap: break-word">박정은</div>
-                        <div style="text-align: center; color: white; font-size: 48px; font-family: Pretendard; font-weight: 400; line-height: 72px; word-wrap: break-word">Park Jung-Eun</div>
+                        <div style="text-align: center; color: white; font-size: 64px;  font-family: 'Pretendard', sans-serif; font-weight: 700; line-height: 96px; word-wrap: break-word">박정은</div>
+                        <div style="text-align: center; color: white; font-size: 48px;  font-family: 'Pretendard', sans-serif; font-weight: 400; line-height: 72px; word-wrap: break-word">Park Jung-Eun</div>
                     </div>
                     <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
                         <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
@@ -104,9 +105,97 @@
     </div>
     </section>
 
+    <div id="fixed-icons">
+        <a href="mailto:shahmaran0207@naver.com" title="메일 보내기" data-text="shahmaran0207@naver.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/shahmaran0207" title="GITHUB 주소로 이동" data-text="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#page-top" title="위로가기" data-text="위로가기"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
 </body>
 
+<style>
+    #fixed-icons {
+        display: flex;
+        flex-direction: column; /* 가로 -> 세로 정렬 */
+        align-items: center;
+        gap: 15px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
 
+    #fixed-icons a {
+        font-size: 24px;
+        background-color: white;
+        color: #373737;
+        padding: 20px;
+        border-radius: 50%;
+
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    #fixed-icons a:hover {
+        background-color: #f8f9fa;
+        color: #373737;
+        transform: scale(1.25);
+    }
+
+
+
+    #fixed-icons.inverse-icons a:hover {
+        background-color: #373737;
+        color: #ffffff;
+
+        #sidebar-container,
+        #fixed-icons {
+            display: none;
+        }
+    }
+
+    i {
+        font-size: 1.5rem; /* 아이콘 크기 */
+        line-height: 1;   /* 비율 고정 */
+    }
+
+
+    #fixed-icons a:hover::after {
+        display: block;
+    }
+
+    #fixed-icons a::after {
+        content: attr(data-text);
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 15px;
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: white;
+        color: #373737;
+        border-radius: 10px;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+        box-sizing: border-box;
+        min-width: 70px;
+        max-width: 150px;
+    }
+
+    #fixed-icons.inverse-icons a:hover::after {
+        background-color: #f4623a;
+        color: white;
+    }
+
+    #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
+        font-size: 16px;
+        padding: 15px 20px;
+        min-width: 100px;
+        max-width: 2000px;
+    }
+</style>
 <script>
 
     const titleElement = document.getElementById('title');

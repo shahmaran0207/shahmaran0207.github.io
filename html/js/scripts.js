@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         backEnd.style.transform = "translateY(-67%)";
 
         const developer = document.getElementById("developer-container");
-        developer.style.transform = "translateY(27%)";
+        developer.style.transform = "translateY(47%)";
 
         // 새로운 내용 표시
         setTimeout(() => {
