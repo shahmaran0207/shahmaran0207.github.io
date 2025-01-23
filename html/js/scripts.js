@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 600); // 화면 진입 후 0.6초 뒤
 });
 
-$('#Header-container').load('/html/Header.html');
+$('#Starter-container').load('/html/Starter.html');
 $('#Aboutme-container').load('/html/Aboutme.html');
 $('#interview-container').load('/html/Interview.html');
 $('#Skills-container').load('/html/Skills.html');

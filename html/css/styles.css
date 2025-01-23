@@ -1,5 +1,7 @@
 html{
     background-color: #232323;
+    width: 100%;
+    height: auto;
 }
 
 .modal {
@@ -255,6 +257,7 @@ html{
 
 .card-title {
     font-size: 22px;
+    text-align: left;
     font-family: Pretendard;
     font-weight: 700;
     line-height: 36px;
@@ -264,7 +267,7 @@ html{
     color: #a6a6a6;
     font-size: 16px;
     font-family: Pretendard;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     line-height: 24px;
 }
@@ -344,7 +347,7 @@ html{
 
 .selector-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 20px 0;
     padding-right: 10px;
 }
@@ -393,3 +396,4 @@ html{
     color: white;
     transform: scale(1.1);
 }
+

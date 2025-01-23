@@ -67,7 +67,81 @@
         </div>
     </div>
 </div>
+
 <div
         style="position: absolute; margin-left: 80px; margin-bottom: 40px; color: white; left: 10px; bottom: 10px;  font-size: 24px; font-family: Pretendard; font-weight: 400;">
     updated, on 2025.01.23
 </div>
+
+<div class="scroll-container">
+    <a href="#profile">
+        <span></span>
+    </a>
+</div>
+
+<style>
+    a {
+        padding-top: 60px;
+    }
+    a span {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        margin-left: -15px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+    a span::before {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #fff;
+        border-radius: 100%;
+        -webkit-animation: sdb 2s infinite;
+        animation: sdb 2s infinite;
+        box-sizing: border-box;
+    }
+    @-webkit-keyframes sdb {
+        0% {
+            -webkit-transform: translate(0, 0);
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: translate(0, 20px);
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes sdb {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        80% {
+            transform: translate(0, 20px);
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    html {
+        scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
+    }
+
+</style>
