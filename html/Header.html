@@ -1,197 +1,73 @@
-<header class="masthead">
-  <div class="container px-4 px-lg-5 h-100">
-    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-      <div id="intro-overlay">
-        <div class="intro-text-fixed">
-          <h1 class="bg-text">BACK-END</h1>
-          <h2 class="main-title">박정은's Portfolio</h2>
-          <h3 class="sub-title">다양한 데이터 분석 경험과 백엔드 개발 경험을 지닌 개발자 박정은입니다.</h3>
-        </div>
-        <img id="intro-image" src="../html/assets/img/PJE.png" alt="Profile Image" />
-      </div>
+
+<div
+        style="width: 1920px; left: 0px; top: 490px; position: absolute; justify-content: center; align-items: center; display: inline-flex; transition: transform 1s ease-out;"
+        id="developer-container">
+    <div
+            id="developer"
+            style="text-align: center; color: #373737; font-size: 340px; font-family: Pretendard; font-weight: 700; word-wrap: break-word;">
+        Developer
     </div>
-  </div>
-  <a href="#top" style="margin-left: 10px; margin-top: 10px" class="scroll-to-top">박정은's Portfolio</a>
-</header>
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  .intro-text-fixed {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    text-align: center;
-    color: white;
-    pointer-events: none;
-  }
-
-  @keyframes scaleDown {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.8);
-    }
-  }
-
-  .bg-text {
-    font-size: 15em;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 20px;
-    opacity: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: slideUpFromBottom 1.5s ease-out 1.5s forwards, moveUpAfterFadeOut 1.2s ease-in-out 3.3s forwards;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  .sub-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    opacity: 0;
-    white-space: nowrap;
-    animation: fadeInUp 2s ease-out 0.3s forwards, moveUpAfterFadeOut2 1.2s ease-in-out 3.3s forwards;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  .main-title {
-    font-size: 8em;
-    margin-bottom: 25px;
-    white-space: nowrap;
-    opacity: 0;
-    animation: fadeInUp 2s ease-out 0s forwards, moveUpAfterFadeOut3 1.2s ease-in-out 3.3s forwards;
-  }
-
-  @keyframes slideUpFromBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(70px);
-    }
-  }
-
-  #intro-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2c2c2c;
-    z-index: 10000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation: fadeOutBackground 1s ease-in-out 3.5s forwards;
-  }
-
-  @keyframes fadeOutBackground {
-    0% {
-      background-color: #2c2c2c;
-    }
-    100% {
-      background-color: transparent;
-    }
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideUp {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
-  }
-
-  @keyframes moveUpAfterFadeOut2 {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-340px);
-      font-size: 1.8rem;
-    }
-  }
-
-  @keyframes moveUpAfterFadeOut3 {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-340px);
-      font-size: 4.5rem;
-    }
-  }
-
-  @keyframes moveUpAfterFadeOut {
-    0% {
-      transform: translateY(70px);
-      font-size: 15rem;
-    }
-    100% {
-      transform: translateY(-260px);
-      font-size: 9rem;
-    }
-  }
-
-  #intro-image {
-    visibility: hidden;
-    width: 450px;
-    margin-top: 17.6%;
-    opacity: 0;
-    animation: showImage 1s ease-in-out 3.5s forwards;
-  }
-
-  @keyframes showImage {
-    0% {
-      opacity: 0;
-      visibility: hidden;
-    }
-    100% {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  .scroll-to-top {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font-size: 1.4rem;
-    color: black;
-    text-decoration: none;
-    z-index: 999;
-    cursor: pointer;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;
-  }
-
-  .scroll-to-top:hover {
-    color: black;
-    cursor: pointer;
-  }
-</style>
+</div>
+<div
+        style="left: 0.50px; top: 184px; position: absolute; justify-content: center; align-items: center; display: inline-flex; transition: transform 1s ease-out;"
+        id="back-end-container">
+    <div
+            id="back-end"
+            style="width: 1920px; text-align: center; color: #373737; font-size: 340px; font-family: Pretendard; font-weight: 700; word-wrap: break-word;">
+        Back-End
+    </div>
+</div>
+<!-- 새로운 내용 -->
+<div
+        id="new-content"
+        style="width: 100%; height: 100%; padding-left: 40px; padding-right: 40px; flex-direction: column; justify-content: center; align-items: center; gap: 40px; display: none; position: absolute; top: 0; left: 0;">
+    <div style="justify-content: center; align-items: center; gap: 24px; display: inline-flex;">
+        <div
+                style="text-align: center; color: white; font-size: 104px; font-family: Pretendard; font-weight: 400; line-height: 156px; word-wrap: break-word;">
+            백엔드 개발자
+        </div>
+        <div
+                style="text-align: center; color: white; font-size: 104px; font-family: Pretendard; font-weight: 700; line-height: 156px; word-wrap: break-word;">
+            박정은
+        </div>
+    </div>
+    <div
+            style="padding-left: 12px; padding-right: 12px; flex-direction: column; justify-content: center; align-items: center; gap: 8px; display: flex;">
+        <div style="justify-content: center; align-items: flex-end; gap: 12px; display: inline-flex;">
+            <div
+                    style="text-align: center; color: white; font-size: 40px; font-family: Pretendard; font-weight: 400; line-height: 60px; word-wrap: break-word;">
+                다양한
+            </div>
+            <div
+                    style="text-align: center; color: rgba(255, 255, 255, 0.90); font-size: 48px; font-family: Pretendard; font-weight: 700; line-height: 72px; word-wrap: break-word;">
+                데이터 분석
+            </div>
+            <div
+                    style="text-align: center; color: white; font-size: 40px; font-family: Pretendard; font-weight: 400; line-height: 60px; word-wrap: break-word;">
+                경험과
+            </div>
+        </div>
+        <div style="justify-content: center; align-items: flex-end; gap: 12px; display: inline-flex;">
+            <div
+                    style="text-align: center; color: rgba(255, 255, 255, 0.90); font-size: 48px; font-family: Pretendard; font-weight: 700; line-height: 72px; word-wrap: break-word;">
+                백엔드 개발
+            </div>
+            <div
+                    style="text-align: center; color: white; font-size: 40px; font-family: Pretendard; font-weight: 400; line-height: 60px; word-wrap: break-word;">
+                경험을 지닌, 개발자
+            </div>
+            <div
+                    style="text-align: center; color: rgba(255, 255, 255, 0.90); font-size: 48px; font-family: Pretendard; font-weight: 700; line-height: 72px; word-wrap: break-word;">
+                박정은
+            </div>
+            <div
+                    style="text-align: center; color: white; font-size: 40px; font-family: Pretendard; font-weight: 400; line-height: 60px; word-wrap: break-word;">
+                입니다.
+            </div>
+        </div>
+    </div>
+</div>
+<div
+        style="position: absolute; margin-left: 80px; margin-bottom: 40px; color: white; left: 10px; bottom: 10px;  font-size: 24px; font-family: Pretendard; font-weight: 400;">
+    updated, on 2025.01.23
+</div>

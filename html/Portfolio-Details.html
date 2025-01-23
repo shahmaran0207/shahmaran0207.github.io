@@ -1,999 +1,1514 @@
-<script>
-    $('#portfolioModal2').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal2').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal3').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal3').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal4').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal4').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal5').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal5').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal6').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal6').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal7').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal7').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal8').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal8').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal9').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal9').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal10').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal10').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal11').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal11').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal12').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal12').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal13').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal13').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal14').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal14').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal15').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal15').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal16').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal16').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal17').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal17').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal18').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal18').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-
-    $('#portfolioModal19').on('show.bs.modal', function () {
-        $('body').css('overflow', 'hidden');
-    });
-
-    $('#portfolioModal19').on('hidden.bs.modal', function () {
-        $('body').css('overflow', 'auto');
-    });
-</script>
-
-<!-- 포트폴리오 세부사항 - 졸업작품 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/final.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>여행경비 예측 사이트 프로젝트 - 졸업작품</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        졸업작품 목적으로 시도하였던 여행경비 예측 사이트를 국비지원 과정에서 EC2, RDS를 통해 배포까지 성공한 사이트입니다.<br>
-                        데이터는 한국관광데이터랩의 데이터를 사용하였으며 데이터가 5년치로 한정되어 있어 비교적 정확도는 부족합니다.<br>
-                        예측 자체는 파이썬으로 하였으며, 사이트는 Spring 으로 제작하였습니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>선택에 따른 여행경비 예측</span>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/final.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Money For Travel - 여행경비 예측 사이트</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/final_project">https://github.com/shahmaran0207/final_project</a></span>
+                    <div class="modal-p">
+                        졸업작품 목적으로 시도하였던 여행경비 예측 사이트를 국비지원 과정에서 EC2, RDS를 통해 배포까지 성공한 사이트입니다. <br>데이터는 한국관광데이터랩의 데이터를 사용하였으며 데이터가 5년치로 한정되어 있어 비교적 정확도는 부족합니다.  예측 자체는 파이썬으로 하였으며, 사이트는 Spring 으로 제작하였습니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2023.02. ~ 2023.11.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(20%), 전처리(20%), 예측(20%), 사이트 제작(100%)</div>
+                        </div>
                     </div>
-        
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML, CSS, JS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Python, Spring</span>
-                    </div>
-                    <div class="span-group">
-                        <span>배운 내용:</span>
-                        <span>Docker, EC2, RDS를 통한 배포, Spring을 통한 사이트 제작</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>데이터 수집(20%), 전처리(20%), 예측(20%), 사이트 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 4인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2023.02 ~ 2023.11</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">선택에 따른 여행경비 예측</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">Docker, EC2, RDS를 통한 배포, Spring을 통한 사이트 제작</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal1')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/final_project" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">
+                                GitHub
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 범죄율과 신고율의 상관관계 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/crime.jpg" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>지역별 범죄율과 신고율의 상관관계 분석<br> - 빅데이터 분석 경진대회</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/png.jpg" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">지역별 범죄율과 신고율의 상관관계 분석<br>- 빅데이터 분석 경진대회</div>
+                        <div class="modal-button">
+                            <div class="modal-back">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Data Analysis</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p">
                         빅데이터 분석 경진대회를 위해 분석한 데이터입니다. 지역별 신고율, 범죄율 데이터를 토대로 지역별 범죄율과 신고율의 비율을 분석,<br>
-                        GeoJson을 통해 시각화하였습니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>지역별 신고율 대비 범죄율 분석 및 예측</span>
+                        GeoJson을 통해 시각화하였습니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2020.12. ~ 2021.02.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(30%), 전처리(70%), 예측(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/crime_report_correlation">https://github.com/shahmaran0207/crime_report_correlation</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Python</span>
-                    </div>
-                    <div class="span-group">
-                        <span>배운 내용:</span>
-                        <span>GeoJson을 통한 지도 시각화, 파이썬을 통한 비율 계산 및 분석</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>데이터 수집(30%), 전처리(70%), 예측(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 4인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2020.12 ~ 2021.02</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">지역별 신고율 대비 범죄율 분석 및 예측</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">GeoJson을 통한 지도 시각화, 파이썬을 통한 비율 계산 및 분석</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal2')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/crime_report_correlation" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content"> GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 지역별 신용카드 예측 프로젝트 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/credit.jpg" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>지역별 신용카드 예측 프로젝트</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/png.jpg" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">지역별 신용카드 예측 프로젝트</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Data Analysis</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">
                         대학 수업 과제로 진행하였던 신용카드 소비금액 예측 프로젝트입니다.<br>
                         데이터는 데이콘의 데이터를 사용하였으며, 과거의 데이터를 통해 향후 1년간 지역별 소비금액을 예측하였습니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>지역별 신용카드 소비금액 예측</span>
+                        </div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2022.09. ~ 2022.11.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(40%), 전처리(70%), 예측(50%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/credit_card_predict">https://github.com/shahmaran0207/credit_card_predict</a></span>
-                    </div>
-                    
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Python</span>
-                    </div>
-                    <div class="span-group">
-                        <span>배운 내용:</span>
-                        <span>파이썬을 통한 데이터 전처리, 분석, 예측, 예측에 사용한는 모델</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>데이터 수집(40%), 전처리(70%), 예측(50%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 4인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2023.09 ~ 2022.11</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">지역별 신고율 대비 범죄율 분석 및 예측</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">파이썬을 통한 데이터 전처리, 분석, 예측, 예측에 사용한는 모델</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal3')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/credit_card_predict" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 인생네컷 -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/four.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>인생네컷</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        인생네컷을 코드로 제작하였습니다. 스파르타코딩스쿨의 무료 강의를 토대로 진행하였습니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>인생네컷</span>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/four.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">인생네컷</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">싱글 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/four_photo">https://github.com/shahmaran0207/four_photo</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">인생네컷을 코드로 제작하였습니다.<br> 스파르타코딩스쿨의 무료 강의를 토대로 진행하였습니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">1주일</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">인생네컷 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="https://shahmaran0207.github.io/four_photo/">https://shahmaran0207.github.io/four_photo/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML, CSS, JS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>인생네컷 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>1주일</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">인생네컷</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal4')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/four_photo" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 청소년 범죄율 분석 및 예측 -->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/crime.jpg" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>청소년 범죄율 분석 및 예측<br> - 빅데이터 분석 경진대회</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        빅데이터 분석 경진대회를 위해 분석한 데이터입니다. 청소년 범죄율에 영향을 주는 요소들을 선별,<br>
-                        이 데이터를 기반으로 향후 1년간 지역별 청소년 범죄율을 예측하였습니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>청소년 범죄율 예측</span>
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/crime.jpg" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">청소년 범죄율 분석 및 예측<br>- 빅데이터 분석 경진대회</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Data Analysis</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/youth_crime_predict">https://github.com/shahmaran0207/youth_crime_predict</a></span>
+                    <div class="modal-p" style="margin-top: 38px;">빅데이터 분석 경진대회를 위해 분석한 데이터입니다. 청소년 범죄율에 영향을 주는 요소들을 선별,<br> 이 데이터를 기반으로 향후 1년간 지역별 청소년 범죄율을 예측하였습니다.
                     </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Python</span>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">0222.12 ~ 2023.01</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(30%), 전처리(70%), 예측(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>배운내용:</span>
-                        <span>파이썬을 통한 데이터 예측, seaborn을 통한 heatpmap 작성</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>데이터 수집(30%), 전처리(70%), 예측(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 4인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2022.12~2023.01</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">청소년 범죄율 예측</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">파이썬을 통한 데이터 예측, seaborn을 통한 heatpmap 작성</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal5')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/youth_crime_predict" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
 
-<!-- 포트폴리오 세부사항 - 국비지원 과정 -->
-<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/kg.jpg" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>E커머스 기반 SW 개발자 양성 과정</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        국비지원 과정은 E커머스 기반 SW 개발자 양성과정에서 학습한 코드들입니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href=" https://github.com/shahmaran0207/Developer_studying"> https://github.com/shahmaran0207/Developer_studying</a></span>
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/kg.jpg" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">E커머스 기반 SW 개발자 양성 과정</div>
+                        <div class="modal-button">
+                            <div class="modal-back">
+                                <div class="modal-button2">Study</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">국비지원 과정은 E커머스 기반 SW 개발자 양성과정에서 학습한 코드들입니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">Study</div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">국비지원 과정의 내용</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal6')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Developer_studying" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 국비지원 과정 2번째 프로젝트 -->
-<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/pet.jpg" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Pet Hub</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        국비지원 과정의 두 번째 프로젝트입니다.<br> 애완동물과 관련된 여러 상품들을 판매하며, 관련 의견을 나눌 수 있는 쇼핑몰사이트입니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>반려동물과 관련된 다양한 상품 판매 및 후기 작성기능</span>
+<div id="modal7" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/pet.jpg" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Pet Hub</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/Komo1284/pethub">https://github.com/Komo1284/pethub</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">국비지원 과정의 두 번째 프로젝트입니다.<br>
+                        애완동물과 관련된 여러 상품들을 판매하며, 관련 의견을 나눌 수 있는 쇼핑몰사이트입니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">6명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2주</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">장바구니(60%), 결제 시스템(100%), 관리자의 상품 관리 시스템(50%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML, CSS, JS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Springboot</span>
-                    </div>
-                    <div class="span-group">
-                        <span>배운내용:</span>
-                        <span>결제 API 사용</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>장바구니(60%), 결제 시스템(100%), 관리자의 상품 관리 시스템(50%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 6인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2주</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">반려동물과 관련된 다양한 상품 판매 및 후기 작성기능</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Thymeleaf</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">결제 API 사용</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal7')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/Komo1284/pethub" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 국비지원 과정 첫 번째 프로젝트 -->
-<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/smart.jpg" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Smart Farm</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        국비지원 과정의 첫 번째 프로젝트입니다.<br>
-                        스마트팜에 사용할 수 있는 아두이노 상품과, 프로그램을 판매하며 관련 의견을 나눌 수 있는 쇼핑몰사이트입니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>스마트팜에 사용되는 아두이노 기계 판매 사이트</span>
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/smart.jpg" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Pet Hub</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/Komo1284/SmartFarm">https://github.com/Komo1284/SmartFarm</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">국비지원 과정의 첫 번째 프로젝트입니다.<br>
+                        스마트팜에 사용할 수 있는 아두이노 상품과, 프로그램을 판매하며 관련 의견을 나눌 수 있는 쇼핑몰사이트입니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">6명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2주</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">장바구니(60%), 결제 시스템(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML, CSS, JS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Springboot</span>
-                    </div>
-                    <div class="span-group">
-                        <span>배운내용:</span>
-                        <span>결제 API 사용</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>장바구니(60%), 결제 시스템(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 6인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2주</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">스마트팜에 사용되는 아두이노 기계 판매 사이트</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Thymeleaf</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">결제 API 사용</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal8')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/Komo1284/SmartFarm" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 수박게임 -->
-<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/수박게임.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>수박게임</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        간단히 즐길 수 있는 수박게임 입니다.<br>
-                        키 조절은 방향키로 가능합니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>수박게임</span>
+<!-- 포트폴리오 detail - 수박게임 -->
+<div id="modal9" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/수박게임.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">수박게임</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/watermelon_game">https://github.com/shahmaran0207/watermelon_game</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">간단히 즐길 수 있는 수박게임 입니다.<br>키 조절은 방향키로 가능합니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.08 ~ 2024.09</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">수박게임 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="https://neon-praline-dda96f.netlify.app">https://neon-praline-dda96f.netlify.app</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>수박게임 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.08 ~ 2024.09</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">수박게임</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Node.js</div>
+                            </div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">Node.js 사용법</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal9')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/watermelon_game" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 슈팅게임(Unity) -->
-<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/슈팅게임.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>슈팅게임</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        간단히 즐길 수 있는 슈팅게임 입니다.<br>
-                        W,A,S,D로 캐릭터를 조정하고, 마우스로 총알을 발사합니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span> 슈팅게임</span>
+<!-- 포트폴리오 detail - 슈팅게임(Unity) -->
+<div id="modal10" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/슈팅게임.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">슈팅게임</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Shooting_Game">https://github.com/shahmaran0207/Shooting_Game</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">간단히 즐길 수 있는 슈팅게임 입니다.<br>W,A,S,D로 캐릭터를 조정하고, 마우스로 총알을 발사합니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.08 ~ 2024.09</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">슈팅게임 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="https://66d92913afb80099941e3aba--comforting-sprite-660098.netlify.app/">https://66d92913afb80099941e3aba--comforting-sprite-660098.netlify.app/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>C#, Unity</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>슈팅게임 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.08 ~ 2024.09</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">슈팅게임</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">C#</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Unity</div>
+                            </div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">Unity 사용법, 간단한 C#</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal10')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Shooting_Game" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 리듬게임 -->
-<div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/리듬게임.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>리듬게임</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        간단히 즐길 수 있는 리듬게임 입니다.<br>
-                        Java 실행 시 게임이 실행됩니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span> 리듬게임</span>
+<!-- 포트폴리오 detail  - 리듬게임 -->
+<div id="modal11" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/리듬게임.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">리듬게임</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Music-video-game">https://github.com/shahmaran0207/Music-video-game</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">간단히 즐길 수 있는 슈팅게임 입니다.<br>W,A,S,D로 캐릭터를 조정하고, 마우스로 총알을 발사합니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.09.07 ~ 2024.09.15</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">리듬게임 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>JAVA</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>리듬게임 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.09.07 ~ 2024.09.15</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">리듬게임</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JAVA</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal11')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Music-video-game" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - todolist -->
-<div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/todolist.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Todo List</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        리액트를 통해 만든 할 일을 등록 및 삭제 가능한 사이트입니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span> Todo List</span>
+<!-- 포트폴리오 detail  - todolist -->
+<div id="modal12" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/todolist.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Todo List</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Todolist_application">https://github.com/shahmaran0207/Todolist_application</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">리액트를 통해 만든 할 일을 등록 및 삭제 가능한 사이트입니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.09.07 ~ 2024.09.21</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">Todo List 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="https://glowing-rolypoly-c489b7.netlify.app/">https://glowing-rolypoly-c489b7.netlify.app/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>React</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>Todo List 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.09.07 ~ 2024.09.21</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">Todo List</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal12')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Todolist_application" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 슈팅게임(JavaScript)  -->
-<div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/자바슈팅.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Space Shooting Game</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        JavaScript를 통해 만든 슈팅게임 입니다.<br>
-                        좌우 방향키로 캐릭터를 이동하고 스페이스바로 총알을 발사합니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>Space Shooting Game</span>
+<!-- 포트폴리오 detail  - js 슈팅게임 -->
+<div id="modal13" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/자바슈팅.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Todo List</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Shooting_Game_JS"> https://github.com/shahmaran0207/Shooting_Game_JS</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">JavaScript를 통해 만든 슈팅게임 입니다. <br>좌우 방향키로 캐릭터를 이동하고 스페이스바로 총알을 발사합니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.09.21 ~ 2024.09.28</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">슈팅게임 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="https://66f74a596d45dc1814fff657--lovely-daifuku-6afc1d.netlify.app/">https://66f74a596d45dc1814fff657--lovely-daifuku-6afc1d.netlify.app/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML, CSS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>JS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>슈팅게임 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.09.21 ~ 2024.09.28</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">Space Shooting Game</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal13')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Shooting_Game_JS" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - memoapplication  -->
-<div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/memoapplication.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Memo Application</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        vue.js를 통해 만든 메모장입니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span> 메모장</span>
+<!-- 포트폴리오 detail  - memoapplication -->
+<div id="modal14" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/memoapplication.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Todo List</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Memo_application">https://github.com/shahmaran0207/Memo_application</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">vue.js를 통해 만든 메모장입니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.10.22 ~ 2024.10.23</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">Memeo application 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML</span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Vue.js</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>Memeo application 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.10.22 ~ 2024.10.23</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">메모장</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Vue.js</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">Vue.js의 간단한 사용법</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal14')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Memo_application" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - Infinite Scroll  -->
-<div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/movie.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Movie Infinite Scroll</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        리액트를 통해 무한스크롤 사이트입니다.<br>
-                        정해진 영화 목록이 전부 나오기 전까지 아래로 스크롤을 내리면 영화 목록이 무한히 나옵니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>Movie Infinite Scroll</span>
+<!-- 포트폴리오 detail  - 무한 스크롤 -->
+<div id="modal15" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/movie.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Movie Infinite Scroll</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Infinite-Scroll">https://github.com/shahmaran0207/Infinite-Scroll</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">리액트를 통해 무한스크롤 사이트입니다.<br>
+                        정해진 영화 목록이 전부 나오기 전까지 아래로 스크롤을 내리면 영화 목록이 무한히 나옵니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.10 ~ 2024.11</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail"> Movie Infinite Scroll 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://tranquil-pixie-a55e46.netlify.app/">https://tranquil-pixie-a55e46.netlify.app/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>React</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>Movie Infinite Scroll 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.10 ~ 2024.11</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">Movie Infinite Scroll</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">React를 통한 무한 스크롤 로딩</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal15')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Infinite-Scroll" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 채팅 사이트  -->
-<div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/chatting.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Chatting_application</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        간단한 채팅 사이트입니다.<br>
-                        내가 보낸 메시지는 오른쪽에 노란색으로, 상대가 보낸 메시지는 흰색으로 왼쪽에 나옵니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>채팅 기능</span>
+<!-- 포트폴리오 detail  - 웹소켓 채팅 -->
+<div id="modal16" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/chatting.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Chatting_Application</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Chatting_application">https://github.com/shahmaran0207/Chatting_application</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">간단한 채팅 사이트입니다.<br>
+                        내가 보낸 메시지는 오른쪽에 노란색으로, 상대가 보낸 메시지는 흰색으로 왼쪽에 나옵니다.</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.11.11 ~ 2024.11.18</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">채팅 사이트 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>React, JavaScript</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>채팅 사이트 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.11.11 ~ 2024.11.18</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">채팅 기능</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Node.js</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">웹소켓의 개념</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal16')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Chatting_application" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - 환율 계산 사이트  -->
-<div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/exchange.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Exchange_rate_application</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        간단한 환율 계산 사이트입니다.<br>
+<!-- 포트폴리오 detail  - 환율 계산 사이트 -->
+<div id="modal17" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/exchange.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Exchange_Rate_Site</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">간단한 환율 계산 사이트입니다.<br>
                         달러(USD), 원(KRW), 동(VND)를 선택하고 숫자를 입력하면 환율을 계산하여 보여줍니다.
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>환율 계산 기능</span>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Exchange_rate_application">https://github.com/shahmaran0207/Exchange_rate_application</a></span>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.11.18 ~ 2024.11.19</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">환율계산 사이트 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="https://euphonious-smakager-838510.netlify.app/">https://euphonious-smakager-838510.netlify.app/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>React, JavaScript</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>환율계산 사이트 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.11.18 ~ 2024.11.19</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">환율 계산 기능</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal17')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Exchange_rate_application" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
 
-<!-- 포트폴리오 세부사항 - WIT -->
-<div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img class="img-fluid" src="../html/assets/img/portfolio/wit.png" alt="..." style="width: 600px;" />
-                <div class="description-box">
-                    <h1>Way into Travel</h1>
-                    <p class="item-intro text-muted" style="text-align: center;">
-                        여행 일정을 구매/판매할 수 있고, 후기 등을 남길 수 있는 여행 사이트
-                    </p>
-                    <hr>
-                    <div class="span-group">
-                        <span>주요 기능:</span>
-                        <span>여행 일정 판매/구매, 여행 후기 작성, 문의사항 작성/답변, 자유게시판</span>
+<!-- 포트폴리오 detail  - wit -->
+<div id="modal18" class="modal">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img style="width: 600px; height: 300px" src="../html/assets/img/portfolio/wit.png" />
+                    <div style="align-self: stretch; height: 108px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+                        <div class="modal-title">Way into Travel</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>GitHub:</span>
-                        <span><a href="https://github.com/shahmaran0207/Member_project.git">https://github.com/shahmaran0207/Member_project.git</a></span>
+                    <div class="modal-p" style="margin-top: 4px;">여행 일정을 구매/판매할 수 있고, 후기 등을 남길 수 있는 여행 사이트</div>
+                    <div style="align-self: stretch; height: 122px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.10.30 ~ 2025.01.17</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">사이트 제작(100%)</div>
+                        </div>
                     </div>
-                    <div class="span-group">
-                        <span>URL:</span>
-                        <span><a href="http://13.125.250.100:8084/">http://13.125.250.100:8084/</a></span>
-                    </div>
-                    <div class="span-group">
-                        <span>Front-end:</span>
-                        <span>HTML, CSS</span>
-                    </div>
-                    <div class="span-group">
-                        <span>Back-end:</span>
-                        <span>Spring Boot, JAVA, AWS - EC2, Kakao API, AWS - RDS, AWS - S3, Firebase</span>
-                    </div>
-                    <div class="span-group">
-                        <span>My-Role:</span>
-                        <span>사이트 제작(100%)</span>
-                    </div>
-                    <div class="span-group">
-                        <span>배운 내용:</span>
-                        <span>S3 서버 사용 방법, Interceptor 오류, return 시 "\" 제거의 필요성</span>
-                    </div>
-                    <div class="span-group">
-                        <span>개발인원:</span>
-                        <span> 1인</span>
-                    </div>
-                    <div class="span-group">
-                        <span>제작기간:</span>
-                        <span>2024.10.30 ~ 2025.01.17</span>
+                    <div style="align-self: stretch; height: 172px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">여행 일정 판매/구매, 여행 후기 작성, 문의사항 작성/답변, 자유게시판</div>
+                        </div>
+
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JAVA</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Kakao API</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">RDS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">EC2</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">S3</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Firebase</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div class="modal-content-title">배운 내용</div>
+                            <div class="modal-study-detail">S3 서버 사용 방법, Interceptor 오류, return 시 "\" 제거의 필요성</div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-3 custom-font" data-dismiss="modal" type="button" style="display: block; margin: 0 auto;">Close</button>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div class="exit-button" onclick="closeModal('modal18')">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+
+                    <div class="modal-git">
+                        <a href="https://github.com/shahmaran0207/Member_project.git" target="_blank" style="text-decoration: none;">
+                            <div class="exit-button">
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                                </div>
+                            </div>
+                            <div class="modal-git-content">GitHub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal-overlay" onclick="closeModal()"></div>
 </div>
