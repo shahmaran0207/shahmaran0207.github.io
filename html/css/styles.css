@@ -103,7 +103,7 @@ html{
 
 .modal-git{
     align-self: stretch;
-    height: 84px;
+    height: 24px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
