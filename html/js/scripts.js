@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         // 위/아래로 이동하는 애니메이션
         const backEnd = document.getElementById("back-end-container");
-        backEnd.style.transform = "translateY(-67%)";
+        backEnd.style.transform = "translateY(-75%)";
 
         const developer = document.getElementById("developer-container");
-        developer.style.transform = "translateY(47%)";
+        developer.style.transform = "translateY(55%)";
 
         // 새로운 내용 표시
         setTimeout(() => {

@@ -1,4 +1,4 @@
-<div id="modal1" class="modal">
+<div id="modal1" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div class="modal-inline">
             <div class="modal-flex">
@@ -91,10 +91,10 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal1')"></div>
 </div>
 
-<div id="modal2" class="modal">
+<div id="modal2" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -151,30 +151,31 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div style="position: absolute; top: 16px; right: -5%; display: flex; flex-direction: column; gap: 16px;">
-        <div class="exit-button" onclick="closeModal('modal2')">
-            <div style="width: 24px; height: 24px; position: relative">
-                <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
-            </div>
-        </div>
-
-        <div class="modal-git">
-            <a href="https://github.com/shahmaran0207/crime_report_correlation" target="_blank" style="text-decoration: none;">
-                <div class="exit-button">
+            <div style="position: absolute; top: 16px; right: -5%; display: flex; flex-direction: column; gap: 16px;">
+                <div class="exit-button" onclick="closeModal('modal2')">
                     <div style="width: 24px; height: 24px; position: relative">
-                        <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
                     </div>
                 </div>
-                <div class="modal-git-content">GitHub</div>
-            </a>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/crime_report_correlation" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+
+    <div class="modal-overlay" onclick="closeModal('modal2')"></div>
 </div>
 
-<div id="modal3" class="modal">
+<div id="modal3" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -253,10 +254,10 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal3')"></div>
 </div>
 
-<div id="modal4" class="modal">
+<div id="modal4" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -336,10 +337,10 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal4')"></div>
 </div>
 
-<div id="modal5" class="modal">
+<div id="modal5" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -417,11 +418,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal5')"></div>
 </div>
 
 
-<div id="modal6" class="modal">
+<div id="modal6" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -471,10 +472,10 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal6')"></div>
 </div>
 
-<div id="modal7" class="modal">
+<div id="modal7" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -570,10 +571,10 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal7')"></div>
 </div>
 
-<div id="modal8" class="modal">
+<div id="modal8" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -669,11 +670,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal8')"></div>
 </div>
 
 <!-- 포트폴리오 detail - 수박게임 -->
-<div id="modal9" class="modal">
+<div id="modal9" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -750,11 +751,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal9')"></div>
 </div>
 
 <!-- 포트폴리오 detail - 슈팅게임(Unity) -->
-<div id="modal10" class="modal">
+<div id="modal10" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -834,11 +835,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal10')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - 리듬게임 -->
-<div id="modal11" class="modal">
+<div id="modal11" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -906,11 +907,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal11')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - todolist -->
-<div id="modal12" class="modal">
+<div id="modal12" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -978,11 +979,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal12')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - js 슈팅게임 -->
-<div id="modal13" class="modal">
+<div id="modal13" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -1057,11 +1058,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal13')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - memoapplication -->
-<div id="modal14" class="modal">
+<div id="modal14" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -1145,11 +1146,11 @@
 
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal14')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - 무한 스크롤 -->
-<div id="modal15" class="modal">
+<div id="modal15" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -1234,11 +1235,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal15')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - 웹소켓 채팅 -->
-<div id="modal16" class="modal">
+<div id="modal16" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -1326,11 +1327,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal16')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - 환율 계산 사이트 -->
-<div id="modal17" class="modal">
+<div id="modal17" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -1415,11 +1416,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal17')"></div>
 </div>
 
 <!-- 포트폴리오 detail  - wit -->
-<div id="modal18" class="modal">
+<div id="modal18" class="modal" onclick="event.stopPropagation();">
     <div class="modal-content">
         <div  class="modal-inline">
             <div class="modal-flex">
@@ -1524,5 +1525,5 @@
             </div>
         </div>
     </div>
-    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-overlay" onclick="closeModal('modal18')"></div>
 </div>
