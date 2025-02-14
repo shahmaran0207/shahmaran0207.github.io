@@ -2,6 +2,51 @@ html{
     background-color: #232323;
 }
 
+body{
+    width: 100%;
+}
+
+.skill-container{
+    width: 256px;
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.upper-skill-main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.upper-skill-container{
+    width: 100%;
+    margin-top: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.AboutMe-title{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    word-wrap: break-word;
+}
+
+.upper-accordion{
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+}
+
 .accordion {
     margin-top: 20px;
     text-align: left;
@@ -284,16 +329,15 @@ img {
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: flex-start; /* 카드들이 왼쪽부터 정렬 */
     gap: 20px; /* 카드 사이 간격 */
 }
-
 
 .card img {
     width: 100%;
     height: auto;
 }
-
 
 .card-image {
     height: 180px;
@@ -312,6 +356,17 @@ img {
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 20px);
+    }
+
+    .interview-container {
+        width: 100%; /* 화면에 맞게 조정 */
+        padding: 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+        box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
     }
 }
 
@@ -406,10 +461,12 @@ img {
     word-wrap: break-word;
 }
 
-.interview-container{
-    width:95%;
+.interview-container {
+    width: 100%; /* 부모 크기를 꽉 채우도록 설정 */
+    max-width: 100%; /* 최대 너비를 부모에 맞춤 */
     margin-top: 40px;
-    height: 196px;
+    height: auto;
+    min-height: 196px;
     padding: 24px;
     background: #373737;
     border-radius: 16px;
@@ -417,8 +474,13 @@ img {
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
 }
+
 
 .hover-buttons {
     margin-top: 40px;
@@ -860,4 +922,27 @@ html, body {
     font-weight: 500;
     line-height: 30px;
     word-wrap: break-word;
+}
+
+.sub-main{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.subtext-sub{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.aboutMe-title{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
 }
