@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
             backEnd.style.transform = "translateY(-275%)";
         }
 
-
         // 새로운 내용 표시
         setTimeout(() => {
             const newContent = document.getElementById("new-content");
