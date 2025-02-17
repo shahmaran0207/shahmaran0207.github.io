@@ -44,16 +44,6 @@ body{
     display: flex;
 }
 
-.certificate-text{
-    width: 300px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-    display: inline-flex;
-    vertical-align: top;
-}
-
 .scroll-item{
     width: 100%;
     height: 80vh;
@@ -65,6 +55,24 @@ body{
     gap: 80px;
     display: inline-flex;
     overflow-y: hidden;
+}
+
+.profile-content{
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.certificate-text{
+    width: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+    vertical-align: top;
 }
 
 .skill-container{
@@ -173,6 +181,18 @@ body{
     align-items: flex-start;
     gap: 16px;
     display: flex;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start; /* 카드들이 왼쪽부터 정렬 */
+    gap: 20px; /* 카드 사이 간격 */
+}
+.portfolio-item {
+    flex: 0 0 calc(33.333% - 20px); /* 기본적으로 3개씩 배치 */
+    box-sizing: border-box; /* 여백 포함 계산 */
 }
 
 .accordion-item.active .accordion-content {
@@ -394,14 +414,6 @@ img {
     box-sizing: border-box;
 }
 
-.portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start; /* 카드들이 왼쪽부터 정렬 */
-    gap: 20px; /* 카드 사이 간격 */
-}
-
 .card img {
     width: 100%;
     height: auto;
@@ -421,9 +433,30 @@ img {
     object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+    .portfolio-item {
+        flex: 0 0 calc(50% - 20px); /* 화면이 좁아지면 2개씩 배치 */
+        transform: scale(0.9); /* 화면이 작아질 때 전체적으로 줄어듦 */
+    }
+
+}
+
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 20px);
+    }
+    .portfolio-item {
+        flex: 0 0 100%; /* 화면이 더 좁아지면 1개씩 배치 */
+    }
+
+    .sub-profile {
+        flex-direction: column; /* 세로 정렬로 변경 */
+        align-items: center; /* 중앙 정렬 */
+    }
+
+    .scroll-item {
+        height: auto; /* 스크롤 높이 자동으로 변경 */
+        margin-top: 20px; /* 프로필 아래 간격 추가 */
     }
 
     .interview-container {
@@ -474,6 +507,10 @@ img {
 .card-tags {
     display: flex;
     gap: 4px;
+    flex-grow: 1; /* 태그들이 자동으로 너비를 조정 */
+    text-align: center;
+    font-size: min(1.2vw, 14px); /* 화면 너비가 작아질수록 자동으로 축소 */
+    padding: 5px 8px;
 }
 
 .tag {
@@ -698,14 +735,6 @@ html, body {
     font-weight: 700;
     line-height: 72px;
     word-wrap: break-word;"
-}
-
-.profile-content{
-    align-self: stretch;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-    display: inline-flex;
 }
 
 .profile-text{
