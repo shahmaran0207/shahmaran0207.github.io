@@ -4,6 +4,8 @@ html{
 
 body{
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .porfile-title{
@@ -185,11 +187,14 @@ body{
 
 .portfolio-grid {
     display: flex;
+    margin-right: 0;
+    padding-right: 0;
     flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start; /* 카드들이 왼쪽부터 정렬 */
     gap: 20px; /* 카드 사이 간격 */
 }
+
 .portfolio-item {
     flex: 0 0 calc(33.333% - 20px); /* 기본적으로 3개씩 배치 */
     box-sizing: border-box; /* 여백 포함 계산 */
@@ -455,6 +460,7 @@ img {
     }
 
     .scroll-item {
+        width: 100%;
         height: auto; /* 스크롤 높이 자동으로 변경 */
         margin-top: 20px; /* 프로필 아래 간격 추가 */
     }
