@@ -1639,22 +1639,51 @@
                                 <div class="accordion-item">
                                     <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
                                     <div class="accordion-content">
+                                        1. 웹소켓의 개념<br>
+                                        • 클라이언트와 서버 간의 실시간 양방향 통신을 지원하는 프로토콜<br>
 
+                                        • 기존 HTTP 요청/응답 방식과 달리, 한 번 연결을 맺으면 지속적으로 데이터를<br> 주고받을 수 있습니다.<br>
+                                        • 실시간 채팅, 게임, 주식 거래 등 빠른 데이터 전송이 필요한 서비스에서 많이 사용됩니다.<br>
+                                        • 소켓을 유지하며 데이터를 이벤트 기반으로 주고받습니다.<br>
+                                        • 클라이언트와 서버가 연결을 유지하면서 필요할 때만 데이터를 주고받아 <br>네트워크 부하가 줄어듭니다.<br>
+                                        • HTTP와 달리 요청을 보내지 않아도 서버에서 클라이언트로 데이터를 푸시할 수 있습니다.<br><br>
+
+
+                                       2.  웹소켓과 HTTP/기타 프로토콜과의 차이점<br>
+                                        • HTTP는 요청과 응답이 1:1 방식으로 연결이 끊기는 반면, 웹소켓은 한 번 연결되면 유지됩니다.<br>
+                                        • 웹소켓은 Handshake과정 이후 지속적인 연결을 유지하며 <br>데이터를 주고받을 수 있습니다.<br>
+
+                                        • HTTP는 요청마다 헤더가 포함되어 오버헤드가 크지만, 웹소켓은 프레임 기반 통신으로 <br>데이터 전송이 가볍습니다.<br>
+                                        • 지속적인 연결을 유지하기 때문에 실시간성이 중요한 서비스에서 웹소켓이 더 적합합니다.<br><br>
+
+                                        3. 웹소켓을 활용한 실시간 통신 구현<br>
+                                        • HTTP 요청과 달리 웹소켓은 지속적인 연결을 유지하여 실시간 데이터 전송이 가능하다.<br>
+                                        • 클라이언트와 서버 간의 양방향 통신을 통해 효율적인 메시지 전송이 이루어진다.
 
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
                                     <div class="accordion-content">
+                                        1. 소켓 ID 중복 처리 문제<br>
+                                        • 만약 다른 기기에서 접속 중인 사용자라면, 새로 입력된 소켓 ID로 덮어씌워져 <br>이전에 연결된 소켓 ID와 연결된 상태 정보가 덮어씌워져 문제가 발생하였습니다.<br><br>
 
-
+                                        2. 현재 대화 상대가 누구인지 모르는 문제<br>
+                                        • 채팅방을 열었지만, 상대방이 누구인지 표시되지 않았습니다.
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
                                     <div class="accordion-content">
+                                        1. 사용자가 여러 기기에서 접속할 수 있도록 처리<br>
 
+                                        • 코드에서 user.token = sid;로 소켓 ID를 새로 갱신하고 있습니다.<br>
+                                        •  이 때, 새로운 소켓 ID가 들어와도 기존 소켓 ID를 갱신하되, 다른 장치에서 접속한 상태를 <br>명시적으로 처리하는 방식으로 문제를 해결하였습니다.<br><br>
 
+                                        2. 채팅방 진입 시 상대방 정보 로드<br>
+
+                                        • 채팅방을 열 때 프로프트로 이름을 입력하게 하였습니다.<br>
+                                        • 클라이언트에서 상대방의 닉네임을 채팅방 상단에 표시하여, 사용자가 누구와 대화 중인지 <br>알 수 있도록 하여 문제를 해결하였습니다.<br>
                                     </div>
                                 </div>
                             </div>
@@ -1854,32 +1883,53 @@
                                 <div class="modal-button2">Firebase</div>
                             </div>
                         </div>
-                        <div class="text-title-detail">
-                            <div class="modal-content-title">배운 내용</div>
-                            <div class="modal-study-detail">S3 서버 사용 방법, Interceptor 오류, return 시 "\" 제거의 필요성</div>
-                        </div>
 
                         <div class="upper-accordion">
                             <div class="accordion">
                                 <div class="accordion-item">
                                     <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
                                     <div class="accordion-content">
+                                        1. S3를 통한 사진 입출력<br>
+                                        • S3 버킷에 파일을 업로드하고, 업로드된 파일을 다운로드하는 방법을 배웠습니다. <br>이를 통해 클라우드 저장소에 파일을 안전하게 보관할 수 있음을 이해했습니다.<br>
+                                        • 버킷에 대한 접근 제어와 권한을 설정하여, 필요한 파일만 외부에서 접근할 수 있게 하는<br> 방법을 배웠습니다.<br>
+                                        • 업로드된 파일에 접근할 수 있는 URL을 생성하고, 이를 이용해 웹 애플리케이션에서 사진을<br> 표시하는 방법을 익혔습니다.<br><br>
 
+                                        2. 카카오 지도와 마커 표시<br>
+                                        • 카카오 지도를 웹페이지에 삽입하고, 지도에 마커를 추가하는 방법을 배웠습니다. <br>이를 통해 사용자 위치나 중요한 장소를 지도에 표시할 수 있게 되었습니다.<br>
+                                        • 사용자 또는 서버에서 받아온 데이터를 기반으로 동적으로 마커를 지도에 표시하는<br> 방법을 배웠습니다.<br>
+                                        • 마커 클릭 등 지도에서 발생하는 다양한 이벤트를 처리하여, 사용자 인터랙션을 보다<br> 풍부하게 만드는 방법을 익혔습니다.<br><br>
 
+                                        3. 파이어베이스를 통한 로그인<br>
+                                        • 파이어베이스에서 인증 기능을 설정하고, 이메일/비밀번호 기반 로그인 방식을 <br>구현하는 방법을 배웠습니다.<br>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
                                     <div class="accordion-content">
+                                        1. S3를 통한 사진 출력<br>
+                                        • S3를 통해 사진 업로드는 문제 없었는데, 출력시 출력이 되지 않는 문제가 발생하였습니다.<br>
+                                        • 확인 결과, 출력시 접근하는 주소체계에 문제가 있었습니다.<br><br>
 
+                                        2. 로그인 인터셉터<br>
+                                        • 로컬에서는 화이트리스트 방식으로 잘 작동하였슨데, 배포시에는 제외시키는 코드가<br> 작동하지 않았습니다.<br>
+                                        • 이로 인해 배포 시, 무한리다이렉션이 발생하였습니다.<br><br>
 
+                                        3. 경로 관련 에러<br>
+                                        • 배포 시, 분명 html 파일이 있음에도 불구하고 404에러가 발생하였습니다.<br><br>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
                                     <div class="accordion-content">
-
-
+                                        1. 주소 컨버터 로직 삽입<br>
+                                        • 확인 결과, 버킷에서 직접 접근하는 주소와 프로젝트 코드 내에서 접근하는 주소에 <br>순서가 다름을 확인하였습니다. <br>
+                                        • 버킷에서 직접 접근하는 주소로는 접근이 가능하였습니다.<br>
+                                        • 프로젝트에서 접근하는 주소의 순서만 바꾸면 버킷에서 접근 하는 주소로 변환이 가능하며, <br>이를 실행하는 컨버터 로직을 삽입하였습니다.<br><br>
+                                        2. 블랙 리스트 방식으로 대체<br>
+                                        • 화이트 리스트 방식을 포기하고, 필요 페이지를 막는 블랙리스트 방식을 통해 <br>문제를 해결하였습니다.<br><br>
+                                        3. "/"제거<br>
+                                        • return 앞에 "/"를 제거하여 문제를 해결하였습니다.<br>
+                                        • 로컬에서는 프로그램이 경로를 보정해주지만, 배포시에는 그렇지 못하여 발생한 문제였습니다.<br><br>
                                     </div>
                                 </div>
                             </div>
