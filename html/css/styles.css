@@ -8,6 +8,15 @@ body{
     margin: 0;
 }
 
+.certificate1{
+    width: 100%;
+    margin-top: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
 .upper-exit{
     position: absolute;
     top: 16px;
@@ -834,7 +843,6 @@ html, body {
 
 #back-end{
     width: 100%;
-
     text-align: center;
     color: #373737;
     font-size: 340px;
@@ -1240,7 +1248,55 @@ html, body {
         width: 100%;
     }
 }
-@media (min-width: 769px) and (max-width: 1330px) {
+
+@media (max-width: 1146px) {
+    .modal-flex {
+        margin-right: 40px;
+    }
+
+    .upper-exit{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 990px) {
+    .modal-flex {
+        margin-right: 80px;
+        height: 100%;
+    }
+
+    .modal-inline{
+        margin-top: 50px;
+    }
+
+    .upper-exit{
+        margin-right: 80px;
+        gap: 10px;
+    }
+
+    .exit-button{
+        margin-top: 60px;
+    }
+
+    .education-container{
+        gap: 50px;
+    }
+
+    .certificate1{
+        gap: 50px;
+    }
+
+    .awardsamd{
+        gap: 50px;
+    }
+
+    .ineter{
+        gap: 50px;
+    }
+}
+
+
+@media (min-width: 769px) {
     .modal-flex {
         margin-top: 40px;
     }
@@ -1252,7 +1308,7 @@ html, body {
 
 @media (max-width: 768px) {
     .modal-flex {
-        margin-top: 5150px; /* 이 조건이 500px에서 적용돼야 함 */
+        margin-top: 150px; /* 이 조건이 500px에서 적용돼야 함 */
     }
 }
 
