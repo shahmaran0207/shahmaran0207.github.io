@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const developer = document.getElementById("developer-container");
         developer.style.transform = "translateY(55%)";
 
+        if (window.innerWidth <= 1280) { // 모바일 화면
+            developer.style.transform = "translateY(80%)";
+            backEnd.style.transform = "translateY(-115%)";
+        }
+
         if (window.innerWidth <= 1024) { // 모바일 화면
             developer.style.transform = "translateY(355%)";
             backEnd.style.transform = "translateY(-275%)";

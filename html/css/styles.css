@@ -101,7 +101,6 @@ body{
     display: inline-flex;
 }
 
-
 .education-container{
     width: 100%;
     justify-content: flex-start;
@@ -476,7 +475,15 @@ body{
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     line-height: 30px;
-    word-wrap: break-word
+    word-wrap: break-word;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;  /* 버튼 자동 줄바꿈 */
+    gap: 8px;  /* 버튼 간 간격 */
+    min-width: 0;  /* 줄바꿈이 일어날 때 너비를 유지 */
+    margin-left: 28px;
 }
 
 .modal-content-detail{
@@ -546,6 +553,8 @@ img {
 .modal-flex{
     flex: 1 1 0;
     height: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     justify-content: flex-start;
     overflow: auto;
     align-items: flex-start;
@@ -815,8 +824,6 @@ html, body {
     height: 100%;
 }
 
-
-/* 스크롤바 숨기기 */
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
@@ -1030,9 +1037,9 @@ html, body {
 .text-title-detail{
     align-self: stretch;
     justify-content: flex-start;
-    align-items: center;
     gap: 16px;
-    display: inline-flex;
+    display: flex;
+    align-items: flex-start;  /* 세로 정렬 */
 }
 
 .skill-title{
@@ -1377,13 +1384,17 @@ html, body {
         text-align: center;
     }
 
+    .transparent-margin {
+        height: 110vh;  /* 기존 margin-top과 동일한 높이 */
+        background-color: transparent;  /* 완전 투명 */
+    }
+
     .porfile-title {
         order: -1;
         font-size: 28px;
         margin-bottom: 20px;
     }
 
-    /* profile이 화면을 침범하지 않도록 설정 */
     #profile {
         display: flex;
         flex-direction: column;
@@ -1394,7 +1405,6 @@ html, body {
         overflow: hidden;  /* 내부 요소 스크롤만 허용 */
         position: relative;
         background-color: #373737;
-        margin-top: 100vh; /* section1 이후에 나오도록 설정 */
     }
 
     .profile-container {
@@ -1415,8 +1425,46 @@ html, body {
         position: relative;
         z-index: 2;
     }
+
+    #back-end-container{
+        left: -7%;
+        top: 30%;
+        width: 120%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;
+    }
+
+    #back-end{
+        width: 100%;
+        text-align: center;
+        color: #373737;
+        font-size: 230px;
+        font-family: 'Pretendard', sans-serif ;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #developer-container{
+        width: 100%;
+        left: 30px;
+        top: 51%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;"
+    }
+
+    #developer{
+        text-align: center;
+        color: #373737;
+        font-size: 230px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
 }
-
-
-
-
