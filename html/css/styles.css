@@ -2,6 +2,10 @@ html{
     background-color: #232323;
 }
 
+html, body {
+    height: 100%; /* 명시적으로 높이 지정 */
+}
+
 body{
     width: 100%;
     padding: 0;
@@ -816,10 +820,6 @@ img {
     font-size: 24px;"
 }
 
-html, body {
-    height: 100%; /* 명시적으로 높이 지정 */
-}
-
 #profile{
     height: 100%;
 }
@@ -1385,8 +1385,8 @@ html, body {
     }
 
     .transparent-margin {
-        height: 110vh;  /* 기존 margin-top과 동일한 높이 */
-        background-color: transparent;  /* 완전 투명 */
+        height: 110vh;
+        background-color: transparent;
     }
 
     .porfile-title {
@@ -1400,9 +1400,9 @@ html, body {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        min-height: auto;  /* 높이를 자동으로 조절 */
-        height: auto; /* 내용에 맞게 조절 */
-        overflow: hidden;  /* 내부 요소 스크롤만 허용 */
+        min-height: auto;
+        height: auto;
+        overflow: hidden;
         position: relative;
         background-color: #373737;
     }
@@ -1416,11 +1416,10 @@ html, body {
         z-index: 2;
     }
 
-    /* 내부 스크롤 가능하게 설정 */
     .scroll-item {
         width: 100%;
-        overflow-y: auto; /* 내부에서만 세로 스크롤 */
-        max-height: 70vh; /* 내부에서만 스크롤 되도록 */
+        overflow-y: auto;
+        max-height: 70vh;
         padding: 20px;
         position: relative;
         z-index: 2;
