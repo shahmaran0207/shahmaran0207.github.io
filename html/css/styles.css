@@ -1413,6 +1413,84 @@ img {
     }
 }
 
+@media screen and (max-width: 828px) {
+    #back-end-container{
+        left: -7%;
+        top: 30%;
+        width: 80%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;
+    }
+
+    div #back-end{
+        width: 100%;
+        text-align: center;
+        color: #373737;
+        font-size: 150px;
+        font-family: 'Pretendard', sans-serif ;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #developer-container{
+        width: 100%;
+        left: 30px;
+        top: 51%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;"
+    }
+
+    div #developer{
+        text-align: center;
+        color: #373737;
+        font-size: 150px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    .starter-content2{
+        font-size: 38px;
+    }
+
+    .starter-content{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 921px) {
+    div #developer{
+        text-align: center;
+        color: #373737;
+        font-size: 160px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    div #back-end{
+        width: 100%;
+        text-align: center;
+        color: #373737;
+        font-size: 160px;
+        font-family: 'Pretendard', sans-serif ;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    div .gnu {
+        margin-left: 11%;
+    }
+}
+
 @media screen and (max-width: 1110px) {
     .certificate1{
         gap: 98px;
@@ -1479,16 +1557,16 @@ img {
         text-align: center;
         flex-shrink: 0;
         z-index: 2;
-        position: static; /* 스크롤이 정상적으로 적용되도록 변경 */
+        position: static;
         width: 100%;
     }
 
     .scroll-item {
         width: 100%;
         padding: 20px;
-            max-height: none; /* 최대 높이 제한 해제 */
-            height: auto; /* 전체 내용 표시 */
-            overflow-y: visible; /* 스크롤 가능하도록 변경 */
+        max-height: none;
+        height: auto;
+        overflow-y: visible;
         position: relative;
         z-index: 2;
     }
@@ -1574,3 +1652,4 @@ img {
         margin-right: 8%;
     }
 }
+

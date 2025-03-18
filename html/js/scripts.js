@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
             backEnd.style.transform = "translateY(-275%)";
         }
 
+        if (window.innerWidth <= 921) { // 모바일 화면
+            developer.style.transform = "translateY(115%)";
+            backEnd.style.transform = "translateY(-155%)";
+        }
+
+        if (window.innerWidth <= 828) { // 모바일 화면
+            developer.style.transform = "translateY(135%)";
+            backEnd.style.transform = "translateY(-155%)";
+        }
+
         // 새로운 내용 표시
         setTimeout(() => {
             const newContent = document.getElementById("new-content");
