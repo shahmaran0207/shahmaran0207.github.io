@@ -12,6 +12,30 @@ body{
     margin: 0;
 }
 
+.Portfolio-container{
+    width: 100%;
+}
+
+#high-skill{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.certificateconatiner2{
+    margin-left: 40px;
+    flex: 1 1 0;
+    height: 264px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: block;
+    vertical-align: top;
+}
+
+
 #certificateconatiner{
     height: 52px;
     justify-content: flex-start;
@@ -365,6 +389,7 @@ body{
 
 .portfolio-text{
     align-self: stretch;
+    height: 122px;
     height: 122px;
     flex-direction: column;
     justify-content: center;
@@ -1216,6 +1241,11 @@ img {
     white-space: nowrap; /* 줄바꿈 적용 */
 }
 
+.break-point2::after {
+    content: "\A";  /* 줄바꿈 문자 */
+    white-space: nowrap; /* 줄바꿈 적용 */
+}
+
 .skill-image{
     width: 100%; height: 100%;
 }
@@ -1301,8 +1331,8 @@ img {
     }
 
     .break-point::after {
-        content: "\A";  /* "부산" 뒤에 줄바꿈 */
-        white-space: pre; /* 줄바꿈을 적용 */
+        content: "\A";
+        white-space: pre;
         text-align: left;
     }
 
@@ -1414,6 +1444,40 @@ img {
 }
 
 @media screen and (max-width: 828px) {
+    #Portfolio-container{
+        width: 80%;
+    }
+
+    #Skills-container{
+        margin-left: -4%;
+    }
+
+    .skill-main{
+        max-width: 70%;
+    }
+
+    .upper-skill-container{
+        gap: 20px;
+    }
+
+    #high-skill{
+        gap: 20px;
+    }
+
+    .interview-container{
+        width: 80%;
+    }
+
+    .break-point2::after {
+        content: "\A";
+        white-space: pre;
+        text-align: left;
+    }
+
+    div .ineter{
+        margin-right: 0%;
+    }
+
     #back-end-container{
         left: -7%;
         top: 30%;
@@ -1461,6 +1525,22 @@ img {
 
     .starter-content{
         font-size: 38px;
+    }
+
+    div #profile{
+        padding-left: 180px;
+    }
+
+    .certificateconatiner2{
+        margin-left: 20px;
+    }
+
+    div .adsp{
+        margin-left: 10px;
+    }
+
+    div #internationalActivityconatiner{
+        margin-right: 50px;
     }
 }
 
