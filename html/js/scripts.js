@@ -1,45 +1,61 @@
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        // 위/아래로 이동하는 애니메이션
+    function updateTransform() {
         const backEnd = document.getElementById("back-end-container");
-        backEnd.style.transform = "translateY(-75%)";
-
         const developer = document.getElementById("developer-container");
-        developer.style.transform = "translateY(55%)";
+        const newContent = document.getElementById("new-content");
 
-        if (window.innerWidth <= 1280) { // 모바일 화면
-            developer.style.transform = "translateY(80%)";
-            backEnd.style.transform = "translateY(-115%)";
-        }
+        if (!backEnd || !developer || !newContent) return; // 요소가 없으면 함수 종료
+        const windowWidth = window.innerWidth; // 브라우저 창의 가로 크기
+        console.log("현재 화면 너비:", windowWidth); // 디버깅용
 
-        if (window.innerWidth <= 1024) { // 모바일 화면
-            developer.style.transform = "translateY(355%)";
-            backEnd.style.transform = "translateY(-275%)";
-        }
+        if (window.innerWidth <= 1336) {
+            developer.style.transform = "translateY(70%)";
+            backEnd.style.transform = "translateY(-85%)";
 
-        if (window.innerWidth <= 921) { // 모바일 화면
-            developer.style.transform = "translateY(115%)";
-            backEnd.style.transform = "translateY(-155%)";
-        }
+        } else if (window.innerWidth <= 1369) {
+            developer.style.transform = "translateY(55%)";
+            backEnd.style.transform = "translateY(-85%)";
 
-        if (window.innerWidth <= 828) { // 모바일 화면
-            developer.style.transform = "translateY(135%)";
-            backEnd.style.transform = "translateY(-155%)";
+        } else if (window.innerWidth <= 1440) {
+            developer.style.transform = "translateY(65%)";
+            backEnd.style.transform = "translateY(-85%)";
+
+        } else if (window.innerWidth <= 1600) {
+            developer.style.transform = "translateY(60%)";
+            backEnd.style.transform = "translateY(-75%)";
+
+        } else if (window.innerWidth <= 1680) {
+        developer.style.transform = "translateY(80%)";
+        backEnd.style.transform = "translateY(-80%)";
+
+
+    } else {
+            developer.style.transform = "translateY(55%)";
+            backEnd.style.transform = "translateY(-75%)";
         }
+    }
+
+    // 처음 실행
+    setTimeout(() => {
+        updateTransform();
 
         // 새로운 내용 표시
         setTimeout(() => {
             const newContent = document.getElementById("new-content");
-            newContent.style.display = "flex"; // 새로운 콘텐츠를 표시
+            newContent.style.display = "flex";
             newContent.style.opacity = "0";
             newContent.style.transition = "opacity 0.5s ease-in";
 
             setTimeout(() => {
-                newContent.style.opacity = "1"; // 서서히 보이게
+                newContent.style.opacity = "1";
             }, 10);
-        }, 1000); // 글자 이동 후 1초 뒤
-    }, 600); // 화면 진입 후 0.6초 뒤
+        }, 1000);
+    }, 600);
+
+    // 창 크기 변경 시 적용
+    window.addEventListener("resize", updateTransform);
 });
+
 
 $('#Starter-container').load('/html/Starter.html');
 $('#Aboutme-container').load('/html/Aboutme.html');

@@ -10,23 +10,30 @@
           <div class="button-text">학사</div>
         </div>
       </div>
+
       <div class="inline-flex-container">
-        <div class="school">
-          <div class="date-text">2018. 03. ~ 2025. 02.</div>
-          <div class="sub-sub">졸업예정</div>
-        </div>
-        <div class="school">
+        <!-- 주전공 & 복수전공 그룹 -->
+        <div class="majors">
           <div class="aboutMe-title">
             <div class="date-text">주전공</div>
-            <div class="sub-sub">경영학부</div>
+            <div class="sub-sub economymajor">경영학부</div>
           </div>
           <div class="aboutMe-title">
-            <div class="date-text">복수전공</div>
-            <div class="sub-sub">컴퓨터공학과 빅데이터전공</div>
+            <div class="date-text submajor">복수전공</div>
+            <div class="sub-sub">
+              <span class="first-part">컴퓨터공학과</span>
+              <span class="second-part">빅데이터전공</span>
+            </div>
           </div>
+        </div>
+
+        <div class="date-info">
+          <div class="date-text gnudate">2018. 03. ~ 2025. 02.</div>
+          <div class="sub-sub">졸업</div>
         </div>
       </div>
     </div>
+
     <div class="kgitbank-sub">
       <div class="aboutMe-title">
         <div class="about-main">KG아이티뱅크</div>
@@ -36,20 +43,29 @@
       </div>
       <div class="inline-flex-container">
       <div class="kgitbank">
-        <div class="sub-sub">JAVA, C, Spring, JSP, 자료구조</div>
-        <div class="sub-sub">2023. 06. ~ 2023. 11.</div>
+        <div class="sub-sub">
+          <span class="first-part">JAVA, C, Spring</span>
+          <span class="second-part">JSP, 자료구조</span>
+        </div>
+        <div class="sub-sub kgdate">
+          <span class="first-part">2023. 06. ~</span>
+          <span class="second-part">2023. 11.</span>
+           </div>
       </div>
       </div>
     </div>
-    <div class="kgitbank-sub">
+    <div class="kgitbank-sub kg2">
       <div class="aboutMe-title">
         <div class="about-main">KG아이티뱅크</div>
         <div  class="about-title">
           <div class="button-text">수료</div>
         </div>
       </div>
-      <div class="kgitbank">
-        <div class="date-text"><span class="break-point">전자정부기반 e커머스 융합</span> sw개발자과정</div>
+      <div class="kgitbank mainbank">
+        <div class="date-text itbank">
+          <span class="first-part">전자정부기반 e커머스 융합</span>
+          <span class="second-part">sw개발자과정</span>
+        </div>
         <div class="sub-sub">2023. 12. ~ 2024. 06.</div>
       </div>
     </div>
@@ -75,7 +91,7 @@
       </div>
     </div>
 
-    <div class="certificate-text">
+    <div class="certificate-text sqld">
       <div class="certificate-sub">
         <div class="certificate">SQL개발자</div>
       </div>
@@ -140,7 +156,8 @@
   <div class="detail-awards">
     <div class="upper-sub">
       <div class="aboutMe-title">
-        <div class="about-main"><span class="break-point">제21회 </span>로켓피치 경진대회</div>
+        <div class="about-main main-awards">
+          <span class="break-point">제21회 </span>로켓피치 경진대회</div>
         <div class="about-title">
           <div class="button-text">특별상</div>
         </div>
@@ -152,7 +169,7 @@
     </div>
     <div class="upper-sub">
       <div class="aboutMe-title">
-        <div class="about-main">
+        <div class="about-main main-awards">
           <span class="break-point">파이썬을 활용한</span> 빅데이터 분석 경진대회</div>
         <div class="about-title">
           <div class="button-text">우수상</div>
@@ -165,7 +182,7 @@
     </div>
     <div class="upper-sub">
       <div class="aboutMe-title">
-        <div class="about-main">
+        <div class="about-main main-awards">
           <span class="break-point">부산금융중심지</span> 영상공모전</div>
         <div class="about-title">
           <div class="button-text">장려상</div>
@@ -178,7 +195,8 @@
     </div>
     <div class="upper-sub">
       <div class="aboutMe-title">
-        <div class="about-main"><span class="break-point">서민금융진흥원</span> 영상공모전</div>
+        <div class="about-main main-awards">
+          <span class="break-point">서민금융진흥원</span> 영상공모전</div>
         <div class="about-title">
           <div class="button-text">입상</div>
         </div>
@@ -190,7 +208,7 @@
     </div>
     <div class="upper-sub">
       <div class="aboutMe-title">
-        <div class="about-main">
+        <div class="about-main main-awards">
           <span class="break-point">파이썬을 활용한</span> 빅데이터 분석 경진대회</div>
         <div class="about-title" >
           <div class="button-text">우수상</div>
@@ -210,13 +228,15 @@
   </div>
   <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
     <div class="upper-sub">
-      <div class="aboutMe-title">
+      <div class="aboutMe-title fleamarket">
         <div class="about-main">
           <span class="break-point">파란만장</span> 플리마켓</div>
-        <div class="subtext-sub">2022. 10. ~ 2023. 03.</div>
+        <div class="subtext-sub">
+          <span class="break-point">2022. 10. ~ </span> 2023. 03.</div>
+
       </div>
       <div class="sub-main">
-        <div class="subtext">
+        <div class="subtext flea">
           <span class="break-point">플리마켓 마케팅 및 영상제작,</span> 플리마켓 물품 판매</div>
       </div>
       <div class="sub-main">
@@ -225,8 +245,8 @@
       </div>
     </div>
     <div class="upper-sub">
-      <div class="aboutMe-title">
-        <div class="about-main">
+      <div class="aboutMe-title YLC-date">
+        <div class="about-main YLC">
           <span class="break-point">전국연합</span>경제학술동아리 YLC</div>
         <div class="subtext-sub"><span class="break-point">2020. 09. ~</span>  2021. 06.</div>
       </div>
@@ -239,7 +259,7 @@
       </div>
     </div>
     <div class="upper-sub">
-      <div class="aboutMe-title">
+      <div class="aboutMe-title N-date">
         <div class="about-main">N돌핀</div>
         <div class="subtext-sub"><span class="break-point">2022. 03. ~</span> 2022. 10.</div>
       </div>
@@ -252,8 +272,10 @@
       </div>
     </div>
     <div class="upper-sub">
-      <div class="aboutMe-title">
-        <div class="about-main economy"><span class="break-point2">매경이코노미</span> X YLC 서포터즈</div>
+      <div class="aboutMe-title YLCECONOMY">
+        <div class="about-main economy">
+          <span class="break-point">매경이코노미</span>
+          X YLC 서포터즈</div>
         <div class="subtext-sub">
         <span class="break-point2">
             <span class="break-point">2021. 04.</span> ~ 2021. 07.
@@ -270,8 +292,8 @@
       </div>
     </div>
     <div class="upper-sub">
-      <div class="aboutMe-title">
-        <div class="about-main"><span class="break-point">삼성증권 주단기</span> 서포터즈 1기</div>
+      <div class="aboutMe-title samsung-date">
+        <div class="about-main samsung"><span class="break-point">삼성증권 주단기</span> 서포터즈 1기</div>
         <div class="subtext-sub"><span class="break-point">2021. 11. ~ </span>2021. 12.</div>
       </div>
       <div class="sub-main">

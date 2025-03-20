@@ -12,6 +12,20 @@ body{
     margin: 0;
 }
 
+/* 주전공 & 복수전공을 담는 컨테이너 */
+.majors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 기간 & 졸업 예정 정보를 담는 컨테이너 */
+.date-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .Portfolio-container{
     width: 100%;
 }
@@ -116,8 +130,9 @@ body{
 
 .upper-exit{
     position: absolute;
-    top: 16px;
-    right: -5%; display: flex;
+    top: 3%;
+    right: -7%;
+    display: flex;
     flex-direction: column;
     gap: 16px;
 }
@@ -607,7 +622,7 @@ img {
 }
 
 .modal-inline{
-    width: 1000px;
+    width: 96%;
     height: 90%;
     padding: 24px;
     justify-content: center;
@@ -619,8 +634,8 @@ img {
 .modal-flex{
     flex: 1 1 0;
     height: 90%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 12%;
+    margin-bottom: 8%;
     justify-content: flex-start;
     overflow: auto;
     align-items: flex-start;
@@ -894,26 +909,6 @@ img {
     filter: invert(1) brightness(2); /* 흰색으로 바꾸기 위한 CSS */
 }
 
-.starter-content{
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    line-height: 60px;
-    word-wrap: break-word;
-}
-
-.starter-content2{
-    text-align:center;
-    color: rgba(255, 255, 255, 0.90);
-    font-size: 48px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 700;
-    line-height: 72px;
-    word-wrap: break-word;"
-}
-
 .profile-text{
     text-align: center;
     color: white;
@@ -964,12 +959,41 @@ img {
     transition: transform 1s ease-out;"
 }
 
+#devloper-text{
+    text-align: center;
+    color: white;
+    font-size: 104px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    line-height: 156px;
+    word-wrap: break-word;"
+}
+
 #jungeun{
     text-align: center;
     color: white;
     font-size: 104px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700; line-height: 156px;
+    word-wrap: break-word;"
+}
+.starter-content{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+
+.starter-content2{
+    text-align:center;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 48px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    line-height: 72px;
     word-wrap: break-word;"
 }
 
@@ -996,16 +1020,6 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-#devloper-text{
-    text-align: center;
-    color: white;
-    font-size: 104px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    line-height: 156px;
-    word-wrap: break-word;"
 }
 
 @media (max-width: 1024px) {
@@ -1196,7 +1210,7 @@ img {
 }
 
 .sub-sub{
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -1236,9 +1250,8 @@ img {
     display: inline-flex;
 }
 
-.break-point::after {
-    content: "\A";  /* 줄바꿈 문자 */
-    white-space: nowrap; /* 줄바꿈 적용 */
+.break-point {
+    display: inline-block; /* 기본적으로 인라인으로 표시 */
 }
 
 .break-point2::after {
@@ -1250,7 +1263,534 @@ img {
     width: 100%; height: 100%;
 }
 
-@media (max-width: 1838px) {
+.first-part {
+    display: inline-block; /* 줄바꿈이 적용되게 하기 위해 inline-block 사용 */
+}
+
+.second-part {
+    display: inline-block;
+}
+
+@media (min-width: 913px) and  (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and  (max-width: 1280px) {
+    .modal-flex{
+        margin-bottom: 8%;
+        margin-top: 7%;
+    }
+
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    .skill-text {
+        left: calc(40% + 10px); /* 기존보다 더 왼쪽으로 이동 */
+        font-size: 20px; /* 글자 크기 조절 */
+    }
+
+    .skill-title {
+        gap: 8px; /* 아이콘과 텍스트 사이 간격 줄이기 */
+    }
+
+    .upper-skill-main {
+        flex-direction: column; /* 세로 배치 */
+        gap: 24px; /* 요소 간 간격 */
+        width: 100%; /* 전체 너비 사용 */
+    }
+
+    #high-skill , .upper-skill-container{
+        gap: -100px;
+    }
+
+    .break-point {
+        display: block;
+    }
+
+    .economy, .samsung, .flea , .YLC, .main-awards{
+        text-align: left;
+    }
+
+    .certificate1{
+        margin-top: 80px;
+    }
+
+    .awardsamd{
+        margin-top: 60%;
+    }
+
+    .sqld{
+        margin-top: 5%;
+    }
+
+    .opic{
+        margin-top: 5%;
+    }
+
+    .afpk{
+        margin-top: 5%;
+    }
+
+    .adsp{
+        margin-top: 5%;
+    }
+
+    .submajor{
+        text-align: left;
+    }
+
+    .itbank{
+        text-align: left;
+    }
+
+    .gnudate{
+        text-align: left;
+    }
+
+    #developer-container{
+        top: 45%;
+        left: 2%;
+    }
+
+    #back-end-container{
+        bottom: 35%;
+    }
+
+    #back-end{
+        font-size: 230px;
+    }
+
+    #developer{
+        font-size: 250px;
+    }
+
+    #fixed-icons{
+        margin-right: 4%;
+    }
+
+    .kgitbank{
+        gap: 80px;
+    }
+
+    .mainbank{
+        gap: 30px;
+    }
+
+    .fleamarket{
+        gap: 150px;
+    }
+
+    .YLC-date{
+        gap: 40px;
+    }
+
+    .N-date{
+        gap: 180px;
+    }
+
+    .samsung-date{
+        gap: 80px;
+    }
+
+    .YLCECONOMY{
+        gap: 80px;
+    }
+
+    #fixed-icons{
+        left: 93%;
+    }
+
+    .exit-button{
+        margin-top: 65%;
+    }
+
+    .upper-exit{
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 1281px) and  (max-width: 1366px) {
+    .modal-flex{
+        margin-bottom: 8%;
+        margin-top: 7%;
+    }
+
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    .upper-skill-main {
+        flex-direction: column; /* 세로 배치 */
+        gap: 24px; /* 요소 간 간격 */
+        width: 100%; /* 전체 너비 사용 */
+    }
+
+    .break-point {
+        display: block;
+    }
+
+    .aboutMe-title{
+        gap: 16px;
+    }
+
+    .sub-text{
+        text-align: left;
+    }
+
+    .YLC{
+        text-align: left;
+    }
+
+    .flea{
+        text-align: left;
+    }
+
+    .fleamarket{
+        gap: 240px;
+    }
+
+    .samsung{
+        text-align: left;
+    }
+
+    .samsung-date{
+        gap: 150px;
+    }
+
+    .N-date{
+        gap: 260px;
+    }
+
+    .YLC-date{
+        gap: 120px;
+    }
+
+    .ineter{
+        gap: 70px;
+    }
+
+    .main-awards{
+        text-align: left;
+    }
+
+    .first-part {
+        display: inline-block; /* 인라인 블록으로 설정 */
+    }
+
+    .first-part::after {
+        content: '\A'; /* 줄바꿈 추가 */
+        white-space: pre; /* 줄바꿈이 실제로 적용되게 함 */
+    }
+
+    .kg2{
+        margin-top: 5%;
+    }
+
+    .awardsamd{
+        width: 100%;
+        margin-top: 58%;
+    }
+
+    .detail-awards{
+        margin-left: 11%;
+        gap: 20px;
+    }
+
+    .sqld{
+        margin-top: 5%;
+    }
+
+    .opic{
+        margin-top: 5%;
+    }
+
+    .afpk{
+        margin-top: 5%;
+    }
+
+    .adsp{
+        margin-top: 5%;
+    }
+
+    .certificateconatiner2{
+        margin-left: 1.5%;
+    }
+
+    .itbank{
+        text-align: left;
+    }
+
+    .kgdate{
+        margin-left: 10%;
+    }
+
+    .gnudate{
+        text-align: left;
+    }
+
+    .economymajor{
+        margin-left: 18%;
+    }
+
+    .aboutMe-title:nth-child(2) {
+        display: flex;
+        align-items: flex-start; /* 위쪽 정렬 */
+    }
+
+    .aboutMe-title:nth-child(2) .date-text {
+        min-width: 100px; /* 필요하면 더 크게 조정 */
+        text-align: left; /* 왼쪽 정렬 */
+    }
+
+    .gnu{
+        margin-left: 3%;
+    }
+
+    #developer-container{
+        top: 45%;
+        left: 2%;
+    }
+
+    #back-end-container{
+        bottom: 35%;
+    }
+
+    #back-end{
+        font-size: 260px;
+    }
+
+    #developer{
+        font-size: 280px;
+    }
+}
+
+@media (min-width: 1367px) and  (max-width: 1440px) {
+    .inline-flex-container {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .majors {
+        order: -1;
+    }
+
+    .modal-flex{
+        margin-bottom: 4%;
+        margin-top: 5%;
+    }
+
+    .portfolio-item {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    .upper-skill-main {
+        flex-direction: column; /* 세로 배치 */
+        gap: 24px; /* 요소 간 간격 */
+        width: 100%; /* 전체 너비 사용 */
+    }
+
+    .kgitbank {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kgitbank-sub.kg2{
+        margin-top: 5%;
+    }
+
+    .awardsamd{
+        margin-top: 55%;
+    }
+
+    .sqld{
+        margin-top: 5%;
+    }
+
+    .opic{
+        margin-top: 5%;
+    }
+
+    .kgitbank-sub{
+        margin-top: 17%;
+    }
+
+    #back-end{
+        font-size: 270px;
+    }
+
+    .inline-flex-container {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .majors {
+        order: -1;
+    }
+
+    #developer{
+        font-size: 280px;
+    }
+
+    #developer-container{
+        top: 45%;
+        left: 2%;
+    }
+
+    #back-end-container{
+        bottom: 35%;
+    }
+
+}
+
+@media (min-width: 1441px) and  (max-width: 1600px) {
+    .upper-skill-main {
+        flex-direction: column; /* 세로 배치 */
+        gap: 24px; /* 요소 간 간격 */
+        width: 100%; /* 전체 너비 사용 */
+    }
+
+    .modal-flex{
+        margin-bottom: 4%;
+        margin-top: 5%;
+    }
+
+    .portfolio-item {
+        flex: 0 0 calc(50% - 20px); /* 화면이 좁아지면 2개씩 배치 */
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    #back-end{
+        width: 100%;
+        text-align: center;
+        color: #373737;
+        font-size: 300px;
+        font-family: 'Pretendard', sans-serif ;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #developer-container{
+        top: 40%;
+    }
+
+    .opic{
+        margin-top: 6%;
+    }
+
+    div #developer{
+        font-size: 320px;
+    }
+
+    .awardsamd{
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 1601px) and  (max-width: 1680px) {
+    .portfolio-item {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .opic{
+        margin-top: 6%;
+    }
+
+    .modal-flex{
+        width: 60%;
+    }
+
+    .upper-exit{
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+    .card-image{
+        width: 100%;
+    }
+    #developer{
+        text-align: center;
+        color: #373737;
+        font-size: 300px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #back-end-container{
+        left: 10%;
+        top: 184px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;
+    }
+
+    #back-end{
+        width: 100%;
+        text-align: center;
+        color: #373737;
+        font-size: 300px;
+        font-family: 'Pretendard', sans-serif ;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #developer-container{
+        width: 100%;
+        left: 0px;
+        top: 490px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;"
+    }
+
+    #jungeun{
+        font-size: 104px;
+    }
+    .starter-content{
+        font-size: 60px;
+    }
+
+    .starter-content2{
+        font-size: 68px;
+    }
+
+    #various{
+        font-size: 60px;
+    }
+
+    .awardsamd{
+        margin-top: 21%;
+    }
+
+    .skill-text {
+        left: calc(50% - 30px); /* 왼쪽으로 더 이동 */
+    }
+
+}
+
+@media (min-width: 1681px) and (max-width: 1838px) {
     .portfolio-item {
         flex: 0 0 calc(50% - 20px); /* 화면이 좁아지면 2개씩 배치 */
     }
@@ -1270,466 +1810,3 @@ img {
         width: 100%;
     }
 }
-
-@media (max-width: 1673px) {
-    .skill-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .skill-main {
-        flex: 1 1 100%;
-        max-width: 600px;
-    }
-
-    .skill-text{
-        margin-left: 120px;
-        margin-top: 40px;
-        text-align: left;
-        position: static;
-        font-size: 26px;
-    }
-
-}
-
-@media (max-width: 1540px) {
-    .inline-flex-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 28px;
-    }
-
-    .about-main {
-        white-space: normal;  /* 작은 화면에서 줄바꿈이 자연스럽게 가능 */
-    }
-    .gnu-title{
-        margin-bottom: 100px;
-    }
-
-    .date-text{
-        text-align: left;
-    }
-
-    .kgitbank {
-        gap: 8px;
-        display: flex; /* inline-flex에서 flex로 변경 */
-        flex-direction: column; /* 수직 방향으로 배치 */
-        align-items: flex-start;
-    }
-
-    .kgitbank-sub {
-        margin-bottom: 40px;
-    }
-
-    .certificate-text{
-        margin-bottom: 40px;
-    }
-
-    .awardsamd{
-        margin-top: 550px;
-    }
-
-    .break-point::after {
-        content: "\A";
-        white-space: pre;
-        text-align: left;
-    }
-
-    .about-main{
-        text-align: left;
-        margin-right: 40px;
-    }
-
-    .subtext{
-        text-align: left;
-    }
-}
-
-@media (max-width: 1466px) {
-    .portfolio-item {
-        flex: 0 0 calc(100% - 20px); /* 화면이 좁아지면 하나씩 배치 */
-    }
-
-    .card-image{
-        width: 100%;
-    }
-}
-
-@media (max-width: 1146px) {
-    .modal-flex {
-        margin-right: 40px;
-    }
-
-    .upper-exit{
-        margin-right: 40px;
-    }
-}
-
-@media (max-width: 990px) {
-    .modal-flex {
-        margin-right: 80px;
-        height: 100%;
-    }
-
-    .modal-inline{
-        margin-top: 50px;
-    }
-
-    .upper-exit{
-        margin-right: 80px;
-        gap: 10px;
-    }
-
-    .exit-button{
-        margin-top: 60px;
-    }
-
-    .education-container{
-        gap: 50px;
-    }
-
-    .certificate1{
-        gap: 50px;
-    }
-
-    .awardsamd{
-        gap: 50px;
-    }
-
-    .ineter{
-        gap: 50px;
-    }
-}
-
-
-@media (min-width: 769px) {
-    .modal-flex {
-        margin-top: 40px;
-    }
-
-    .upper-exit{
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .modal-flex {
-        margin-top: 150px; /* 이 조건이 500px에서 적용돼야 함 */
-    }
-}
-
-@media (max-width: 534px) {
-    .modal-content{
-        width: 100%;
-        height: 200%;
-    }
-
-    .scroll-scroll{
-        height: 150%;
-    }
-
-    #section2{
-        height: 150%;
-    }
-
-    .modal-flex {
-        margin-right: 230px;
-        margin-top: 1000px;
-    }
-
-    .upper-exit{
-        margin-top: 500px;
-    }
-}
-
-@media screen and (max-width: 828px) {
-    #Portfolio-container{
-        width: 80%;
-    }
-
-    #Skills-container{
-        margin-left: -4%;
-    }
-
-    .skill-main{
-        max-width: 70%;
-    }
-
-    .upper-skill-container{
-        gap: 20px;
-    }
-
-    #high-skill{
-        gap: 20px;
-    }
-
-    .interview-container{
-        width: 80%;
-    }
-
-    .break-point2::after {
-        content: "\A";
-        white-space: pre;
-        text-align: left;
-    }
-
-    div .ineter{
-        margin-right: 0%;
-    }
-
-    #back-end-container{
-        left: -7%;
-        top: 30%;
-        width: 80%;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-        transition: transform 1s ease-out;
-    }
-
-    div #back-end{
-        width: 100%;
-        text-align: center;
-        color: #373737;
-        font-size: 150px;
-        font-family: 'Pretendard', sans-serif ;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
-
-    #developer-container{
-        width: 100%;
-        left: 30px;
-        top: 51%;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-        transition: transform 1s ease-out;"
-    }
-
-    div #developer{
-        text-align: center;
-        color: #373737;
-        font-size: 150px;
-        font-family: 'Pretendard', sans-serif;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
-
-    .starter-content2{
-        font-size: 38px;
-    }
-
-    .starter-content{
-        font-size: 38px;
-    }
-
-    div #profile{
-        padding-left: 180px;
-    }
-
-    .certificateconatiner2{
-        margin-left: 20px;
-    }
-
-    div .adsp{
-        margin-left: 10px;
-    }
-
-    div #internationalActivityconatiner{
-        margin-right: 50px;
-    }
-}
-
-@media screen and (max-width: 921px) {
-    div #developer{
-        text-align: center;
-        color: #373737;
-        font-size: 160px;
-        font-family: 'Pretendard', sans-serif;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
-
-    div #back-end{
-        width: 100%;
-        text-align: center;
-        color: #373737;
-        font-size: 160px;
-        font-family: 'Pretendard', sans-serif ;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    div .gnu {
-        margin-left: 11%;
-    }
-}
-
-@media screen and (max-width: 1110px) {
-    .certificate1{
-        gap: 98px;
-        align-items: flex-start;
-        margin-bottom: 300px;
-    }
-
-    .certificate-text{
-        margin-right: 200px;
-    }
-
-    .afpk{
-        margin-right: 200px;
-        margin-bottom: 40px;
-    }
-
-    .adsp{
-        margin-left: 30px;
-    }
-
-}
-
-
-@media screen and (max-width: 1280px) {
-    #profile{
-        height: auto;
-        overflow: visible;
-    }
-
-    .title-profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .transparent-margin {
-        height: 70vh; /* 여백을 줄여서 부드럽게 스크롤 */
-        background-color: transparent;
-    }
-
-    .porfile-title {
-        order: -1;
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    #profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: auto;
-        height: auto;
-        overflow: hidden;
-        position: relative;
-        background-color: #373737;
-    }
-
-    .profile-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        flex-shrink: 0;
-        z-index: 2;
-        position: static;
-        width: 100%;
-    }
-
-    .scroll-item {
-        width: 100%;
-        padding: 20px;
-        max-height: none;
-        height: auto;
-        overflow-y: visible;
-        position: relative;
-        z-index: 2;
-    }
-
-    #back-end-container{
-        left: -7%;
-        top: 30%;
-        width: 120%;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-        transition: transform 1s ease-out;
-    }
-
-    #back-end{
-        width: 100%;
-        text-align: center;
-        color: #373737;
-        font-size: 230px;
-        font-family: 'Pretendard', sans-serif ;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
-
-    #developer-container{
-        width: 100%;
-        left: 30px;
-        top: 51%;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-        transition: transform 1s ease-out;"
-    }
-
-    #developer{
-        text-align: center;
-        color: #373737;
-        font-size: 230px;
-        font-family: 'Pretendard', sans-serif;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
-
-    .gnu{
-        margin-left: 13%;
-    }
-
-    .afpk{
-        margin-top: 0;
-    }
-
-    .adsp{
-        margin-top: 0%;
-        margin-right: 40%;
-    }
-
-    .opic{
-        margin-left: 2%;
-    }
-
-    .awardsamd{
-        margin-top: 20%;
-        width: 100%;
-    }
-
-    .AWARDS{
-        margin-right: 10%;
-    }
-
-    .ineter{
-        margin-right: 50%;
-        width: 100%;
-    }
-
-    .detail-awards{
-        width: 70%;
-        margin-left: 7%;
-    }
-
-    #internationalActivityconatiner{
-        margin-right: 8%;
-    }
-}
-
