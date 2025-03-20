@@ -8,7 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
         const windowWidth = window.innerWidth; // 브라우저 창의 가로 크기
         console.log("현재 화면 너비:", windowWidth); // 디버깅용
 
-        if (window.innerWidth <= 1336) {
+        if (window.innerWidth <= 914) {
+            developer.style.transform = "translateY(320%)";
+            backEnd.style.transform = "translateY(-60%)";
+
+        }
+        else if (window.innerWidth <= 1024) {
+            developer.style.transform = "translateY(120%)";
+            backEnd.style.transform = "translateY(-120%)";
+
+        }
+        else if (window.innerWidth <= 1034) {
+            developer.style.transform = "translateY(120%)";
+            backEnd.style.transform = "translateY(-120%)";
+
+        }     else if (window.innerWidth <= 1198) {
+            developer.style.transform = "translateY(110%)";
+            backEnd.style.transform = "translateY(-315%)";
+
+        } else if (window.innerWidth <= 1336) {
             developer.style.transform = "translateY(70%)";
             backEnd.style.transform = "translateY(-85%)";
 
