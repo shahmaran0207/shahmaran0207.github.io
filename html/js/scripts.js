@@ -46,8 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
         developer.style.transform = "translateY(80%)";
         backEnd.style.transform = "translateY(-80%)";
 
+        } else if (window.innerWidth >= 2560 && window.innerWidth <= 3440) {
+            developer.style.transform = "translateY(80%)";
+            backEnd.style.transform = "translateY(-60%)";
 
-    } else {
+        } else {
             developer.style.transform = "translateY(55%)";
             backEnd.style.transform = "translateY(-75%)";
         }

@@ -12,6 +12,31 @@ body{
     margin: 0;
 }
 
+#fixed-icons a {
+    font-size: 32px; /* 아이콘 크기 증가 */
+    background-color: white;
+    color: #373737;
+    width: 32px; /* 동일한 width, height 설정 */
+    height: 32px;
+    display: flex; /* 아이콘을 가운데 정렬 */
+    padding: 20px; /* 기존 타원 형태 유지 */
+    border-radius: 50%; /* 둥근 모양 유지 */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#fixed-icons a:hover {
+    background-color: #f8f9fa;
+    color: #373737;
+    transform: scale(1.25);
+}
+
+#fixed-icons.inverse-icons a:hover {
+    background-color: #373737;
+    color: #ffffff;
+}
+
+
 .second-title{
     padding-left: 12px;
     padding-right: 12px;
@@ -335,6 +360,11 @@ body{
     align-items: center;
     gap: 16px;
     display: inline-flex;
+}
+
+i {
+    font-size: 2rem;
+    line-height: 1;
 }
 
 .certificate-text{
@@ -1238,6 +1268,10 @@ img {
     display: inline-block; /* 기본적으로 인라인으로 표시 */
 }
 
+.break-point22 {
+    display: inline-block; /* 기본적으로 인라인으로 표시 */
+}
+
 .break-point2::after {
     content: "\A";  /* 줄바꿈 문자 */
     white-space: nowrap; /* 줄바꿈 적용 */
@@ -1281,10 +1315,19 @@ img {
 
 @media (min-width: 769px) and  (max-width: 850px) {
 
+
 }
 
 
 @media (min-width: 851px) and  (max-width: 912px) {
+    .transparent-margin{
+        height: 10%;
+    }
+
+    .sub-profile{
+        height: 200%;
+    }
+
     .certificateconatiner2 {
         display: flex;
         flex-direction: column;
@@ -1300,7 +1343,7 @@ img {
     }
 
     .mainmajor{
-        gap: 36%;
+        gap: 16%;
     }
 
     .submajortitle{
@@ -1334,6 +1377,10 @@ img {
         flex-direction: column;
         align-items: center; /* 전체 가운데 정렬 */
         text-align: center;
+    }
+
+    .sub-profile {
+        height: auto; /* 혹은 height를 명확한 값으로 조정 */
     }
 
     .profile-container {
@@ -1392,7 +1439,7 @@ img {
     #jungeun{
         text-align: center;
         color: white;
-        font-size: 78px;
+        font-size: 98px;
         font-weight: 700;
         line-height: 156px;
         word-wrap: break-word;"
@@ -1401,22 +1448,22 @@ img {
     #devloper-text{
         text-align: center;
         color: white;
-        font-size: 78px;
+        font-size: 98px;
         font-weight: 400;
         line-height: 156px;
         word-wrap: break-word;"
     }
 
     .starter-content{
-        font-size: 44px;
+        font-size: 64px;
     }
 
     .starter-content2{
-        font-size: 45px;
+        font-size: 65px;
     }
 
     #various{
-        font-size: 70px;
+        font-size: 90px;
     }
 
     #internationalActivity{
@@ -1480,16 +1527,24 @@ img {
 
     }
 
-    .first-title{
-        margin-right: 18%;
-    }
-
-    .second-title{
-        margin-right: 18%;
+    .first-title, .second-title{
+        margin-top: 10%;
+        margin-right: 10%;
+        line-height: 1.8;
     }
 
     .structure, .ecomerse{
         line-height: 1.8;
+    }
+
+    .fourth-title {
+        display: flex; /* inline-flex를 flex로 변경 */
+        flex-wrap: wrap; /* 자동 줄바꿈 가능하게 설정 */
+    }
+
+    .break {
+        text-align: center; /* 중앙 정렬 */
+        white-space: nowrap; /* 공백을 포함한 자동 줄바꿈 방지 */
     }
 }
 
@@ -1544,6 +1599,14 @@ img {
 
     .sub-profile{
         height: 200%;
+    }
+
+    .date-info{
+        margin-left: -6%;
+    }
+
+    .gnudate{
+        text-align: left;
     }
 
     .title-profile{
@@ -1776,19 +1839,7 @@ img {
         margin-top: 60%;
     }
 
-    .sqld{
-        margin-top: 5%;
-    }
-
-    .opic{
-        margin-top: 5%;
-    }
-
-    .afpk{
-        margin-top: 5%;
-    }
-
-    .adsp{
+    .adsp, .sqld, .opic, .afpk{
         margin-top: 5%;
     }
 
@@ -1801,7 +1852,8 @@ img {
     }
 
     .gnudate{
-        text-align: left;
+        text-align: center;
+        margin-left: -40%;
     }
 
     #developer-container{
@@ -1864,6 +1916,16 @@ img {
     .upper-exit{
         margin-right: 2%;
     }
+
+    .kgitbank-sub{
+        margin-top: 13%;
+    }
+
+    .swdate, .kgdate{
+        margin-left: 12%;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 1281px) and  (max-width: 1366px) {
@@ -1894,15 +1956,15 @@ img {
         gap: 16px;
     }
 
+    .YLCECONOMY{
+        gap: 160px;
+    }
+
     .sub-text{
         text-align: left;
     }
 
-    .YLC{
-        text-align: left;
-    }
-
-    .flea{
+    .YLC, .flea, .economy{
         text-align: left;
     }
 
@@ -1930,6 +1992,10 @@ img {
         gap: 70px;
     }
 
+    .certificate1{
+        margin-top: 15%;
+    }
+
     .main-awards{
         text-align: left;
     }
@@ -1944,7 +2010,7 @@ img {
     }
 
     .kg2{
-        margin-top: 5%;
+        margin-top:15%;
     }
 
     .awardsamd{
@@ -1982,7 +2048,7 @@ img {
     }
 
     .kgdate{
-        margin-left: 10%;
+        margin-left: 40%;
     }
 
     .gnudate{
@@ -2022,6 +2088,14 @@ img {
 
     #developer{
         font-size: 280px;
+    }
+
+    .kgitbank-sub{
+        margin-top:8%;
+    }
+
+    .swdate{
+        margin-left: 35%;
     }
 }
 
@@ -2177,6 +2251,7 @@ img {
     .card-image{
         width: 100%;
     }
+
     #developer{
         text-align: center;
         color: #373737;
@@ -2239,8 +2314,8 @@ img {
     .skill-text {
         left: calc(50% - 30px); /* 왼쪽으로 더 이동 */
     }
-
 }
+
 
 @media (min-width: 1681px) and (max-width: 1838px) {
     .portfolio-item {
@@ -2261,4 +2336,261 @@ img {
     .card-image{
         width: 100%;
     }
+}
+
+@media (min-width: 2560px) and (max-width: 3439px) {
+    #developer{
+        text-align: center;
+        color: #373737;
+        font-size: 500px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #back-end{
+        width: 100%;
+        text-align: center;
+        color: #373737;
+        font-size: 460px;
+        font-family: 'Pretendard', sans-serif ;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    #back-end-container{
+        left: 10%;
+        top: 184px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;
+    }
+
+    #developer-container{
+        width: 100%;
+        left: 0px;
+        top: 490px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        transition: transform 1s ease-out;"
+    }
+
+    #jungeun{
+        font-size: 134px;
+    }
+    .starter-content{
+        font-size: 90px;
+    }
+
+    .starter-content2{
+        font-size: 98px;
+    }
+
+    #various{
+        font-size: 90px;
+    }
+
+    .third-title{
+        margin-bottom: 1%;
+    }
+
+    .updated{
+        font-size: 40px;
+    }
+
+    .updated-date{
+        font-size: 30px;
+    }
+
+    #fixed-icons{
+        font-size: 150px;
+    }
+
+    .scroll-scroll{
+        margin-left: 3%;
+    }
+
+    #fixed-icons a {
+        font-size: 64px; /* 아이콘 크기 증가 */
+        background-color: white;
+        color: #373737;
+        width: 64px; /* 동일한 width, height 설정 */
+        height: 64px;
+        display: flex; /* 아이콘을 가운데 정렬 */
+        padding: 20px; /* 기존 타원 형태 유지 */
+        border-radius: 50%; /* 둥근 모양 유지 */
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+
+    i {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .bi-envelope, .bi-arrow-up-circle, .bi-github{
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .certificateconatiner2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 가로 3개 */
+        grid-template-rows: repeat(2, auto);  /* 세로 2개 */
+        gap: 20px; /* 간격 조정 */
+        height: auto; /* 높이를 자동으로 조정 */
+    }
+
+    #Aboutme-container{
+        margin-top: 1%;
+    }
+
+    .about-main, .profile-title{
+        font-size: 50px;
+    }
+
+    #internationalActivity{
+        font-size: 40px;
+    }
+
+    .upper-sub{
+        gap: 20px;
+    }
+
+    .button-text{
+        font-size: 30px;
+    }
+
+    .gkrtk, .tnfy{
+        width: 100%;
+        height: 120%;
+    }
+
+    .date-text, .economymajor, .submajor, .computer, .structure, .kgdate, .swdate{
+        font-size: 30px;
+    }
+
+    .kgcontainer{
+        width: 100%;
+        margin-top: 0.5%;
+    }
+
+    .structure{
+        width: 140%;
+    }
+
+    .spring{
+        gap: 530px;
+    }
+
+    .fleamarket{
+        gap: 240px;
+    }
+
+  .N-date{
+      gap: 490px;
+  }
+
+  .exit-button{
+      margin-top: 80px;
+  }
+
+  .interview-container{
+      width: 97%;
+  }
+
+  .card-image{
+      width: 100%;
+  }
+
+    .kgcontainer {
+        align-self: flex-start;
+    }
+
+    .inline-flex-container{
+        gap: 480px;
+    }
+
+    .certificate{
+        line-height: 1.2;
+        font-size: 35px;
+    }
+
+    .economymajor{
+        margin-left: 30%;
+    }
+
+    .computer{
+        margin-left: 32%;
+    }
+
+    .sqld{
+        width: 370px;
+    }
+
+    .datacreater{
+        width: 480px;
+    }
+
+    .cetificatebutton {
+        width: 100%;
+        height: 40px;
+    }
+
+    .adsp{
+        width: 480px;
+    }
+
+    .sub-sub{
+        font-size: 30px;
+    }
+
+    .mainbank{
+        gap: 400px;
+    }
+
+    .majors{
+        gap: 20px;
+    }
+
+    .kgitbank-sub{
+        margin-top: 4%;
+    }
+
+    .kgdate{
+        width: 100%;
+    }
+
+    .break-point22 {
+        display: block;
+    }
+
+    .subtext, .subtext-sub{
+        font-size: 28px;
+    }
+
+    .subtext-sub{
+        margin-left: 40px;
+    }
+
+    .ineter{
+        gap: 120px;
+    }
+}
+
+@media (min-width: 3440px) and (max-width: 3839px) {
+}
+
+@media (min-width: 3840px) and (max-width: 5119px) {
+}
+
+@media (min-width: 5120px) and (max-width: 7679px) {
+}
+
+@media (min-width: 7680px) {
 }
