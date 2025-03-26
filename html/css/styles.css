@@ -6,6 +6,49 @@ html, body {
     height: 100%; /* 명시적으로 높이 지정 */
 }
 
+.wholeint{
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: inline-flex;
+}
+
+.profile-content-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+}
+
+.jungeuncontainer{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: flex;
+}
+
+.sta{
+    width:100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#section1 {
+    z-index: 0;
+    height: 100%;
+}
+
+#whole{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
 body{
     width: 100%;
     padding: 0;
@@ -68,7 +111,6 @@ body{
     gap: 8px;
 }
 
-/* 기간 & 졸업 예정 정보를 담는 컨테이너 */
 .date-info {
     display: flex;
     flex-direction: column;
@@ -1790,7 +1832,599 @@ img {
 
 }
 
-@media (min-width: 1025px) and  (max-width: 1280px) {
+@media (min-width: 1025px) and  (max-width: 1080px) {
+
+    #section1{
+        height: 50%;
+    }
+
+    .transparent-margin{
+        height: 0%;
+    }
+
+    #new-content{
+        top: 20%;
+        left: -2%;
+        justify-content: flex-start; /* 중앙 정렬 대신 위쪽 정렬로 변경 */
+        height: auto; /* 내부 콘텐츠 크기에 맞게 조절 */
+        min-height: 30%; /* 원하는 최소 높이 설정 */
+    }
+
+    #devloper-text{
+        font-size: 57px;
+    }
+
+    #jungeun{
+        margin-top: -22%;
+        font-size: 58px;
+    }
+
+    .starter-content{
+        font-size: 40px;
+    }
+
+    .starter-content2{
+        font-size: 48px;
+    }
+
+    #various{
+        font-size: 40px;
+    }
+
+    .third-title{
+        margin-bottom: 1%;
+    }
+
+    .updated{
+        font-size: 30px;
+        margin-bottom: 31%;
+        margin-left: 2%;
+    }
+
+    #developer-container{
+        top:35%;
+        left: -30%;
+    }
+
+    #back-end-container{
+        bottom: 45%;
+        left: 3%;
+    }
+
+    #back-end{
+        font-size: 80px;
+    }
+
+    #developer{
+        font-size: 80px;
+    }
+
+    .sub-profile{
+        height: 200%;
+    }
+
+    .title-profile{
+        gap: 130px; display: flex;
+        flex-direction: column;
+        align-items: center; /* 전체 가운데 정렬 */
+        text-align: center;
+    }
+
+    .sub-profile {
+        height: auto;
+    }
+
+    .profile-container  {
+        order: 1;
+        width: 40%;
+        margin-left: 38%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container > div {
+        align-items: center;
+    }
+
+    .profile-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .title-profile {
+        flex-direction: column;
+    }
+
+    .scroll-item {
+        order: 2;
+        width: 100%;
+    }
+
+    .scroll-container{
+        display: none;
+    }
+
+    .first-title{
+        margin-top: -16%;
+        flex-wrap: wrap;
+        width: 40%;
+        margin-right: 63%;
+    }
+
+    .transparent-margin{
+        height: 0;
+    }
+    .third-title{
+        margin-top: -4%;
+        flex-wrap: wrap;
+        width: 30%;
+        margin-right: 65%;
+    }
+
+    .second-title{
+        margin-left: 3%;
+        width: 100%;
+    }
+
+    .fourth-title{
+        margin-top: 5%;
+        flex-wrap: wrap;
+        margin-left: -63%;
+        width: 30%;
+    }
+
+    #whole{
+        width: 70%;
+        height: 60%;
+        padding: 0;
+    }
+
+    .sta{
+        width:100%;
+        height: 70%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    html{
+        width: 30%;
+        overflow-x: hidden;
+    }
+
+    #section2{
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .sub-profile{
+        padding: 0;
+    }
+
+    #fixed-icons{
+        width: 30%;
+        left: 17%;
+    }
+
+    .porfile-title{
+        font-size: 64px;
+        margin-left: 15%;
+    }
+
+    /* Education, Certificate, Awards 등의 컨테이너 내부 요소 세로 배치 */
+    .education-container, .certificate1, .awardsamd {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 가운데 정렬 */
+    }
+
+    /* 각 항목들도 세로로 정렬되도록 수정 */
+    .gnu, .certificateconatiner2, .detail-awards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 각 항목 간격 조정 */
+    .gnu-title, .kgitbank-sub, .certificate-text, .upper-sub {
+        width: 100%;
+        text-align: center; /* 텍스트 중앙 정렬 */
+        margin-bottom: 20px; /* 아래쪽 여백 추가 */
+    }
+
+    /* Awards 내부 요소 정렬 */
+    .detail-awards .upper-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lastDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 내부 요소들도 세로 정렬 */
+    #lastDiv > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name{
+        margin-left: 20%
+    }
+
+    .profile-content-container{
+        align-items: center;
+    }
+
+    .profile-up{
+        display: none;
+    }
+
+    .birth{
+        margin-left: 25%;
+    }
+
+    .phone{
+        margin-left: 20%;
+    }
+
+    .ema{
+        margin-left: 2%;
+    }
+
+    .git{
+        margin-left: 15%;
+    }
+
+    .profile-title{
+        margin-left: -12%;
+    }
+
+    .gnu{
+        margin-left: 20%;
+        margin-top: -10%;
+    }
+
+    .inline-flex-container {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .aboutMe-title{
+        margin-left: 15%;
+    }
+
+    .gnugnu{
+        margin-left: -20%;
+    }
+
+    .majors{
+        margin-left: -10%;
+    }
+
+    .submajor{
+        width: 60%;
+        margin-left: -15%;
+    }
+
+    .date-info {
+        margin-left: -5%;
+        width: 110%;
+        flex-direction: row; /* 가로 정렬 */
+        align-items: center; /* 세로 정렬 맞추기 */
+        gap: 12px; /* 요소 간 간격 */
+    }
+
+    .gnudate {
+        order: 1; /* 기간을 먼저 오도록 설정 */
+    }
+
+    .completeschool{
+        order: 2;
+    }
+
+    .kgitbank-sub{
+        margin-top: 12%;
+    }
+
+    .kgitbank {
+        flex-direction: column; /* 화면이 작아져도 과목명 아래 기간 유지 */
+        align-items: flex-start;
+    }
+
+    .kgshort, .kglong{
+        margin-left: -25%;
+    }
+
+    .structure{
+        margin-left: -12%;
+    }
+
+    .kgdate, .swdate{
+        margin-top: -13%;
+    }
+
+    .ecomerse{
+        margin-left: -22%;
+    }
+
+    .datacreater{
+        margin-top: -25%;
+    }
+
+    .sub-main{
+        margin-left: -1%;
+    }
+
+    .cerdate{
+        margin-left: 20%;
+    }
+
+    .sqldate{
+        margin-left: 11%;
+    }
+
+    .tksdjqdlsfur{
+        width: 100%;
+    }
+
+    .awardsamd{
+        margin-top: 150%;
+    }
+
+    .opicim2, .afpkim2, .adspim2{
+        margin-left: 15%;
+    }
+
+    .opicdate, .afpkdate{
+        margin-left: 12%;
+    }
+
+    .adspdate{
+        margin-left: 28%;
+    }
+
+    .afpk{
+        margin-top: -5%;
+    }
+
+    .afpktitle{
+        margin-left: -15%;
+    }
+
+    .adsp{
+        margin-top: 5%;
+        margin-left: -35%;
+    }
+
+    .detail-awards{
+        margin-top: -10%;
+        margin-left: 0%;
+    }
+
+    .certificate{
+        margin-left: 15%;
+    }
+
+    .afpktitle{
+        margin-left: -3%;
+    }
+
+    .adsppro{
+        margin-left: 15%;
+        text-align: center;
+    }
+
+    .rocket{
+        margin-left: 0%;
+    }
+
+    .rockat{
+        margin-left: -11%;
+    }
+
+    .breakbraek {
+        display: block;
+    }
+
+    #interview-container{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .YLCdetail{
+        margin-left: 15%;
+    }
+
+    .N-detail2, .N-detail{
+        margin-left: 23%;
+    }
+
+    .YLCECONOMY, .samsung-date{
+        margin-left: 0%;
+    }
+
+    .YLCECONOMYdetail{
+        margin-left: 25%;
+    }
+
+    .samsungdetail{
+        margin-left: 25%;
+    }
+
+    .samsungdetail2{
+        margin-left: 25%;
+    }
+
+    .YLCECONOMYdetail2{
+        margin-left: 35%;
+    }
+
+    .YLCdetail2{
+        margin-left: 35%;
+    }
+
+    .break3{
+        display: block;
+    }
+
+    .YLC-date{
+        margin-left: 5%;
+    }
+
+    .ineter{
+        margin-top: -10%;
+    }
+
+    .flea{
+        margin-left: 15%;
+    }
+
+    .fleamarket{
+        margin-left: 20%;
+    }
+
+    .wholeint{
+        margin-top: -10%;
+    }
+
+    .international-activity .upper-sub {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* 활동명과 기간을 세로 정렬 */
+    .international-activity .aboutMe-title {
+        display: flex;
+        flex-direction: column; /* 활동명 아래 기간 배치 */
+    }
+
+    /* 내용과 주관을 가로 정렬 유지 */
+    .international-activity .sub-main {
+        display: flex;
+        flex-direction: row; /* 주관과 기관명을 같은 줄에 유지 */
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* 주관 및 기관명이 한 줄 유지되도록 */
+    .international-activity .sub-main .subtext {
+        white-space: nowrap;
+    }
+
+    .upper-skill-main {
+        flex-direction: column; /* 세로 배치 */
+        gap: 24px; /* 요소 간 간격 */
+        width: 100%; /* 전체 너비 사용 */
+        margin-left: 20%;
+    }
+
+    .upper-skill-container,
+    #high-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-container {
+        margin-left: 30%;
+        width: 100%;
+    }
+
+    .skill-main{
+        margin-left: 20%;
+        width: 230%;
+    }
+
+    .devlopere{
+        margin-left: 20%;
+    }
+
+    .gittext{
+        margin-left: -20%;
+    }
+
+    .skill-text {
+        left: calc(40% + 10px); /* 기존보다 더 왼쪽으로 이동 */
+        font-size: 20px; /* 글자 크기 조절 */
+    }
+
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    .hover-button{
+        width: 160%;
+        margin-left: -30%;
+    }
+
+    #portfolio{
+        margin-left: 14%;
+    }
+
+    .portfolio-grid{
+        width: 70%;
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    .card-tags{
+        display: none;
+    }
+
+    .modal-content{
+        margin-top: 213%;
+        width: 30%;
+        height: 70%;
+        margin-left: -70%;
+    }
+
+    .modal-inline{
+        height: 60%;
+    }
+
+    .upper-exit{
+        margin-right: -15%;
+    }
+
+    .modal-title{
+        font-size: 20px;
+    }
+
+    .modal-button, .portfront{
+        display: none;
+    }
+
+    .modal-main-text{
+        width: 120%;
+        margin-bottom: -30%;
+    }
+
+    .modal-content-title, .modal-content-detail, .accordion-header, .accordion-content{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .portfolio-text{
+        margin-top: 32%;
+    }
+
+    .text-title-detail{
+        margin-top: 25%;
+    }
+}
+
+@media (min-width: 1081px) and  (max-width: 1280px) {
     .modal-flex{
         margin-bottom: 8%;
         margin-top: 7%;

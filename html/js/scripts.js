@@ -22,11 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
             developer.style.transform = "translateY(120%)";
             backEnd.style.transform = "translateY(-120%)";
 
-        }     else if (window.innerWidth <= 1198) {
+        }  else if (window.innerWidth <= 1080) {
+            developer.style.transform = "translateY(450%)";
+            backEnd.style.transform = "translateY(-75%)";
+
+        } else if (window.innerWidth <= 1198) {
             developer.style.transform = "translateY(110%)";
             backEnd.style.transform = "translateY(-315%)";
 
-        } else if (window.innerWidth <= 1336) {
+        }  else if (window.innerWidth <= 1336) {
             developer.style.transform = "translateY(70%)";
             backEnd.style.transform = "translateY(-85%)";
 
@@ -75,6 +79,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 창 크기 변경 시 적용
     window.addEventListener("resize", updateTransform);
+});
+
+window.addEventListener("resize", function () {
+    let element = document.querySelector(".starter-content.break");
+    if (window.innerWidth <= 1080) {
+        element.innerHTML = "경험을 지닌,<br>";
+    } else {
+        element.innerHTML = "경험을 지닌,";
+    }
 });
 
 
