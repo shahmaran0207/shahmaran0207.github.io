@@ -751,7 +751,7 @@ img {
     flex: 1 1 0;
     height: 90%;
     margin-top: 12%;
-    margin-bottom: 8%;
+    margin-bottom: 12%;
     justify-content: flex-start;
     overflow: auto;
     align-items: flex-start;
@@ -3224,14 +3224,3 @@ img {
     }
 }
 
-@media (min-width: 3440px) and (max-width: 3839px) {
-}
-
-@media (min-width: 3840px) and (max-width: 5119px) {
-}
-
-@media (min-width: 5120px) and (max-width: 7679px) {
-}
-
-@media (min-width: 7680px) {
-}
