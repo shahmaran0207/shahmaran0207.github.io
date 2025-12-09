@@ -1,0 +1,3191 @@
+﻿/* 1920x1080 기준 Aboutme, Interview, Skills 완벽 복사 */
+
+/* 스크롤 영역 */
+.profile-scroll-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #232323;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-scroll-content::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* 공통 스타일 */
+.wholeint {
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: inline-flex;
+}
+
+.profile-title {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    word-wrap: break-word;
+}
+
+.aboutMe-title {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.about-main {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.about-title {
+    padding: 4px 8px;
+    background: #373737;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.button-text {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.date-text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.sub-sub {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.sub-main {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.subtext {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.subtext-sub {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.certificate {
+    flex: 1 1 0;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+/* Education */
+.education-container {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: flex;
+}
+
+.eduandawards {
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.gnu {
+    margin-left: 50px;
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: flex;
+}
+
+.gnu-title {
+    align-self: stretch;
+    height: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+}
+
+.majors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.kgitbank-sub {
+    align-self: stretch;
+    height: 82px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+}
+
+.kgitbank {
+    justify-content: flex-start;
+    gap: 48px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Career */
+.career {
+    width: 100%;
+    margin-top: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.CareerContainer2 {
+    margin-left: 110px;
+    flex: 1 1 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: block;
+    vertical-align: top;
+}
+
+#CareerContainer {
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    vertical-align: top;
+}
+
+/* Certificate */
+.certificate1 {
+    width: 100%;
+    margin-top: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.certificateconatiner2 {
+    margin-left: 40px;
+    flex: 1 1 0;
+    height: 264px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: block;
+    vertical-align: top;
+}
+
+#certificateconatiner {
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    vertical-align: top;
+}
+
+.certificate-text {
+    width: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.certificate-container {
+    width: 300px;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.certificate-sub {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+
+/* Awards */
+.awardsamd,
+.ineter {
+    margin-top: 80px;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.detail-awards {
+    flex: 1 1 0;
+    margin-left: 95px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: inline-flex;
+}
+
+.upper-sub {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+}
+
+/* International Activity */
+#internationalActivity {
+    width: 240px;
+    color: white;
+    font-size: 35px;
+    font-family: Pretendard, serif;
+    font-weight: 700;
+    line-height: 52px;
+    word-wrap: break-word;
+}
+
+#internationalActivityconatiner {
+    height: 104px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+/* Interview */
+.interview-container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 80px;
+    height: auto;
+    min-height: 196px;
+    padding: 24px;
+    background: #373737;
+    border-radius: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.interview-container:first-of-type {
+    margin-top: 80px;
+}
+
+.interview-question {
+    color: white;
+    font-size: 40px;
+    font-family: Pretendard, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+
+.interview-answer {
+    align-self: stretch;
+    color: white;
+    font-size: 20px;
+    font-family: Pretendard, serif;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+/* Skills */
+#high-skill {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.upper-skill-container {
+    width: 100%;
+    margin-top: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.upper-skill-container:last-of-type {
+    margin-bottom: 80px;
+}
+
+.skill-container {
+    width: 256px;
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.upper-skill-main {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.skill-main {
+    flex: 0 1 calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skill-title {
+    padding: 8px 16px;
+    background: #373737;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.skill-icon {
+    width: 80px;
+    margin-right: 10px;
+    height: 80px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.skill-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 20px);
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: Pretendard, serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.skill-image {
+    width: 100%;
+    height: 100%;
+}
+
+.white-icon {
+    filter: invert(1) brightness(2);
+}
+
+/* break-point */
+.break-point {
+    display: inline-block;
+}
+
+.break-point22 {
+    display: inline-block;
+}
+
+.first-part {
+    display: inline-block;
+}
+
+.second-part {
+    display: inline-block;
+}
+
+.AboutMe-title {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    word-wrap: break-word;
+}
+
+
+/* ========================================
+   반응형 미디어 쿼리
+   ======================================== */
+
+/* 초소형 모바일 (320px ~ 359px) */
+@media (max-width: 359px) {
+    .profile-scroll-content {
+        padding: 20px;
+    }
+    
+    .profile-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .about-main {
+        font-size: 14px;
+        line-height: 20px;
+        white-space: normal;
+    }
+    
+    .button-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .about-title {
+        padding: 3px 6px;
+        top: 5px;
+    }
+    
+    .date-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .sub-sub {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .certificate {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    /* Education */
+    .education-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .eduandawards {
+        height: auto;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 30px;
+    }
+    
+    .gnu-title {
+        height: auto;
+        gap: 12px;
+    }
+    
+    .inline-flex-container {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    
+    .majors {
+        gap: 6px;
+    }
+    
+    .date-info {
+        gap: 6px;
+    }
+    
+    .kgitbank-sub {
+        height: auto;
+        gap: 12px;
+    }
+    
+    .kgitbank {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    /* Career */
+    .career {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    #CareerContainer {
+        height: auto;
+    }
+    
+    .certificate-text {
+        gap: 6px;
+    }
+    
+    /* Certificate */
+    .certificate1 {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 30px;
+    }
+    
+    #certificateconatiner {
+        height: auto;
+    }
+    
+    .certificate-text, .certificate-container {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .certificate-container {
+        margin-top: 30px;
+    }
+    
+    .certificate-sub {
+        width: 100%;
+    }
+    
+    /* Awards */
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 60px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 30px;
+    }
+    
+    .upper-sub {
+        gap: 6px;
+    }
+    
+    /* International Activity */
+    #internationalActivity {
+        width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    #internationalActivityconatiner {
+        height: auto;
+    }
+    
+    .wholeint {
+        gap: 30px;
+    }
+    
+    /* Interview */
+    .interview-container {
+        margin-top: 60px;
+        padding: 16px;
+        gap: 12px;
+        min-height: auto;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 60px;
+    }
+    
+    .interview-question {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .interview-answer {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    /* Skills */
+    #high-skill {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 60px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 60px;
+    }
+    
+    .skill-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .AboutMe-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 16px;
+        width: 300px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .skill-title {
+        height: 60px; width: 100%;
+        padding: 8px 12px;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 8px;
+    }
+    
+    .skill-text {
+        font-size: 14px;
+        margin-left: 10px;
+        left: calc(50% + 10px);
+    }
+}
+
+/* Galaxy S 시리즈 (360px) */
+@media (min-width: 360px) and (max-width: 360px) {
+    .profile-scroll-content {
+        padding: 24px;
+    }
+    
+    .profile-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    
+    .about-main {
+        font-size: 16px;
+        line-height: 22px;
+        white-space: normal;
+    }
+    
+    .button-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .about-title {
+        padding: 4px 7px;
+        top: 6px;
+    }
+    
+    .date-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .sub-sub {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .certificate {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 32px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 50px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 50px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 32px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 70px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 32px;
+    }
+    
+    .wholeint {
+        gap: 32px;
+    }
+    
+    .interview-container {
+        margin-top: 70px;
+        padding: 18px;
+        gap: 14px;
+        min-height: auto;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 70px;
+    }
+    
+    .interview-question {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .interview-answer {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .AboutMe-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 70px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 70px;
+    }
+    
+    .skill-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 18px;
+        width: 300px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 1 1 100%; width: 100%; max-width: 100%;
+    }
+    
+    .skill-title {
+        height: 65px; width: 100%;
+        padding: 8px 14px;
+    }
+    
+    .skill-icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+    
+    .skill-text {
+        font-size: 16px;
+        margin-left: 12px;
+        left: calc(50% + 12px);
+    }
+}
+
+/* iPhone SE (375px) */
+@media (min-width: 361px) and (max-width: 375px) {
+    .profile-scroll-content {
+        padding: 25px;
+    }
+    
+    .profile-title {
+        font-size: 29px;
+        line-height: 37px;
+        margin-bottom: 25px;
+    }
+    
+    .about-main {
+        font-size: 16px;
+        line-height: 22px;
+        white-space: normal;
+    }
+    
+    .button-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .date-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .sub-sub {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .certificate {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 33px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 52px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 52px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 33px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 72px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 33px;
+    }
+    
+    .wholeint {
+        gap: 33px;
+    }
+    
+    .interview-container {
+        margin-top: 72px;
+        padding: 19px;
+        gap: 14px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 72px;
+    }
+    
+    .interview-question {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    
+    .interview-answer {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .AboutMe-title {
+        font-size: 29px;
+        line-height: 37px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 72px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 72px;
+    }
+    
+    .upper-skill-main {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        width: 300px;
+        gap: 20px;
+    }
+    
+    .skill-main {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    
+    .skill-title {
+        height: 66px;
+        width: 100%;
+    }
+    
+    .skill-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .skill-text {
+        font-size: 16px;
+    }
+}
+
+/* iPhone 12/13 (390px) */
+@media (min-width: 376px) and (max-width: 390px) {
+    .profile-scroll-content {
+        padding: 26px;
+    }
+    
+    .profile-title {
+        font-size: 29px;
+        line-height: 38px;
+        margin-bottom: 26px;
+    }
+    
+    .about-main {
+        font-size: 16.5px;
+        line-height: 23px;
+    }
+    
+    .button-text {
+        font-size: 12.5px;
+        line-height: 19px;
+    }
+    
+    .date-text {
+        font-size: 14.5px;
+        line-height: 21px;
+    }
+    
+    .sub-sub {
+        font-size: 14.5px;
+        line-height: 21px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 14.5px;
+        line-height: 21px;
+    }
+    
+    .certificate {
+        font-size: 16.5px;
+        line-height: 23px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 26px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 34px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 53px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 53px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 34px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 73px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 34px;
+    }
+    
+    .wholeint {
+        gap: 34px;
+    }
+    
+    .interview-container {
+        margin-top: 73px;
+        padding: 19px;
+        gap: 15px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 73px;
+    }
+    
+    .interview-question {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    
+    .interview-answer {
+        font-size: 14.5px;
+        line-height: 23px;
+    }
+    
+    .AboutMe-title {
+        font-size: 29px;
+        line-height: 38px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 73px;
+        margin-bottom: 73px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 73px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 73px;
+    }
+    
+    .upper-skill-main { 
+        display: flex !important; 
+        flex-direction: column !important;
+         flex-wrap: nowrap !important;
+          gap: 20px;
+          width: 300px;
+         } 
+          
+    .skill-main { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; min-width: 100% !important;
+    }
+    
+    .skill-title {
+        height: 67px;
+    }
+    
+    .skill-icon {
+        width: 57px;
+        height: 57px;
+    }
+    
+    .skill-text {
+        font-size: 16.5px;
+    }
+}
+
+/* iPhone 15/Pixel (393px) */
+@media (min-width: 391px) and (max-width: 393px) {
+    .profile-scroll-content {
+        padding: 26px;
+    }
+    
+    .profile-title {
+        font-size: 29px;
+        line-height: 38px;
+        margin-bottom: 26px;
+    }
+    
+    .about-main {
+        font-size: 16.5px;
+        line-height: 23px;
+    }
+    
+    .button-text {
+        font-size: 12.5px;
+        line-height: 19px;
+    }
+    
+    .date-text {
+        font-size: 14.5px;
+        line-height: 22px;
+    }
+    
+    .sub-sub {
+        font-size: 14.5px;
+        line-height: 22px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 14.5px;
+        line-height: 22px;
+    }
+    
+    .certificate {
+        font-size: 16.5px;
+        line-height: 24px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 26px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 34px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 54px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 54px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 34px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 74px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 34px;
+    }
+    
+    .wholeint {
+        gap: 34px;
+    }
+    
+    .interview-container {
+        margin-top: 74px;
+        padding: 19px;
+        gap: 15px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 74px;
+    }
+    
+    .interview-question {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
+    .interview-answer {
+        font-size: 14.5px;
+        line-height: 23px;
+    }
+    
+    .AboutMe-title {
+        font-size: 29px;
+        line-height: 38px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 74px;
+        margin-bottom: 74px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 26px;
+        margin-top: 74px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 74px;
+    }
+    
+    .upper-skill-main { 
+        display: flex !important;
+         flex-direction: column !important;
+          flex-wrap: nowrap !important;
+          width: 300px;
+           gap: 20px; } 
+           
+           .skill-main { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; min-width: 100% !important;
+    }
+    
+    .skill-title {
+        height: 68px;
+    }
+    
+    .skill-icon {
+        width: 58px;
+        height: 58px;
+    }
+    
+    .skill-text {
+        font-size: 17px;
+    }
+}
+
+/* Galaxy Ultra/Pixel Pro (412px) */
+@media (min-width: 394px) and (max-width: 412px) {
+    .profile-scroll-content {
+        padding: 27px;
+    }
+    
+    .profile-title {
+        font-size: 30px;
+        line-height: 39px;
+        margin-bottom: 27px;
+    }
+    
+    .about-main {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    
+    .button-text {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    
+    .date-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .sub-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .certificate {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 27px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 35px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 27px;
+        margin-top: 55px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 27px;
+        margin-top: 55px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 35px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 27px;
+        margin-top: 75px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 35px;
+    }
+    
+    .wholeint {
+        gap: 35px;
+    }
+    
+    .interview-container {
+        margin-top: 75px;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 75px;
+    }
+    
+    .interview-question {
+        font-size: 23px;
+        line-height: 33px;
+    }
+    
+    .interview-answer {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    
+    .AboutMe-title {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 27px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 27px;
+        margin-top: 75px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 75px;
+    }
+    
+    .upper-skill-main { width: 300px; display: flex !important; flex-direction: column !important; flex-wrap: nowrap !important; gap: 20px; } .skill-main { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; min-width: 100% !important;
+    }
+    
+    .skill-title {
+        height: 69px;
+    }
+    
+    .skill-icon {
+        width: 59px;
+        height: 59px;
+    }
+    
+    .skill-text {
+        font-size: 17px;
+    }
+}
+
+/* iPhone Pro Max (428px ~ 430px) */
+@media (min-width: 413px) and (max-width: 430px) {
+    .profile-scroll-content {
+        padding: 28px;
+    }
+    
+    .profile-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 28px;
+    }
+    
+    .about-main {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    
+    .button-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .date-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .sub-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .certificate {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 35px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 55px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 55px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 35px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 75px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 35px;
+    }
+    
+    .wholeint {
+        gap: 35px;
+    }
+    
+    .interview-container {
+        margin-top: 75px;
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 75px;
+    }
+    
+    .interview-question {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .interview-answer {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    .AboutMe-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 75px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 75px;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+        width: 350px;
+        align-items: stretch;
+    }
+    
+    .skill-main {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .skill-title {
+        height: 70px;
+        width: 100%;
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .skill-text {
+        font-size: 17px;
+    }
+}
+
+/* iPhone 16 Pro Max (440px) */
+@media (min-width: 431px) and (max-width: 440px) {
+    .profile-scroll-content {
+        padding: 28px;
+    }
+    
+    .profile-title {
+        font-size: 31px;
+        line-height: 41px;
+        margin-bottom: 28px;
+    }
+    
+    .about-main {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    
+    .button-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .date-text {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    
+    .sub-sub {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    
+    .certificate {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 36px;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 56px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 56px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 36px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 76px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 36px;
+    }
+    
+    .wholeint {
+        gap: 36px;
+    }
+    
+    .interview-container {
+        margin-top: 76px;
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 76px;
+    }
+    
+    .interview-question {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    
+    .interview-answer {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    .AboutMe-title {
+        font-size: 31px;
+        line-height: 41px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 76px;
+        margin-bottom: 76px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 76px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 76px;
+    }
+    
+    .upper-skill-main { width: 300px; display: flex !important; flex-direction: column !important; flex-wrap: nowrap !important; gap: 20px; } .skill-main { flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; min-width: 100% !important;
+    }
+    
+    .skill-title {
+        height: 71px;
+    }
+    
+    .skill-icon {
+        width: 61px;
+        height: 61px;
+    }
+    
+    .skill-text {
+        font-size: 18px;
+    }
+}
+
+/* 일반 모바일 (441px ~ 480px) */
+@media (min-width: 441px) and (max-width: 480px) {
+    .profile-scroll-content {
+        padding: 24px;
+    }
+    
+    .profile-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    
+    .about-main {
+        font-size: 16px;
+        line-height: 22px;
+        white-space: normal;
+    }
+    
+    .button-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .about-title {
+        padding: 4px 7px;
+        top: 6px;
+    }
+    
+    .date-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .sub-sub {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .certificate {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    /* Education */
+    .education-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .eduandawards {
+        height: auto;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 32px;
+    }
+    
+    .gnu-title {
+        height: auto;
+        gap: 14px;
+    }
+    
+    .inline-flex-container {
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+    }
+    
+    .majors {
+        gap: 8px;
+    }
+    
+    .date-info {
+        gap: 8px;
+    }
+    
+    .kgitbank-sub {
+        height: auto;
+        gap: 14px;
+    }
+    
+    .kgitbank {
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    /* Career */
+    .career {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 50px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    #CareerContainer {
+        height: auto;
+    }
+    
+    .certificate-text {
+        gap: 8px;
+    }
+    
+    /* Certificate */
+    .certificate1 {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 50px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 32px;
+    }
+    
+    #certificateconatiner {
+        height: auto;
+    }
+    
+    .certificate-text, .certificate-container {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .certificate-container {
+        margin-top: 32px;
+    }
+    
+    .certificate-sub {
+        width: 100%;
+    }
+    
+    /* Awards */
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 70px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 32px;
+    }
+    
+    .upper-sub {
+        gap: 8px;
+    }
+    
+    /* International Activity */
+    #internationalActivity {
+        width: 100%;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    #internationalActivityconatiner {
+        height: auto;
+    }
+    
+    .wholeint {
+        gap: 32px;
+    }
+    
+    /* Interview */
+    .interview-container {
+        margin-top: 70px;
+        padding: 18px;
+        gap: 14px;
+        min-height: auto;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 70px;
+    }
+    
+    .interview-question {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .interview-answer {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    /* Skills */
+    #high-skill {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 70px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 70px;
+    }
+    
+    .skill-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .AboutMe-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 18px;
+        width: 300px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 1 1 100%; width: 100%; max-width: 100%;
+    }
+    
+    .skill-title {
+        height: 65px; width: 100%;
+        padding: 8px 14px;
+    }
+    
+    .skill-icon {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+    
+    .skill-text {
+        font-size: 16px;
+        margin-left: 12px;
+        left: calc(50% + 12px);
+    }
+}
+
+/* 모바일 가로 (481px ~ 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .profile-scroll-content {
+        padding: 28px;
+    }
+    
+    .profile-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 28px;
+    }
+    
+    .about-main {
+        font-size: 17px;
+        line-height: 24px;
+        white-space: normal;
+    }
+    
+    .button-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .about-title {
+        padding: 4px 8px;
+        top: 7px;
+    }
+    
+    .date-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .sub-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .certificate {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    
+    /* Education */
+    .education-container {
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    .eduandawards {
+        height: auto;
+        width: 100%;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 35px;
+        width: 100%;
+    }
+    
+    .gnu-title {
+        height: auto;
+        gap: 16px;
+    }
+    
+    .inline-flex-container {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+    .majors {
+        gap: 10px;
+    }
+    
+    .date-info {
+        gap: 10px;
+    }
+    
+    .kgitbank-sub {
+        height: auto;
+        gap: 16px;
+    }
+    
+    .kgitbank {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    /* Career */
+    .career {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 55px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    #CareerContainer {
+        height: auto;
+    }
+    
+    .certificate-text {
+        gap: 10px;
+    }
+    
+    /* Certificate */
+    .certificate1 {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 55px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        gap: 35px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #certificateconatiner {
+        height: auto;
+    }
+    
+    .certificate-text, .certificate-container {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .certificate-container {
+        margin-top: 35px;
+    }
+    
+    .certificate-sub {
+        width: 100%;
+    }
+    
+    /* Awards */
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 75px;
+    }
+    
+    .AWARDS {
+        width: 100%;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 35px;
+        width: 100%;
+    }
+    
+    .upper-sub {
+        gap: 10px;
+    }
+    
+    /* International Activity */
+    #internationalActivity {
+        width: 100%;
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+    #internationalActivityconatiner {
+        height: auto;
+    }
+    
+    .wholeint {
+        gap: 35px;
+    }
+    
+    /* Interview */
+    .interview-container {
+        margin-top: 75px;
+        padding: 20px;
+        gap: 16px;
+        min-height: auto;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 75px;
+    }
+    
+    .interview-question {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .interview-answer {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    /* Skills */
+    #high-skill {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 75px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 75px;
+    }
+    
+    .skill-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .AboutMe-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 1 1 100%; width: 100%; max-width: 100%;
+    }
+    
+    .skill-title {
+        height: 70px; width: 100%;
+        padding: 8px 12px;
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 8px;
+    }
+    
+    .skill-text {
+        font-size: 16px;
+        margin-left: 10px;
+        left: calc(50% + 10px);
+    }
+}
+
+/* 태블릿 세로 (768px ~ 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .profile-scroll-content {
+        padding: 32px;
+    }
+    
+    .profile-title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    
+    .about-main {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    
+    .button-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .about-title {
+        top: 8px;
+    }
+    
+    .date-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .sub-sub {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .certificate {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .eduandawards {
+        width: 100%;
+    }
+    
+    .gnu {
+        margin-left: 0;
+        gap: 38px;
+    }
+    
+    .gnu-title {
+        height: auto;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 58px;
+    }
+    
+    #CareerContainer {
+        width: 100%;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 58px;
+    }
+    
+    #certificateconatiner {
+        width: 100%;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 38px;
+    }
+    
+    .certificate-text, .certificate-container {
+        width: calc(50% - 19px);
+    }
+    
+    .certificate-container {
+        margin-top: 38px;
+    }
+    
+    .awardsamd, .ineter {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 78px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+        gap: 38px;
+    }
+    
+    .wholeint {
+        gap: 38px;
+    }
+    
+    #internationalActivity {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    
+    .interview-container {
+        margin-top: 78px;
+        padding: 22px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 78px;
+    }
+    
+    .interview-question {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    
+    .interview-answer {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .AboutMe-title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 78px;
+    }
+    
+    .skill-container {
+        width: 100%;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 0 1 auto;
+        width: 500px;
+    }
+    
+    .skill-text {
+        font-size: 19px;
+    }
+    
+    .skill-title {
+        height: 75px;
+    }
+    
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* 태블릿 가로 (1024px ~ 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .profile-scroll-content {
+        padding: 36px;
+    }
+    
+    .profile-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    
+    .about-main {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    
+    .button-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .about-title {
+        top: 9px;
+    }
+    
+    .date-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .sub-sub {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .certificate {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .eduandawards {
+        width: 100%;
+    }
+    
+    .gnu {
+        margin-left: 0;
+    }
+    
+    .career {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 58px;
+    }
+    
+    #CareerContainer {
+        width: 100%;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;
+    }
+    
+    .certificate1 {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 58px;
+    }
+    
+    #certificateconatiner {
+        width: 100%;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;
+    }
+    
+    .ineter {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 78px;
+    }
+
+    .awardsamd{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 230px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;
+    }
+    
+    #internationalActivity {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    
+    .interview-container {
+        margin-top: 78px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 78px;
+    }
+    
+    .interview-question {
+        font-size: 34px;
+        line-height: 50px;
+    }
+    
+    .interview-answer {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .AboutMe-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 78px;
+    }
+    
+    .skill-container {
+        width: 100%;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 0 1 auto;
+        width: 500px;
+    }
+    
+    .skill-text {
+        font-size: 21px;
+    }
+    
+    .skill-title {
+        height: 90px; width: 100%;
+        padding: 12px 20px;
+        justify-content: flex-start;
+    }
+    
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* PC 작은 화면 (1280px ~ 1439px) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .profile-scroll-content {
+        padding: 38px;
+    }
+    
+    .profile-title {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    
+    .about-main {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    
+    .about-title {
+        top: 9px;
+    }
+    
+    .date-text {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    
+    .sub-sub {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    
+    .certificate {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    
+    .education-container {
+        gap: 70px;
+    }
+    
+    .gnu {
+        margin-left: 45px;
+    }
+    
+    .career {
+        gap: 70px;
+        margin-top: 58px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 95px;
+    }
+    
+    .certificate1 {
+        gap: 70px;
+        margin-top: 58px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 38px;
+    }
+    
+    .ineter {
+        gap: 70px;
+        margin-top: 100px;
+    }
+
+    .awardsamd {
+        gap: 70px;
+        margin-top: 370px;
+    }
+    
+    .detail-awards {
+        margin-left: 85px;
+    }
+    
+    #internationalActivity {
+        font-size: 34px;
+        line-height: 50px;
+    }
+    
+    .interview-container {
+        margin-top: 78px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 78px;
+    }
+    
+    .interview-question {
+        font-size: 38px;
+        line-height: 56px;
+    }
+    
+    .interview-answer {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    
+    .AboutMe-title {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    
+    #high-skill {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 78px;
+    }
+    
+    .skill-container {
+        width: 100%;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .skill-main {
+        flex: 0 1 auto;
+        width: 750px;
+    }
+    
+    .skill-text {
+        font-size: 22px;
+    }
+    
+    .skill-title {
+        height: 90px; width: 100%;
+        padding: 12px 20px;
+        justify-content: flex-start;
+    }
+    
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* PC 일반 화면 (1440px ~ 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .profile-scroll-content {
+        padding: 40px;
+    }
+
+    .certificate-text{
+        margin-top: 50px;
+        margin-bottom: -20px;
+    }
+
+    .about-title {
+        top: 10px;
+    }
+    
+    .education-container {
+        gap: 75px;
+    }
+    
+    .gnu {
+        margin-left: 48px;
+    }
+    
+    .career {
+        gap: 75px;
+        margin-top: 58px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 105px;
+    }
+    
+    .certificate1 {
+        gap: 75px;
+        margin-top: 58px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 40px;
+    }
+    
+    .ineter {
+        gap: 75px;
+        margin-top: 78px;
+    }
+
+    .awardsamd {
+        gap: 75px;
+        margin-top: 100px;
+    }
+    
+    .detail-awards {
+        margin-left: 90px;
+    }
+    
+    .interview-container {
+        margin-top: 78px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 78px;
+    }
+    
+    #high-skill {
+        gap: 75px;
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }
+    
+    .upper-skill-container {
+        gap: 75px;
+        margin-top: 78px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 78px;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .skill-main {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+/* 초고해상도 화면 (2560px 이상) */
+@media (min-width: 2560px) {
+    .profile-title {
+        font-size: clamp(40px, 2vw, 60px);
+        line-height: clamp(52px, 2.5vw, 78px);
+    }
+    
+    .about-main {
+        font-size: clamp(24px, 1.2vw, 36px);
+        line-height: clamp(36px, 1.8vw, 54px);
+    }
+    
+    .button-text {
+        font-size: clamp(16px, 0.8vw, 24px);
+        line-height: clamp(24px, 1.2vw, 36px);
+    }
+    
+    .date-text {
+        font-size: clamp(20px, 1vw, 30px);
+        line-height: clamp(30px, 1.5vw, 45px);
+    }
+    
+    .sub-sub {
+        font-size: clamp(20px, 1vw, 30px);
+        line-height: clamp(30px, 1.5vw, 45px);
+    }
+    
+    .subtext, .subtext-sub {
+        font-size: clamp(20px, 1vw, 30px);
+        line-height: clamp(30px, 1.5vw, 45px);
+    }
+    
+    .certificate {
+        font-size: clamp(24px, 1.2vw, 36px);
+        line-height: clamp(36px, 1.8vw, 54px);
+    }
+    
+    .interview-question {
+        font-size: clamp(40px, 2vw, 60px);
+        line-height: clamp(60px, 3vw, 90px);
+    }
+    
+    .interview-answer {
+        font-size: clamp(20px, 1vw, 30px);
+        line-height: clamp(30px, 1.5vw, 45px);
+    }
+    
+    .AboutMe-title {
+        font-size: clamp(40px, 2vw, 60px);
+        line-height: clamp(52px, 2.5vw, 78px);
+    }
+    
+    #internationalActivity {
+        font-size: clamp(35px, 1.8vw, 52px);
+        line-height: clamp(52px, 2.5vw, 78px);
+    }
+    
+    .skill-text {
+        font-size: clamp(24px, 1.2vw, 36px);
+    }
+    
+    .skill-title {
+        height: clamp(80px, 4vw, 120px);
+    }
+    
+    .skill-icon {
+        width: clamp(80px, 4vw, 120px);
+        height: clamp(80px, 4vw, 120px);
+    }
+}
+
+
+/* 1440px 이하 aboutme 글자 배치 수정 */
+@media (max-width: 1439px) {
+    /* Education 섹션 수정 */
+    .gnu-title {
+        height: auto;
+        min-height: auto;
+        gap: 20px;
+    }
+    
+    .aboutMe-title {
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    
+    .about-main {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    .about-title {
+        flex-shrink: 0;
+    }
+    
+    .inline-flex-container {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    
+    .majors {
+        flex: 1 1 auto;
+        min-width: 300px;
+    }
+    
+    .date-info {
+        flex: 0 1 auto;
+        min-width: 200px;
+    }
+    
+    .mainmajor, .submajortitle {
+        margin-bottom: 8px;
+    }
+    
+    .kgitbank {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    
+    .kgitbank-sub {
+        height: auto;
+        min-height: auto;
+        gap: 20px;
+    }
+    
+    .kgcontainer {
+        width: 100%;
+    }
+    
+    .spring {
+        flex: 1 1 auto;
+    }
+    
+    .sub-main {
+        flex-wrap: wrap;
+    }
+    
+    .certificate-text {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .upper-sub {
+        width: 100%;
+    }
+}
+
+
+/* 세로 높이 650px 이하 - Skills 여백 조정 */
+@media (max-height: 650px) {
+    .profile-scroll-content {
+        padding: 20px 20px 30px 20px !important;
+    }
+    
+    .education-container, .career, .certificate1, .awardsamd, .ineter {
+        margin-top: 20px !important;
+        gap: 15px !important;
+    }
+    
+    .gnu {
+        gap: 15px !important;
+    }
+    
+    .detail-awards, .wholeint {
+        gap: 15px !important;
+    }
+    
+    #high-skill {
+        margin-top: 20px !important;
+        margin-bottom: 0 !important;
+        gap: 15px !important;
+    }
+    
+    .upper-skill-container {
+        margin-top: 15px !important;
+        gap: 15px !important;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 0 !important;
+    }
+    
+    .upper-skill-main {
+        gap: 10px !important;
+    }
+    
+    .interview-container {
+        margin-top: 15px !important;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 15px !important;
+    }
+}
+
+
+
+
+
+

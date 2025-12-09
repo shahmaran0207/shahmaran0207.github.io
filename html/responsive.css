@@ -1,0 +1,1430 @@
+/* ========================================
+   초세밀 반응??미디??쿼리
+   ?�제 기기�??�벽 최적??
+   ======================================== */
+
+/* 초소??모바???�로 (320px ~ 360px) - iPhone SE, Galaxy Fold */
+@media (max-width: 360px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 12%; }
+    #developer-container { top: 48%; left: 0; }
+    #back-end { font-size: clamp(55px, 17vw, 70px); }
+    #developer { font-size: clamp(55px, 17vw, 70px); }
+    #new-content { padding: 12px; gap: 16px; }
+    .first-title { flex-direction: column; gap: 6px; }
+    #devloper-text, #jungeun { font-size: clamp(28px, 7vw, 40px); }
+    .third-title, .fourth-title { flex-direction: column; gap: 3px; }
+    .starter-content { font-size: clamp(16px, 3.5vw, 20px); }
+    .starter-content2 { font-size: clamp(18px, 4.5vw, 24px); }
+    #various { font-size: clamp(16px, 3.5vw, 20px); }
+    .updated { margin-left: 12px; margin-bottom: 12px; font-size: 12px; }
+    .scroll-container a span { width: 22px; height: 36px; margin-left: -11px; }
+}
+
+/* ?�형 모바???�로 (361px ~ 375px) - iPhone 12 mini */
+@media (min-width: 361px) and (max-width: 375px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 13%; }
+    #developer-container { top: 47%; left: 0; }
+    #back-end { font-size: clamp(60px, 17vw, 75px); }
+    #developer { font-size: clamp(60px, 17vw, 75px); }
+    #new-content { padding: 14px; gap: 18px; }
+    .first-title { flex-direction: column; gap: 7px; }
+    #devloper-text, #jungeun { font-size: clamp(30px, 7.5vw, 42px); }
+    .third-title, .fourth-title { flex-direction: column; gap: 4px; }
+    .starter-content { font-size: clamp(17px, 3.8vw, 22px); }
+    .starter-content2 { font-size: clamp(19px, 4.8vw, 26px); }
+    #various { font-size: clamp(17px, 3.8vw, 22px); }
+    .updated { margin-left: 14px; margin-bottom: 14px; font-size: 13px; }
+}
+
+/* 중형 모바???�로 (376px ~ 390px) - iPhone 13/14 */
+@media (min-width: 376px) and (max-width: 390px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 14%; }
+    #developer-container { top: 46%; left: 0; }
+    #back-end { font-size: clamp(65px, 17vw, 78px); }
+    #developer { font-size: clamp(65px, 17vw, 78px); }
+    #new-content { padding: 15px; gap: 19px; }
+    .first-title { flex-direction: column; gap: 7px; }
+    #devloper-text, #jungeun { font-size: clamp(32px, 8vw, 44px); }
+    .third-title, .fourth-title { flex-direction: column; gap: 4px; }
+    .starter-content { font-size: clamp(18px, 4vw, 23px); }
+    .starter-content2 { font-size: clamp(20px, 5vw, 27px); }
+    #various { font-size: clamp(18px, 4vw, 23px); }
+    .updated { margin-left: 15px; margin-bottom: 15px; font-size: 13px; }
+}
+/* 
+?�??모바???�로 (391px ~ 414px) - iPhone 14 Plus, Pixel */
+@media (min-width: 391px) and (max-width: 414px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 14.5%; }
+    #developer-container { top: 45.5%; left: 0; }
+    #back-end { font-size: clamp(68px, 17vw, 80px); }
+    #developer { font-size: clamp(68px, 17vw, 80px); }
+    #new-content { padding: 16px; gap: 20px; }
+    .first-title { flex-direction: column; gap: 8px; }
+    #devloper-text, #jungeun { font-size: clamp(34px, 8vw, 46px); }
+    .third-title, .fourth-title { flex-direction: column; gap: 4px; }
+    .starter-content { font-size: clamp(18px, 4vw, 24px); }
+    .starter-content2 { font-size: clamp(20px, 5vw, 28px); }
+    #various { font-size: clamp(18px, 4vw, 24px); }
+    .updated { margin-left: 16px; margin-bottom: 16px; font-size: 14px; }
+}
+
+/* 초�???모바???�로 (415px ~ 480px) - iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 480px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 15%; }
+    #developer-container { top: 45%; left: 0; }
+    #back-end { font-size: clamp(70px, 18vw, 85px); }
+    #developer { font-size: clamp(70px, 18vw, 85px); }
+    #new-content { padding: 16px; gap: 20px; }
+    .first-title { flex-direction: column; gap: 8px; }
+    #devloper-text, #jungeun { font-size: clamp(36px, 8vw, 48px); }
+    .third-title, .fourth-title { flex-direction: column; gap: 4px; }
+    .starter-content { font-size: clamp(18px, 4vw, 24px); }
+    .starter-content2 { font-size: clamp(20px, 5vw, 28px); }
+    #various { font-size: clamp(18px, 4vw, 24px); }
+    .updated { margin-left: 16px; margin-bottom: 16px; font-size: 14px; }
+}
+
+/* ?�형 모바??가�?(481px ~ 568px) - iPhone SE 가�?*/
+@media (min-width: 481px) and (max-width: 568px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 16%; }
+    #developer-container { top: 44%; left: 0; }
+    #back-end { font-size: clamp(75px, 16vw, 95px); }
+    #developer { font-size: clamp(75px, 16vw, 95px); }
+    #new-content { padding: 18px; gap: 22px; }
+    .first-title { flex-direction: row; gap: 12px; }
+    #devloper-text, #jungeun { font-size: clamp(38px, 8.5vw, 52px); }
+    .third-title, .fourth-title { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+    .starter-content { font-size: clamp(19px, 4vw, 26px); }
+    .starter-content2 { font-size: clamp(22px, 5vw, 30px); }
+    #various { font-size: clamp(19px, 4vw, 26px); }
+    .updated { margin-left: 18px; margin-bottom: 18px; font-size: 15px; }
+}
+
+/* 중형 모바??가�?(569px ~ 667px) - iPhone 8 Plus 가�?*/
+@media (min-width: 569px) and (max-width: 667px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 17%; }
+    #developer-container { top: 43%; left: 0; }
+    #back-end { font-size: clamp(85px, 16vw, 105px); }
+    #developer { font-size: clamp(85px, 16vw, 105px); }
+    #new-content { padding: 20px; gap: 24px; }
+    .first-title { flex-direction: row; gap: 14px; }
+    #devloper-text, #jungeun { font-size: clamp(42px, 9vw, 56px); }
+    .third-title, .fourth-title { flex-direction: row; flex-wrap: wrap; gap: 7px; }
+    .starter-content { font-size: clamp(20px, 4vw, 27px); }
+    .starter-content2 { font-size: clamp(24px, 5vw, 31px); }
+    #various { font-size: clamp(20px, 4vw, 27px); }
+    .updated { margin-left: 20px; margin-bottom: 20px; font-size: 16px; }
+}
+
+/* ?�??모바??가�?(668px ~ 767px) - iPhone 14 Pro Max 가�?*/
+@media (min-width: 668px) and (max-width: 767px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 18%; }
+    #developer-container { top: 42%; left: 0; }
+    #back-end { font-size: clamp(95px, 16vw, 115px); }
+    #developer { font-size: clamp(95px, 16vw, 115px); }
+    #new-content { padding: 20px; gap: 24px; }
+    .first-title { flex-direction: row; gap: 16px; }
+    #devloper-text, #jungeun { font-size: clamp(45px, 9vw, 58px); }
+    .third-title, .fourth-title { flex-direction: row; flex-wrap: wrap; gap: 8px; }
+    .starter-content { font-size: clamp(21px, 4vw, 28px); }
+    .starter-content2 { font-size: clamp(25px, 5vw, 32px); }
+    #various { font-size: clamp(21px, 4vw, 28px); }
+    .updated { margin-left: 20px; margin-bottom: 20px; font-size: 16px; }
+}
+/* 
+?�형 ?�블�??�로 (768px ~ 810px) - iPad mini */
+@media (min-width: 768px) and (max-width: 810px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 19%; }
+    #developer-container { top: 41%; left: 0; }
+    #back-end { font-size: clamp(110px, 14vw, 135px); }
+    #developer { font-size: clamp(110px, 14vw, 135px); }
+    #new-content { padding: 25px; gap: 28px; }
+    .first-title { gap: 18px; }
+    #devloper-text, #jungeun { font-size: clamp(55px, 9.5vw, 70px); }
+    .third-title, .fourth-title { gap: 9px; }
+    .starter-content { font-size: clamp(26px, 4.5vw, 33px); }
+    .starter-content2 { font-size: clamp(30px, 5.5vw, 38px); }
+    #various { font-size: clamp(26px, 4.5vw, 33px); }
+    .updated { margin-left: 28px; margin-bottom: 28px; font-size: 17px; }
+}
+
+/* 중형 ?�블�??�로 (811px ~ 834px) - iPad Air */
+@media (min-width: 811px) and (max-width: 834px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 19.5%; }
+    #developer-container { top: 40.5%; left: 0; }
+    #back-end { font-size: clamp(120px, 14vw, 145px); }
+    #developer { font-size: clamp(120px, 14vw, 145px); }
+    #new-content { padding: 28px; gap: 29px; }
+    .first-title { gap: 19px; }
+    #devloper-text, #jungeun { font-size: clamp(58px, 9.5vw, 73px); }
+    .third-title, .fourth-title { gap: 9px; }
+    .starter-content { font-size: clamp(27px, 4.8vw, 34px); }
+    .starter-content2 { font-size: clamp(31px, 5.8vw, 39px); }
+    #various { font-size: clamp(27px, 4.8vw, 34px); }
+    .updated { margin-left: 30px; margin-bottom: 30px; font-size: 18px; }
+}
+
+/* ?�???�블�??�로 (835px ~ 1023px) - iPad Pro 11" */
+@media (min-width: 835px) and (max-width: 1023px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 20%; }
+    #developer-container { top: 40%; left: 0; }
+    #back-end { font-size: clamp(130px, 14vw, 165px); }
+    #developer { font-size: clamp(130px, 14vw, 165px); }
+    #new-content { padding: 30px; gap: 30px; }
+    .first-title { gap: 20px; }
+    #devloper-text, #jungeun { font-size: clamp(62px, 10vw, 78px); }
+    .third-title, .fourth-title { gap: 10px; }
+    .starter-content { font-size: clamp(28px, 5vw, 36px); }
+    .starter-content2 { font-size: clamp(32px, 6vw, 42px); }
+    #various { font-size: clamp(28px, 5vw, 36px); }
+    .updated { margin-left: 30px; margin-bottom: 30px; font-size: 18px; }
+}
+
+/* ?�형 ?�블�?가�?(1024px ~ 1112px) - iPad mini 가�?*/
+@media (min-width: 1024px) and (max-width: 1112px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 21%; }
+    #developer-container { top: 39%; left: 0; }
+    #back-end { font-size: clamp(160px, 13vw, 190px); }
+    #developer { font-size: clamp(160px, 13vw, 190px); }
+    #new-content { padding: 35px; gap: 33px; }
+    .first-title { gap: 22px; }
+    #devloper-text, #jungeun { font-size: clamp(68px, 9vw, 84px); }
+    .third-title, .fourth-title { gap: 11px; }
+    .starter-content { font-size: clamp(30px, 4vw, 37px); }
+    .starter-content2 { font-size: clamp(34px, 5vw, 43px); }
+    #various { font-size: clamp(30px, 4vw, 37px); }
+    .updated { margin-left: 35px; margin-bottom: 33px; font-size: 19px; }
+}
+
+/* 중형 ?�블�?가�?(1113px ~ 1194px) - iPad Air 가�?*/
+@media (min-width: 1113px) and (max-width: 1194px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 21.5%; }
+    #developer-container { top: 38.5%; left: 0; }
+    #back-end { font-size: clamp(175px, 12.5vw, 205px); }
+    #developer { font-size: clamp(175px, 12.5vw, 205px); }
+    #new-content { padding: 38px; gap: 35px; }
+    .first-title { gap: 23px; }
+    #devloper-text, #jungeun { font-size: clamp(72px, 9vw, 88px); }
+    .third-title, .fourth-title { gap: 11px; }
+    .starter-content { font-size: clamp(31px, 4vw, 38px); }
+    .starter-content2 { font-size: clamp(35px, 5vw, 44px); }
+    #various { font-size: clamp(31px, 4vw, 38px); }
+    .updated { margin-left: 38px; margin-bottom: 35px; font-size: 20px; }
+}
+
+/* ?�???�블�?가�?(1195px ~ 1279px) - iPad Pro 11" 가�?*/
+@media (min-width: 1195px) and (max-width: 1279px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 22%; }
+    #developer-container { top: 38%; left: 0; }
+    #back-end { font-size: clamp(185px, 12vw, 215px); }
+    #developer { font-size: clamp(185px, 12vw, 215px); }
+    #new-content { padding: 40px; gap: 35px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(75px, 9vw, 90px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(32px, 4vw, 38px); }
+    .starter-content2 { font-size: clamp(36px, 5vw, 44px); }
+    #various { font-size: clamp(32px, 4vw, 38px); }
+    .updated { margin-left: 40px; margin-bottom: 35px; font-size: 20px; }
+}
+/* 
+?�형 ?�트�?(1280px ~ 1365px) - 13" MacBook */
+@media (min-width: 1280px) and (max-width: 1365px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(210px, 10.5vw, 245px); }
+    #developer { font-size: clamp(210px, 10.5vw, 245px); }
+    #new-content { padding: 40px; gap: 38px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(78px, 8.5vw, 95px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(33px, 3.2vw, 39px); }
+    .starter-content2 { font-size: clamp(38px, 4vw, 46px); }
+    #various { font-size: clamp(33px, 3.2vw, 39px); }
+    .updated { margin-left: 55px; margin-bottom: 38px; font-size: 21px; }
+}
+
+/* 중형 ?�트�?(1366px ~ 1439px) - 14" ?�트�?*/
+@media (min-width: 1366px) and (max-width: 1439px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(225px, 10vw, 255px); }
+    #developer { font-size: clamp(225px, 10vw, 255px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(82px, 8vw, 98px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(34px, 3vw, 40px); }
+    .starter-content2 { font-size: clamp(40px, 4vw, 48px); }
+    #various { font-size: clamp(34px, 3vw, 40px); }
+    .updated { margin-left: 65px; margin-bottom: 40px; font-size: 22px; }
+}
+
+/* ?��? ?�스?�톱 (1440px ~ 1535px) - 15" ?�트�? 24" 모니??*/
+@media (min-width: 1440px) and (max-width: 1535px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(245px, 9vw, 275px); }
+    #developer { font-size: clamp(245px, 9vw, 275px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(88px, 7.5vw, 102px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(36px, 2.8vw, 40px); }
+    .starter-content2 { font-size: clamp(42px, 3.5vw, 48px); }
+    #various { font-size: clamp(36px, 2.8vw, 40px); }
+    .updated { margin-left: 75px; margin-bottom: 40px; font-size: 23px; }
+}
+
+/* ?�???�스?�톱 (1536px ~ 1679px) - 16" MacBook Pro */
+@media (min-width: 1536px) and (max-width: 1679px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(260px, 8.5vw, 290px); }
+    #developer { font-size: clamp(260px, 8.5vw, 290px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(92px, 7vw, 104px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(37px, 2.6vw, 40px); }
+    .starter-content2 { font-size: clamp(44px, 3.2vw, 48px); }
+    #various { font-size: clamp(37px, 2.6vw, 40px); }
+    .updated { margin-left: 80px; margin-bottom: 40px; font-size: 24px; }
+}
+
+/* 초�????�스?�톱 (1680px ~ 1919px) - 27" iMac */
+@media (min-width: 1680px) and (max-width: 1919px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(275px, 8vw, 305px); }
+    #developer { font-size: clamp(275px, 8vw, 305px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(96px, 6.5vw, 104px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(38px, 2.4vw, 40px); }
+    .starter-content2 { font-size: clamp(46px, 3vw, 48px); }
+    #various { font-size: clamp(38px, 2.4vw, 40px); }
+    .updated { margin-left: 85px; margin-bottom: 42px; font-size: 25px; }
+    .scroll-container a span { width: 32px; height: 55px; margin-left: -16px; }
+}
+
+/* Full HD (1920px ~ 2047px) - 27" 모니??*/
+@media (min-width: 1920px) and (max-width: 2047px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(295px, 7vw, 325px); }
+    #developer { font-size: clamp(295px, 7vw, 325px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(100px, 6vw, 110px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(38px, 2.2vw, 42px); }
+    .starter-content2 { font-size: clamp(46px, 2.8vw, 50px); }
+    #various { font-size: clamp(38px, 2.2vw, 42px); }
+    .updated { margin-left: 95px; margin-bottom: 45px; font-size: 26px; }
+    .scroll-container a span { width: 34px; height: 58px; margin-left: -17px; }
+}
+/* 2K ?�상
+??(2048px ~ 2559px) - 32" 모니??*/
+@media (min-width: 2048px) and (max-width: 2559px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(320px, 6.5vw, 360px); }
+    #developer { font-size: clamp(320px, 6.5vw, 360px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(105px, 5.5vw, 118px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(40px, 2vw, 44px); }
+    .starter-content2 { font-size: clamp(48px, 2.5vw, 52px); }
+    #various { font-size: clamp(40px, 2vw, 44px); }
+    .updated { margin-left: 105px; margin-bottom: 50px; font-size: 28px; }
+    .scroll-container a span { width: 35px; height: 60px; margin-left: -17px; }
+}
+
+/* 4K ?�상??(2560px ~ 3439px) - 4K 모니??*/
+@media (min-width: 2560px) and (max-width: 3439px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(380px, 5.5vw, 450px); }
+    #developer { font-size: clamp(380px, 5.5vw, 450px); }
+    #new-content { padding: 40px; gap: 40px; }
+    .first-title { gap: 24px; }
+    #devloper-text, #jungeun { font-size: clamp(115px, 4.8vw, 140px); }
+    .third-title, .fourth-title { gap: 12px; }
+    .starter-content { font-size: clamp(42px, 1.8vw, 55px); }
+    .starter-content2 { font-size: clamp(50px, 2.2vw, 65px); }
+    #various { font-size: clamp(42px, 1.8vw, 55px); }
+    .updated { margin-left: 115px; margin-bottom: 55px; font-size: 30px; }
+    .scroll-container a span { width: 38px; height: 65px; margin-left: -19px; }
+}
+
+/* 5K ?�상??(3440px ~ 5119px) - 5K iMac, 초광?�??모니??*/
+@media (min-width: 3440px) and (max-width: 5119px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(450px, 5vw, 550px); }
+    #developer { font-size: clamp(450px, 5vw, 550px); }
+    #new-content { padding: 50px; gap: 45px; }
+    .first-title { gap: 28px; }
+    #devloper-text, #jungeun { font-size: clamp(140px, 4.2vw, 170px); }
+    .third-title, .fourth-title { gap: 14px; }
+    .starter-content { font-size: clamp(55px, 1.6vw, 70px); }
+    .starter-content2 { font-size: clamp(65px, 2vw, 80px); }
+    #various { font-size: clamp(55px, 1.6vw, 70px); }
+    .updated { margin-left: 130px; margin-bottom: 65px; font-size: 35px; }
+    .scroll-container a span { width: 42px; height: 72px; margin-left: -21px; }
+}
+
+/* 8K ?�상??(5120px ?�상) - 8K 모니?? 초고?�상??*/
+@media (min-width: 5120px) {
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #developer-container { top: 490px; left: 0; }
+    #back-end { font-size: clamp(550px, 4.5vw, 700px); }
+    #developer { font-size: clamp(550px, 4.5vw, 700px); }
+    #new-content { padding: 60px; gap: 50px; }
+    .first-title { gap: 32px; }
+    #devloper-text, #jungeun { font-size: clamp(170px, 3.8vw, 220px); }
+    .third-title, .fourth-title { gap: 16px; }
+    .starter-content { font-size: clamp(70px, 1.4vw, 90px); }
+    .starter-content2 { font-size: clamp(80px, 1.8vw, 105px); }
+    #various { font-size: clamp(70px, 1.4vw, 90px); }
+    .updated { margin-left: 150px; margin-bottom: 75px; font-size: 40px; }
+    .scroll-container a span { width: 48px; height: 82px; margin-left: -24px; }
+}
+
+
+/* 고정 아이콘 반응형 */
+/* Galaxy S 시리즈 (360px) */
+@media (max-width: 360px) {
+    #fixed-icons {
+        bottom: 12px;
+        right: 8px;
+        gap: 9px;
+    }
+    
+    #fixed-icons a {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        min-height: 46px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 23px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 11px;
+        padding: 7px 11px;
+        margin-right: 11px;
+    }
+}
+
+/* iPhone SE (375px) */
+@media (min-width: 361px) and (max-width: 375px) {
+    #fixed-icons {
+        bottom: 13px;
+        right: 9px;
+        gap: 9px;
+    }
+    
+    #fixed-icons a {
+        width: 47px;
+        height: 47px;
+        min-width: 47px;
+        min-height: 47px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 23px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 11px;
+        padding: 7px 11px;
+        margin-right: 11px;
+    }
+}
+
+/* iPhone 12/13 (390px) */
+@media (min-width: 376px) and (max-width: 390px) {
+    #fixed-icons {
+        bottom: 14px;
+        right: 9px;
+        gap: 10px;
+    }
+    
+    #fixed-icons a {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 24px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 12px;
+    }
+}
+
+/* iPhone 15/Pixel (393px) */
+@media (min-width: 391px) and (max-width: 393px) {
+    #fixed-icons {
+        bottom: 14px;
+        right: 9px;
+        gap: 10px;
+    }
+    
+    #fixed-icons a {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 24px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 12px;
+    }
+}
+
+/* Galaxy Ultra/Pixel Pro (412px) */
+@media (min-width: 394px) and (max-width: 412px) {
+    #fixed-icons {
+        bottom: 15px;
+        right: 10px;
+        gap: 10px;
+    }
+    
+    #fixed-icons a {
+        width: 49px;
+        height: 49px;
+        min-width: 49px;
+        min-height: 49px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 24px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 12px;
+    }
+}
+
+/* iPhone Pro Max (428px ~ 430px) */
+@media (min-width: 413px) and (max-width: 430px) {
+    #fixed-icons {
+        bottom: 16px;
+        right: 10px;
+        gap: 11px;
+    }
+    
+    #fixed-icons a {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 25px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 12px;
+    }
+}
+
+/* iPhone 16 Pro Max (440px) */
+@media (min-width: 431px) and (max-width: 440px) {
+    #fixed-icons {
+        bottom: 16px;
+        right: 11px;
+        gap: 11px;
+    }
+    
+    #fixed-icons a {
+        width: 51px;
+        height: 51px;
+        min-width: 51px;
+        min-height: 51px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 25px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 12px;
+    }
+}
+
+/* 일반 모바일 (441px ~ 480px) */
+@media (min-width: 441px) and (max-width: 480px) {
+    #fixed-icons {
+        bottom: 15px;
+        right: 10px;
+        gap: 10px;
+    }
+    
+    #fixed-icons a {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 24px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    #fixed-icons {
+        bottom: 18px;
+        right: 12px;
+        gap: 12px;
+    }
+    
+    .profile-layout {
+        margin-left: 20px;
+        width: 440px;
+        min-height: 1300px;
+    }
+    
+    #fixed-icons a {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+        min-height: 54px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 768px) {
+    #fixed-icons {
+        bottom: 18px;
+        right: 18px;
+        gap: 12px;
+    }
+    
+    #fixed-icons a {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        min-height: 56px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #fixed-icons {
+        bottom: 25px;
+        right: 25px;
+        gap: 18px;
+    }
+    
+    #fixed-icons a {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+        min-height: 72px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 36px;
+    }
+}
+
+/* =
+=======================================
+   프로필 섹션 반응형
+   ======================================== */
+
+/* 모바일 세로 (768px 이하) - 세로 배치 */
+@media (max-width: 768px) {
+    .profile-layout {
+        flex-direction: column;
+        gap: clamp(30px, 6vw, 40px);
+    }
+    
+    .profile-left {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .profile-name-ko {
+        font-size: clamp(40px, 10vw, 56px);
+    }
+    
+    .profile-name-en {
+        font-size: clamp(32px, 8vw, 44px);
+    }
+    
+    .profile-info-text {
+        font-size: clamp(16px, 4vw, 20px);
+    }
+    
+    .profile-right {
+        width: 100%;
+        min-height: 300px;
+    }
+}
+
+/* 태블릿 세로 (769px ~ 1023px) - 세로 배치 유지 */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .profile-layout {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .profile-left {
+        max-width: 600px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-name-box {
+        align-items: center;
+    }
+    
+    .profile-info-list {
+        align-items: center;
+    }
+    
+    .profile-info-item {
+        justify-content: center;
+    }
+    
+    .profile-right {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+/* 태블릿 가로 & 작은 데스크톱 (1024px ~ 1279px) - 가로 배치 시작 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .profile-layout {
+        flex-direction: row;
+        gap: 60px;
+    }
+    
+    .profile-left {
+        max-width: 350px;
+    }
+}
+
+/* 데스크톱 (1280px 이상) - 가로 배치 */
+@media (min-width: 1280px) {
+    .profile-layout {
+        flex-direction: row;
+        gap: clamp(80px, 8vw, 104px);
+    }
+    
+    .profile-left {
+        max-width: 400px;
+    }
+}
+
+/* ========================================
+   세로 높이 반응형
+   ======================================== */
+
+/* 세로 높이 560px 이하 */
+@media (max-height: 560px) {
+    #fixed-icons {
+        bottom: 10px !important;
+        right: 8px !important;
+        gap: 8px !important;
+    }
+    
+    #fixed-icons a {
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+        padding: 10px !important;
+    }
+    
+    #fixed-icons a i {
+        font-size: 22px !important;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 11px !important;
+        padding: 6px 10px !important;
+        margin-right: 10px !important;
+    }
+    
+    /* 프로필 섹션 조정 */
+    .profile-layout {
+        padding: 15px !important;
+        gap: 20px !important;
+    }
+    
+    .profile-name-ko {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+    }
+    
+    .profile-name-en {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+    }
+    
+    .profile-info-item {
+        padding: 8px 0 !important;
+    }
+    
+    .profile-info-text {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+}
+
+/* 세로 높이 480px 이하 */
+@media (max-height: 480px) {
+    #fixed-icons {
+        bottom: 8px !important;
+        right: 6px !important;
+        gap: 6px !important;
+    }
+    
+    #fixed-icons a {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
+        padding: 8px !important;
+    }
+    
+    #fixed-icons a i {
+        font-size: 20px !important;
+    }
+    
+    .profile-layout {
+        padding: 10px !important;
+        gap: 15px !important;
+    }
+    
+    .profile-name-ko {
+        font-size: 28px !important;
+    }
+    
+    .profile-name-en {
+        font-size: 22px !important;
+    }
+    
+    .profile-info-text {
+        font-size: 13px !important;
+    }
+}
+
+/* 세로 높이 400px 이하 */
+@media (max-height: 400px) {
+    #fixed-icons {
+        bottom: 6px !important;
+        right: 5px !important;
+        gap: 5px !important;
+    }
+    
+    #fixed-icons a {
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px !important;
+        min-height: 36px !important;
+        padding: 6px !important;
+    }
+    
+    #fixed-icons a i {
+        font-size: 18px !important;
+    }
+    
+    .profile-name-ko {
+        font-size: 24px !important;
+    }
+    
+    .profile-name-en {
+        font-size: 20px !important;
+    }
+}
+
+
+/* ========================================
+   Starter 페이지 - 삼성/애플 기기별 최적화
+   ======================================== */
+
+/* Galaxy S 시리즈 (360px) */
+@media (max-width: 360px) {
+    #developer-container {
+        top: 420px;
+    }
+    
+    #back-end-container {
+        top: 150px;
+        left: 5%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(60px, 18vw, 280px);
+    }
+    
+    #new-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 30px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(36px, 10vw, 80px);
+        line-height: 1.3;
+    }
+    
+    .starter-content {
+        font-size: clamp(18px, 5vw, 32px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(22px, 6vw, 38px);
+    }
+    
+    #various {
+        font-size: clamp(18px, 5vw, 32px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 8px;
+    }
+    
+    .updated {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        left: 5px;
+        bottom: 5px;
+        font-size: clamp(13px, 2.5vw, 18px);
+    }
+    
+    .scroll-container a span {
+        width: 24px;
+        height: 40px;
+        margin-left: -12px;
+    }
+}
+
+/* iPhone SE (375px) */
+@media (min-width: 361px) and (max-width: 375px) {
+    #developer-container {
+        top: 440px;
+    }
+    
+    #back-end-container {
+        top: 160px;
+        left: 6%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(65px, 18.5vw, 290px);
+    }
+    
+    #new-content {
+        padding-left: 22px;
+        padding-right: 22px;
+        gap: 32px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(38px, 10.5vw, 84px);
+        line-height: 1.35;
+    }
+    
+    .starter-content {
+        font-size: clamp(19px, 5.2vw, 33px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(23px, 6.2vw, 40px);
+    }
+    
+    #various {
+        font-size: clamp(19px, 5.2vw, 33px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 9px;
+    }
+    
+    .updated {
+        margin-left: 25px;
+        margin-bottom: 22px;
+        left: 6px;
+        bottom: 6px;
+        font-size: clamp(13.5px, 2.6vw, 19px);
+    }
+    
+    .scroll-container a span {
+        width: 25px;
+        height: 42px;
+        margin-left: -12.5px;
+    }
+}
+
+/* iPhone 12/13 (390px) */
+@media (min-width: 376px) and (max-width: 390px) {
+    #developer-container {
+        top: 455px;
+    }
+    
+    #back-end-container {
+        top: 165px;
+        left: 7%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(68px, 19vw, 300px);
+    }
+    
+    #new-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 34px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(40px, 11vw, 88px);
+        line-height: 1.38;
+    }
+    
+    .starter-content {
+        font-size: clamp(20px, 5.4vw, 34px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(24px, 6.4vw, 42px);
+    }
+    
+    #various {
+        font-size: clamp(20px, 5.4vw, 34px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 10px;
+    }
+    
+    .updated {
+        margin-left: 30px;
+        margin-bottom: 24px;
+        left: 7px;
+        bottom: 7px;
+        font-size: clamp(14px, 2.7vw, 20px);
+    }
+    
+    .scroll-container a span {
+        width: 26px;
+        height: 44px;
+        margin-left: -13px;
+    }
+}
+
+/* iPhone 15/Pixel (393px) */
+@media (min-width: 391px) and (max-width: 393px) {
+    #developer-container {
+        top: 460px;
+    }
+    
+    #back-end-container {
+        top: 167px;
+        left: 7%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(69px, 19vw, 302px);
+    }
+    
+    #new-content {
+        padding-left: 25px;
+        padding-right: 25px;
+        gap: 35px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(41px, 11vw, 90px);
+        line-height: 1.4;
+    }
+    
+    .starter-content {
+        font-size: clamp(20px, 5.5vw, 35px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(24px, 6.5vw, 43px);
+    }
+    
+    #various {
+        font-size: clamp(20px, 5.5vw, 35px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 10px;
+    }
+    
+    .updated {
+        margin-left: 32px;
+        margin-bottom: 25px;
+        left: 7px;
+        bottom: 7px;
+        font-size: clamp(14px, 2.8vw, 20px);
+    }
+    
+    .scroll-container a span {
+        width: 26px;
+        height: 44px;
+        margin-left: -13px;
+    }
+}
+
+/* Galaxy Ultra/Pixel Pro (412px) */
+@media (min-width: 394px) and (max-width: 412px) {
+    #developer-container {
+        top: 470px;
+    }
+    
+    #back-end-container {
+        top: 172px;
+        left: 8%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(72px, 19.5vw, 310px);
+    }
+    
+    #new-content {
+        padding-left: 28px;
+        padding-right: 28px;
+        gap: 36px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(43px, 11.5vw, 94px);
+        line-height: 1.42;
+    }
+    
+    .starter-content {
+        font-size: clamp(21px, 5.6vw, 36px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(25px, 6.6vw, 44px);
+    }
+    
+    #various {
+        font-size: clamp(21px, 5.6vw, 36px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 11px;
+    }
+    
+    .updated {
+        margin-left: 35px;
+        margin-bottom: 27px;
+        left: 8px;
+        bottom: 8px;
+        font-size: clamp(14.5px, 2.9vw, 21px);
+    }
+    
+    .scroll-container a span {
+        width: 27px;
+        height: 46px;
+        margin-left: -13.5px;
+    }
+}
+
+/* iPhone Pro Max (428px ~ 430px) */
+@media (min-width: 413px) and (max-width: 430px) {
+    #developer-container {
+        top: 520px;
+    }
+    
+    #back-end-container {
+        top: 200px;
+        left: 8.5%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(70px, 18vw, 300px);
+    }
+    
+    #new-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 35px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(42px, 11vw, 92px);
+        line-height: 1.4;
+    }
+    
+    .starter-content {
+        font-size: clamp(21px, 5.5vw, 36px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(25px, 6.5vw, 44px);
+    }
+    
+    #various {
+        font-size: clamp(21px, 5.5vw, 36px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 11px;
+    }
+    
+    .updated {
+        margin-left: 40px;
+        margin-bottom: 28px;
+        left: 8px;
+        bottom: 8px;
+        font-size: clamp(15px, 2.95vw, 22px);
+    }
+    
+    .scroll-container a span {
+        width: 28px;
+        height: 47px;
+        margin-left: -14px;
+    }
+}
+
+/* iPhone 16 Pro Max (440px) */
+@media (min-width: 431px) and (max-width: 440px) {
+    #developer-container {
+        top: 485px;
+    }
+    
+    #back-end-container {
+        top: 180px;
+        left: 9%;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(76px, 20vw, 325px);
+    }
+    
+    #new-content {
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 38px;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(45px, 12vw, 98px);
+        line-height: 1.45;
+    }
+    
+    .starter-content {
+        font-size: clamp(22px, 5.9vw, 38px);
+    }
+    
+    .starter-content2 {
+        font-size: clamp(26px, 6.9vw, 46px);
+    }
+    
+    #various {
+        font-size: clamp(22px, 5.9vw, 38px);
+    }
+    
+    .third-title, .fourth-title {
+        gap: 12px;
+    }
+    
+    .updated {
+        margin-left: 42px;
+        margin-bottom: 30px;
+        left: 9px;
+        bottom: 9px;
+        font-size: clamp(15px, 3vw, 22px);
+    }
+    
+    .scroll-container a span {
+        width: 28px;
+        height: 48px;
+        margin-left: -14px;
+    }
+}
+
+/* 일반 모바일 (441px ~ 600px) */
+@media (min-width: 441px) and (max-width: 600px) {
+    #developer-container {
+        top: 490px;
+    }
+    
+    #back-end-container {
+        top: 184px;
+        left: 10%;
+    }
+    
+    #new-content {
+        padding-left: 35px;
+        padding-right: 35px;
+        gap: 38px;
+    }
+    
+    .third-title, .fourth-title {
+        gap: 12px;
+    }
+    
+    .updated {
+        margin-left: 50px;
+        margin-bottom: 32px;
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+/* 세로 높이별 Starter 페이지 최적화 */
+
+/* iPhone SE 세로 (667px) */
+@media (max-height: 667px) {
+    #developer-container {
+        top: 380px !important;
+    }
+    
+    #back-end-container {
+        top: 140px !important;
+    }
+    
+    #developer, #back-end {
+        font-size: clamp(60px, 18vw, 280px) !important;
+    }
+    
+    #new-content {
+        gap: 28px !important;
+    }
+    
+    #devloper-text, #jungeun {
+        font-size: clamp(38px, 10vw, 85px) !important;
+    }
+    
+    .starter-content {
+        font-size: clamp(19px, 5vw, 33px) !important;
+    }
+    
+    .starter-content2 {
+        font-size: clamp(23px, 6vw, 40px) !important;
+    }
+    
+    .scroll-container a span {
+        bottom: 3% !important;
+    }
+}
+
+/* Galaxy S 시리즈 세로 (780px ~ 800px) */
+@media (min-height: 780px) and (max-height: 800px) {
+    #developer-container {
+        top: 450px !important;
+    }
+    
+    #back-end-container {
+        top: 170px !important;
+    }
+}
+
+/* iPhone 12/13 세로 (844px) */
+@media (min-height: 844px) and (max-height: 844px) {
+    #developer-container {
+        top: 470px !important;
+    }
+    
+    #back-end-container {
+        top: 175px !important;
+    }
+}
+
+/* iPhone 15 세로 (852px) */
+@media (min-height: 852px) and (max-height: 852px) {
+    #developer-container {
+        top: 475px !important;
+    }
+    
+    #back-end-container {
+        top: 177px !important;
+    }
+}
+
+/* Galaxy Ultra/Pixel Pro 세로 (915px) */
+@media (min-height: 915px) and (max-height: 915px) {
+    #developer-container {
+        top: 495px !important;
+    }
+    
+    #back-end-container {
+        top: 182px !important;
+    }
+}
+
+/* iPhone 13 Pro Max 세로 (926px) */
+@media (min-height: 926px) and (max-height: 926px) {
+    #developer-container {
+        top: 500px !important;
+    }
+    
+    #back-end-container {
+        top: 184px !important;
+    }
+}
+
+/* iPhone 14/15 Pro Max 세로 (932px) */
+@media (min-height: 932px) and (max-height: 932px) {
+    #developer-container {
+        top: 502px !important;
+    }
+    
+    #back-end-container {
+        top: 185px !important;
+    }
+}
+
+/* iPhone 16 Pro Max 세로 (956px) */
+@media (min-height: 956px) and (max-height: 956px) {
+    #developer-container {
+        top: 510px !important;
+    }
+    
+    #back-end-container {
+        top: 188px !important;
+    }
+}
