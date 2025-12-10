@@ -645,19 +645,36 @@
     
     .profile-wrapper {
         margin-left: -60px;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    
+    .profile-layout {
+        gap: 150px;
+    }
+    
+    .profile-left {
+        flex: 0 0 500px;
+        min-width: 500px;
     }
     
     .profile-title-fixed {
-        font-size: clamp(80px, 4vw, 120px);
+        font-size: 100px;
+        line-height: 100px;
         margin-bottom: 80px;
+        white-space: nowrap;
     }
     
     .profile-name-ko {
-        font-size: clamp(64px, 3vw, 96px);
+        font-size: 80px;
+        line-height: 80px;
+        white-space: nowrap;
     }
     
     .profile-name-en {
-        font-size: clamp(48px, 2.5vw, 72px);
+        font-size: 60px;
+        line-height: 60px;
+        white-space: nowrap;
     }
     
     .profile-name-box {
@@ -665,11 +682,27 @@
     }
     
     .profile-info-text {
-        font-size: clamp(24px, 1.5vw, 32px);
+        font-size: 28px;
+        line-height: 28px;
     }
     
     .profile-updated {
-        font-size: clamp(24px, 1.5vw, 32px);
+        font-size: 28px;
+        line-height: 28px;
+    }
+    
+    .profile-right {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: #232323 !important;
+    }
+    
+    .profile-scroll-content {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: #232323 !important;
     }
 }
 

@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
 html {
@@ -741,42 +743,107 @@ body {
 
 /* 초고해상도 화면 (2560px 이상) */
 @media (min-width: 2560px) {
+
+    * {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    body {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .container {
+        border: none !important;
+        outline: none !important;
+    }
+    
     #back-end {
         font-size: clamp(400px, 5vw, 500px);
+        border: none !important;
+        outline: none !important;
     }
     
     #developer {
         font-size: clamp(400px, 5vw, 500px);
+        border: none !important;
+        outline: none !important;
     }
     
     #devloper-text,
     #jungeun {
         font-size: clamp(120px, 4vw, 150px);
+        border: none !important;
+        outline: none !important;
     }
     
     .starter-content {
         font-size: clamp(45px, 1.8vw, 60px);
+        border: none !important;
+        outline: none !important;
     }
     
     .starter-content2 {
         font-size: clamp(55px, 2.2vw, 70px);
+        border: none !important;
+        outline: none !important;
     }
     
     #various {
         font-size: clamp(45px, 1.8vw, 60px);
+        border: none !important;
+        outline: none !important;
     }
     
     .updated {
         margin-left: 120px;
         margin-bottom: 60px;
         font-size: 32px;
+        border: none !important;
+        outline: none !important;
+    }
+    
+    #new-content {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    #profile-section {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .profile-wrapper {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .profile-layout {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .profile-left {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .profile-right {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .profile-scroll-content {
+        border: none !important;
+        outline: none !important;
+    }
+
+    .opic{
+        margin-top: 35px;
     }
 }
 
-/
-* ========================================
-   프로필 섹션
-   ======================================== */
 
 #profile-section {
     width: 100%;
