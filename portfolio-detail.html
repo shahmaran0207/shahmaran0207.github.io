@@ -1,0 +1,2163 @@
+<script>
+    function toggleAccordion(element) {
+        const parent = element.parentElement;
+
+        parent.classList.toggle("active");
+    }
+</script>
+
+<!-- 포트폴리오 detail  - 졸업작품 -->
+<div id="modal1" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div class="modal-inline">
+            <div class="modal-flex">
+                <div class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/final.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Money For Travel - 여행경비 예측 사이트</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p">
+                        졸업작품 목적으로 시도하였던 여행경비 예측 사이트를 국비지원 과정에서 EC2, RDS를 통해 배포까지 성공한 사이트입니다.
+                        <br>데이터는 한국관광데이터랩의 데이터를 사용하였으며 데이터가 5년치로 한정되어 있어 비교적 정확도는 부족합니다.<br>
+                        예측 자체는 파이썬으로 하였으며, 사이트는 Spring 으로 제작하였습니다.
+                    </div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2023.02. ~ 2023.11.</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(20%), 전처리(20%), 예측(20%), 사이트 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">선택에 따른 여행경비 예측</div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">1. RDS 연결 방법: application.yml에 RDS를 위한 설정을 어떻게 적어야하는지<br> 명확히 이해하였습니다.<br><br>
+                                    2. DOCKER 빌드 및 실행 방법: Docker 이미지 파일 빌드 및 컨테이너 빌드를 위한<br> 명령어 및 EC2에서 어떻게 사용해야 하는지 명확히 이해하였습니다.</div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">프로젝트 진행 중, 크게 두가지 문제점을 겪었습니다.<br><br>
+                                    1. 개발에 필요한 실질적인 능력 부족<br>• 프로젝트 처음 진행 당시 개발에 대한 아무런 지식이 없었기에 예측까지는 성공하였으나<br> 사이트를 완성하지 못했습니다.<br>
+                                        • 프론트엔드는 만들 수 있었으나 백엔드에 대한 개념이 전무하였기에 프론트엔드와 백엔드를<br> 연결시키지 못해 사이트가 제 기능을 하지 못하였습니다. <br> • 때문에 졸업작품
+                                        발표 당시에는 사이트와 예측치를 각각 별도로 발표하였습니다.
+                                    <br><br>
+                                    2. Docker, EC2 및 RDS에 대한 개념 부재<br>
+                                        • Docker에 대한 개념이 전무하여 이미지 빌드를 시도하지도 않고 바로 EC2를<br> 사용하려고 하였습니다.<br>
+                                        • EC2와 RDS를 연결시키지 않아 배포에는 성공하였음에도 불구하고 서비스를 이용 시 <br>오류가 발생하였습니다.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. 백엔드 개발에 필요한 지식 습득: 국비지원 과정을 거치며 Spring 프레임워크와 백엔드 개발에<br> 필요한 실질적인 지식을 쌓았습니다. 이를 통해 국비지원 과정 중 졸업작품을 재 진행하여 배포까지<br> 진행하였습니다.<br><br>
+                                        2. EC2와 RDS 연결: EC2에 대해 처음 Docker 컨테이너를 업로드 후, EC2를 RDS와 연결시켜 <br>서비스가 제대로 작동하게 하였습니다. 그 결과 서비스가 제대로 작동하는 것을 확인하였습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upper-exit">
+            <div class="exit-button" onclick="closeModal('modal1')">
+                <div style="width: 24px; height: 24px; position: relative">
+                    <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                </div>
+            </div>
+
+            <div class="modal-git">
+                <a href="https://github.com/shahmaran0207/final_project" target="_blank" style="text-decoration: none;">
+                    <div class="exit-button">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                        </div>
+                    </div>
+                    <div class="modal-git-content">GitHub</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal1')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 범죄율과 신고율의 상관관계 -->
+<div id="modal2" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/png.jpg" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">지역별 범죄율과 신고율의 상관관계 분석<br>- 빅데이터 분석 경진대회</div>
+                        <div class="modal-button">
+                            <div class="modal-back">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Data Analysis</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p">
+                        빅데이터 분석 경진대회를 위해 분석한 데이터입니다. 지역별 신고율, 범죄율 데이터를 토대로 지역별 범죄율과 신고율의 비율을 분석,<br>
+                        GeoJson을 통해 시각화하였습니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2020.12. ~ 2021.02.</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(30%), 전처리(70%), 예측(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">지역별 신고율 대비 범죄율 분석 및 예측</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. GeoJson 사용방법<br>
+                                        • GeoJson 시각화 시에 특정 모양으로 시각화 하려면 Json 파일이 필요하다는 것을 배웠습니다.<br>
+                                        • 지도 시각화와 범례 사용에 대해 자세히 배울 수 있었습니다. 지도 시각화는 몇 배율로 표시하는지가 중요한데 이를 범례를 통해 더욱 시각적으로 표시하는 방법을 배웠습니다.
+                                        <br><br>
+
+                                        2. 데이터 전처리 및 결합<br>
+                                        • 데이터를 전처리 시에 pandas를 통해 더욱 효율적으로 전처리하는 방법을 배웠습니다.
+
+                                        <br><br>
+
+                                        3. 객관적인 분석의 중요성<br>
+                                        • 이 대회를 진행할 당시 단순한 분석 및 시각화로 그쳤으며, 이를 팀원들과 함께 임의로 <br>분석하였습니다. 이로 인해 좋지 못한 성적을 거두었으며, 이를 계기로 데이터를 분석할 때,<br> 더욱 객관적인 과정 및
+                                        결과가 필요하다는 것을 크게 배웠습니다.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">1. 데이터 키(지역 코드) 불일치 문제<br>
+                                        • 지도 시각화에 익숙치 않아 데이터키와 지역을 제대로 매칭시키지 못하였고 이로 인해 특정 지역에 대한 시각화가 제대로 진행되지 않는 문제가 발생하였습니다.
+                                        <br><br>
+
+                                        2. 지역 누락 문제<br>
+                                        • Json 파일을 처음부터 만드는 것은 불가능하다고 판단하여 온라인에서 기존의 파일을 찾아 <br>수정하여 사용하였습니다. <br>그러다보니 제가 분석한 지역과는 매칭이 되지 않았고, 이로 인해 특정 지역에 대한
+                                        시각화가 <br>진행되지 않는 문제가 발생하였습니다.
+
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">1. 데이터 키 수정: 엑셀의 데이터 키를 Json 파일에 맞게 수정하여 데이터키 불일치 문제를<br> 해결하였습니다.<br><br>
+                                        2. 새로운 Json 파일 탐색: 온라인에서 전국 8도로 나누어진 Json 파일을 찾아 새로운 Json 파일로 설정, 지역 누락 문제를 해결하였습니다. 물론 Json  파일 없이 코드 자체에서
+                                        해결할 수 있었지만<br> 저희는 전국 8도라는 특정한 모양의 지도 시각화를 원하였고, Json 파일을 찾는 것이 더욱<br> 효율적이라는 판단하에 시행하였습나다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal2')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/crime_report_correlation" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal2')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 지역별 신용카드 예측 프로젝트 -->
+<div id="modal3" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/credit.jpg" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">지역별 신용카드 예측 프로젝트</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Data Analysis</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">
+                        대학 수업 과제로 진행하였던 신용카드 소비금액 예측 프로젝트입니다.<br>
+                        데이터는 데이콘의 데이터를 사용하였으며, 과거의 데이터를 통해 향후 1년간 지역별 소비금액을 예측하였습니다.
+                        </div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2022.09. ~ 2022.11.</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(40%), 전처리(70%), 예측(50%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">지역별 신고율 대비 범죄율 분석 및 예측</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. Train_Test_Split<br>
+                                        • 데이터를 훈련 세트와 테스트 세트로 나누는 과정에서 단순한 무작위 분할이 아닌, 데이터의 특성을 고려한 분할이 중요하다는 것을 배웠습니다.<br>
+                                        • 학습 데이터와 테스트 데이터의 비율을 잘못 설정할 경우 과적합으로 인한 예측 오류가 <br>발생할 수 있으니, 적절한 비율로 데이터를 나누어야 함을 배웠습니다.<br>
+                                        <br>
+
+                                        2. Stadnard_Scaling<br>
+                                        • 데이터의 스케일을 조정하는 것이 모델 성능에 미치는 영향을 학습하였습니다.<br>
+                                        • 데이터의 부족으로 인해 예측의 부족함을 스케일링을 통해 <br>조금이나마 개선할 수 있음을 배웠습니다.<br>
+                                        • 데이터 스케일링 이후, 여러 모델을 테스트 한다면 성능을 크게 향상시킬 수 있음을 배웠습니다.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">1. 데이터 과적합 및 특정 지역의 데이터에 대한 예측치가 너무 낮은 문제
+                                        • 모델이 특정 데이터에 <br>과도하게 학습되면서 과적합 현상이 발생하였다.<br>
+                                        • 일부 지역의 데이터가 제대로 반영되지 않아 예측값이 낮게 나오는 문제가 발생하였다.<br>
+
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">1. Standard_Scaling을 통한 데이터 과적합 완화 <br>
+                                        • 데이터 스케일링을 통해 데이터 분포를 일정하게 조정하였으며, 모델이 특정 변수에 과도하게<br> 의존하지 않도록 하였습니다.<br>
+                                        • 각 데이터의 분포도를 데이터 스케일링을 통해 조절함으로써, 변수의 예측치를 높일 수 있었습니다.
+                                        <br><br>
+
+                                        2. 여러 모델을 통한 비교 후, 가장 예측에 대한 R2 Score가 높은 모델을 선정 <br>
+                                        • 데이터 스케일링과 Train_test_split으로 학습시킨 데이터를 여러 모델틀 통해 비교하였습니다.<br>
+                                        • 이후, 각 모델의 예측치 결과 R2 Score가 가장 높은 모델을 선정하였습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal3')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/credit_card_predict" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal3')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 인생네컷 -->
+<div id="modal4" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/four.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">인생네컷</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">싱글 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">인생네컷을 코드로 제작하였습니다.<br> 스파르타코딩스쿨의 무료 강의를 토대로 진행하였습니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">1주일</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">인생네컷 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail" >
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">인생네컷</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal4')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/four_photo" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal4')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 청소년 범죄율 분석 및 예측 -->
+<div id="modal5" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/crime.jpg" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">청소년 범죄율 분석 및 예측<br>- 빅데이터 분석 경진대회</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Data Analysis</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 38px;">빅데이터 분석 경진대회를 위해 분석한 데이터입니다. 청소년 범죄율에 영향을 주는 요소들을 선별,<br> 이 데이터를 기반으로 향후 1년간 지역별 청소년 범죄율을 예측하였습니다.
+                    </div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">4명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2022.12 ~ 2023.01</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">데이터 수집(30%), 전처리(70%), 예측(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">청소년 범죄율 예측</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Python</div>
+                            </div>
+
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. 다중공선성<br>
+                                        • 일부 변수들이 서로 높은 상관관계를 가지는 경우 다중공선성 문제가 <br>발생할 수 있다는 점을 학습하였습니다. <br>
+                                        • 다중공선성이 심할 경우 회귀 모델의 계수가 왜곡되거나 모델 성능이 저하될 수 있음을 배웠습니다. <br>
+                                        • 다중공선성의 개념: 회귀 분석에서 독립 변수(설명 변수)들 사이의 상관관계가 매우 높아,<br> 하나의 변수를 다른 변수로 설명할 수 있는 상태를 의미합니다. <br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">1. 인구 예측에 대한 문제
+                                        • 인구 또한, 예측에 대한 중요한 요소였기에 <br>아무렇게나 생성할 수는 없었습니다.<br>
+                                        • 프로젝트를 진행할 당시, 인구에 대한 통계가 없었습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">1. 과거의 인구 증가폭을 통한 인구에 대한 난수 생성<br>
+                                        • 처음에는 시계열 분석을 통해 인구를 예측하려고 하였습니다.<br>
+                                        • 하지만, 시계열 분석을 통한 예측을 하기 위한 실력이 부족하여 난수를 생성하였습니다.<br>
+                                        • 단, 무작위적인 생성이 아닌, 각 지수별 마지막 수에 전년대비 당해의 인구 증가폭을 곱하여<br> 합리적인 난수를 생성하였습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal5')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/youth_crime_predict" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal5')"></div>
+</div>
+
+
+<div id="modal6" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/kg.jpg" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">E커머스 기반 SW 개발자 양성 과정</div>
+                        <div class="modal-button">
+                            <div class="modal-back">
+                                <div class="modal-button2">Study</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">국비지원 과정은 E커머스 기반 SW 개발자 양성과정에서 학습한 코드들입니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">Study</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">국비지원 과정의 내용</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal6')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Developer_studying" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal6')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 펫허브 -->
+<div id="modal7" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/pet.jpg" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Pet Hub</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">국비지원 과정의 두 번째 프로젝트입니다.<br>
+                        애완동물과 관련된 여러 상품들을 판매하며, 관련 의견을 나눌 수 있는 쇼핑몰사이트입니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">6명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2주</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">장바구니(60%), 결제 시스템(100%), 관리자의 상품 관리 시스템(50%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">반려동물과 관련된 다양한 상품 판매 및 후기 작성기능</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Thymeleaf</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. 트랜잭션 관리와 데이터 정합성 유지<br>
+                                        • 결제 도중 서버 장애나 네트워크 문제로 인해 주문 정보 저장이 실패할 수 있기 때문에, <br>
+                                        트랜잭션을 활용하여 결제 승인과 주문 정보 저장을 하나의 작업 단위로 처리하는 방법을 배웠습니다.<br>
+                                        • 일부 과정이 실패하면 전체 작업을 롤백하여 데이터 정합성을 유지하는 기법을 익혔습니다.<br>
+                                        • 이를 통해 결제 시스템에서 데이터 무결성을 유지하는 것이 얼마나 중요한지 깨달았습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">1. 간편 결제 문제<br>
+                                        • 첫 번째 프로젝트와 달리, 네이버페이 간편결제와 카카오페이 간편 결제를 적용하려고 하였습니다.<br>
+                                        • 하지만, 네이버페이의 경우 실제 사업장을 개설하지 않으면 간편결제 자체가<br> 불가하다는 것을 알게 되었습니다.<br><br>
+
+                                        2. 데이터 베이스 설계 문제<br>
+                                        • DB 참조 방향이 역방향으로 설계된 문제가 있었습니다.<br>
+                                        • 장바구니, 주문, 결제 확인, 배송정보 순서로 참조해야 하지만 역방향으로 참조하여<br> 정상적인 로직으로 하면 DB가 생성되지 않았습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">1. 간편결제 제거<br>
+                                        • 처음 설계가 카카오페이, 네이버페이 두 가지를 모두 적용하려는 것이었습니다.<br>
+                                        • 둘 중, 하나만 적용하는 것은 의미가 없다고 판단하였으며, 카카오페이와 네이버페이 모두 <br>KG 이니시스 안에 있어 간편 결제 자체를
+                                        제거하는 것으로 설계를 변경하였습니다.<br><br>
+
+                                        2. 데이터 역방향 생성<br>
+                                        • DB를 다시 정방향으로 다시 설계하기에는 시간이 부족하다고 판단하였습니다.<br>
+                                        • 문제가 발생하는 부분은 결제 성공 시, 생성되는 데이터의 문제였기에, 데이터 생성을<br> 역방향으로 생성되게 하여 문제를 해결하였습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal7')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/Komo1284/pethub" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal7')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 스마프팜 -->
+<div id="modal8" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/smart.jpg" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">SmartFarm</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">팀 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">국비지원 과정의 첫 번째 프로젝트입니다.<br>
+                        스마트팜에 사용할 수 있는 아두이노 상품과, 프로그램을 판매하며 관련 의견을 나눌 수 있는 쇼핑몰사이트입니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">6명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2주</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">장바구니(60%), 결제 시스템(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">스마트팜에 사용되는 아두이노 기계 판매 사이트</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Thymeleaf</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. 결제 API의 동작 원리<br>
+                                        • 단순히 결제 요청을 보내는 것이 아니라, 카드사 및 PG사와의 승인/취소 프로세스를 <br>배울 수 있었습니다.<br>
+                                        • 사용자가 결제 요청을 보내면, 결제 승인 → 결제 완료 → 주문 정보 저장 순으로<br> 진행되는 과정을 배웠습니다. <br>
+                                        • 이러한 흐름을 이해하고, 각 단계에서 오류 발생 시 어떻게 대응할지 설계하는 방법을 익혔습니다.<br><br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">1. 결제 완료 후 주문 정보 반영 실패<br>
+                                        • ajax를 통해 결제 완료 정보를 컨트롤러를 통해 보낼 때, 컨트롤러의 로직이 실패하면 결제 자체는<br> 성공하지만 DB에는 반영되지 못하는
+                                        문제가 발생하였습니다.<br>
+                                        • 결제 시, 사용자의 정보(휴대전화, 이름, 가격, 이메일 등)을 제대로 지정하지 않으면 <br>결제에 실패하는 문제가 발생하였습니다.<br><br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">1. 트랜잭션 롤백 적용<br>
+                                        • 여러 시도를 하며 Serivce 파일 내의 로직을 수정하였습니다.<br>
+                                        • ajax내부에 success와 error로 나누어서 성공과 실패 시 작동 로직을 설계하였습니다.<br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal8')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/Komo1284/SmartFarm" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal8')"></div>
+</div>
+
+<!-- 포트폴리오 detail - 수박게임 -->
+<div id="modal9" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/수박게임.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">수박게임</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">간단히 즐길 수 있는 수박게임 입니다.<br>키 조절은 방향키로 가능합니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.08 ~ 2024.09</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">수박게임 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">수박게임</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Node.js</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">1. Node.js를 활용한 서버 구축<br>
+                                       • 클라이언트와 서버 간의 통신 방식을 이해하고, 요청-응답 흐름을 배울 수 있었습니다.<br><br>
+
+                                        2. 비동기 프로그래밍 이해<br>
+                                       • Node.js의 비동기 처리 방식을 경험하면서, 동기 코드와의 차이를 배울 수 있었습니다. <br>
+                                       • 특히 게임 로직에서 데이터 처리를 효율적으로 하기 위해 이벤트 기반 프로그래밍을 활용하는 <br>방법을 익힐 수 있었습니다.<br>
+
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">1. 서버 실행 오류<br>
+                                        • node server.js 실행 시 "module not found" 오류 발생하였습니다.<br>
+                                        • 필수 패키지가 설치되지 않아 문제가 발생하였습니다.<br><br>
+
+
+                                        2. 포트가 이미 사용 중이라 서버가 실행되지 않음<br>
+                                        • 프로젝트를 닫을 때, 포트를 닫지 않고 프로젝트를 종료 후, 새로 서버를 실행시키니 서버 포트를 <br>이미 사용하고 있어 문제가 발생하였습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">1. 필수 패키지 설치<br>
+                                        • npm install 명령어를 통해 필수 패키지를 설치하였습니다.<br>
+                                        • npm install --force 명령어를 통해 강제 업데이트를 시켜 에러를 해결하였습니다.<br><br>
+
+                                        2. 기존 포트 강제 종료 및 서버 재시작<br>
+                                        • `netstat -ano | findstr :포트번호` 명령어를 통해 기존 사용중인 포트 번호를 확인하였습니다.<br>
+                                        • `taskkill /PID PID /F` 명령어를 통해 현재 사용중인 포트를 강제 종료 후,<br> 서버를 재시작 함으로써, 문제를 해결하였습니다.<br>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal9')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/watermelon_game" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal9')"></div>
+</div>
+
+<!-- 포트폴리오 detail - 슈팅게임(Unity) -->
+<div id="modal10" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/슈팅게임.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">슈팅게임</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Web</div>
+                            </div>
+
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">간단히 즐길 수 있는 슈팅게임 입니다.<br>W,A,S,D로 캐릭터를 조정하고, 마우스로 총알을 발사합니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.08 ~ 2024.09</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">슈팅게임 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">슈팅게임</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">C#</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Unity</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. Unity의 기본 인터페이스 이해<br>
+                                        • Unity Editor를 활용해 게임 오브젝트를 배치하고, 씬(Scene)을 구성하는 방법을 익혔습니다.<br>
+                                        • 처음 사용하는 툴이었지만 직관적인 UI로 작업을 시작할 수 있었습니다.<br><br>
+
+                                        2. C# 스크립트로 캐릭터 동작 구현<br>
+                                        • 캐릭터 이동 및 공격 스크립트를 작성하며 Unity와 C#의 연동 방식을 학습했습니다.<br><br>
+
+                                        3. 2D 게임 개발 과정 익히기<br>
+                                        • 슈팅 게임을 제작하며 2D 스프라이트 관리, 애니메이션, 충돌 처리를 배웠습니다.<br>
+                                        • 게임의 기본적인 구조를 이해하고 직접 구현해보며 경험을 쌓았습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">
+                                        1. 초기 환경 설정의 어려움<br>
+                                        • Unity 설치와 프로젝트 세팅 과정이 처음이라 시간이 많이 걸렸습니다.<br>
+                                        • 에셋 관리와 기본 설정 작업에서 시행착오를 겪었습니다.<br><br>
+
+                                        2. 충돌 처리 오류<br>
+                                        • 총알과 적의 충돌 판정을 제대로 구현하지 못해 디버깅에 시간을 소비했습니다.<br>
+                                        • Collider 설정이나 레이어 관리에 대한 이해 부족이 문제였습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. 공식 문서와 튜토리얼 활용<br>
+                                        • Unity Learn과 유튜브 튜토리얼을 참고해 환경 설정과 기본적인 사용법을 익혔습니다.<br>
+                                        • 이를 통해 필요한 기능을 단계적으로 구현할 수 있었습니다. <br><br>
+
+                                        2. Object Pooling 적용<br>
+                                        • 생성과 소멸을 반복하던 적 오브젝트를 Object Pooling으로 관리하며 성능을 개선했습니다. <br>
+                                        • 이를 통해 프레임 드랍 문제를 효과적으로 해결했습니다. <br><br>
+
+                                        3. 디버깅 및 충돌 처리 학습<br>
+                                        • Debug.Log와 Unity의 충돌 처리 문서를 참고해 문제를 해결했습니다.<br>
+                                        • Collider와 Rigidbody 설정을 점검하고, 충돌 판정 로직을 수정했습니다. <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal10')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Shooting_Game" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal10')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 리듬게임 -->
+<div id="modal11" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/리듬게임.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">리듬게임</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">Music-video-game은 음악과 게임을 결합한 리듬 게임으로, <br>
+                        플레이어가 다양한 음악 트랙에 맞춰 박자를 맞추며 점수를 획득하는 게임입니다.<br>
+                    키는 S, D, F, SpaceBar, J, K, L을 이용합니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.09.07 ~ 2024.09.15</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">리듬게임 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">리듬게임</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JAVA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal11')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Music-video-game" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal11')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - todolist -->
+<div id="modal12" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/todolist.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Todo List</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">리액트를 통해 만든 할 일을 등록 및 삭제 가능한 사이트입니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.09.07 ~ 2024.09.21</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">Todo List 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">Todo List</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. 컴포넌트 분리<br>
+                                        • 리액트에서는 화면을 여러 개의 작은 컴포넌트로 나누어서 만든다는 것을 배웠습니다.<br>
+                                        예를 들어, 입력창, 버튼, 목록을 각각 독립적인 컴포넌트로 만들 수 있어요 <br>
+                                        • 이를 통해, 코드를 더 깔끔하고 보기 쉽게 정리할 수 있으며,
+                                        같은 컴포넌트를 여러 번 <br>재사용할 수 있어서 유지보수가 편리하다는 것을 배웠습니다.<br><br>
+
+                                        2. 상태 관리에 대해 배웠습니다. <br>
+                                        • 상태(State) 는 컴포넌트가 가지고 있는 값(데이터)을 의미하다는 것을 배웠습나다.<br>
+                                        •  예를 들어, 할 일 목록을 화면에 보여주려면, 할 일 목록을 상태로 저장해야 하며,<br>
+                                        리액트에서는 useState라는 기능을 사용해서 상태를 관리한다는 것을 배웠습니다.<br>
+                                        • 이것이 중요한 이유는 상태가 바뀌면 자동으로 화면이 업데이트되기 때문에, <br>직접 DOM을 조작할 필요가 없기 때문입니다.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">
+                                        1. 할 일이 추가되지 않음
+                                        • 입력창에 글을 입력해도 값이 안 바뀌지 않았습니다.<br>
+                                        • 입력하고 버튼을 눌렀는데, 화면에 새로운 할 일이 나타나지 않았습나다.<br><br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. 입력창의 값을 상태와 연결 <br>
+                                        • useState를 사용해서 입력한 값을 저장하고, onChange 이벤트로 상태를 업데이트 하여<br> 문제를 해결했습니다. <br><br>
+
+                                        2. State를 통한 상태 업데이트<br>
+                                        • setTodos([...todos, newTodo])처럼 기존 목록에 새 항목을 추가해 문제를 해결했습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal12')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Todolist_application" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal12')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - js 슈팅게임 -->
+<div id="modal13" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/자바슈팅.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Space Shooting Game</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">JavaScript를 통해 만든 슈팅게임 입니다. <br>좌우 방향키로 캐릭터를 이동하고 스페이스바로 총알을 발사합니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.09.21 ~ 2024.09.28</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">슈팅게임 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">Space Shooting Game</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal13')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Shooting_Game_JS" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal13')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - memoapplication -->
+<div id="modal14" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/memoapplication.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Memo Application</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">vue.js를 통해 만든 메모장입니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.10.22 ~ 2024.10.23</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">Memeo application 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">메모장</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Vue.js</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. Vue.js의 기본 개념과 사용법<br>
+                                        • Vue의 반응형 데이터와 디렉티브를 배울 수 있었습니다.<br>
+                                        • 컴포넌트 기반 개발 방식과 props, emit을 활용한 부모-자식 간 데이터 전달 방법을 학습함.<br>
+                                        • Vue의 반응형 시스템을 통해 데이터가 변경되면 자동으로 UI가 업데이트되는 원리를 이해할 수 있었습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">
+                                        1. MongoDB 데이터 저장 실패 문제<br>
+                                        • 프론트엔드에서 입력한 할 일을 MongoDB에 저장하는 API 요청이 실패하는 상황이 발생하였습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. Content-Type 설정<br>
+                                        • 서버에서 CORS 설정을 확인하고, 프론트엔드에서 백엔드로 요청을 보낼 때 Content-Type을 application/json으로 설정하여 문제를 해결하였습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal14')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Memo_application" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal14')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 무한 스크롤 -->
+<div id="modal15" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/movie.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Movie Infinite Scroll</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">리액트를 통해 무한스크롤 사이트입니다.<br>
+                        정해진 영화 목록이 전부 나오기 전까지 아래로 스크롤을 내리면 영화 목록이 무한히 나옵니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.10 ~ 2024.11</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail"> Movie Infinite Scroll 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">Movie Infinite Scroll</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal15')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Infinite-Scroll" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal15')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 웹소켓 채팅 -->
+<div id="modal16" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/chatting.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Chatting_Application</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">간단한 채팅 사이트입니다.<br>
+                        내가 보낸 메시지는 오른쪽에 노란색으로, 상대가 보낸 메시지는 흰색으로 왼쪽에 나옵니다.</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.11.11 ~ 2024.11.18</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">채팅 사이트 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">채팅 기능</div>
+                        </div>
+
+                        <div class="text-title-detail">
+                            <div class="modal-content-title portfront">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Node.js</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. 웹소켓의 개념<br>
+                                        • 클라이언트와 서버 간의 실시간 양방향 통신을 지원하는 프로토콜<br>
+
+                                        • 기존 HTTP 요청/응답 방식과 달리, 한 번 연결을 맺으면 지속적으로 데이터를<br> 주고받을 수 있습니다.<br>
+                                        • 실시간 채팅, 게임, 주식 거래 등 빠른 데이터 전송이 필요한 서비스에서 많이 사용됩니다.<br>
+                                        • 소켓을 유지하며 데이터를 이벤트 기반으로 주고받습니다.<br>
+                                        • 클라이언트와 서버가 연결을 유지하면서 필요할 때만 데이터를 주고받아 <br>네트워크 부하가 줄어듭니다.<br>
+                                        • HTTP와 달리 요청을 보내지 않아도 서버에서 클라이언트로 데이터를 푸시할 수 있습니다.<br><br>
+
+
+                                       2.  웹소켓과 HTTP/기타 프로토콜과의 차이점<br>
+                                        • HTTP는 요청과 응답이 1:1 방식으로 연결이 끊기는 반면, 웹소켓은 한 번 연결되면 유지됩니다.<br>
+                                        • 웹소켓은 Handshake과정 이후 지속적인 연결을 유지하며 <br>데이터를 주고받을 수 있습니다.<br>
+
+                                        • HTTP는 요청마다 헤더가 포함되어 오버헤드가 크지만, 웹소켓은 프레임 기반 통신으로 <br>데이터 전송이 가볍습니다.<br>
+                                        • 지속적인 연결을 유지하기 때문에 실시간성이 중요한 서비스에서 웹소켓이 더 적합합니다.<br><br>
+
+                                        3. 웹소켓을 활용한 실시간 통신 구현<br>
+                                        • HTTP 요청과 달리 웹소켓은 지속적인 연결을 유지하여 실시간 데이터 전송이 가능하다.<br>
+                                        • 클라이언트와 서버 간의 양방향 통신을 통해 효율적인 메시지 전송이 이루어진다.
+
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">
+                                        1. 소켓 ID 중복 처리 문제<br>
+                                        • 만약 다른 기기에서 접속 중인 사용자라면, 새로 입력된 소켓 ID로 덮어씌워져 <br>이전에 연결된 소켓 ID와 연결된 상태 정보가 덮어씌워져 문제가 발생하였습니다.<br><br>
+
+                                        2. 현재 대화 상대가 누구인지 모르는 문제<br>
+                                        • 채팅방을 열었지만, 상대방이 누구인지 표시되지 않았습니다.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. 사용자가 여러 기기에서 접속할 수 있도록 처리<br>
+
+                                        • 코드에서 user.token = sid;로 소켓 ID를 새로 갱신하고 있습니다.<br>
+                                        •  이 때, 새로운 소켓 ID가 들어와도 기존 소켓 ID를 갱신하되, 다른 장치에서 접속한 상태를 <br>명시적으로 처리하는 방식으로 문제를 해결하였습니다.<br><br>
+
+                                        2. 채팅방 진입 시 상대방 정보 로드<br>
+
+                                        • 채팅방을 열 때 프로프트로 이름을 입력하게 하였습니다.<br>
+                                        • 클라이언트에서 상대방의 닉네임을 채팅방 상단에 표시하여, 사용자가 누구와 대화 중인지 <br>알 수 있도록 하여 문제를 해결하였습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal16')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Chatting_application" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal16')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - 환율 계산 사이트 -->
+<div id="modal17" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/exchange.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Exchange_Rate_Site</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">간단한 환율 계산 사이트입니다.<br>
+                        달러(USD), 원(KRW), 동(VND)를 선택하고 숫자를 입력하면 환율을 계산하여 보여줍니다.
+                    </div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.11.18 ~ 2024.11.19</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">환율계산 사이트 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">환율 계산 기능</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">React</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal17')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Exchange_rate_application" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal17')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - wit ver1.0-->
+<div id="modal18" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/wit.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Way into Travel</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">여행 일정을 구매/판매할 수 있고, 후기 등을 남길 수 있는 여행 사이트</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2024.10.30 ~ 2025.01.17</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">사이트 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">여행 일정 판매/구매, 여행 후기 작성, 문의사항 작성/답변, 자유게시판</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JAVA</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Kakao API</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">RDS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">EC2</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">S3</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Firebase</div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. S3를 통한 사진 입출력<br>
+                                        • S3 버킷에 파일을 업로드하고, 업로드된 파일을 다운로드하는 방법을 배웠습니다. <br>이를 통해 클라우드 저장소에 파일을 안전하게 보관할 수 있음을 이해했습니다.<br>
+                                        • 버킷에 대한 접근 제어와 권한을 설정하여, 필요한 파일만 외부에서 접근할 수 있게 하는<br> 방법을 배웠습니다.<br>
+                                        • 업로드된 파일에 접근할 수 있는 URL을 생성하고, 이를 이용해 웹 애플리케이션에서 사진을<br> 표시하는 방법을 익혔습니다.<br><br>
+
+                                        2. 카카오 지도와 마커 표시<br>
+                                        • 카카오 지도를 웹페이지에 삽입하고, 지도에 마커를 추가하는 방법을 배웠습니다. <br>이를 통해 사용자 위치나 중요한 장소를 지도에 표시할 수 있게 되었습니다.<br>
+                                        • 사용자 또는 서버에서 받아온 데이터를 기반으로 동적으로 마커를 지도에 표시하는<br> 방법을 배웠습니다.<br>
+                                        • 마커 클릭 등 지도에서 발생하는 다양한 이벤트를 처리하여, 사용자 인터랙션을 보다<br> 풍부하게 만드는 방법을 익혔습니다.<br><br>
+
+                                        3. 파이어베이스를 통한 로그인<br>
+                                        • 파이어베이스에서 인증 기능을 설정하고, 이메일/비밀번호 기반 로그인 방식을 <br>구현하는 방법을 배웠습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">
+                                        1. S3를 통한 사진 출력<br>
+                                        • S3를 통해 사진 업로드는 문제 없었는데, 출력시 출력이 되지 않는 문제가 발생하였습니다.<br>
+                                        • 확인 결과, 출력시 접근하는 주소체계에 문제가 있었습니다.<br><br>
+
+                                        2. 로그인 인터셉터<br>
+                                        • 로컬에서는 화이트리스트 방식으로 잘 작동하였슨데, 배포시에는 제외시키는 코드가<br> 작동하지 않았습니다.<br>
+                                        • 이로 인해 배포 시, 무한리다이렉션이 발생하였습니다.<br><br>
+
+                                        3. 경로 관련 에러<br>
+                                        • 배포 시, 분명 html 파일이 있음에도 불구하고 404에러가 발생하였습니다.<br><br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. 주소 컨버터 로직 삽입<br>
+                                        • 확인 결과, 버킷에서 직접 접근하는 주소와 프로젝트 코드 내에서 접근하는 주소에 <br>순서가 다름을 확인하였습니다. <br>
+                                        • 버킷에서 직접 접근하는 주소로는 접근이 가능하였습니다.<br>
+                                        • 프로젝트에서 접근하는 주소의 순서만 바꾸면 버킷에서 접근 하는 주소로 변환이 가능하며, <br>이를 실행하는 컨버터 로직을 삽입하였습니다.<br><br>
+                                        2. 블랙 리스트 방식으로 대체<br>
+                                        • 화이트 리스트 방식을 포기하고, 필요 페이지를 막는 블랙리스트 방식을 통해 <br>문제를 해결하였습니다.<br><br>
+                                        3. "/"제거<br>
+                                        • return 앞에 "/"를 제거하여 문제를 해결하였습니다.<br>
+                                        • 로컬에서는 프로그램이 경로를 보정해주지만, 배포시에는 그렇지 못하여 발생한 문제였습니다.<br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal18')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Member_project/tree/main/WIT%20ver2.0" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal18')"></div>
+</div>
+
+<!-- 포트폴리오 detail  - MFA -->
+<div id="modal19" class="modal" onclick="event.stopPropagation();">
+    <div class="modal-content">
+        <div  class="modal-inline">
+            <div class="modal-flex">
+                <div  class="modal-main-image">
+                    <img class="modal-image-image" src="../html/assets/img/portfolio/MTA.png" />
+                    <div class="modal-main-text">
+                        <div class="modal-title">Master-The-Auction</div>
+                        <div class="modal-button">
+                            <div class="modal-button2">
+                                <div class="modal-button2">개인 프로젝트</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Front-End</div>
+                            </div>
+                            <div class="modal-back">
+                                <div class="modal-button2">Back-End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-p" style="margin-top: 4px;">다양한 물품을 경매 상품으로 등록 가능하고 <br>경매에 자유롭게 입찰하여 물품을 낙찰 받을 수 있는 사이트</div>
+                    <div class="portfolio-text">
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">개발 인원</div>
+                            <div class="modal-content-detail">1명</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">제작 기간</div>
+                            <div class="modal-content-detail">2025.02.24 ~ 2025.03.16</div>
+                        </div>
+                        <div class="modal-inner-text">
+                            <div class="modal-content-title">My-Role</div>
+                            <div class="modal-content-detail">사이트 제작(100%)</div>
+                        </div>
+                    </div>
+                    <div class="text-title">
+                        <div class="text-title-detail">
+                            <div class="modal-content-title">주요 기능</div>
+                            <div class="modal-content-detail">경매 물품 등록, 입찰, 낙찰, 경매 포인트 구매, 멤버 및 게시판 좋아요/싫어요,<br> 멤버 별 후기 작성, 문의사항 작성/답변, 자유게시판</div>
+                        </div>
+
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">HTML</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">CSS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Back-End</div>
+                            <div class="button-container">
+                            <div class="modal-button2">
+                                <div class="modal-button2">Spring Boot</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">JAVA</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">RDS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">ALB</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Target Group</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Listener</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">SSL/TLS</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Gabia</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">EC2</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">S3</div>
+                            </div>
+                            <div class="modal-button2">
+                                <div class="modal-button2">Firebase</div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="upper-accordion">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">배운 내용</div>
+                                    <div class="accordion-content">
+                                        1. HTTPOnly Cookie<br>
+                                        • 기존 세션 기반 인증보다 보안성이 높은 HTTPOnly 쿠키 기반 인증을 적용하는 방법을 배웠습니다. <br>이를 통해 클라이언트에서 쿠키를 직접 접근할 수 없도록 하여 보안을 강화할 수 있었습니다.<br>
+                                        • 로그인, 로그아웃, 회원가입 과정에서 HTTPOnly 쿠키를 사용하여 사용자 인증 정보를<br> 안전하게 관리하는 방법을 익혔습니다.<br><br>
+
+                                        2. 스케줄러<br>
+                                        • 경매 사이트를 개발하며 경매 마감 시간이 지나면 자동으로 입찰 및 낙찰 처리, <br>경매 상태 관리를 해야 한다는 필요성을 느꼈고, 이를 해결하기 위해 Spring의 스케줄러를 활용하는 방법을 배웠습니다.<br>
+                                        • @Scheduled 어노테이션과 cron 표현식을 사용하여 특정 시간마다 경매 상태를 업데이트하도록 구현하였으며, 이를 통해 사용자의 개입 없이 시스템이 자동으로 상태를 관리할 수 있도록 했습니다.<br>
+                                        • 스케줄러 실행 도중 오류가 발생할 경우 시스템에 영향을 주지 않도록<br> 예외 처리를 추가하는 과정에서, 분산 환경에서 스케줄러를 안정적으로 운영하는 방법에 대한 고민을 하게 되었습니다.<br><br>
+
+                                        3. HTTPS 배포를 위한 도메인 및 로드밸런싱<br>
+                                        • AWS Route 53을 이용하여 도메인을 설정하고, ACM(AWS Certificate Manager)에서 SSL/TLS 인증서를 적용하는 과정을 학습하였습니다. 이를 통해 HTTPS 환경에서 안전한 웹사이트를 배포할 수 있었습니다.<br>
+                                        • HTTPS 환경에서 로드 밸런서를 통해 트래픽을 분산하는 과정에서, HTTP → HTTPS 리디렉션<br> 설정과 보안 그룹 설정을 조정하는 방법을 배웠습니다.이를 통해 사용자가 항상 보안 연결을 통해 <br>
+                                        서비스에 접근하도록 보장할 수 있었습니다.<br>
+                                        • HTTPS 설정 과정에서 SSL 인증서 적용 후 발생하는 Mixed Content 문제 및 CORS 이슈를 해결하는 과정에서, 웹 애플리케이션의 보안 및 브라우저 정책에 대한 이해도를 높일 수 있었습니다.<br><br>
+
+                                        4. SMTP를 통한 이메일 인증<br>
+                                        • 회원 가입 시 이메일 인증 기능을 구현하기 위해 Gmail SMTP를 활용하는 방법을 학습하였으며,<br> 이를 통해 사용자가 본인 확인을 완료해야만 회원가입을 진행할 수 있도록 <br>보안성을 강화할 수 있었습니다.<br>
+                                        • JavaMailSender를 사용하여 인증 이메일을 발송하고, 임의의 인증 토큰을 생성하여 <br>일정 시간 내에 인증을 완료하도록 제한하는 기능을 구현하였습니다.<br>
+                                        • SMTP 서버에서 발생하는 보안 이슈(2단계 인증, 앱 비밀번호 설정 등)를 해결하는 과정에서, <br>외부 API와 연동할 때의 보안 고려 사항과 설정 방법을 익힐 수 있었습니다.<br><br>
+
+                                        5. HTTPS 배포 시 t3.small 이상의 인스턴스를 사용하는 이유<br>
+                                        • HTTPS(SSL/TLS) 암호화 및 복호화 과정에서 높은 RAM 사용량이 발생함을 학습하였습니다.<br>
+                                        • 로그인 이후 HttpOnly 쿠키를 지속적으로 포함하여 처리하는 과정에서 추가적인 리소스가 요구됨을 경험하였습니다.<br>
+                                        • 기본적으로 t2.micro 인스턴스는 1GB RAM을 제공하며, Spring Boot와 HTTPS 처리까지 수행하기에는 부족함을 확인하였습니다.<br>
+                                        • 이에 따라, 보다 안정적인 운영을 위해 일반적으로 t3.small(2GB RAM) 이상의 인스턴스를 사용하게 됨을 이해하였습니다.<br><br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">문제점</div>
+                                    <div class="accordion-content">
+                                        1. 로그인정보를 세션에 저장함에 따라 보안성이 취약함<br>
+                                        • 기존에는 로그인을 위한 Firebase 토큰을 세션에 저장하였습니다.<br>
+                                        • 하지만 이 방식은 오히려 보안성이 취약하다는 것을 알게되었습니다.<br><br>
+
+                                        2. 경매 상태 관리를 관리할 방법의 부재<br>
+                                        • 일정 시간이 지나면 경매 상태를 '마감'으로 바꾼 후, 낙찰을 수동으로 진행하였습니다.<br>
+                                        • 하지만, 경매 물품이 많아짐에 따라 경매 상태 및 낙찰을 수동을 관리할 수는 없게 되었습니다.<br><br>
+
+                                        3. 별도 설정 없이 AWS에서 배포할 경우 HTTPOnly 쿠키가 정상적으로 동작하지 않는 문제<br>
+                                        • AWS에서 별도의 설정없이 배포하면 HTTP 프로토콜로 배포되었습니다.<br>
+                                        • 보안성을 위해 사용한 HTTPOnly Cookie는 HTTP 프로토콜에서는 사용이 불가하였고,
+                                        <br>이로 인해 로그인이 유지되지 않았습니다.<br><br>
+
+                                        4. 배포 시 SMTP 이메일 발송 오류 문제<br>
+                                        • 도커 이미지 빌드 후 EC2에 업로드 시, 이메일이 발송되지 않았습니다.<br>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header" onclick="toggleAccordion(this)">해결법</div>
+                                    <div class="accordion-content">
+                                        1. HTTPOnly 쿠키를 통한 보안성 강화<br>
+                                        • 로그인 정보를 HTTPOnly 쿠키에 저장하여,
+                                        브라우저에서 쿠키에 직접 접근할 수 없도록 <br>설정하였습니다.
+                                        <br>이를 통해 보안성이 강화되고 XSS 공격으로부터 정보를 보호할 수 있었습니다.<br>
+                                        • 기존에는 세션에 로그인 정보를 저장했지만,
+                                        이를 HTTPOnly 쿠키로 변경하면서 인증 방식이 <br>더 안전하고 간편해졌습니다.<br>
+                                        • 배포 환경에서도 HTTPOnly 쿠키가 정상적으로 동작하도록 설정하는 과정에서,<br>
+                                        HTTPS 환경이 필요하다는 것을 알게 되었습니다.<br><br>
+
+                                        2. 스케줄러를 활용한 경매 상태 자동 관리<br>
+                                        • Spring의 @Scheduled 어노테이션을 사용하여 0.6초마다 경매 상태를 검사하도록<br> 구현하였습니다.<br>이를 통해 일정 시간이 지나면 자동으로 경매 상태를 '마감'으로 변경할 수 있었습니다.<br>
+                                        • 경매 마감 시 자동으로 낙찰 처리를 수행하도록 로직을 구성하여, <br>사용자의 개입 없이 시스템이 입찰자 중 최고가를 제시한 사용자를 낙찰자로 지정하도록 <br>개선하였습니다.<br>
+                                        • 경매 물품 수가 증가해도 안정적으로 동작하도록, <br>스케줄러 실행 시 불필요한 데이터 조회를 최소화하고 성능을 최적화하는 방법을 적용하였습니다.<br><br>
+
+                                        3. HTTPS 배포를 위한 도메인 및 로드 밸런서 설정<br>
+                                        • Route 53과 가비아를 이용해 도메인을 구매하고, <br>AWS ACM에서 SSL 인증서를 적용하여 HTTPS 환경을 구축하였습니다.<br>
+                                        • AWS 로드 밸런서를 설정하고, 타겟 그룹을 구성하여 트래픽을 관리하도록 개선하였습니다.<br>이를 통해 사용자가 항상 HTTPS 프로토콜을 통해 안전하게 접속할 수 있도록 설정하였습니다.<br>
+                                        • HTTP → HTTPS 자동 리디렉션을 적용하여, <br>보안성이 낮은 HTTP 연결을 차단하고 모든 요청이 보안 연결을 통해 이루어지도록 구성하였습니다.<br><br>
+
+
+                                        4. 도커 컨테이너를 활용한 이메일 인증 문제 해결<br>
+                                        • 도커 컨테이너 빌드 시, 애플리케이션을 관리하는 컨테이너와 Redis 컨테이너를 분리하여 <br>두 개의 컨테이너를 생성하였습니다. 이를 통해 이메일 인증 요청 시 Redis를 활용한<br> 비동기 처리가 가능하도록 개선하였습니다.<br>
+                                        • EC2 환경에서 두 컨테이너가 정상적으로 연결되도록 Docker Compose를 사용하여 <br>네트워크 설정을 조정하였으며, 이메일 전송 시 SMTP 서버와의 연결이 원활하게 이루어지도록 <br>환경 변수를 관리하였습니다.<br>
+                                        • 컨테이너 내부에서 SMTP 인증이 정상적으로 동작하지 않는 문제를 해결하기 위해, <br>필요한 인증 정보를 컨테이너 실행 시 환경 변수로 주입하고,<br> SMTP 포트가 차단되지 않도록 보안 그룹을 조정하였습니다.<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="upper-exit">
+                <div class="exit-button" onclick="closeModal('modal19')">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <img src="../html/assets/img/aboutme/Exit.svg" alt="SVG Icon">
+                    </div>
+                </div>
+
+                <div class="modal-git">
+                    <a href="https://github.com/shahmaran0207/Master-The-Auction.git" target="_blank" style="text-decoration: none;">
+                        <div class="exit-button">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <img src="../html/assets/img/aboutme/Github.svg" alt="SVG Icon">
+                            </div>
+                        </div>
+                        <div class="modal-git-content">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" onclick="closeModal('modal19')"></div>
+</div>

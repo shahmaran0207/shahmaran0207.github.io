@@ -2425,9 +2425,109 @@
     
     .portfolio-grid {
         grid-template-columns: repeat(3, 1fr) !important;
-        gap: 40px;
-        max-width: 1800px;
+        gap: 50px;
+        max-width: 2200px;
         margin: 0 auto;
+        width: 100%;
+    }
+    
+    .card {
+        width: 100%;
+        min-width: 400px;
+    }
+}
+
+/* 4K 화면 (3440px 이상) */
+@media (min-width: 3440px) {
+    .portfolio-section {
+        margin-top: 120px;
+        max-width: 2800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .option {
+        padding: 18px 48px;
+        font-size: 26px;
+    }
+    
+    .portfolio-grid {
+        gap: 60px;
+        max-width: 2800px;
+    }
+    
+    .card {
+        min-width: 500px;
+    }
+    
+    .card-image {
+        height: 350px;
+    }
+    
+    .card-content {
+        padding: 32px;
+    }
+    
+    .card-title {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+    
+    .card-description {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    .tag {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+/* 8K 화면 (5120px 이상) */
+@media (min-width: 5120px) {
+    .portfolio-section {
+        margin-top: 150px;
+        max-width: 3600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .option {
+        padding: 22px 56px;
+        font-size: 32px;
+    }
+    
+    .portfolio-grid {
+        gap: 80px;
+        max-width: 3600px;
+    }
+    
+    .card {
+        min-width: 650px;
+    }
+    
+    .card-image {
+        height: 450px;
+    }
+    
+    .card-content {
+        padding: 40px;
+    }
+    
+    .card-title {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    
+    .card-description {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    
+    .tag {
+        font-size: 22px;
+        padding: 10px 20px;
     }
     
     .card-image {

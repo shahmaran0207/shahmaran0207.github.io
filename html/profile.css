@@ -644,18 +644,20 @@
     }
     
     .profile-wrapper {
-        margin-left: -60px;
-        max-width: 1800px;
-        margin: 0 auto;
+        margin-left: -120px;
+        max-width: 2200px;
+        margin-right: auto;
     }
     
     .profile-layout {
-        gap: 150px;
+        gap: 200px;
+        justify-content: flex-start;
     }
     
     .profile-left {
-        flex: 0 0 500px;
-        min-width: 500px;
+        flex: 0 0 600px;
+        min-width: 600px;
+        margin-left: 100px;
     }
     
     .profile-title-fixed {
@@ -703,6 +705,96 @@
         outline: none !important;
         box-shadow: none !important;
         background-color: #232323 !important;
+    }
+}
+
+/* 4K 화면 (3440px 이상) */
+@media (min-width: 3440px) {
+    #profile-section {
+        padding: 80px 150px;
+        padding-left: 150px;
+    }
+    
+    .profile-wrapper {
+        margin-left: -150px;
+        max-width: 2800px;
+        margin-right: auto;
+    }
+    
+    .profile-layout {
+        gap: 250px;
+    }
+    
+    .profile-left {
+        flex: 0 0 700px;
+        min-width: 700px;
+        margin-left: 120px;
+    }
+    
+    .profile-title-fixed {
+        font-size: 120px;
+        line-height: 120px;
+        margin-bottom: 100px;
+    }
+    
+    .profile-name-ko {
+        font-size: 96px;
+        line-height: 96px;
+    }
+    
+    .profile-name-en {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    
+    .profile-info-text, .profile-updated {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+/* 8K 화면 (5120px 이상) */
+@media (min-width: 5120px) {
+    #profile-section {
+        padding: 100px 200px;
+        padding-left: 200px;
+    }
+    
+    .profile-wrapper {
+        margin-left: -200px;
+        max-width: 3600px;
+        margin-right: auto;
+    }
+    
+    .profile-layout {
+        gap: 300px;
+    }
+    
+    .profile-left {
+        flex: 0 0 800px;
+        min-width: 800px;
+        margin-left: 150px;
+    }
+    
+    .profile-title-fixed {
+        font-size: 150px;
+        line-height: 150px;
+        margin-bottom: 120px;
+    }
+    
+    .profile-name-ko {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    
+    .profile-name-en {
+        font-size: 90px;
+        line-height: 90px;
+    }
+    
+    .profile-info-text, .profile-updated {
+        font-size: 40px;
+        line-height: 40px;
     }
 }
 

@@ -230,6 +230,12 @@ function setupPortfolioFilter() {
     });
 }
 
+// 아코디언 토글 함수 (Portfolio-Details.html에서 사용)
+function toggleAccordion(element) {
+    const parent = element.parentElement;
+    parent.classList.toggle("active");
+}
+
 
 // 모달 열기
 function openModal(modalId) {
