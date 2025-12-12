@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // 페이지 로드 시 body overflow 초기화
+    document.body.style.overflow = '';
+    
+    // 모든 모달 닫기
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.classList.remove('active');
+    });
+    
     function updateTransform() {
         const backEnd = document.getElementById("back-end-container");
         const developer = document.getElementById("developer-container");
@@ -136,17 +145,24 @@ document.addEventListener('DOMContentLoaded', function() {
 // 콘텐츠 로드 함수
 async function loadContent() {
     const contentContainer = document.querySelector('.profile-scroll-content');
-    if (!contentContainer) return;
+    if (!contentContainer) {
+        console.error('profile-scroll-content 요소를 찾을 수 없습니다.');
+        return;
+    }
 
     try {
+        console.log('HTML 파일 로드 시작...');
+        
         // 각 HTML 파일 로드
         const [aboutmeResponse, interviewResponse, skillsResponse, portfolioResponse, portfolioDetailsResponse] = await Promise.all([
-            fetch('html/Aboutme.html'),
-            fetch('html/Interview.html'),
-            fetch('html/Skills.html'),
-            fetch('html/Portfolio.html'),
-            fetch('html/Portfolio-Details.html')
+            fetch('html/Aboutme.html').catch(err => { console.error('Aboutme.html 로드 실패:', err); throw err; }),
+            fetch('html/Interview.html').catch(err => { console.error('Interview.html 로드 실패:', err); throw err; }),
+            fetch('html/Skills.html').catch(err => { console.error('Skills.html 로드 실패:', err); throw err; }),
+            fetch('html/Portfolio.html').catch(err => { console.error('Portfolio.html 로드 실패:', err); throw err; }),
+            fetch('html/Portfolio-Details.html').catch(err => { console.error('Portfolio-Details.html 로드 실패:', err); throw err; })
         ]);
+
+        console.log('모든 파일 응답 받음, 텍스트 변환 중...');
 
         const aboutmeHTML = await aboutmeResponse.text();
         const interviewHTML = await interviewResponse.text();
@@ -154,10 +170,21 @@ async function loadContent() {
         const portfolioHTML = await portfolioResponse.text();
         const portfolioDetailsHTML = await portfolioDetailsResponse.text();
 
+        console.log('텍스트 변환 완료, DOM에 삽입 중...');
+
         // 콘텐츠 삽입
         contentContainer.innerHTML = aboutmeHTML + interviewHTML + skillsHTML + portfolioHTML + portfolioDetailsHTML;
         
         console.log('콘텐츠 로드 완료');
+        
+        // 콘텐츠 로드 후 body overflow 다시 초기화
+        document.body.style.overflow = '';
+        
+        // 모든 모달 닫기
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            modal.classList.remove('active');
+        });
         
         // 콘텐츠 로드 후 스크롤 이벤트 리스너 추가
         setupScrollTitleChange();
@@ -166,6 +193,7 @@ async function loadContent() {
         setupPortfolioFilter();
     } catch (error) {
         console.error('콘텐츠 로드 실패:', error);
+        console.error('오류 상세:', error.message, error.stack);
     }
 }
 

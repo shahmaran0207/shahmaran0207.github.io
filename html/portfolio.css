@@ -3074,3 +3074,69 @@
         gap: 40px !important;
     }
 }
+
+/* Hover Content */
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-radius: 16px;
+}
+
+.card:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-title {
+    color: white;
+    font-size: 18px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hover-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.hover-button {
+    padding: 12px 24px;
+    background: white;
+    color: #232323;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    text-align: center;
+}
+
+.hover-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* Card position relative for hover overlay */
+.card {
+    position: relative;
+}
