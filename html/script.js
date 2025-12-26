@@ -202,29 +202,46 @@ function setupScrollTitleChange() {
     const scrollContent = document.querySelector('.profile-scroll-content');
     const titleElement = document.querySelector('.profile-title-fixed');
     
-    if (!scrollContent || !titleElement) return;
+    console.log('setupScrollTitleChange 호출됨');
+    console.log('scrollContent:', scrollContent);
+    console.log('titleElement:', titleElement);
+    
+    if (!scrollContent || !titleElement) {
+        console.log('scrollContent 또는 titleElement가 없음');
+        return;
+    }
+    
+    // 섹션들 미리 찾아두기
+    const interviewSection = document.querySelector('.interview-container');
+    const skillsSection = document.querySelector('#high-skill');
+    const portfolioSection = document.querySelector('.portfolio-section');
+    
+    console.log('interviewSection:', interviewSection);
+    console.log('skillsSection:', skillsSection);
+    console.log('portfolioSection:', portfolioSection);
+    
+    if (!interviewSection || !skillsSection) {
+        console.log('interviewSection 또는 skillsSection이 없음');
+        return;
+    }
     
     scrollContent.addEventListener('scroll', function() {
         const scrollTop = scrollContent.scrollTop;
-        const scrollHeight = scrollContent.scrollHeight;
+        const containerRect = scrollContent.getBoundingClientRect();
         
-        // Interview, Skills, Portfolio 섹션 찾기
-        const interviewSection = document.querySelector('.interview-container');
-        const skillsSection = document.querySelector('#high-skill');
-        const portfolioSection = document.querySelector('.portfolio-section');
+        // getBoundingClientRect로 현재 뷰포트 기준 위치 계산 후 스크롤 위치 더해서 절대 위치 계산
+        const interviewTop = interviewSection.getBoundingClientRect().top - containerRect.top + scrollTop;
+        const skillsTop = skillsSection.getBoundingClientRect().top - containerRect.top + scrollTop;
+        const portfolioTop = portfolioSection ? portfolioSection.getBoundingClientRect().top - containerRect.top + scrollTop : Infinity;
         
-        if (!interviewSection || !skillsSection) return;
+        console.log('scrollTop:', scrollTop, 'skillsTop:', skillsTop, 'portfolioTop:', portfolioTop);
         
-        const interviewTop = interviewSection.offsetTop;
-        const skillsTop = skillsSection.offsetTop;
-        const portfolioTop = portfolioSection ? portfolioSection.offsetTop : Infinity;
-        
-        // 스크롤 위치에 따라 타이틀 변경
-        if (scrollTop >= portfolioTop - 100) {
+        // 스크롤 위치에 따라 타이틀 변경 (300px 여유를 둬서 섹션이 보이기 시작할 때 변경)
+        if (portfolioSection && scrollTop >= portfolioTop - 300) {
             titleElement.textContent = 'Portfolio';
-        } else if (scrollTop >= skillsTop - 100) {
+        } else if (scrollTop >= skillsTop - 300) {
             titleElement.textContent = 'Skills';
-        } else if (scrollTop >= interviewTop - 100) {
+        } else if (scrollTop >= interviewTop - 300) {
             titleElement.textContent = 'Interview';
         } else {
             titleElement.textContent = 'Profile';

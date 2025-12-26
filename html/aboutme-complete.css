@@ -2923,6 +2923,7 @@
     
     .CareerContainer2 {
         margin-left: 105px;
+        margin-top: -60px;
     }
     
     .certificate1 {
@@ -2932,6 +2933,7 @@
     
     .certificateconatiner2 {
         margin-left: 40px;
+        margin-top: -40px;
     }
     
     .ineter {
@@ -2941,7 +2943,7 @@
 
     .awardsamd {
         gap: 75px;
-        margin-top: 100px;
+        margin-top: 200px;
     }
     
     .detail-awards {
