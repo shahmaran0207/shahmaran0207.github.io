@@ -1453,8 +1453,8 @@
     }
 }
 
-/* 1440px 이하 aboutme 글자 배치 수정 */
-@media (max-width: 1439px) {
+/* 1920px 이하 aboutme 글자 배치 수정 */
+@media (max-width: 1920px) {
     /* Education 섹션 수정 */
     .education-container {
         flex-direction: column;
@@ -1551,4 +1551,49 @@
     #internationalActivityconatiner {
         height: auto;
         flex-wrap: wrap;
-   
+    }
+    
+    /* Skills 섹션 수정 */
+    #high-skill {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .skill-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* 인라인 스타일 오버라이드 */
+    #high-skill > div[style],
+    .upper-skill-container > div[style] {
+        flex: 1 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .upper-skill-main {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+    }
+    
+    .skill-main {
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .skill-title {
+        width: 100%;
+        max-width: 100%;
+    }
+}
