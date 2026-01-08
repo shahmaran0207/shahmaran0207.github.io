@@ -131,6 +131,7 @@
 /* Education */
 .education-container {
     width: 100%;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 80px;
@@ -553,7 +554,7 @@
         line-height: 24px;
     }
     
-    /* Education */
+    /* Education - 모바일에서만 세로 배치 */
     .education-container {
         flex-direction: column;
         gap: 40px;
@@ -897,6 +898,18 @@
     /* 기본 스타일 유지 */
 }
 
+@media (min-width: 1441px) and (max-width: 1670px) {
+    .awardsamd {
+        margin-top: 420px;
+    }
+}
+
+@media (min-width: 1671px) and (max-width: 1920px) {
+    .awardsamd {
+        margin-top: 220px;
+    }
+}
+
 /* 대형 데스크톱 (1441px ~ 1920px) */
 @media (min-width: 1441px) and (max-width: 1920px) {
     .profile-scroll-content {
@@ -1006,7 +1019,7 @@
     /* Awards */
     .awardsamd {
         gap: 90px;
-        margin-top: 220px;
+        /* margin-top: 220px; */
     }
 
     .ineter {
@@ -1454,8 +1467,8 @@
 }
 
 /* 1920px 이하 aboutme 글자 배치 수정 */
-@media (max-width: 1920px) {
-    /* Education 섹션 수정 */
+@media (max-width: 1024px) {
+    /* Education 섹션 수정 - 태블릿 이하에서만 세로 배치 */
     .education-container {
         flex-direction: column;
         gap: 40px;
