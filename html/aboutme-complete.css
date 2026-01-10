@@ -898,11 +898,63 @@
     /* 기본 스타일 유지 */
 }
 
+/* 1520px 이하에서 모든 섹션 세로 배치 */
+@media (max-width: 1580px) {
+    /* Education 섹션 */
+    .education-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .gnu {
+        margin-left: 0;  /* 왼쪽 마진 제거 */
+        gap: 24px;
+    }
+    
+    /* Career 섹션 */
+    .career {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 0;  /* 왼쪽 마진 제거 */
+        gap: 24px;
+    }
+    
+    /* Certificate 섹션 */
+    .certificate1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 0;  /* 왼쪽 마진 제거 */
+        gap: 24px;
+    }
+    
+    /* Awards 섹션 */
+    .awardsamd,
+    .ineter {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .detail-awards {
+        margin-left: 0;  /* 왼쪽 마진 제거 - 이게 핵심! */
+        gap: 24px;
+    }
+}
+
+
+
 @media (min-width: 1441px) and (max-width: 1670px) {
     .awardsamd {
         margin-top: 420px;
     }
 }
+
+
 
 @media (min-width: 1671px) and (max-width: 1920px) {
     .awardsamd {
@@ -968,7 +1020,7 @@
     }
     
     .gnu {
-        margin-left: 55px;
+        /* margin-left: 55px; */
         gap: 45px;
     }
     
@@ -992,7 +1044,7 @@
     }
     
     .CareerContainer2 {
-        margin-left: 120px;
+        /* margin-left: 120px; */
         gap: 45px;
     }
     
@@ -1003,7 +1055,7 @@
     }
     
     .certificateconatiner2 {
-        margin-left: 45px;
+        /* margin-left: 45px; */
         gap: 45px;
     }
     
@@ -1028,7 +1080,7 @@
     }
     
     .detail-awards {
-        margin-left: 100px;
+        /* margin-left: 100px; */
         gap: 45px;
     }
     
@@ -1086,6 +1138,7 @@
     }
     
     .upper-skill-main {
+        flex-direction: column;
         gap: 26px;
     }
     
