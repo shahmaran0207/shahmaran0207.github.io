@@ -894,6 +894,17 @@
     .profile-scroll-content {
         padding: 40px;
     }
+
+    .upper-skill-main {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill-main {
+    flex: 1;
+    width: 100%;
+}
+
     
     /* 기본 스타일 유지 */
 }
@@ -943,6 +954,32 @@
     .detail-awards {
         margin-left: 0;  /* 왼쪽 마진 제거 - 이게 핵심! */
         gap: 24px;
+    }
+
+      /* Skills 섹션 */
+    #high-skill {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    /* 인라인 스타일 오버라이드 */
+    #high-skill > div[style],
+.upper-skill-container > div[style] {
+    flex: 1 0 auto !important;  /* flex-shrink: 0, flex-basis: auto */
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;  /* 최소 너비 제한 해제 */
+}
+
+
+    .upper-skill-main{
+        width: 100%;
     }
 }
 
