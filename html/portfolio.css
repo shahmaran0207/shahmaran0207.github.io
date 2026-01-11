@@ -421,6 +421,26 @@
     line-height: 1.8;
 }
 
+.number-item{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* 번호 목록 스타일 (1., 2. 등) */
+.accordion-content .number-item {
+    margin-bottom: 10px;
+    text-indent: 0;
+    padding-left: 30px;  /* 전체 텍스트 들여쓰기 */
+    text-indent: -30px;  /* 번호만 왼쪽으로 */
+}
+
+/* 불릿 포인트 스타일 (• 등) */
+.accordion-content .bullet-item {
+    margin-left: 20px;
+    text-indent: 0;
+    margin-bottom: 5px;
+}
+
 .accordion-item.active .accordion-content {
     display: block;
 }

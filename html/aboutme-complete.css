@@ -905,8 +905,17 @@
     width: 100%;
 }
 
-    
-    /* 기본 스타일 유지 */
+}
+
+
+@media (min-width: 1441px) and (max-width: 1670px) {
+    .awardsamd {
+        margin-top: 460px;
+    }
+
+    .certificate-text, .certificate-container{
+        margin-top: 20px;
+    }
 }
 
 /* 1520px 이하에서 모든 섹션 세로 배치 */
@@ -916,9 +925,14 @@
         flex-direction: column;
         gap: 40px;
     }
+
+    .awardsamd{
+        margin-top: 220px;
+    }
     
     .gnu {
-        margin-left: 0;  /* 왼쪽 마진 제거 */
+        margin-left: 0;
+        margin-top: -50px;
         gap: 24px;
     }
     
@@ -929,7 +943,8 @@
     }
     
     .CareerContainer2 {
-        margin-left: 0;  /* 왼쪽 마진 제거 */
+        margin-left: 0;
+        margin-top: -100px;
         gap: 24px;
     }
     
@@ -940,7 +955,8 @@
     }
     
     .certificateconatiner2 {
-        margin-left: 0;  /* 왼쪽 마진 제거 */
+        margin-left: 0;
+        margin-top: -100px;
         gap: 24px;
     }
     
@@ -952,8 +968,13 @@
     }
     
     .detail-awards {
-        margin-left: 0;  /* 왼쪽 마진 제거 - 이게 핵심! */
+        margin-left: 0;
+        margin-top: -80px;
         gap: 24px;
+    }
+
+    .wholeint{
+        margin-top: -60px;
     }
 
       /* Skills 섹션 */
@@ -975,6 +996,13 @@
     display: flex !important;
     flex-direction: column !important;
     min-width: 0 !important;  /* 최소 너비 제한 해제 */
+    justify-content: flex-start !important;
+            flex: 1 0 auto !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
 }
 
 
@@ -983,15 +1011,33 @@
     }
 }
 
-
-
-@media (min-width: 1441px) and (max-width: 1670px) {
+@media (max-width: 1440px) {
     .awardsamd {
-        margin-top: 420px;
+        margin-top: 460px;
+    }
+
+    .certificate-text, .certificate-container{
+        margin-top: 60px;
+    }
+
+    .awardsamd{
+        margin-top: 280px;
+    }
+    
+    .detail-awards{
+        margin-top: -20px;
+    }
+    
+    .wholeint{
+        margin-top: -10px;
     }
 }
 
-
+@media (max-width: 1150px) {
+    .awardsamd{
+        margin-top: 630px
+    }
+}
 
 @media (min-width: 1671px) and (max-width: 1920px) {
     .awardsamd {
