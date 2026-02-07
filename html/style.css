@@ -59,7 +59,7 @@ body {
 /* Back-End 텍스트 애니메이션 */
 #back-end-container {
     left: 10%;
-    top: 184px;
+    top: 220px;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -323,7 +323,7 @@ body {
 @media (max-width: 360px) {
     #back-end-container {
         left: 1%;
-        top: 12%;
+        top: 15%;
     }
 
     .profile-layout {
@@ -396,7 +396,7 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
     #back-end-container {
         left: 3%;
-        top: 18%;
+        top: 21%;
     }
 
     .profile-layout {
@@ -464,7 +464,7 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
     #back-end-container {
         left: 5%;
-        top: 20%;
+        top: 23%;
     }
     
     #developer-container {
@@ -522,7 +522,7 @@ body {
 @media (min-width: 1024px) and (max-width: 1279px) {
     #back-end-container {
         left: 8%;
-        top: 22%;
+        top: 25%;
     }
     
     #developer-container {
@@ -580,7 +580,7 @@ body {
 @media (min-width: 1280px) and (max-width: 1439px) {
     #back-end-container {
         left: 10%;
-        top: 184px;
+        top: 220px;
     }
     
     #developer-container {
@@ -633,7 +633,7 @@ body {
 @media (min-width: 1440px) and (max-width: 1919px) {
     #back-end-container {
         left: 10%;
-        top: 184px;
+        top: 220px;
     }
     
     #developer-container {
@@ -686,7 +686,7 @@ body {
 @media (min-width: 1920px) {
     #back-end-container {
         left: 10%;
-        top: 184px;
+        top: 220px;
     }
     
     #developer-container {

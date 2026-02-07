@@ -295,11 +295,11 @@
 }
 
 .ineter {
-    margin-top: 80px;
+    margin-top: 65px;
     align-self: stretch;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
+    gap: 65px;
     display: inline-flex;
 }
 
@@ -619,8 +619,8 @@
     .awardsamd,
     .ineter {
         flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
+        gap: 25px;
+        margin-top: 25px;
     }
     
     .detail-awards {
@@ -809,7 +809,7 @@
     /* Awards */
     .awardsamd,
     .ineter {
-        gap: 60px;
+        gap: 45px;
         margin-top: 60px;
     }
     
@@ -910,7 +910,7 @@
 
 @media (min-width: 1441px) and (max-width: 1670px) {
     .awardsamd {
-        margin-top: 460px;
+        margin-top: 260px;
     }
 
     .certificate-text, .certificate-container{
@@ -964,7 +964,7 @@
     .awardsamd,
     .ineter {
         flex-direction: column;
-        gap: 40px;
+        gap: 25px;
     }
     
     .detail-awards {
@@ -1158,7 +1158,7 @@
     }
 
     .ineter {
-        gap: 90px;
+        gap: 75px;
         margin-top: 90px;
     }
     
@@ -1362,7 +1362,7 @@
     }
 
     .ineter {
-        gap: 100px;
+        gap: 85px;
         margin-top: 100px;
     }
     
@@ -1683,7 +1683,7 @@
         
     .ineter {
         flex-direction: column;
-        gap: 40px;
+        gap: 25px;
     }
     
     .detail-awards {

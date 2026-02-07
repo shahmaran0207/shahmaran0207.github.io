@@ -5,7 +5,7 @@
 
 /* 초소??모바???�로 (320px ~ 360px) - iPhone SE, Galaxy Fold */
 @media (max-width: 360px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 12%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 15%; }
     #developer-container { top: 48%; left: 0; }
     #back-end { font-size: clamp(55px, 17vw, 70px); }
     #developer { font-size: clamp(55px, 17vw, 70px); }
@@ -22,7 +22,7 @@
 
 /* ?�형 모바???�로 (361px ~ 375px) - iPhone 12 mini */
 @media (min-width: 361px) and (max-width: 375px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 13%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 16%; }
     #developer-container { top: 47%; left: 0; }
     #back-end { font-size: clamp(60px, 17vw, 75px); }
     #developer { font-size: clamp(60px, 17vw, 75px); }
@@ -38,7 +38,7 @@
 
 /* 중형 모바???�로 (376px ~ 390px) - iPhone 13/14 */
 @media (min-width: 376px) and (max-width: 390px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 14%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 17%; }
     #developer-container { top: 46%; left: 0; }
     #back-end { font-size: clamp(65px, 17vw, 78px); }
     #developer { font-size: clamp(65px, 17vw, 78px); }
@@ -54,7 +54,7 @@
 /* 
 ?�??모바???�로 (391px ~ 414px) - iPhone 14 Plus, Pixel */
 @media (min-width: 391px) and (max-width: 414px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 14.5%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 17.5%; }
     #developer-container { top: 45.5%; left: 0; }
     #back-end { font-size: clamp(68px, 17vw, 80px); }
     #developer { font-size: clamp(68px, 17vw, 80px); }
@@ -70,7 +70,7 @@
 
 /* 초�???모바???�로 (415px ~ 480px) - iPhone 14 Pro Max */
 @media (min-width: 415px) and (max-width: 480px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 15%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 18%; }
     #developer-container { top: 45%; left: 0; }
     #back-end { font-size: clamp(70px, 18vw, 85px); }
     #developer { font-size: clamp(70px, 18vw, 85px); }
@@ -86,7 +86,7 @@
 
 /* ?�형 모바??가�?(481px ~ 568px) - iPhone SE 가�?*/
 @media (min-width: 481px) and (max-width: 568px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 16%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 19%; }
     #developer-container { top: 44%; left: 0; }
     #back-end { font-size: clamp(75px, 16vw, 95px); }
     #developer { font-size: clamp(75px, 16vw, 95px); }
@@ -102,7 +102,7 @@
 
 /* 중형 모바??가�?(569px ~ 667px) - iPhone 8 Plus 가�?*/
 @media (min-width: 569px) and (max-width: 667px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 17%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 20%; }
     #developer-container { top: 43%; left: 0; }
     #back-end { font-size: clamp(85px, 16vw, 105px); }
     #developer { font-size: clamp(85px, 16vw, 105px); }
@@ -118,7 +118,7 @@
 
 /* ?�??모바??가�?(668px ~ 767px) - iPhone 14 Pro Max 가�?*/
 @media (min-width: 668px) and (max-width: 767px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 18%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 21%; }
     #developer-container { top: 42%; left: 0; }
     #back-end { font-size: clamp(95px, 16vw, 115px); }
     #developer { font-size: clamp(95px, 16vw, 115px); }
@@ -134,7 +134,7 @@
 /* 
 ?�형 ?�블�??�로 (768px ~ 810px) - iPad mini */
 @media (min-width: 768px) and (max-width: 810px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 19%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 22%; }
     #developer-container { top: 41%; left: 0; }
     #back-end { font-size: clamp(110px, 14vw, 135px); }
     #developer { font-size: clamp(110px, 14vw, 135px); }
@@ -150,7 +150,7 @@
 
 /* 중형 ?�블�??�로 (811px ~ 834px) - iPad Air */
 @media (min-width: 811px) and (max-width: 834px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 19.5%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 22.5%; }
     #developer-container { top: 40.5%; left: 0; }
     #back-end { font-size: clamp(120px, 14vw, 145px); }
     #developer { font-size: clamp(120px, 14vw, 145px); }
@@ -166,7 +166,7 @@
 
 /* ?�???�블�??�로 (835px ~ 1023px) - iPad Pro 11" */
 @media (min-width: 835px) and (max-width: 1023px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 20%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 23%; }
     #developer-container { top: 40%; left: 0; }
     #back-end { font-size: clamp(130px, 14vw, 165px); }
     #developer { font-size: clamp(130px, 14vw, 165px); }
@@ -182,7 +182,7 @@
 
 /* ?�형 ?�블�?가�?(1024px ~ 1112px) - iPad mini 가�?*/
 @media (min-width: 1024px) and (max-width: 1112px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 21%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 24%; }
     #developer-container { top: 39%; left: 0; }
     #back-end { font-size: clamp(160px, 13vw, 190px); }
     #developer { font-size: clamp(160px, 13vw, 190px); }
@@ -198,7 +198,7 @@
 
 /* 중형 ?�블�?가�?(1113px ~ 1194px) - iPad Air 가�?*/
 @media (min-width: 1113px) and (max-width: 1194px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 21.5%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 24.5%; }
     #developer-container { top: 38.5%; left: 0; }
     #back-end { font-size: clamp(175px, 12.5vw, 205px); }
     #developer { font-size: clamp(175px, 12.5vw, 205px); }
@@ -214,7 +214,7 @@
 
 /* ?�???�블�?가�?(1195px ~ 1279px) - iPad Pro 11" 가�?*/
 @media (min-width: 1195px) and (max-width: 1279px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 22%; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 25%; }
     #developer-container { top: 38%; left: 0; }
     #back-end { font-size: clamp(185px, 12vw, 215px); }
     #developer { font-size: clamp(185px, 12vw, 215px); }
@@ -230,7 +230,7 @@
 /* 
 ?�형 ?�트�?(1280px ~ 1365px) - 13" MacBook */
 @media (min-width: 1280px) and (max-width: 1365px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(210px, 10.5vw, 245px); }
     #developer { font-size: clamp(210px, 10.5vw, 245px); }
@@ -246,7 +246,7 @@
 
 /* 중형 ?�트�?(1366px ~ 1439px) - 14" ?�트�?*/
 @media (min-width: 1366px) and (max-width: 1439px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(225px, 10vw, 255px); }
     #developer { font-size: clamp(225px, 10vw, 255px); }
@@ -262,7 +262,7 @@
 
 /* ?��? ?�스?�톱 (1440px ~ 1535px) - 15" ?�트�? 24" 모니??*/
 @media (min-width: 1440px) and (max-width: 1535px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(245px, 9vw, 275px); }
     #developer { font-size: clamp(245px, 9vw, 275px); }
@@ -278,7 +278,7 @@
 
 /* ?�???�스?�톱 (1536px ~ 1679px) - 16" MacBook Pro */
 @media (min-width: 1536px) and (max-width: 1679px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(260px, 8.5vw, 290px); }
     #developer { font-size: clamp(260px, 8.5vw, 290px); }
@@ -294,7 +294,7 @@
 
 /* 초�????�스?�톱 (1680px ~ 1919px) - 27" iMac */
 @media (min-width: 1680px) and (max-width: 1919px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(275px, 8vw, 305px); }
     #developer { font-size: clamp(275px, 8vw, 305px); }
@@ -311,7 +311,7 @@
 
 /* Full HD (1920px ~ 2047px) - 27" 모니??*/
 @media (min-width: 1920px) and (max-width: 2047px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(295px, 7vw, 325px); }
     #developer { font-size: clamp(295px, 7vw, 325px); }
@@ -328,7 +328,7 @@
 /* 2K ?�상
 ??(2048px ~ 2559px) - 32" 모니??*/
 @media (min-width: 2048px) and (max-width: 2559px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(320px, 6.5vw, 360px); }
     #developer { font-size: clamp(320px, 6.5vw, 360px); }
@@ -345,7 +345,7 @@
 
 /* 4K ?�상??(2560px ~ 3439px) - 4K 모니??*/
 @media (min-width: 2560px) and (max-width: 3439px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(380px, 5.5vw, 450px); }
     #developer { font-size: clamp(380px, 5.5vw, 450px); }
@@ -362,7 +362,7 @@
 
 /* 5K ?�상??(3440px ~ 5119px) - 5K iMac, 초광?�??모니??*/
 @media (min-width: 3440px) and (max-width: 5119px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(450px, 5vw, 550px); }
     #developer { font-size: clamp(450px, 5vw, 550px); }
@@ -379,7 +379,7 @@
 
 /* 8K ?�상??(5120px ?�상) - 8K 모니?? 초고?�상??*/
 @media (min-width: 5120px) {
-    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 184px; }
+    #back-end-container { left: 0; right: 0; margin: 0 auto; top: 220px; }
     #developer-container { top: 490px; left: 0; }
     #back-end { font-size: clamp(550px, 4.5vw, 700px); }
     #developer { font-size: clamp(550px, 4.5vw, 700px); }
@@ -951,7 +951,7 @@
     }
     
     #back-end-container {
-        top: 160px;
+        top: 180px;
         left: 6%;
     }
     
@@ -1008,7 +1008,7 @@
     }
     
     #back-end-container {
-        top: 165px;
+        top: 185px;
         left: 7%;
     }
     
@@ -1065,7 +1065,7 @@
     }
     
     #back-end-container {
-        top: 167px;
+        top: 187px;
         left: 7%;
     }
     
@@ -1122,7 +1122,7 @@
     }
     
     #back-end-container {
-        top: 172px;
+        top: 192px;
         left: 8%;
     }
     
@@ -1179,7 +1179,7 @@
     }
     
     #back-end-container {
-        top: 200px;
+        top: 220px;
         left: 8.5%;
     }
     
@@ -1236,7 +1236,7 @@
     }
     
     #back-end-container {
-        top: 180px;
+        top: 200px;
         left: 9%;
     }
     
@@ -1293,7 +1293,7 @@
     }
     
     #back-end-container {
-        top: 184px;
+        top: 220px;
         left: 10%;
     }
     
@@ -1403,7 +1403,7 @@
     }
     
     #back-end-container {
-        top: 184px !important;
+        top: 220px !important;
     }
 }
 
