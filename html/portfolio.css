@@ -445,6 +445,22 @@
     margin-bottom: 5px;
 }
 
+/* 문제 상황, 해결 과정 제목 스타일 */
+.section-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-indent: 0;
+    padding-left: 0;
+}
+
+/* 첫 번째 section-title은 위 여백 줄이기 */
+.accordion-content .section-title:first-of-type {
+    margin-top: 12px;
+}
+
 .accordion-item.active .accordion-content {
     display: block;
 }
@@ -785,6 +801,14 @@
         width: 600px;
         height: 300px;
     }
+}
+
+/* 특정 범위 데스크톱 (1580px ~ 1630px) */
+@media (min-width: 1580px) and (max-width: 1630px) {
+    .awardsamd{
+        margin-top: 470px;
+    }
+
 }
 
 /* 대형 데스크톱 (1441px ~ 1920px) */
