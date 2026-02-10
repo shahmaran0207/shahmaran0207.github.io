@@ -1,6 +1,6 @@
-/* Aboutme, Interview, Skills 스타일 */
+/* Aboutme, Interview, Skills 스타일 - Mobile First */
 
-/* 스크롤 영역 */
+/* 기본 스타일 (모바일 기준 - 320px~) */
 .profile-scroll-content {
     position: relative;
     width: 100%;
@@ -8,7 +8,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #232323;
-    padding: 40px;
+    padding: 16px;
     box-sizing: border-box;
 }
 
@@ -23,15 +23,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
     display: inline-flex;
 }
 
 .profile-title {
     color: white;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 32px;
     word-wrap: break-word;
 }
 
@@ -45,9 +45,9 @@
 .about-main {
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 22px;
     word-wrap: break-word;
     white-space: nowrap;
     display: inline-block;
@@ -69,27 +69,27 @@
 .button-text {
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 18px;
     word-wrap: break-word;
 }
 
 .date-text {
     text-align: left;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 21px;
     word-wrap: break-word;
 }
 
 .sub-sub {
     text-align: left;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 21px;
     word-wrap: break-word;
 }
 
@@ -103,18 +103,18 @@
 .subtext {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 21px;
     word-wrap: break-word;
 }
 
 .subtext-sub {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 21px;
     word-wrap: break-word;
 }
 
@@ -122,24 +122,24 @@
     flex: 1 1 0;
     text-align: left;
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 22px;
     word-wrap: break-word;
 }
 
 /* Education */
 .education-container {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
+    gap: 30px;
     display: flex;
 }
 
 .eduandawards {
-    height: 52px;
+    height: auto;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
@@ -147,82 +147,87 @@
 }
 
 .gnu {
-    margin-left: 50px;
+    margin-left: 0;
     flex: 1 1 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 120px;
+    gap: 20px;
     display: flex;
 }
 
 .gnu-title {
     align-self: stretch;
-    height: 120px;
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
     display: flex;
 }
 
 .inline-flex-container {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    gap: 48px;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .majors {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .date-info {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .kgitbank-sub {
     align-self: stretch;
-    height: 82px;
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
     display: flex;
 }
 
 .kgitbank {
     justify-content: flex-start;
-    gap: 48px;
+    gap: 12px;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
 /* Career */
 .career {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 30px;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
-    display: inline-flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .CareerContainer2 {
-    margin-left: 110px;
+    margin-left: 0;
     flex: 1 1 0;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
     display: block;
 }
 
 #CareerContainer {
-    height: 52px;
+    height: auto;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
@@ -232,25 +237,26 @@
 /* Certificate */
 .certificate1 {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
-    display: inline-flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .certificateconatiner2 {
-    margin-left: 40px;
+    margin-left: 0;
     flex: 1 1 0;
-    height: 264px;
+    height: auto;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
     display: block;
 }
 
 #certificateconatiner {
-    height: 52px;
+    height: auto;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
@@ -258,7 +264,7 @@
 }
 
 .certificate-text {
-    width: 300px;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -267,8 +273,8 @@
 }
 
 .certificate-container {
-    width: 300px;
-    margin-top: 40px;
+    width: 100%;
+    margin-top: 20px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -277,7 +283,7 @@
 }
 
 .certificate-sub {
-    width: 300px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -286,30 +292,32 @@
 
 /* Awards */
 .awardsamd {
-    margin-top: 440px;
+    margin-top: 30px;
     align-self: stretch;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
-    display: inline-flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .ineter {
-    margin-top: 65px;
+    margin-top: 30px;
     align-self: stretch;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 65px;
-    display: inline-flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .detail-awards {
     flex: 1 1 0;
-    margin-left: 95px;
+    margin-left: 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
     display: inline-flex;
 }
 
@@ -323,37 +331,38 @@
 
 /* International Activity */
 #internationalActivity {
-    width: 240px;
+    width: auto;
     color: white;
-    font-size: 35px;
+    font-size: 20px;
     font-family: Pretendard, serif;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 28px;
     word-wrap: break-word;
 }
 
 #internationalActivityconatiner {
-    height: 104px;
+    height: auto;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Interview */
 .interview-container {
     width: 100%;
     max-width: 100%;
-    margin-top: 80px;
+    margin-top: 30px;
     height: auto;
-    min-height: 196px;
-    padding: 24px;
+    min-height: auto;
+    padding: 16px;
     background: #373737;
     border-radius: 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 16px;
+    gap: 10px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -362,25 +371,25 @@
 }
 
 .interview-container:first-of-type {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .interview-question {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     font-family: Pretendard, sans-serif;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 28px;
     word-wrap: break-word;
 }
 
 .interview-answer {
     align-self: stretch;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-family: Pretendard, serif;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 21px;
     word-wrap: break-word;
 }
 
@@ -389,28 +398,30 @@
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
-    display: inline-flex;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .upper-skill-container {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 30px;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
-    display: inline-flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .upper-skill-container:last-of-type {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .skill-container {
-    width: 256px;
-    height: 52px;
+    width: 100%;
+    height: auto;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
@@ -419,19 +430,21 @@
 
 .upper-skill-main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
 }
 
 .skill-main {
-    flex: 0 1 calc(50% - 20px);
+    flex: 1;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
 .skill-title {
-    padding: 8px 16px;
+    padding: 4px 8px;
     background: #373737;
     border-radius: 8px;
     overflow: hidden;
@@ -439,13 +452,13 @@
     align-items: center;
     position: relative;
     width: 100%;
-    height: 80px;
+    height: 50px;
 }
 
 .skill-icon {
-    width: 80px;
-    margin-right: 10px;
-    height: 80px;
+    width: 50px;
+    margin-right: 6px;
+    height: 50px;
     position: relative;
     flex-shrink: 0;
 }
@@ -454,16 +467,16 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-left: 20px;
+    margin-left: 12px;
     position: absolute;
     top: 50%;
-    left: calc(50% + 20px);
+    left: calc(50% + 12px);
     transform: translateY(-50%);
     text-align: center;
     color: white;
     font-family: Pretendard, serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .skill-image {
@@ -494,226 +507,18 @@
 
 .AboutMe-title {
     color: white;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 32px;
     word-wrap: break-word;
 }
 
 /* ========================================
-   반응형 미디어 쿼리 (간소화)
+   반응형 미디어 쿼리 (3단계)
    ======================================== */
 
-/* 모바일 (최대 768px) */
-@media (max-width: 768px) {
-    .profile-scroll-content {
-        padding: 20px;
-    }
-    
-    .wholeint {
-        gap: 24px;
-    }
-    
-    .profile-title {
-        font-size: 28px;
-        line-height: 36px;
-    }
-    
-    .about-main {
-        font-size: 18px;
-        line-height: 24px;
-    }
-    
-    .button-text {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    
-    .date-text {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    .sub-sub {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    .subtext {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    .subtext-sub {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    .certificate {
-        font-size: 18px;
-        line-height: 24px;
-    }
-    
-    /* Education - 모바일에서만 세로 배치 */
-    .education-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .gnu {
-        margin-left: 0;
-        gap: 24px;
-    }
-    
-    .gnu-title {
-        height: auto;
-        gap: 12px;
-    }
-    
-    .inline-flex-container {
-        flex-direction: column;
-        gap: 16px;
-        align-items: flex-start;
-    }
-    
-    .kgitbank {
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    /* Career */
-    .career {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-    }
-    
-    .CareerContainer2 {
-        margin-left: 0;
-        gap: 24px;
-    }
-    
-    /* Certificate */
-    .certificate1 {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-    }
-    
-    .certificateconatiner2 {
-        margin-left: 0;
-        height: auto;
-        gap: 24px;
-    }
-    
-    .certificate-text,
-    .certificate-container {
-        width: 100%;
-    }
-    
-    .certificate-sub {
-        width: 100%;
-    }
-    
-    /* Awards */
-    .awardsamd,
-    .ineter {
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 25px;
-    }
-    
-    .detail-awards {
-        margin-left: 0;
-        gap: 24px;
-    }
-    
-    /* International Activity */
-    #internationalActivity {
-        font-size: 24px;
-        line-height: 32px;
-        width: auto;
-    }
-    
-    #internationalActivityconatiner {
-        height: auto;
-    }
-    
-    /* Interview */
-    .interview-container {
-        margin-top: 40px;
-        padding: 20px;
-        min-height: auto;
-        gap: 12px;
-    }
-    
-    .interview-container:first-of-type {
-        margin-top: 40px;
-    }
-    
-    .interview-question {
-        font-size: 24px;
-        line-height: 32px;
-    }
-    
-    .interview-answer {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    /* Skills */
-    #high-skill {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    
-    .upper-skill-container {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-    }
-    
-    .upper-skill-container:last-of-type {
-        margin-bottom: 40px;
-    }
-    
-    .skill-container {
-        width: 100%;
-        height: auto;
-    }
-    
-    .upper-skill-main {
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .skill-main {
-        flex: 1;
-        width: 100%;
-    }
-    
-    .skill-title {
-        height: 60px;
-        padding: 6px 12px;
-    }
-    
-    .skill-icon {
-        width: 60px;
-        height: 60px;
-        margin-right: 8px;
-    }
-    
-    .skill-text {
-        font-size: 18px;
-        margin-left: 16px;
-        left: calc(50% + 16px);
-    }
-}
-
 /* 태블릿 (769px ~ 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
     .profile-scroll-content {
         padding: 32px;
     }
@@ -764,12 +569,11 @@
     
     /* Education */
     .education-container {
-        gap: 60px;
+        gap: 50px;
     }
     
     .gnu {
-        margin-left: 30px;
-        gap: 32px;
+        gap: 24px;
     }
     
     .gnu-title {
@@ -777,45 +581,42 @@
     }
     
     .inline-flex-container {
-        gap: 32px;
+        gap: 20px;
     }
     
     .kgitbank {
-        gap: 32px;
+        gap: 20px;
     }
     
     /* Career */
     .career {
-        gap: 60px;
-        margin-top: 50px;
+        gap: 50px;
+        margin-top: 40px;
     }
     
     .CareerContainer2 {
-        margin-left: 80px;
-        gap: 32px;
+        gap: 24px;
     }
     
     /* Certificate */
     .certificate1 {
-        gap: 60px;
-        margin-top: 50px;
+        gap: 50px;
+        margin-top: 40px;
     }
     
     .certificateconatiner2 {
-        margin-left: 30px;
-        gap: 32px;
+        gap: 24px;
     }
     
     /* Awards */
     .awardsamd,
     .ineter {
-        gap: 45px;
-        margin-top: 60px;
+        gap: 40px;
+        margin-top: 40px;
     }
     
     .detail-awards {
-        margin-left: 70px;
-        gap: 32px;
+        gap: 24px;
     }
     
     /* International Activity */
@@ -826,13 +627,13 @@
     
     /* Interview */
     .interview-container {
-        margin-top: 60px;
+        margin-top: 50px;
         padding: 22px;
         gap: 14px;
     }
     
     .interview-container:first-of-type {
-        margin-top: 60px;
+        margin-top: 50px;
     }
     
     .interview-question {
@@ -847,30 +648,22 @@
     
     /* Skills */
     #high-skill {
-        gap: 60px;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     
     .upper-skill-container {
-        gap: 60px;
-        margin-top: 60px;
+        gap: 50px;
+        margin-top: 50px;
     }
     
     .upper-skill-container:last-of-type {
-        margin-bottom: 60px;
-    }
-    
-    .skill-container {
-        width: 220px;
+        margin-bottom: 50px;
     }
     
     .upper-skill-main {
         gap: 20px;
-    }
-    
-    .skill-main {
-        flex: 0 1 calc(50% - 16px);
     }
     
     .skill-title {
@@ -889,44 +682,251 @@
     }
 }
 
-/* 데스크톱 (1025px ~ 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
+/* PC (1025px ~) */
+@media (min-width: 1025px) {
     .profile-scroll-content {
         padding: 40px;
     }
-
+    
+    .wholeint {
+        gap: 40px;
+    }
+    
+    .profile-title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    
+    .about-main {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .button-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .date-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .sub-sub {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .subtext {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .subtext-sub {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .certificate {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    /* Education */
+    .education-container {
+        flex-direction: row;
+        gap: 80px;
+    }
+    
+    .gnu {
+        margin-left: 50px;
+        gap: 120px;
+    }
+    
+    .gnu-title {
+        height: 120px;
+        gap: 16px;
+    }
+    
+    .inline-flex-container {
+        flex-direction: row;
+        gap: 48px;
+    }
+    
+    .majors,
+    .date-info {
+        width: auto;
+    }
+    
+    .kgitbank {
+        flex-direction: row;
+        gap: 48px;
+    }
+    
+    /* Career */
+    .career {
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 100px;
+    }
+    
+    .CareerContainer2 {
+        margin-left: 110px;
+        gap: 40px;
+    }
+    
+    /* Certificate */
+    .certificate1 {
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 60px;
+    }
+    
+    .certificateconatiner2 {
+        margin-left: 40px;
+        height: 264px;
+        gap: 40px;
+    }
+    
+    .certificate-text {
+        width: 300px;
+    }
+    
+    .certificate-container {
+        width: 300px;
+        margin-top: 40px;
+    }
+    
+    .certificate-sub {
+        width: 300px;
+    }
+    
+    /* Awards */
+    .awardsamd {
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 440px;
+    }
+    
+    .ineter {
+        flex-direction: row;
+        gap: 65px;
+        margin-top: 65px;
+    }
+    
+    .detail-awards {
+        margin-left: 95px;
+        gap: 40px;
+    }
+    
+    /* International Activity */
+    #internationalActivity {
+        font-size: 35px;
+        line-height: 52px;
+        width: 240px;
+    }
+    
+    #internationalActivityconatiner {
+        height: 104px;
+        flex-wrap: nowrap;
+    }
+    
+    /* Interview */
+    .interview-container {
+        margin-top: 80px;
+        padding: 24px;
+        gap: 16px;
+    }
+    
+    .interview-container:first-of-type {
+        margin-top: 80px;
+    }
+    
+    .interview-question {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .interview-answer {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    /* Skills */
+    #high-skill {
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .upper-skill-container {
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 80px;
+    }
+    
+    .upper-skill-container:last-of-type {
+        margin-bottom: 80px;
+    }
+    
+    .skill-container {
+        width: 256px;
+        height: 52px;
+    }
+    
     .upper-skill-main {
-    flex-direction: column;
-    gap: 16px;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    
+    .skill-main {
+        flex: 0 1 calc(50% - 20px);
+        gap: 16px;
+    }
+    
+    .skill-title {
+        height: 80px;
+        padding: 8px 16px;
+    }
+    
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+    
+    .skill-text {
+        font-size: 24px;
+        margin-left: 20px;
+        left: calc(50% + 20px);
+    }
 }
 
-.skill-main {
-    flex: 1;
-    width: 100%;
+/* 특정 포인트 미세 조정 (기존 유지) */
+@media (max-width: 1150px) {
+    .awardsamd {
+        margin-top: 630px;
+    }
 }
-
-}
-
 
 @media (min-width: 1441px) and (max-width: 1670px) {
     .awardsamd {
         margin-top: 260px;
     }
 
-    .certificate-text, .certificate-container{
+    .certificate-text, .certificate-container {
         margin-top: 20px;
     }
 }
 
-/* 1520px 이하에서 모든 섹션 세로 배치 */
 @media (max-width: 1580px) {
-    /* Education 섹션 */
     .education-container {
         flex-direction: column;
         gap: 40px;
     }
 
-    .awardsamd{
+    .awardsamd {
         margin-top: 220px;
     }
     
@@ -936,7 +936,6 @@
         gap: 24px;
     }
     
-    /* Career 섹션 */
     .career {
         flex-direction: column;
         gap: 40px;
@@ -948,7 +947,6 @@
         gap: 24px;
     }
     
-    /* Certificate 섹션 */
     .certificate1 {
         flex-direction: column;
         gap: 40px;
@@ -960,7 +958,6 @@
         gap: 24px;
     }
     
-    /* Awards 섹션 */
     .awardsamd,
     .ineter {
         flex-direction: column;
@@ -973,11 +970,10 @@
         gap: 24px;
     }
 
-    .wholeint{
+    .wholeint {
         margin-top: -60px;
     }
 
-      /* Skills 섹션 */
     #high-skill {
         flex-direction: column;
         gap: 40px;
@@ -988,25 +984,17 @@
         gap: 40px;
     }
     
-    /* 인라인 스타일 오버라이드 */
     #high-skill > div[style],
-.upper-skill-container > div[style] {
-    flex: 1 0 auto !important;  /* flex-shrink: 0, flex-basis: auto */
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    min-width: 0 !important;  /* 최소 너비 제한 해제 */
-    justify-content: flex-start !important;
-            flex: 1 0 auto !important;
+    .upper-skill-container > div[style] {
+        flex: 1 0 auto !important;
         width: 100% !important;
         display: flex !important;
-        flex-direction: row !important;
+        flex-direction: column !important;
+        min-width: 0 !important;
         justify-content: flex-start !important;
-        align-items: center !important;
-}
+    }
 
-
-    .upper-skill-main{
+    .upper-skill-main {
         width: 100%;
     }
 }
@@ -1016,26 +1004,20 @@
         margin-top: 460px;
     }
 
-    .certificate-text, .certificate-container{
+    .certificate-text, .certificate-container {
         margin-top: 60px;
     }
 
-    .awardsamd{
+    .awardsamd {
         margin-top: 280px;
     }
     
-    .detail-awards{
+    .detail-awards {
         margin-top: -20px;
     }
     
-    .wholeint{
+    .wholeint {
         margin-top: -10px;
-    }
-}
-
-@media (max-width: 1150px) {
-    .awardsamd{
-        margin-top: 630px
     }
 }
 
@@ -1097,13 +1079,11 @@
         line-height: 37px;
     }
     
-    /* Education */
     .education-container {
         gap: 90px;
     }
     
     .gnu {
-        /* margin-left: 55px; */
         gap: 45px;
     }
     
@@ -1120,25 +1100,21 @@
         gap: 55px;
     }
     
-    /* Career */
     .career {
         gap: 90px;
         margin-top: 70px;
     }
     
     .CareerContainer2 {
-        /* margin-left: 120px; */
         gap: 45px;
     }
     
-    /* Certificate */
     .certificate1 {
         gap: 90px;
         margin-top: 70px;
     }
     
     .certificateconatiner2 {
-        /* margin-left: 45px; */
         gap: 45px;
     }
     
@@ -1151,10 +1127,8 @@
         width: 325px;
     }
     
-    /* Awards */
     .awardsamd {
         gap: 90px;
-        /* margin-top: 220px; */
     }
 
     .ineter {
@@ -1163,11 +1137,9 @@
     }
     
     .detail-awards {
-        /* margin-left: 100px; */
         gap: 45px;
     }
     
-    /* International Activity */
     #internationalActivity {
         font-size: 36px;
         line-height: 55px;
@@ -1178,7 +1150,6 @@
         height: 110px;
     }
     
-    /* Interview */
     .interview-container {
         margin-top: 90px;
         padding: 26px;
@@ -1199,7 +1170,6 @@
         line-height: 32px;
     }
     
-    /* Skills */
     #high-skill {
         gap: 90px;
         margin-top: 90px;
@@ -1301,7 +1271,6 @@
         line-height: 38px;
     }
     
-    /* Education */
     .education-container {
         gap: 100px;
     }
@@ -1324,7 +1293,6 @@
         gap: 60px;
     }
     
-    /* Career */
     .career {
         gap: 100px;
         margin-top: 80px;
@@ -1335,7 +1303,6 @@
         gap: 50px;
     }
     
-    /* Certificate */
     .certificate1 {
         gap: 100px;
         margin-top: 80px;
@@ -1355,7 +1322,6 @@
         width: 350px;
     }
     
-    /* Awards */
     .awardsamd {
         gap: 100px;
         margin-top: 250px;
@@ -1366,13 +1332,11 @@
         margin-top: 100px;
     }
     
-    
     .detail-awards {
         margin-left: 110px;
         gap: 50px;
     }
     
-    /* International Activity */
     #internationalActivity {
         font-size: 38px;
         line-height: 58px;
@@ -1383,7 +1347,6 @@
         height: 120px;
     }
     
-    /* Interview */
     .interview-container {
         margin-top: 100px;
         padding: 28px;
@@ -1404,7 +1367,6 @@
         line-height: 33px;
     }
     
-    /* Skills */
     #high-skill {
         gap: 100px;
         margin-top: 100px;
@@ -1450,299 +1412,5 @@
         gap: 20px;
         margin-left: 24px;
         left: calc(50% + 24px);
-    }
-}
-
-/* 초소형 모바일 (최대 480px) */
-@media (max-width: 480px) {
-    .profile-scroll-content {
-        padding: 16px;
-    }
-    
-    .wholeint {
-        gap: 20px;
-    }
-    
-    .profile-title {
-        font-size: 24px;
-        line-height: 32px;
-    }
-    
-    .about-main {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    
-    .button-text {
-        font-size: 13px;
-        line-height: 18px;
-    }
-    
-    .date-text {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    .sub-sub {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    .subtext {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    .subtext-sub {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    .certificate {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    
-    /* Interview */
-    .interview-container {
-        margin-top: 32px;
-        padding: 16px;
-        gap: 10px;
-    }
-    
-    .interview-container:first-of-type {
-        margin-top: 32px;
-    }
-    
-    .interview-question {
-        font-size: 20px;
-        line-height: 28px;
-    }
-    
-    .interview-answer {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    /* Skills */
-    .skill-title {
-        height: 50px;
-        padding: 4px 8px;
-    }
-    
-    .skill-icon {
-        width: 50px;
-        height: 50px;
-        margin-right: 6px;
-    }
-    
-    .skill-text {
-        font-size: 16px;
-        margin-left: 12px;
-        left: calc(50% + 12px);
-    }
-}
-
-/* 세로 높이가 낮은 화면 (최대 600px) */
-@media (max-height: 600px) {
-    .profile-scroll-content {
-        padding: 20px;
-    }
-    
-    .wholeint {
-        gap: 20px;
-    }
-    
-    .interview-container {
-        margin-top: 30px;
-        padding: 16px;
-        min-height: auto;
-    }
-    
-    .interview-container:first-of-type {
-        margin-top: 30px;
-    }
-    
-    .interview-question {
-        font-size: 24px;
-        line-height: 32px;
-    }
-    
-    .interview-answer {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    #high-skill {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        gap: 30px;
-    }
-    
-    .upper-skill-container {
-        margin-top: 30px;
-        gap: 30px;
-    }
-    
-    .upper-skill-container:last-of-type {
-        margin-bottom: 30px;
-    }
-    
-    .career {
-        margin-top: 30px;
-    }
-    
-    .certificate1 {
-        margin-top: 30px;
-    }
-    
-    .awardsamd,
-    .ineter {
-        margin-top: 30px;
-    }
-}
-
-/* 1920px 이하 aboutme 글자 배치 수정 */
-@media (max-width: 1024px) {
-    /* Education 섹션 수정 - 태블릿 이하에서만 세로 배치 */
-    .education-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .gnu {
-        margin-left: 0;
-        gap: 24px;
-    }
-    
-    .gnu-title {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        height: auto;
-    }
-    
-    .inline-flex-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-    
-    .majors,
-    .date-info {
-        width: 100%;
-    }
-    
-    .kgitbank {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-    
-    /* Career 섹션 수정 */
-    .career {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .CareerContainer2 {
-        margin-left: 0;
-        gap: 24px;
-    }
-    
-    /* Certificate 섹션 수정 */
-    .certificate1 {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .certificateconatiner2 {
-        margin-left: 0;
-        gap: 24px;
-        height: auto;
-    }
-    
-    .certificate-text,
-    .certificate-container {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .certificate-sub {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    /* Awards 섹션 수정 */
-    .awardsamd {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px
-    }
-
-        
-    .ineter {
-        flex-direction: column;
-        gap: 25px;
-    }
-    
-    .detail-awards {
-        margin-left: 0;
-        gap: 24px;
-    }
-    
-    /* International Activity 섹션 수정 */
-    #internationalActivity {
-        width: auto;
-        max-width: 100%;
-    }
-    
-    #internationalActivityconatiner {
-        height: auto;
-        flex-wrap: wrap;
-    }
-    
-    /* Skills 섹션 수정 */
-    #high-skill {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .upper-skill-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .skill-container {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* 인라인 스타일 오버라이드 */
-    #high-skill > div[style],
-    .upper-skill-container > div[style] {
-        flex: 1 !important;
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    
-    .upper-skill-main {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        flex: 1;
-        display: flex;
-    }
-    
-    .skill-main {
-        flex: 1;
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    .skill-title {
-        width: 100%;
-        max-width: 100%;
     }
 }

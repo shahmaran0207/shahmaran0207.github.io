@@ -1,15 +1,21 @@
-/* Portfolio 섹션 */
+/* Portfolio 섹션 - Mobile First */
+
+/* 기본 스타일 (모바일 기준) */
 .portfolio-section {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
 }
+
+    .awardsamd{
+        margin-top: 60px;
+    }
 
 /* Selector */
 .selector-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .selector {
@@ -21,10 +27,10 @@
 }
 
 .option {
-    padding: 12px 32px;
+    padding: 8px 16px;
     border-radius: 6px;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 500;
     cursor: pointer;
@@ -43,8 +49,8 @@
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
     width: 100%;
 }
 
@@ -59,13 +65,13 @@
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card-image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -76,12 +82,12 @@
 }
 
 .card-content {
-    padding: 24px;
+    padding: 20px;
 }
 
 .card-title {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     line-height: 1.4;
@@ -90,7 +96,7 @@
 
 .card-description {
     color: #cccccc;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -104,11 +110,11 @@
 }
 
 .tag {
-    padding: 6px 12px;
+    padding: 5px 10px;
     background: #232323;
     border-radius: 6px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 500;
 }
@@ -125,7 +131,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -139,7 +145,7 @@
 
 .hover-title {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     line-height: 1.4;
@@ -150,22 +156,22 @@
 .hover-buttons {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
 }
 
 .hover-button {
-    padding: 12px 24px;
+    padding: 10px 20px;
     background: white;
     color: #232323;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 160px;
+    min-width: 140px;
     text-align: center;
 }
 
@@ -205,19 +211,19 @@
 .modal-content {
     position: relative;
     z-index: 1001;
-    width: 70%;
+    width: 95%;
     height: auto;
-    max-height: 90vh;
+    max-height: 95vh;
 }
 
 .modal-inline {
     width: 100%;
     height: 100%;
-    padding: 24px;
+    padding: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .modal-flex {
@@ -226,7 +232,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 24px;
+    gap: 16px;
     overflow: auto;
 }
 
@@ -234,14 +240,14 @@
     width: 100%;
     max-height: 90vh;
     overflow-y: auto;
-    padding: 40px 80px;
+    padding: 20px;
     background: #232323;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
 }
 
 .modal-main-image::-webkit-scrollbar {
@@ -259,8 +265,9 @@
 }
 
 .modal-image-image {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    min-height: 180px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -276,10 +283,10 @@
     align-self: stretch;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 24px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 36px;
     word-wrap: break-word;
 }
 
@@ -304,21 +311,21 @@
 .modal-button2 {
     padding: 4px 8px;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     line-height: 24px;
 }
 
 .modal-p {
-    margin-top: 40px;
+    margin-top: 24px;
     align-self: stretch;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 21px;
     word-wrap: break-word;
 }
 
@@ -338,12 +345,12 @@
 }
 
 .modal-content-title {
-    width: 104px;
+    width: 90px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 24px;
     white-space: nowrap;
 }
 
@@ -351,10 +358,10 @@
     flex: 1;
     text-align: left;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -398,10 +405,10 @@
 }
 
 .accordion-header {
-    padding: 16px 20px;
+    padding: 14px 16px;
     background: #373737;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     cursor: pointer;
@@ -416,36 +423,30 @@
 
 .accordion-content {
     display: none;
-    padding: 20px;
+    padding: 16px;
     background: #232323;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-.number-item{
+.number-item {
     font-weight: bold;
     font-size: 1.3em;
-}
-
-/* 번호 목록 스타일 (1., 2. 등) */
-.accordion-content .number-item {
     margin-bottom: 10px;
     text-indent: 0;
-    padding-left: 30px;  /* 전체 텍스트 들여쓰기 */
-    text-indent: -30px;  /* 번호만 왼쪽으로 */
+    padding-left: 30px;
+    text-indent: -30px;
 }
 
-/* 불릿 포인트 스타일 (• 등) */
 .accordion-content .bullet-item {
     margin-left: 20px;
     text-indent: 0;
     margin-bottom: 5px;
 }
 
-/* 문제 상황, 해결 과정 제목 스타일 */
 .section-title {
     font-weight: bold;
     font-size: 1.3em;
@@ -456,7 +457,6 @@
     padding-left: 0;
 }
 
-/* 첫 번째 section-title은 위 여백 줄이기 */
 .accordion-content .section-title:first-of-type {
     margin-top: 12px;
 }
@@ -468,16 +468,16 @@
 /* Exit and GitHub Buttons */
 .upper-exit {
     position: absolute;
-    top: 24px;
-    right: -46px;
+    top: 12px;
+    right: -40px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     z-index: 3;
 }
 
 .exit-button {
-    padding: 16px;
+    padding: 12px;
     background: white;
     border-radius: 32px;
     display: flex;
@@ -509,143 +509,18 @@
 .modal-git-content {
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 24px;
 }
 
 /* ========================================
-   반응형 미디어 쿼리 (간소화)
+   반응형 미디어 쿼리 (3단계)
    ======================================== */
 
-/* 모바일 (최대 768px) */
-@media (max-width: 768px) {
-    .portfolio-section {
-        margin-top: 40px;
-    }
-    
-    .selector-container {
-        margin-bottom: 24px;
-    }
-    
-    .option {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-    
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .card-image {
-        height: 200px;
-    }
-    
-    .card-content {
-        padding: 20px;
-    }
-    
-    .card-title {
-        font-size: 18px;
-    }
-    
-    .card-description {
-        font-size: 14px;
-    }
-    
-    .tag {
-        font-size: 13px;
-        padding: 5px 10px;
-    }
-    
-    .hover-title {
-        font-size: 16px;
-    }
-    
-    .hover-button {
-        padding: 10px 20px;
-        font-size: 14px;
-        min-width: 140px;
-    }
-    
-    /* 모달 */
-    .modal-content {
-        width: 95%;
-        max-height: 95vh;
-    }
-    
-    .modal-inline {
-        padding: 16px;
-        gap: 12px;
-    }
-    
-    .modal-main-image {
-        padding: 20px;
-        gap: 24px;
-    }
-    
-    .modal-image-image {
-        width: 100%;
-        height: auto;
-        min-height: 180px;
-    }
-    
-    .modal-title {
-        font-size: 24px;
-        line-height: 36px;
-    }
-    
-    .modal-button2 {
-        font-size: 14px;
-    }
-    
-    .modal-p {
-        margin-top: 24px;
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    .modal-content-title {
-        width: 90px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    .modal-content-detail {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    
-    .accordion-header {
-        font-size: 16px;
-        padding: 14px 16px;
-    }
-    
-    .accordion-content {
-        font-size: 14px;
-        padding: 16px;
-        line-height: 1.6;
-    }
-    
-    .upper-exit {
-        top: 12px;
-        right: -40px;
-        gap: 8px;
-    }
-    
-    .exit-button {
-        padding: 12px;
-    }
-    
-    .modal-git-content {
-        font-size: 14px;
-    }
-}
-
 /* 태블릿 (769px ~ 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
     .portfolio-section {
         margin-top: 60px;
     }
@@ -662,6 +537,11 @@
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+    
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
     }
     
     .card-image {
@@ -694,7 +574,6 @@
         font-size: 15px;
     }
     
-    /* 모달 */
     .modal-content {
         width: 85%;
     }
@@ -764,8 +643,8 @@
     }
 }
 
-/* 데스크톱 (1025px ~ 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
+/* PC (1025px ~) */
+@media (min-width: 1025px) {
     .portfolio-section {
         margin-top: 80px;
     }
@@ -774,22 +653,67 @@
         margin-bottom: 40px;
     }
     
+    .option {
+        padding: 12px 32px;
+        font-size: 18px;
+    }
+    
     .portfolio-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+    }
+    
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     }
     
     .card-image {
         height: 250px;
     }
     
-    /* 모달 */
+    .card-content {
+        padding: 24px;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-description {
+        font-size: 16px;
+    }
+    
+    .tag {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .hover-title {
+        font-size: 18px;
+    }
+    
+    .hover-buttons {
+        gap: 12px;
+    }
+    
+    .hover-button {
+        padding: 12px 24px;
+        font-size: 16px;
+        min-width: 160px;
+    }
+    
     .modal-content {
         width: 70%;
     }
     
     .modal-inline {
         padding: 24px;
+        gap: 16px;
+    }
+    
+    .modal-flex {
+        gap: 24px;
     }
     
     .modal-main-image {
@@ -801,17 +725,92 @@
         width: 600px;
         height: 300px;
     }
+    
+    .modal-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .modal-button2 {
+        font-size: 16px;
+    }
+    
+    .modal-p {
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .modal-content-title {
+        width: 104px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .modal-content-detail {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .accordion-header {
+        font-size: 18px;
+        padding: 16px 20px;
+    }
+    
+    .accordion-content {
+        font-size: 16px;
+        padding: 20px;
+        line-height: 1.8;
+    }
+    
+    .upper-exit {
+        top: 24px;
+        right: -46px;
+        gap: 12px;
+    }
+    
+    .exit-button {
+        padding: 16px;
+    }
+    
+    .modal-git-content {
+        font-size: 16px;
+    }
 }
 
-/* 특정 범위 데스크톱 (1580px ~ 1630px) */
-@media (min-width: 1580px) and (max-width: 1630px) {
-    .awardsamd{
+@media (min-width: 1025px) and (max-width: 1183px) {
+        .awardsamd {
+        margin-top: 670px;
+    }
+    
+}
+
+@media (min-width: 1580px) {
+        .awardsamd {
+        margin-top: 202px;
+    }
+    
+}
+
+/* 특정 포인트 미세 조정 (기존 유지) */
+@media (min-width: 1581px) and (max-width: 1630px) {
+    .awardsamd {
         margin-top: 470px;
     }
-
 }
 
-/* 대형 데스크톱 (1441px ~ 1920px) */
+@media (min-width: 1631px) and (max-width: 1664px) {
+    .awardsamd {
+        margin-top: 470px;
+    }
+}
+
+@media (min-width: 1665px) {
+        .awardsamd {
+        margin-top: 190px;
+    }
+}
+
 @media (min-width: 1441px) and (max-width: 1920px) {
     .portfolio-section {
         margin-top: 90px;
@@ -827,7 +826,6 @@
     }
     
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
         gap: 35px;
     }
     
@@ -862,7 +860,6 @@
         min-width: 170px;
     }
     
-    /* 모달 */
     .modal-content {
         width: 68%;
     }
@@ -923,16 +920,11 @@
         right: -48px;
     }
     
-    .exit-button {
-        padding: 16px;
-    }
-    
     .modal-git-content {
         font-size: 16px;
     }
 }
 
-/* 초대형 데스크톱 (1921px 이상) */
 @media (min-width: 1921px) {
     .portfolio-section {
         margin-top: 100px;
@@ -940,7 +932,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .selector-container {
         margin-bottom: 50px;
     }
@@ -951,7 +943,6 @@
     }
     
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
         gap: 40px;
     }
     
@@ -986,7 +977,6 @@
         min-width: 180px;
     }
     
-    /* 모달 */
     .modal-content {
         width: 65%;
     }
@@ -1047,212 +1037,32 @@
         right: -50px;
     }
     
-    .exit-button {
-        padding: 18px;
-    }
-    
     .modal-git-content {
         font-size: 17px;
     }
 }
 
-/* 초소형 모바일 (최대 480px) */
-@media (max-width: 480px) {
-    .portfolio-section {
-        margin-top: 30px;
-    }
-    
-    .selector-container {
-        margin-bottom: 20px;
-    }
-    
-    .option {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-    
-    .portfolio-grid {
-        gap: 16px;
-    }
-    
-    .card-image {
-        height: 180px;
-    }
-    
-    .card-content {
-        padding: 16px;
-    }
-    
-    .card-title {
-        font-size: 16px;
-        line-height: 1.3;
-    }
-    
-    .card-description {
-        font-size: 13px;
-    }
-    
-    .tag {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-    
-    .hover-title {
-        font-size: 14px;
-    }
-    
-    .hover-button {
-        padding: 8px 16px;
-        font-size: 13px;
-        min-width: 120px;
-    }
-    
-    /* 모달 */
-    .modal-content {
-        width: 98%;
-        max-height: 96vh;
-    }
-    
-    .modal-inline {
-        padding: 12px;
-        gap: 8px;
-    }
-    
-    .modal-main-image {
-        padding: 16px;
-        gap: 20px;
-    }
-    
-    .modal-image-image {
-        width: 100%;
-        height: auto;
-        min-height: 150px;
-    }
-    
-    .modal-title {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .modal-button2 {
-        font-size: 12px;
-        padding: 3px 6px;
-    }
-    
-    .modal-p {
-        margin-top: 20px;
-        font-size: 13px;
-        line-height: 19px;
-    }
-    
-    .modal-content-title {
-        width: 80px;
-        font-size: 14px;
-        line-height: 21px;
-    }
-    
-    .modal-content-detail {
-        font-size: 13px;
-        line-height: 21px;
-    }
-    
-    .accordion-header {
-        font-size: 14px;
-        padding: 12px 14px;
-    }
-    
-    .accordion-content {
-        font-size: 13px;
-        padding: 14px;
-        line-height: 1.5;
-    }
-    
-    .upper-exit {
-        top: 8px;
-        right: -35px;
-        gap: 6px;
-    }
-    
-    .exit-button {
-        padding: 10px;
-    }
-    
-    .modal-git-content {
-        font-size: 13px;
+@media (
+min-width: 2128px) {
+    .awardsamd{
+        margin-top: 220px;
     }
 }
 
-/* 세로 높이가 낮은 화면 (최대 600px) */
-@media (max-height: 600px) {
-    .portfolio-section {
-        margin-top: 20px;
+@media (
+min-width: 2129px) {
+    .awardsamd{
+        margin-top: 80px;
+    }
+}@media 
+(min-width: 1440px) and (max-width: 1579px) {
+            .awardsamd {
+        margin-top: 202px;
     }
     
-    .selector-container {
-        margin-bottom: 16px;
-    }
-    
-    .portfolio-grid {
-        gap: 16px;
-    }
-    
-    .card-image {
-        height: 160px;
-    }
-    
-    .card-content {
-        padding: 16px;
-    }
-    
-    /* 모달 */
-    .modal-content {
-        max-height: 95vh;
-    }
-    
-    .modal-inline {
-        padding: 12px;
-    }
-    
-    .modal-main-image {
-        padding: 16px 24px;
-        gap: 20px;
-    }
-    
-    .modal-image-image {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        min-height: 120px;
-    }
-    
-    .modal-title {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .modal-p {
-        margin-top: 16px;
-        font-size: 13px;
-        line-height: 19px;
-    }
-    
-    .accordion-header {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
-    
-    .accordion-content {
-        font-size: 12px;
-        padding: 12px;
-        line-height: 1.4;
-    }
-    
-    .upper-exit {
-        top: 6px;
-        right: -30px;
-    }
-    
-    .exit-button {
-        padding: 8px;
+}
+@media (min-width: 1184px) and (max-width: 1439px) {
+                .awardsamd {
+        margin-top: 302px;
     }
 }

@@ -34,11 +34,11 @@ body {
     z-index: 1;
 }
 
-/* Developer 텍스트 애니메이션 */
+/* Developer 텍스트 애니메이션 - 모바일 기준 */
 #developer-container {
     width: 100%;
     left: 0px;
-    top: 490px;
+    top: 45%;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -50,44 +50,43 @@ body {
 #developer {
     text-align: center;
     color: #373737;
-    font-size: clamp(80px, 20vw, 340px);
+    font-size: clamp(60px, 18vw, 80px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     word-wrap: break-word;
 }
 
-/* Back-End 텍스트 애니메이션 */
+/* Back-End 텍스트 애니메이션 - 모바일 기준 */
 #back-end-container {
-    left: 10%;
-    top: 220px;
+    left: 0px;
+    top: 15%;
     position: absolute;
     justify-content: center;
     align-items: center;
     display: inline-flex;
     transition: transform 1s ease-out;
     z-index: 1;
+    width: 100%;
 }
 
 #back-end {
-    width: 100%;
     text-align: center;
     color: #373737;
-    font-size: clamp(80px, 20vw, 340px);
+    font-size: clamp(60px, 18vw, 80px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     word-wrap: break-word;
 }
 
-/* 최종 콘텐츠 */
+/* 최종 콘텐츠 - 모바일 기준 */
 #new-content {
     width: 100%;
     height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 16px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     display: none;
     position: absolute;
     top: 0;
@@ -97,14 +96,15 @@ body {
 .first-title {
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    display: inline-flex;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 #devloper-text {
     text-align: center;
     color: white;
-    font-size: clamp(48px, 12vw, 104px);
+    font-size: clamp(32px, 8vw, 48px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -114,7 +114,7 @@ body {
 #jungeun {
     text-align: center;
     color: white;
-    font-size: clamp(48px, 12vw, 104px);
+    font-size: clamp(32px, 8vw, 48px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -133,24 +133,26 @@ body {
 
 .third-title {
     justify-content: center;
-    align-items: flex-end;
-    gap: 12px;
-    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .fourth-title {
     justify-content: center;
-    align-items: flex-end;
-    gap: 12px;
-    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .starter-content {
     text-align: center;
     color: white;
-    font-size: clamp(24px, 6vw, 40px);
+    font-size: clamp(18px, 4vw, 24px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -160,7 +162,7 @@ body {
 .starter-content2 {
     text-align: center;
     color: rgba(255, 255, 255, 0.90);
-    font-size: clamp(28px, 7vw, 48px);
+    font-size: clamp(20px, 5vw, 28px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -170,46 +172,46 @@ body {
 #various {
     text-align: center;
     color: white;
-    font-size: clamp(24px, 6vw, 40px);
+    font-size: clamp(18px, 4vw, 24px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 1.5;
     word-wrap: break-word;
 }
 
-/* 업데이트 날짜 */
+/* 업데이트 날짜 - 모바일 기준 */
 .updated {
     position: absolute;
-    margin-left: 80px;
-    margin-bottom: 40px;
+    margin-left: 16px;
+    margin-bottom: 16px;
     color: white;
     left: 10px;
     bottom: 10px;
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: 14px;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
-    z-index: 10; /* Developer 텍스트보다 위에 표시 */
+    z-index: 10;
 }
 
-/* 고정 아이콘 버튼 */
+/* 고정 아이콘 버튼 - 모바일 기준 */
 #fixed-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
     z-index: 100;
 }
 
 #fixed-icons a {
     background-color: white;
     color: #373737;
-    width: 64px;
-    height: 64px;
-    min-width: 64px;
-    min-height: 64px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +223,7 @@ body {
 }
 
 #fixed-icons a i {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1;
     display: flex;
     align-items: center;
@@ -231,7 +233,7 @@ body {
 #fixed-icons a:hover {
     background-color: #f8f9fa;
     color: #373737;
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 #fixed-icons a::after {
@@ -240,19 +242,19 @@ body {
     right: 100%;
     top: 50%;
     transform: translateY(-50%);
-    margin-right: 15px;
-    padding: 10px 15px;
-    font-size: 14px;
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
     font-weight: bold;
     background-color: white;
     color: #373737;
-    border-radius: 10px;
+    border-radius: 8px;
     display: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
     box-sizing: border-box;
-    min-width: 70px;
-    max-width: 150px;
+    min-width: 60px;
+    max-width: 120px;
 }
 
 #fixed-icons a:hover::after {
@@ -260,13 +262,13 @@ body {
 }
 
 #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
-    font-size: 16px;
-    padding: 15px 20px;
-    min-width: 100px;
-    max-width: 250px;
+    font-size: 10px;
+    padding: 6px 8px;
+    min-width: 80px;
+    max-width: 150px;
 }
 
-/* 스크롤 인디케이터 */
+/* 스크롤 인디케이터 - 모바일 기준 */
 .scroll-container a {
     padding-top: 40px;
     text-decoration: none;
@@ -276,9 +278,9 @@ body {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    width: 30px;
-    height: 50px;
-    margin-left: -15px;
+    width: 24px;
+    height: 40px;
+    margin-left: -12px;
     border: 2px solid #fff;
     border-radius: 50px;
     box-sizing: border-box;
@@ -286,12 +288,12 @@ body {
 
 .scroll-container a span::before {
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 50%;
     content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
     background-color: #fff;
     border-radius: 100%;
     animation: scroll-indicator 2s infinite;
@@ -307,7 +309,7 @@ body {
         opacity: 1;
     }
     80% {
-        transform: translate(0, 20px);
+        transform: translate(0, 16px);
         opacity: 0;
     }
     100% {
@@ -315,155 +317,122 @@ body {
     }
 }
 
+/* Profile Section - 모바일 기준 */
+#profile-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #232323;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: clamp(32px, 8vw, 48px);
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.profile-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile-left {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-name-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile-name-ko {
+    color: white;
+    font-size: clamp(32px, 8vw, 48px);
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.profile-name-en {
+    color: white;
+    font-size: clamp(24px, 6vw, 36px);
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.profile-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-info-item svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.profile-info-text {
+    color: white;
+    font-size: clamp(14px, 3vw, 18px);
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+.profile-updated {
+    color: white;
+    font-size: clamp(14px, 3vw, 18px);
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.profile-right {
+    flex: 1;
+    width: 100%;
+    min-height: 300px;
+    background-color: #373737;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ========================================
-   초세밀 반응형 미디어 쿼리 (실제 기기별 최적화)
+   반응형 미디어 쿼리 (3단계)
    ======================================== */
 
-/* 초소형 모바일 (320px ~ 360px) - iPhone SE, Galaxy Fold */
-@media (max-width: 360px) {
+/* 태블릿 (769px ~ 1024px) */
+@media (min-width: 769px) {
     #back-end-container {
-        left: 1%;
-        top: 15%;
-    }
-
-    .profile-layout {
-        margin-left: 20px;
-        width: 300px;
-        height: 1300px;
-    }
-    
-    #developer-container {
-        top: 45%;
         left: 0;
-    }
-    
-    #back-end {
-        font-size: clamp(60px, 18vw, 80px);
-    }
-    
-    #developer {
-        font-size: clamp(60px, 18vw, 80px);
-    }
-    
-    #new-content {
-        padding: 16px;
-        gap: 20px;
-    }
-    
-    .first-title {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    #devloper-text,
-    #jungeun {
-        font-size: clamp(32px, 8vw, 48px);
-    }
-    
-    .third-title,
-    .fourth-title {
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-    }
-    
-    .starter-content {
-        font-size: clamp(18px, 4vw, 24px);
-    }
-    
-    .starter-content2 {
-        font-size: clamp(20px, 5vw, 28px);
-    }
-    
-    #various {
-        font-size: clamp(18px, 4vw, 24px);
-    }
-    
-    .updated {
-        margin-left: 16px;
-        margin-bottom: 16px;
-        font-size: 14px;
-    }
-    
-    .scroll-container a span {
-        width: 24px;
-        height: 40px;
-        margin-left: -12px;
-    }
-}
-
-/* 모바일 가로 (481px ~ 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-    #back-end-container {
-        left: 3%;
-        top: 21%;
-    }
-
-    .profile-layout {
-        margin-left: 20px;
-        width: 440px;
-        height: 1300px;
-    }
-    
-    #developer-container {
-        top: 42%;
-        left: 0;
-    }
-    
-    #back-end {
-        font-size: clamp(80px, 16vw, 120px);
-    }
-    
-    #developer {
-        font-size: clamp(80px, 16vw, 120px);
-    }
-    
-    #new-content {
-        padding: 20px;
-        gap: 24px;
-    }
-    
-    .first-title {
-        flex-direction: row;
-        gap: 16px;
-    }
-    
-    #devloper-text,
-    #jungeun {
-        font-size: clamp(40px, 9vw, 60px);
-    }
-    
-    .third-title,
-    .fourth-title {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
-    
-    .starter-content {
-        font-size: clamp(20px, 4vw, 28px);
-    }
-    
-    .starter-content2 {
-        font-size: clamp(24px, 5vw, 32px);
-    }
-    
-    #various {
-        font-size: clamp(20px, 4vw, 28px);
-    }
-    
-    .updated {
-        margin-left: 20px;
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
-}
-
-/* 태블릿 세로 (768px ~ 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    #back-end-container {
-        left: 5%;
         top: 23%;
     }
     
@@ -486,6 +455,7 @@ body {
     }
     
     .first-title {
+        flex-direction: row;
         gap: 20px;
     }
     
@@ -496,6 +466,7 @@ body {
     
     .third-title,
     .fourth-title {
+        flex-direction: row;
         gap: 10px;
     }
     
@@ -516,70 +487,130 @@ body {
         margin-bottom: 30px;
         font-size: 18px;
     }
-}
-
-/* 태블릿 가로 (1024px ~ 1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-    #back-end-container {
-        left: 8%;
-        top: 25%;
+    
+    #fixed-icons {
+        gap: 15px;
+        bottom: 20px;
+        right: 20px;
     }
     
-    #developer-container {
-        top: 38%;
-        left: 0;
+    #fixed-icons a {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        min-height: 60px;
     }
     
-    #back-end {
-        font-size: clamp(180px, 12vw, 220px);
+    #fixed-icons a i {
+        font-size: 28px;
     }
     
-    #developer {
-        font-size: clamp(180px, 12vw, 220px);
+    #fixed-icons a:hover {
+        transform: scale(1.15);
     }
     
-    #new-content {
+    #fixed-icons a::after {
+        margin-right: 12px;
+        padding: 10px 14px;
+        font-size: 13px;
+        min-width: 70px;
+        max-width: 140px;
+    }
+    
+    #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
+        font-size: 12px;
+        padding: 8px 10px;
+        min-width: 90px;
+        max-width: 180px;
+    }
+    
+    .scroll-container a span {
+        width: 28px;
+        height: 45px;
+        margin-left: -14px;
+    }
+    
+    .scroll-container a span::before {
+        top: 9px;
+        width: 5px;
+        height: 5px;
+        margin-left: -2.5px;
+    }
+    
+    @keyframes scroll-indicator {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        80% {
+            transform: translate(0, 18px);
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    #profile-section {
         padding: 40px;
-        gap: 35px;
     }
     
-    .first-title {
-        gap: 24px;
+    .section-title {
+        font-size: clamp(48px, 8vw, 64px);
+        margin-bottom: 40px;
     }
     
-    #devloper-text,
-    #jungeun {
-        font-size: clamp(70px, 9vw, 90px);
+    .profile-layout {
+        gap: 50px;
     }
     
-    .third-title,
-    .fourth-title {
-        gap: 12px;
+    .profile-left {
+        gap: 40px;
     }
     
-    .starter-content {
-        font-size: clamp(32px, 4vw, 38px);
+    .profile-name-ko {
+        font-size: clamp(48px, 8vw, 56px);
     }
     
-    .starter-content2 {
-        font-size: clamp(36px, 5vw, 44px);
+    .profile-name-en {
+        font-size: clamp(32px, 6vw, 42px);
     }
     
-    #various {
-        font-size: clamp(32px, 4vw, 38px);
+    .profile-info-list {
+        gap: 14px;
     }
     
-    .updated {
-        margin-left: 40px;
-        margin-bottom: 35px;
-        font-size: 20px;
+    .profile-info-item {
+        gap: 14px;
+    }
+    
+    .profile-info-item svg {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .profile-info-text {
+        font-size: clamp(18px, 3vw, 22px);
+    }
+    
+    .profile-updated {
+        font-size: clamp(18px, 3vw, 22px);
+        margin-top: 30px;
+    }
+    
+    .profile-right {
+        min-height: 350px;
+        padding: 30px;
     }
 }
 
-/* PC 작은 화면 (1280px ~ 1439px) */
-@media (min-width: 1280px) and (max-width: 1439px) {
+/* PC (1025px ~) */
+@media (min-width: 1025px) {
     #back-end-container {
-        left: 10%;
+        left: 0;
         top: 220px;
     }
     
@@ -589,11 +620,11 @@ body {
     }
     
     #back-end {
-        font-size: clamp(220px, 10vw, 260px);
+        font-size: clamp(220px, 10vw, 340px);
     }
     
     #developer {
-        font-size: clamp(220px, 10vw, 260px);
+        font-size: clamp(220px, 10vw, 340px);
     }
     
     #new-content {
@@ -607,7 +638,12 @@ body {
     
     #devloper-text,
     #jungeun {
-        font-size: clamp(80px, 8vw, 100px);
+        font-size: clamp(80px, 8vw, 104px);
+    }
+    
+    .third-title,
+    .fourth-title {
+        gap: 12px;
     }
     
     .starter-content {
@@ -623,117 +659,141 @@ body {
     }
     
     .updated {
-        margin-left: 60px;
-        margin-bottom: 40px;
-        font-size: 22px;
-    }
-}
-
-/* PC 일반 화면 (1440px ~ 1919px) */
-@media (min-width: 1440px) and (max-width: 1919px) {
-    #back-end-container {
-        left: 10%;
-        top: 220px;
-    }
-    
-    #developer-container {
-        top: 490px;
-        left: 0;
-    }
-    
-    #back-end {
-        font-size: clamp(260px, 8vw, 300px);
-    }
-    
-    #developer {
-        font-size: clamp(260px, 8vw, 300px);
-    }
-    
-    #new-content {
-        padding: 40px;
-        gap: 40px;
-    }
-    
-    .first-title {
-        gap: 24px;
-    }
-    
-    #devloper-text,
-    #jungeun {
-        font-size: clamp(90px, 7vw, 104px);
-    }
-    
-    .starter-content {
-        font-size: clamp(36px, 2.5vw, 40px);
-    }
-    
-    .starter-content2 {
-        font-size: clamp(44px, 3vw, 48px);
-    }
-    
-    #various {
-        font-size: clamp(36px, 2.5vw, 40px);
-    }
-    
-    .updated {
         margin-left: 80px;
         margin-bottom: 40px;
         font-size: 24px;
     }
+    
+    #fixed-icons {
+        gap: 15px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    #fixed-icons a {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 32px;
+    }
+    
+    #fixed-icons a:hover {
+        transform: scale(1.25);
+    }
+    
+    #fixed-icons a::after {
+        margin-right: 15px;
+        padding: 10px 15px;
+        font-size: 14px;
+        min-width: 70px;
+        max-width: 150px;
+    }
+    
+    #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
+        font-size: 16px;
+        padding: 15px 20px;
+        min-width: 100px;
+        max-width: 250px;
+    }
+    
+    .scroll-container a span {
+        width: 30px;
+        height: 50px;
+        margin-left: -15px;
+    }
+    
+    .scroll-container a span::before {
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+    }
+    
+    @keyframes scroll-indicator {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        80% {
+            transform: translate(0, 20px);
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    #profile-section {
+        padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 80px);
+    }
+    
+    .profile-wrapper {
+        max-width: 1400px;
+    }
+    
+    .section-title {
+        font-size: clamp(48px, 8vw, 80px);
+        margin-bottom: clamp(40px, 6vw, 60px);
+    }
+    
+    .profile-layout {
+        flex-direction: row;
+        gap: clamp(40px, 8vw, 104px);
+    }
+    
+    .profile-left {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+        gap: clamp(40px, 6vw, 80px);
+    }
+    
+    .profile-name-ko {
+        font-size: clamp(48px, 8vw, 64px);
+    }
+    
+    .profile-name-en {
+        font-size: clamp(36px, 6vw, 48px);
+    }
+    
+    .profile-info-list {
+        gap: clamp(12px, 2vw, 16px);
+    }
+    
+    .profile-info-item {
+        gap: 16px;
+    }
+    
+    .profile-info-item svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .profile-info-text {
+        font-size: clamp(18px, 3vw, 24px);
+    }
+    
+    .profile-updated {
+        font-size: clamp(18px, 3vw, 24px);
+        margin-top: auto;
+    }
+    
+    .profile-right {
+        flex: 1;
+        min-height: 400px;
+        padding: clamp(20px, 4vw, 40px);
+    }
 }
 
-/* PC 큰 화면 (1920px 이상) */
+/* 특정 포인트 미세 조정 (기존 유지) */
 @media (min-width: 1920px) {
-    #back-end-container {
-        left: 10%;
-        top: 220px;
-    }
-    
-    #developer-container {
-        top: 490px;
-        left: 0;
-    }
-    
-    #back-end {
-        font-size: clamp(300px, 6vw, 400px);
-    }
-    
-    #developer {
-        font-size: clamp(300px, 6vw, 400px);
-    }
-    
-    #new-content {
-        padding: 40px;
-        gap: 40px;
-    }
-    
-    .first-title {
-        gap: 24px;
-    }
-    
-    #devloper-text,
-    #jungeun {
-        font-size: clamp(100px, 5vw, 120px);
-    }
-    
-    .starter-content {
-        font-size: clamp(38px, 2vw, 45px);
-    }
-    
-    .starter-content2 {
-        font-size: clamp(46px, 2.5vw, 55px);
-    }
-    
-    #various {
-        font-size: clamp(38px, 2vw, 45px);
-    }
-    
-    .updated {
-        margin-left: 100px;
-        margin-bottom: 50px;
-        font-size: 28px;
-    }
-    
     .scroll-container a span {
         width: 35px;
         height: 60px;
@@ -741,9 +801,7 @@ body {
     }
 }
 
-/* 초고해상도 화면 (2560px 이상) */
 @media (min-width: 2560px) {
-
     * {
         border: none !important;
         outline: none !important;
@@ -839,116 +897,7 @@ body {
         outline: none !important;
     }
 
-    .opic{
+    .opic {
         margin-top: 35px;
     }
-}
-
-
-#profile-section {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #232323;
-    padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 80px);
-    box-sizing: border-box;
-}
-
-.profile-wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.section-title {
-    text-align: center;
-    color: white;
-    font-size: clamp(48px, 8vw, 80px);
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 700;
-    margin-bottom: clamp(40px, 6vw, 60px);
-    line-height: 1.2;
-}
-
-.profile-layout {
-    display: flex;
-    gap: clamp(40px, 8vw, 104px);
-    align-items: flex-start;
-}
-
-/* 왼쪽 프로필 */
-.profile-left {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(40px, 6vw, 80px);
-}
-
-.profile-name-box {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.profile-name-ko {
-    color: white;
-    font-size: clamp(48px, 8vw, 64px);
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 700;
-    line-height: 1.5;
-}
-
-.profile-name-en {
-    color: white;
-    font-size: clamp(36px, 6vw, 48px);
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.profile-info-list {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(12px, 2vw, 16px);
-}
-
-.profile-info-item {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.profile-info-item svg {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-}
-
-.profile-info-text {
-    color: white;
-    font-size: clamp(18px, 3vw, 24px);
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    word-break: break-all;
-}
-
-.profile-updated {
-    color: white;
-    font-size: clamp(18px, 3vw, 24px);
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    margin-top: auto;
-}
-
-/* 오른쪽 콘텐츠 */
-.profile-right {
-    flex: 1;
-    min-height: 400px;
-    background-color: #373737;
-    border-radius: 16px;
-    padding: clamp(20px, 4vw, 40px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
