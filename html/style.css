@@ -95,6 +95,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    /* 인트로 텍스트 뒤 스크림 → 배경 고스트 워드가 글자를 관통하지 않도록 */
+    background: radial-gradient(ellipse 78% 60% at 50% 50%,
+        rgba(35, 35, 35, 0.92) 0%,
+        rgba(35, 35, 35, 0.82) 42%,
+        rgba(35, 35, 35, 0) 78%);
 }
 
 .first-title {
@@ -114,6 +119,7 @@ body {
     line-height: 1.5;
     word-wrap: break-word;
 }
+
 
 #jungeun {
     text-align: center;
@@ -155,7 +161,7 @@ body {
 
 .starter-content {
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.60);   /* 연결어는 톤 다운 → 키워드 강조 */
     font-size: clamp(18px, 4vw, 24px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
@@ -165,7 +171,7 @@ body {
 
 .starter-content2 {
     text-align: center;
-    color: rgba(255, 255, 255, 0.90);
+    color: #4ec9b0;                       /* 핵심 키워드(데이터 분석/백엔드 개발/박정은) 액센트 */
     font-size: clamp(20px, 5vw, 28px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
@@ -175,7 +181,7 @@ body {
 
 #various {
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.60);
     font-size: clamp(18px, 4vw, 24px);
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
@@ -903,5 +909,21 @@ body {
 
     .opic {
         margin-top: 35px;
+    }
+}
+
+/* 짧은 세로 화면(가로모드 폰 등): 배경 고스트 워드를 높이에 맞춰 축소 +
+   스크림 강화 → 인트로 글자와 겹치지 않도록 */
+@media (max-height: 520px) {
+    #developer,
+    #back-end {
+        font-size: clamp(48px, 20vh, 160px);
+    }
+    #new-content {
+        gap: 10px;
+        background: radial-gradient(ellipse 92% 78% at 50% 50%,
+            rgba(35, 35, 35, 0.95) 0%,
+            rgba(35, 35, 35, 0.86) 55%,
+            rgba(35, 35, 35, 0) 92%);
     }
 }

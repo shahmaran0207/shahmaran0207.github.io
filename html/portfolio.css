@@ -57,11 +57,16 @@
 /* Card */
 .card {
     position: relative;
-    background: #373737;
+    background: #26262a;
+    border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
+}
+
+.card:hover {
+    border-color: rgba(255, 255, 255, 0.16);
 }
 
 .card:hover {
@@ -476,6 +481,14 @@
     z-index: 3;
 }
 
+/* 좁은 화면: 모달 밖으로 나가 잘리므로 안쪽 우상단으로 이동 */
+@media (max-width: 1200px) {
+    .upper-exit {
+        top: 10px;
+        right: 10px;
+    }
+}
+
 .exit-button {
     padding: 12px;
     background: white;
@@ -778,13 +791,6 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1183px) {
-        .awardsamd {
-        margin-top: 670px;
-    }
-    
-}
-
 @media (min-width: 1580px) {
         .awardsamd {
         margin-top: 202px;
@@ -1053,16 +1059,5 @@ min-width: 2128px) {
 min-width: 2129px) {
     .awardsamd{
         margin-top: 80px;
-    }
-}@media 
-(min-width: 1440px) and (max-width: 1579px) {
-            .awardsamd {
-        margin-top: 202px;
-    }
-    
-}
-@media (min-width: 1184px) and (max-width: 1439px) {
-                .awardsamd {
-        margin-top: 302px;
     }
 }

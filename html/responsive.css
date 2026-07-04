@@ -32,32 +32,32 @@
         margin-right: 13px;
     }
     
-    /* 프로필 레이아웃 - 태블릿에서는 세로 배치 유지 */
+    /* 프로필 레이아웃 - 태블릿: 세로 배치 + 좌측 정렬(1920/모바일과 통일) */
     .profile-layout {
         flex-direction: column;
         gap: 50px;
         align-items: center;
     }
-    
+
     .profile-left {
-        max-width: 600px;
+        max-width: 800px;
         width: 100%;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
-    
+
     .profile-name-box {
-        align-items: center;
+        align-items: flex-start;
     }
-    
+
     .profile-info-list {
-        align-items: center;
+        align-items: flex-start;
     }
-    
+
     .profile-info-item {
-        justify-content: center;
+        justify-content: flex-start;
     }
-    
+
     .profile-right {
         width: 100%;
         max-width: 800px;
@@ -131,6 +131,17 @@
     .profile-right {
         flex: 1;
         max-width: none;
+    }
+}
+
+/* 모바일·태블릿 프로필: 콘텐츠는 상단에 모으고 updated만 하단 고정 (중간 빈 여백 제거) */
+@media (max-width: 1024px) {
+    .profile-info-container {
+        justify-content: flex-start;
+    }
+
+    .profile-updated {
+        margin-top: auto;
     }
 }
 
