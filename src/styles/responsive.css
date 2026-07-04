@@ -1,0 +1,243 @@
+/* Responsive CSS - Mobile First (3단계 브레이크포인트) */
+
+/* 기본 스타일은 각 CSS 파일에서 모바일 기준으로 설정됨 */
+
+/* ========================================
+   반응형 미디어 쿼리 (3단계)
+   ======================================== */
+
+/* 태블릿 (769px ~ 1024px) */
+@media (min-width: 769px) {
+    /* 고정 아이콘 조정 */
+    #fixed-icons {
+        bottom: 18px;
+        right: 18px;
+        gap: 12px;
+    }
+    
+    #fixed-icons a {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        min-height: 56px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 28px;
+    }
+    
+    #fixed-icons a::after {
+        font-size: 13px;
+        padding: 9px 13px;
+        margin-right: 13px;
+    }
+    
+    /* 프로필 레이아웃 - 태블릿: 세로 배치 + 좌측 정렬(1920/모바일과 통일) */
+    .profile-layout {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .profile-left {
+        max-width: 800px;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .profile-name-box {
+        align-items: flex-start;
+    }
+
+    .profile-info-list {
+        align-items: flex-start;
+    }
+
+    .profile-info-item {
+        justify-content: flex-start;
+    }
+
+    .profile-right {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+/* PC (1025px ~) */
+@media (min-width: 1025px) {
+    /* 고정 아이콘 조정 */
+    #fixed-icons {
+        bottom: 20px;
+        right: 20px;
+        gap: 15px;
+    }
+    
+    #fixed-icons a {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 32px;
+    }
+    
+    #fixed-icons a:hover {
+        transform: scale(1.25);
+    }
+    
+    #fixed-icons a::after {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-right: 15px;
+        min-width: 70px;
+        max-width: 150px;
+    }
+    
+    #fixed-icons a[data-text="shahmaran0207@naver.com"]::after {
+        font-size: 16px;
+        padding: 15px 20px;
+        min-width: 100px;
+        max-width: 250px;
+    }
+    
+    /* 프로필 레이아웃 - PC에서 가로 배치 */
+    .profile-layout {
+        flex-direction: row;
+        gap: clamp(80px, 8vw, 104px);
+        align-items: flex-start;
+    }
+    
+    .profile-left {
+        max-width: 400px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .profile-name-box {
+        align-items: flex-start;
+    }
+    
+    .profile-info-list {
+        align-items: flex-start;
+    }
+    
+    .profile-info-item {
+        justify-content: flex-start;
+    }
+    
+    .profile-right {
+        flex: 1;
+        max-width: none;
+    }
+}
+
+/* 모바일·태블릿 프로필: 콘텐츠는 상단에 모으고 updated만 하단 고정 (중간 빈 여백 제거) */
+@media (max-width: 1024px) {
+    .profile-info-container {
+        justify-content: flex-start;
+    }
+
+    .profile-updated {
+        margin-top: auto;
+    }
+}
+
+/* 특정 포인트 미세 조정 (기존 중요한 것들만 유지) */
+@media (min-width: 1920px) {
+    #fixed-icons {
+        bottom: 25px;
+        right: 25px;
+        gap: 18px;
+    }
+    
+    #fixed-icons a {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+        min-height: 72px;
+    }
+    
+    #fixed-icons a i {
+        font-size: 36px;
+    }
+    
+    .scroll-container a span {
+        width: 35px;
+        height: 60px;
+        margin-left: -17px;
+    }
+}
+
+/* 세로 높이 반응형 */
+@media (max-height: 600px) {
+    #fixed-icons {
+        bottom: 10px !important;
+        right: 10px !important;
+        gap: 8px !important;
+    }
+    
+    #fixed-icons a {
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+    }
+    
+    #fixed-icons a i {
+        font-size: 24px !important;
+    }
+    
+    .profile-layout {
+        padding: 15px !important;
+        gap: 20px !important;
+    }
+    
+    .profile-name-ko {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+    }
+    
+    .profile-name-en {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+    }
+    
+    .profile-info-text {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+}
+
+@media (max-height: 480px) {
+    #fixed-icons {
+        bottom: 8px !important;
+        right: 8px !important;
+        gap: 6px !important;
+    }
+    
+    #fixed-icons a {
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+    }
+    
+    #fixed-icons a i {
+        font-size: 22px !important;
+    }
+    
+    .profile-name-ko {
+        font-size: 28px !important;
+    }
+    
+    .profile-name-en {
+        font-size: 22px !important;
+    }
+    
+    .profile-info-text {
+        font-size: 13px !important;
+    }
+}
