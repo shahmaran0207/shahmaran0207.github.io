@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import rawHtml from '../../html/Portfolio-Details.html?raw'
+import rawHtml from '../portfolioDetails.html?raw'
 import { asset } from '../asset.js'
 import '../modalControl.js' // window.openModal/closeModal/toggleAccordion 등록
 
