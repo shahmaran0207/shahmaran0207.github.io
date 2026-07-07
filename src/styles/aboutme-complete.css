@@ -1031,6 +1031,31 @@
         text-align: center;
         word-break: keep-all;
     }
+
+    /* 카드 안 제목: 좁은 컬럼에서 카드 밖으로 넘쳐 잘리지 않도록 줄바꿈 허용
+       (base의 white-space:nowrap 무력화) */
+    .about-main {
+        white-space: normal;
+    }
+
+    /* 1920 전용으로 손튜닝된 수동 줄바꿈(inline-block 덩어리)을 해제해
+       좁은 폭에서 자연스럽게 흐르도록 (한글은 keep-all로 단어 보존) */
+    .break-point,
+    .break-point2,
+    .break-point22,
+    .break3,
+    .breakbraek {
+        display: inline;
+    }
+
+    /* 같은 행의 카드는 높이를 서로 맞춤 (그리드 아이템 stretch)
+       - base의 align-items:flex-start 때문에 카드가 내용 높이대로 제각각이던 문제 해결 */
+    .CareerContainer2,
+    .certificateconatiner2,
+    .detail-awards,
+    .wholeint {
+        align-items: stretch;
+    }
 }
 
 /* 카드 hover (포인터 기기 전용) */
@@ -1502,6 +1527,29 @@
     #high-skill,
     .upper-skill-container {
         margin-top: 64px;
+    }
+
+    /* 좁은 2단 그리드 카드(≈220~300px)에 맞춘 폰트 축소.
+       1025+ 기본 폰트(제목 24px / 본문 20px)는 이 카드폭엔 과대해
+       제목이 어색하게 끊기거나 밖으로 넘치던 문제를 해결 */
+    .certificate,
+    .about-main {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .sub-sub,
+    .subtext,
+    .subtext-sub {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .profile-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #internationalActivity {
+        font-size: 26px;
+        line-height: 34px;
     }
 }
 
