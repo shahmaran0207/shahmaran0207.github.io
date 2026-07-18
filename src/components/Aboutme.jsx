@@ -72,7 +72,7 @@ export default function Aboutme() {
             <div className="aboutMe-title">
               <div className="certificate">(주)엠게임</div>
               <div className="about-title">
-                <div className="button-text">블록체인 개발팀</div>
+                <div className="button-text">블록체인 서버팀</div>
               </div>
             </div>
             <div className="sub-main">
