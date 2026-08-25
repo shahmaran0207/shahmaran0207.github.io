@@ -161,6 +161,20 @@
     }
 }
 
+/* 태블릿에서 좌/우 컬럼의 시작선 맞추기.
+   .profile-left는 base의 align-self:stretch 때문에 왼쪽에 고정되는데
+   .profile-right는 부모의 align-items:center로 중앙에 놓여, 뷰포트가
+   max-width(800px)보다 넓어지는 순간 두 컬럼이 어긋났다.
+   (1024px 기준 제목 40px vs 본문 144px)
+   둘 다 중앙 정렬하고 안쪽 가로 패딩도 .profile-scroll-content와 같은 32px로 통일. */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile-left {
+        align-self: center;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
 /* 특정 포인트 미세 조정 (기존 중요한 것들만 유지) */
 @media (min-width: 1920px) {
     #fixed-icons {
