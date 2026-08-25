@@ -13,8 +13,8 @@ const FILTERS = [
 ]
 
 const PROJECTS = [
-  { cat: 'option3', img: 'ITS_DOS.png', title: 'ITS 상황판', desc: '다수의 교통 정보 레이어를 지도 기반으로 실시간 표출하고, 교통 등급 변화에 따라 화면을 즉시 갱신하는 ITS 상황판 및 제어 운영단말 플랫폼', tags: ['회사 프로젝트', 'GIS Web', 'Front-End', 'Back-End'], hover: ['다수의 교통 정보 레이어를 지도 기반으로 실시간 표출하고, 근무자들에게 필요한 내용들로 패널을 구성한 상황판 및 운영단말 플랫폼'], modal: 'modal21' },
-  { cat: 'option3', img: 'PerformanceSafety.png', title: '공연안전', desc: '공연장에서 발생하는 안전 사고를 대비하기 위한 밀집도 및 실시간 돌발 상황을 체크할 수 있는 플랫폼', tags: ['회사 프로젝트', 'GIS Web', 'Front-End', 'Back-End'], hover: ['공연장의 돌발 상황을 대비하고', '시뮬레이션 및 보고서 작성이 가능한 사이트'], modal: 'modal20' },
+  { cat: 'option3', img: 'ITS_DOS.png', title: 'ITS 상황판', desc: '다수의 교통 정보 레이어를 지도 기반으로 실시간 표출하고, 교통 등급 변화에 따라 화면을 즉시 갱신하는 ITS 상황판 및 제어 운영단말 플랫폼', tags: ['라임에스', 'GIS Web', 'Front-End', 'Back-End'], hover: ['다수의 교통 정보 레이어를 지도 기반으로 실시간 표출하고, 근무자들에게 필요한 내용들로 패널을 구성한 상황판 및 운영단말 플랫폼'], modal: 'modal21' },
+  { cat: 'option3', img: 'PerformanceSafety.png', title: '공연안전', desc: '공연장에서 발생하는 안전 사고를 대비하기 위한 밀집도 및 실시간 돌발 상황을 체크할 수 있는 플랫폼', tags: ['라임에스', 'GIS Web', 'Front-End', 'Back-End'], hover: ['공연장의 돌발 상황을 대비하고', '시뮬레이션 및 보고서 작성이 가능한 사이트'], modal: 'modal20' },
   { cat: 'option2', img: 'MTA.png', title: 'MTA', desc: '다양한 물품을 경매 상품으로 등록 가능하고 경매에 자유롭게 입찰하여 물품을 낙찰 받을 수 있는 사이트', tags: ['개인 프로젝트', 'Web', 'Front-End', 'Back-End'], hover: ['다양한 물품을 경매 상품으로 등록 가능하고', '경매에 자유롭게 입찰하여 물품을 낙찰 받을 수 있는 사이트'], modal: 'modal19' },
   { cat: 'option2', img: 'wit.png', title: 'WIT', desc: '여행 일정을 구매/판매할 수 있고, 후기 등을 남길 수 있는 여행 사이트', tags: ['개인 프로젝트', 'Web', 'Front-End', 'Back-End'], hover: ['여행 일정을 구매/판매할 수 있고,', '후기 등을 남길 수 있는 여행 사이트'], modal: 'modal18' },
   { cat: 'option2', img: 'exchange.png', title: 'Exchange Rate Site', desc: '환율 계산 사이트', tags: ['개인 프로젝트', 'Front-End', 'Back-End'], hover: ['환율 계산 사이트'], modal: 'modal17', link: 'https://euphonious-smakager-838510.netlify.app/' },
