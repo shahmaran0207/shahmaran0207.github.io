@@ -33,7 +33,7 @@ const PROJECTS = [
   { cat: 'option1', img: 'crime.jpg', title: '청소년 범죄율 분석 및 예측', desc: '과거 데이터를 통한 청소년 범죄율 예측', tags: ['팀 프로젝트', 'Data Analysis', 'Back-End'], hover: ['청소년 범죄율 분석 및 예측'], modal: 'modal5' },
   { cat: 'option1', img: 'credit.jpg', title: '지역별 신용카드 예측 프로젝트', desc: '과거 데이터를 통한 지역별 신용카드 소비 데이터 예측', tags: ['팀 프로젝트', 'Data Analysis', 'Back-End'], hover: ['지역별 신용카드 예측 프로젝트'], modal: 'modal3' },
   { cat: 'option1', img: 'png.jpg', title: '지역별 범죄율과 신고율의 상관관계', desc: '과거 데이터를 통한 범죄율과 신고율의 상관관계', tags: ['팀 프로젝트', 'Data Analysis', 'Back-End'], hover: ['지역별 범죄율과 신고율의 상관관계'], modal: 'modal2' },
-  { cat: 'option2', img: 'four.png', title: '인생네컷', desc: '과거를 추억하기 위한 인생네컷', tags: ['싱글 프로젝트', 'Web', 'Front-End'], hover: ['인생네컷'], modal: 'modal4', link: 'https://shahmaran0207.github.io/four_photo/' },
+  { cat: 'option2', img: 'four.png', title: '인생네컷', desc: '과거를 추억하기 위한 인생네컷', tags: ['개인 프로젝트', 'Web', 'Front-End'], hover: ['인생네컷'], modal: 'modal4', link: 'https://shahmaran0207.github.io/four_photo/' },
 ]
 
 function lines(arr) {
