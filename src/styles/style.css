@@ -294,6 +294,10 @@ body {
     border: 2px solid #fff;
     border-radius: 50px;
     box-sizing: border-box;
+    /* 배경 고스트 워드(#developer-container)가 z-index:1이라 DOM 순서상
+       뒤에 있는 이 인디케이터를 덮어써서, 마우스 아웃라인이 'Developer'
+       글자에 파묻혀 깨진 것처럼 보였다 */
+    z-index: 2;
 }
 
 .scroll-container a span::before {
