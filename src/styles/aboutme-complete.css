@@ -344,7 +344,7 @@
     width: auto;
     color: white;
     font-size: 20px;
-    font-family: Pretendard, serif;
+    font-family: Pretendard, sans-serif;
     font-weight: 700;
     line-height: 28px;
     word-wrap: break-word;
@@ -384,23 +384,28 @@
     margin-top: 30px;
 }
 
+/* keep-all: 한글이 단어 중간에서 끊기는 것을 막는다.
+   (없으면 좁은 폭에서 "…되었기 때/문입니다", "즐거움/과" 처럼 잘림)
+   긴 URL 등 끊을 데가 없는 문자열은 overflow-wrap이 받아준다. */
 .interview-question {
     color: white;
     font-size: 20px;
     font-family: Pretendard, sans-serif;
     font-weight: 700;
     line-height: 28px;
-    word-wrap: break-word;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .interview-answer {
     align-self: stretch;
     color: white;
     font-size: 14px;
-    font-family: Pretendard, serif;
+    font-family: Pretendard, sans-serif;
     font-weight: 400;
     line-height: 21px;
-    word-wrap: break-word;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 /* Skills */
@@ -484,7 +489,7 @@
     transform: translateY(-50%);
     text-align: center;
     color: white;
-    font-family: Pretendard, serif;
+    font-family: Pretendard, sans-serif;
     font-weight: 700;
     font-size: 16px;
 }
