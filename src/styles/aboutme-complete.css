@@ -1598,6 +1598,14 @@
         min-width: 0 !important;
         justify-content: flex-start !important;
     }
+
+    /* 위 규칙이 Development 라벨 래퍼까지 잡아 flex-direction:column으로 만들면서
+       인라인 align-items:center가 가로 중앙 정렬로 바뀌어, 이 제목만 혼자
+       가운데 정렬되던 문제 (다른 제목은 .skill-container라 영향 없음) */
+    .skill-label-inline {
+        align-items: flex-start !important;
+        height: auto !important;
+    }
     .upper-skill-main {
         width: 100%;
         display: grid;
@@ -1607,5 +1615,13 @@
     .skill-main {
         flex: none;
         width: 100%;
+    }
+
+    /* 아이콘은 카드 왼쪽 끝, 텍스트는 남은 공간의 정중앙이라 둘 사이가
+       크게 벌어져 서로 무관해 보이던 문제 → 아이콘 옆에 붙여 왼쪽 정렬.
+       .skill-text가 column flex라 text-align은 듣지 않으므로 align-items로 제어 */
+    .skill-text {
+        align-items: flex-start;
+        text-align: left;
     }
 }

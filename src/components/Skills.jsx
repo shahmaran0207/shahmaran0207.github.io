@@ -78,7 +78,10 @@ export default function Skills() {
     <>
       {SECTIONS.map((sec, idx) => {
         const Label = sec.labelInline ? (
+          // 마커 클래스만 추가 (인라인 스타일은 그대로) — 1025px 이상 렌더링은 불변이고,
+          // ≤1024px에서 이 래퍼만 정확히 집어 정렬을 되돌리기 위한 훅
           <div
+            className="skill-label-inline"
             style={{
               width: 256,
               height: 68,
