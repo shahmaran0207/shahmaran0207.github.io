@@ -1573,10 +1573,14 @@
         margin-top: 0;
     }
 
+    /* width가 없어 flex 아이템이 내용 폭으로 줄어드는 바람에
+       Education 카드만 Career/Certificate(width:100% 그리드)보다
+       좁게 나오던 문제 (390px 기준 249px vs 358px) */
     .gnu {
         display: flex;
         flex-direction: column;
         gap: 14px;
+        width: 100%;
     }
     .CareerContainer2,
     .certificateconatiner2,
