@@ -373,8 +373,11 @@
     }
 }
 
-/* 특정 포인트 미세 조정 (기존 유지) */
-@media (min-width: 1024px) and (max-width: 1279px) {
+/* 특정 포인트 미세 조정 (기존 유지)
+   시작점은 1025px — 프로젝트의 태블릿/PC 경계가 1024|1025이므로 1024px에서
+   시작하면 iPad Pro 세로(정확히 1024px)에 PC용 2단 규칙(flex:0 0 340px 등)이
+   태블릿 1단 레이아웃 위로 섞여 들어온다 */
+@media (min-width: 1025px) and (max-width: 1279px) {
     #profile-section {
         padding: 40px 30px 40px 60px;
     }
