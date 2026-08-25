@@ -134,14 +134,30 @@
     }
 }
 
-/* 모바일·태블릿 프로필: 콘텐츠는 상단에 모으고 updated만 하단 고정 (중간 빈 여백 제거) */
+/* 모바일·태블릿 프로필: 좌측 패널을 내용 높이에 맞춤.
+   100vh 고정 + updated의 margin-top:auto 조합이 연락처와 updated 사이에
+   한 화면에 가까운 빈 공간(390px에서 ~430px, 1024px에서 ~800px)을 만들어
+   첫 스크롤을 통째로 낭비하던 문제 해결 */
 @media (max-width: 1024px) {
+    .profile-left {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 48px;
+    }
+
     .profile-info-container {
+        flex: 0 0 auto;
         justify-content: flex-start;
+        gap: 32px;
+    }
+
+    /* 간격은 컨테이너 gap으로 일원화 */
+    .profile-name-box {
+        margin-bottom: 0;
     }
 
     .profile-updated {
-        margin-top: auto;
+        margin-top: 0;
     }
 }
 
