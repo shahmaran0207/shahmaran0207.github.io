@@ -331,7 +331,8 @@
     font-family: 'Pretendard', sans-serif;
     font-weight: 500;
     line-height: 21px;
-    word-wrap: break-word;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .portfolio-text {
@@ -367,7 +368,7 @@
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 24px;
-    word-wrap: break-word;
+    word-break: keep-all;
     overflow-wrap: break-word;
 }
 
@@ -419,6 +420,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 8px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .accordion-header:hover {
@@ -435,6 +438,8 @@
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .number-item {
@@ -1059,5 +1064,45 @@ min-width: 2128px) {
 min-width: 2129px) {
     .awardsamd{
         margin-top: 80px;
+    }
+}
+
+/* ========================================
+   모달 내부 - 모바일 (≤768px)
+   ======================================== */
+@media (max-width: 768px) {
+    /* 90px 고정 라벨 + 16px gap을 빼고 나면 값 컬럼이 250px 남짓이라
+       '주요 기능' 같은 긴 본문이 잘게 쪼개지고, My-Role 값도 어색하게 끊겼다.
+       라벨을 값 위로 올려 값이 모달 폭을 온전히 쓰게 한다. */
+    .modal-inner-text,
+    .text-title-detail {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .modal-content-title {
+        width: auto;
+    }
+
+    /* .portfront는 라벨과 칩이 같은 flex 컨테이너의 형제라,
+       칩이 줄바꿈되면 라벨 아래 왼쪽 끝으로 떨어져 값 컬럼을 벗어났다
+       (Back-End 라벨 옆 Spring Boot / 그 아래 JAVA·REST API).
+       라벨만 한 줄을 차지하게 해서 칩이 그 아래로 나란히 흐르도록 정리. */
+    .text-title-detail.portfront {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .text-title-detail.portfront > .modal-content-title {
+        width: 100%;
+    }
+
+    /* 아래 라벨/값이 전부 왼쪽 정렬인데 이 설명만 가운데 정렬이라
+       모바일의 좁은 폭에서 들쭉날쭉해 보였다 */
+    .modal-p {
+        text-align: left;
     }
 }
