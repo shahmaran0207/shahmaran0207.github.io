@@ -30,9 +30,15 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: shahmaran0207
+          # dark 쪽은 기본 github-dark 팔레트 대신 사이트 톤에 맞춘 커스텀 팔레트를 쓴다.
+          # github-dark는 빈 칸이 #161b22로 페이지 배경(#232323)보다 어두워
+          # 그래프 전체가 검은 덩어리로 가라앉고 커밋이 안 보였다.
+          #   color_dots = 빈칸,1단계,2단계,3단계,4단계
+          #   3단계 #4ec9b0 은 히어로에서 쓰는 사이트 강조색
+          #   뱀은 앰버 — 민트와 보색 방향이라 잘 튀고, 위쪽 GIT 아이콘 빨강과도 겹치지 않음
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#ffb020&color_dots=#2c2c2c,#1e5c52,#2f8f7d,#4ec9b0,#8ff0dd
 
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
