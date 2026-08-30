@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { asset } from '../asset.js'
 import Reveal from './Reveal.jsx'
 
@@ -51,6 +52,13 @@ const SECTIONS = [
     ],
   },
 ]
+
+// .github/workflows/snake.yml이 24시간마다 생성해 output 브랜치에 올리는 SVG.
+// 사이트 배경이 어두우므로 github-dark 팔레트 버전을 쓴다.
+const SNAKE_SVG =
+  'https://raw.githubusercontent.com/shahmaran0207/shahmaran0207.github.io/output/github-contribution-grid-snake-dark.svg'
+
+const GITHUB_URL = 'https://github.com/shahmaran0207'
 
 function SkillGrid({ items }) {
   return (
@@ -128,6 +136,42 @@ export default function Skills() {
           </Reveal>
         )
       })}
+
+      <GithubSnake />
     </>
+  )
+}
+
+// output 브랜치가 아직 없거나(워크플로우 첫 실행 전) raw.githubusercontent가
+// 응답하지 않을 수 있다. 미리 받아보고 성공했을 때만 섹션을 렌더한다.
+// (img에 onError만 달면 lazy 로딩 탓에 뷰포트 진입 전까지 실패를 알 수 없어
+//  'GitHub' 헤더만 있는 빈 블록이 잠깐 노출된다)
+function GithubSnake() {
+  const [ok, setOk] = useState(false)
+
+  useEffect(() => {
+    const img = new Image()
+    img.onload = () => setOk(true)
+    img.src = SNAKE_SVG
+    return () => {
+      img.onload = null
+    }
+  }, [])
+
+  if (!ok) return null
+
+  return (
+    <Reveal>
+      <div className="upper-skill-container">
+        <div className="skill-container">
+          <div className="AboutMe-title">GitHub</div>
+        </div>
+        <div className="github-snake">
+          <a href={GITHUB_URL} target="_blank" rel="noreferrer noopener">
+            <img src={SNAKE_SVG} alt="shahmaran0207의 GitHub 잔디를 먹으며 지나가는 뱀 애니메이션" />
+          </a>
+        </div>
+      </div>
+    </Reveal>
   )
 }

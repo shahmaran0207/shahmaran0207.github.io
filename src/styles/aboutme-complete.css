@@ -528,6 +528,25 @@
     word-wrap: break-word;
 }
 
+/* GitHub 잔디 스네이크 (Platane/snk) */
+.github-snake {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.github-snake a {
+    display: block;
+    text-decoration: none;
+}
+
+.github-snake img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* ========================================
    반응형 미디어 쿼리 (3단계)
    ======================================== */
@@ -1632,5 +1651,15 @@
     .skill-text {
         align-items: flex-start;
         text-align: left;
+    }
+}
+
+/* 잔디 스네이크는 가로:세로가 약 4.6:1인 긴 그래픽이라, 좁은 화면에서
+   width:100%로 맞추면 세로 80px 남짓으로 쭈그러들어 칸도 뱀도 안 보인다.
+   최소 폭을 확보하고 넘치는 만큼 가로 스크롤로 넘긴다. */
+@media (max-width: 768px) {
+    .github-snake img {
+        width: auto;
+        min-width: 660px;
     }
 }
