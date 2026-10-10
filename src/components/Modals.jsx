@@ -3,8 +3,8 @@ import rawHtml from '../portfolioDetails.html?raw'
 import { asset } from '../asset.js'
 import '../modalControl.js' // window.openModal/closeModal/toggleAccordion 등록
 
-// 원본 이미지 경로(../html/assets/...)를 앱 자산 경로로 치환
-const html = rawHtml.replaceAll('../html/assets/', asset('assets/'))
+// 원본 이미지 경로(../public/assets/...)를 앱 자산 경로로 치환
+const html = rawHtml.replaceAll('../public/assets/', asset('assets/'))
 
 export default function Modals() {
   // 모달 오버레이 클릭 시 닫기 (script.js 포팅)
