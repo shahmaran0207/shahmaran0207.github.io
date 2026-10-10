@@ -258,7 +258,7 @@ export default function Aboutme() {
       <div id="lastDiv" className="ineter international-activity">
         <div id="internationalActivityconatiner">
           <div id="internationalActivity">
-            International<br />Activity
+            External<br />Activities
           </div>
         </div>
         <div className="wholeint">

@@ -25,6 +25,7 @@ const SECTIONS = [
       { name: 'Spring', img: 'assets/img/aboutme/Spring.svg' },
       { name: 'SpringBoot', img: 'assets/img/aboutme/Spring.svg' },
       { name: 'JSP', img: 'assets/img/Skills/Back-End/jsp.png' },
+      { name: 'Go', img: 'assets/img/Skills/Back-End/go.png' },
     ],
   },
   {
