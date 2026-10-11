@@ -77,7 +77,7 @@ export default function Aboutme() {
             </div>
             <div className="sub-main">
               <div className="date-text">직무</div>
-              <div className="sub-sub">블록체인 웹 개발자</div>
+              <div className="sub-sub">블록체인 서버/웹 개발자</div>
             </div>
             <div className="sub-main tksdjqdlsfur">
               <div className="date-text">근무일</div>
