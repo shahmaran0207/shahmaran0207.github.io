@@ -48,12 +48,12 @@ export default function Hero() {
             </motion.div>
             <motion.div className="second-title" {...rise(0.22)}>
               <div className="third-title">
-                <div id="various">다양한</div>
-                <div className="starter-content2">데이터 분석</div>
+                <div id="various">실시간</div>
+                <div className="starter-content2">데이터 수집</div>
                 <div className="starter-content">경험과</div>
               </div>
               <div className="fourth-title">
-                <div className="starter-content2">백엔드 개발</div>
+                <div className="starter-content2">GIS 관제</div>
                 <div className="starter-content break">
                   경험을 지닌,{breakMobile && <br />}
                 </div>
@@ -66,7 +66,7 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="updated">updated, on 2026.10.22</div>
+      <div className="updated">updated, on 2026.10.23</div>
 
       <div className="scroll-container">
         <a href="#profile-section" aria-label="아래로 스크롤">

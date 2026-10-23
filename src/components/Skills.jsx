@@ -20,12 +20,21 @@ const SECTIONS = [
     labelClass: 'AboutMe-title',
     gap: 40,
     items: [
-      { name: 'Python', img: 'assets/img/aboutme/Python.svg' },
       { name: 'JAVA', img: 'assets/img/aboutme/JAVA.svg' },
       { name: 'Spring', img: 'assets/img/aboutme/Spring.svg' },
       { name: 'SpringBoot', img: 'assets/img/aboutme/Spring.svg' },
-      { name: 'JSP', img: 'assets/img/Skills/Back-End/jsp.png' },
       { name: 'Go', img: 'assets/img/Skills/Back-End/go.png' },
+    ],
+  },
+  {
+    title: 'Data',
+    labelClass: 'AboutMe-title',
+    gap: 40,
+    items: [
+      { name: 'Python', img: 'assets/img/aboutme/Python.svg' },
+      { name: 'PostgreSQL', img: 'https://cdn.simpleicons.org/postgresql' },
+      { name: 'MySQL', img: 'https://cdn.simpleicons.org/mysql' },
+      { name: 'MQTT', img: 'https://cdn.simpleicons.org/mqtt/white' },
     ],
   },
   {
@@ -34,12 +43,10 @@ const SECTIONS = [
     labelInline: true,
     gap: 40,
     items: [
+      { name: 'Linux', img: 'https://cdn.simpleicons.org/linux' },
       { name: 'DOCKER', img: 'assets/img/aboutme/Docker.svg' },
       { name: 'AWS', img: 'assets/img/aboutme/AWS.svg' },
       { name: 'Intellij IDEA', img: 'assets/img/aboutme/IngelliJ%20IDEA.svg' },
-      { name: 'Eclipse', img: 'assets/img/aboutme/Eclipse.svg' },
-      { name: 'SQLDeveloper', img: 'assets/img/aboutme/DataBase.svg', white: true },
-      { name: 'Unity', img: 'assets/img/aboutme/Unity.svg' },
       { name: 'KIRO', img: 'assets/img/Skills/Development/kiro.jpg' },
     ],
   },
@@ -69,7 +76,7 @@ function SkillGrid({ items }) {
           <div className="skill-title">
             <div className="skill-icon">
               <img
-                src={asset(it.img)}
+                src={/^https?:\/\//.test(it.img) ? it.img : asset(it.img)}
                 alt={it.name}
                 className={it.white ? 'svg-icon white-icon skill-image' : 'skill-image'}
               />

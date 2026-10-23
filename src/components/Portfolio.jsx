@@ -49,7 +49,7 @@ function lines(arr) {
 }
 
 export default function Portfolio() {
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState('option3')
   const visible = PROJECTS.filter((p) => filter === 'all' || p.cat === filter)
 
   return (
