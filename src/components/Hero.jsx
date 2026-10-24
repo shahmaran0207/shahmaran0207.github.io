@@ -66,7 +66,7 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="updated">updated, on 2026.10.23</div>
+      <div className="updated">updated, on 2026.10.24</div>
 
       <div className="scroll-container">
         <a href="#profile-section" aria-label="아래로 스크롤">

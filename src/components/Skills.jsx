@@ -57,6 +57,7 @@ const SECTIONS = [
     items: [
       { name: 'GIT', img: 'assets/img/aboutme/Git.svg' },
       { name: 'GITHUB', img: 'assets/img/aboutme/Github.svg', white: true },
+      { name: 'SVN', img: 'https://cdn.simpleicons.org/subversion' },
     ],
   },
 ]

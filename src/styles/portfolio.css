@@ -125,7 +125,7 @@
     padding: 5px 10px;
     background: #35353c;
     border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 6px;
+    border-radius: 8px;
     color: #e8e8ea;
     font-size: 13px;
     font-family: 'Pretendard', sans-serif;
@@ -506,7 +506,7 @@
 .exit-button {
     padding: 12px;
     background: white;
-    border-radius: 32px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
