@@ -3244,7 +3244,7 @@
                         <div class="text-title-detail">
                             <div class="modal-content-title">주요 기능</div>
                             <div class="modal-content-detail">교통 소통정보(원활·서행·정체) 지도 표출, 교통 CCTV 송출, 돌발 상황 수신 및 시각화,
-                                버스 실시간 위치 및 노선 조회, BIT(버스정보단말기) 장애 모니터링, 버스 도착예정시간 오차 분석, 지하철 실시간 열차 위치(1호선·7호선·서해선),
+                                노선도 기반 버스 위치·진행 방향 표시, BIT(버스정보단말기) 장애 모니터링, 지하철 실시간 열차 위치(1호선·7호선·서해선),
                                 긴급차량 경로 및 주변 CCTV 자동 표출, VMS 문구 제어, 운영 모드별 상황판 구성(평상시·재난·행사·교통),
                                 상황판 표출 제어 및 운영단말(사용자·권한·파라미터·이력 관리)</div>
                         </div>
@@ -3316,73 +3316,7 @@
                                 </div>
                               <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 1. 폐쇄망 환경에서 외부 지도 API 사용 불가
-                                </div>
-                                <div class="accordion-content">
-
-                                    <div class="section-title">문제 상황</div>
-                                    <div class="bullet-item">
-                                        • 초기에는 카카오지도 API를 사용해 화면을 구성하였으나,
-                                        교통정보센터의 운영 환경은 외부 인터넷과 분리된 폐쇄망이었습니다.
-                                    </div>
-                                    <div class="bullet-item">
-                                        • 카카오지도는 지도를 띄울 때마다 외부 서버에서 스크립트와 타일을 받아와야 하는 구조이기 때문에,
-                                        폐쇄망에서는 지도 자체가 표출되지 않았습니다.
-                                    </div>
-                                    <div class="bullet-item">
-                                        • 외부 통신을 위한 방화벽 개방을 요청하였으나 보안 정책상 승인되지 않아,
-                                        외부 API에 의존하지 않는 방식으로 전환해야 했습니다.
-                                    </div>
-
-                                    <br>
-
-                                    <div class="section-title">실행 과정</div>
-
-                                    <div class="bullet-item">
-                                        • 해결 방안으로는
-                                        ① 방화벽 개방을 계속 요청하는 방식,
-                                        ② 지도 이미지를 정적으로 캡처해 사용하는 방식,
-                                        ③ 타일 소스를 교체할 수 있는 지도 라이브러리로 전환하는 방식
-                                        세 가지를 검토하였습니다.
-                                    </div>
-
-                                    <div class="bullet-item">
-                                        • 방화벽 개방은 저희가 결정할 수 있는 사안이 아니었고,
-                                        승인 여부에 일정 전체가 묶이는 위험이 있었습니다.
-                                    </div>
-
-                                    <div class="bullet-item">
-                                        • 정적 이미지 방식은 확대·축소와 레이어 표출이 불가능해
-                                        상황판의 목적 자체를 만족시킬 수 없었습니다.
-                                    </div>
-
-                                    <div class="bullet-item">
-                                        • 따라서 타일 소스를 자유롭게 지정할 수 있는 OpenLayers로 전환하고,
-                                        내부망에 타일 서버를 두어 지도를 공급받는 구조(③번)를 선택하였습니다.
-                                    </div>
-
-                                    <div class="bullet-item">
-                                        • 개발 환경에서는 VWorld 온라인 타일을 그대로 사용하고,
-                                        운영 환경에서는 내부 타일 서버를 바라보도록 환경 변수로 분리해,
-                                        같은 코드가 두 환경에서 모두 동작하도록 구성하였습니다.
-                                    </div>
-
-                                    <br>
-
-                                    <div class="section-title">결과</div>
-                                    <div class="bullet-item">
-                                        • 외부 인터넷 연결 없이도 지도를 표출할 수 있게 되어 폐쇄망 제약을 해소하였습니다.
-                                    </div>
-                                    <div class="bullet-item">
-                                        • 지도 라이브러리를 직접 제어할 수 있게 되면서,
-                                        이후 레이어 구조와 클러스터링을 목적에 맞게 설계할 수 있는 기반을 확보하였습니다.
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 2. 수백 개 장비 동시 표출로 인한 가독성 및 렌더링 성능 저하
+                                    문제 1. 수백 개 장비 동시 표출로 인한 가독성 및 렌더링 성능 저하
                                 </div>
                                 <div class="accordion-content">
 
@@ -3458,7 +3392,7 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 3. 실시간 소통정보 갱신 시 반복적인 Feature 재생성으로 인한 렌더링 부하
+                                    문제 2. 실시간 소통정보 갱신 시 반복적인 Feature 재생성으로 인한 렌더링 부하
                                 </div>
                                 <div class="accordion-content">
 
@@ -3530,18 +3464,14 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 4. 공공 API 호출 제한 및 구조적 비효율 문제
+                                    문제 3. 화면별 직접 호출로 인한 구조적 비효율
                                 </div>
                                 <div class="accordion-content">
 
                                     <div class="section-title">문제 상황</div>
                                     <div class="bullet-item">
-                                        • 초기에는 프론트에서 외부 지하철 실시간 API를 직접 호출하여
-                                        화면에 표출하는 구조였습니다.
-                                    </div>
-                                    <div class="bullet-item">
-                                        • 일일 호출 제한으로 인해 API 차단이 발생하였으며,
-                                        다수 사용자가 접속할 경우 호출 수가 기하급수적으로 증가하는 문제가 있었습니다.
+                                        • 초기에는 화면마다 외부 지하철 실시간 API를 직접 호출하는 구조여서,
+                                        접속 화면이 늘수록 호출과 화면 부하가 함께 늘어나는 문제가 있었습니다.
                                     </div>
 
                                     <br>
@@ -3562,8 +3492,8 @@
 
                                     <div class="bullet-item">
                                         • Redis 캐시를 도입하는 방식도 고려하였으나,
-                                        외부 API 호출 자체가 줄어들지 않으면
-                                        일일 제한 문제는 여전히 존재한다고 판단하였습니다.
+                                        캐시가 비거나 만료되는 시점에는 결국 외부 API를 다시 호출해야 해서
+                                        화면이 늘어날수록 부하가 커지는 근본 구조는 그대로 남는다고 판단하였습니다.
                                     </div>
 
                                     <div class="bullet-item">
@@ -3591,7 +3521,8 @@
 
                                     <div class="section-title">결과</div>
                                     <div class="bullet-item">
-                                        • API 호출 제한 문제를 근본적으로 해결하였습니다.
+                                        • 백엔드에서 10초 주기로 한 번만 수집해 DB를 갱신하고,
+                                        화면은 DB만 조회하도록 바꿔 화면 부하를 줄였습니다.
                                     </div>
                                     <div class="bullet-item">
                                         • 사용자 수 증가와 무관한 안정적인 데이터 구조를 확보하였습니다.
@@ -3601,7 +3532,7 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 5. 잦은 요구사항 변경 속 설계 일관성 유지 문제
+                                    문제 4. 잦은 요구사항 변경 속 설계 일관성 유지 문제
                                 </div>
                                 <div class="accordion-content">
 
