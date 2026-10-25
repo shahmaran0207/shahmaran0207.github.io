@@ -3267,8 +3267,6 @@
                             <div class="modal-content-title">Back-End</div>
                             <div class="modal-back"><div class="modal-button2">Node.js</div>
                             </div>
-                            <div class="modal-back"><div class="modal-button2">Express</div>
-                            </div>
                             <div class="modal-back"><div class="modal-button2">WebSocket</div>
                             </div>
                             <div class="modal-back"><div class="modal-button2">REST API</div>
@@ -3460,7 +3458,79 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 3. 공공 API 호출 제한 및 구조적 비효율 문제
+                                    문제 3. 실시간 소통정보 갱신 시 반복적인 Feature 재생성으로 인한 렌더링 부하
+                                </div>
+                                <div class="accordion-content">
+
+                                    <div class="section-title">문제 상황</div>
+                                    <div class="bullet-item">
+                                        • 교통 소통정보는 도로 링크 단위로 들어옵니다. 링크 ID, 그 링크의 좌표 배열,
+                                        그리고 소통 등급(01 원활 / 02 서행 / 03 정체)이 한 세트이고, 각 링크를 지도 위에
+                                        선으로 그려 등급에 따라 초록·주황·빨강으로 칠해야 했습니다.
+                                    </div>
+                                    <div class="bullet-item">
+                                        • 이 데이터는 일정 주기로 계속 갱신되는데, 처음에는 새 데이터가 올 때마다
+                                        레이어를 비우고 전체 링크를 다시 그리는 방식이었습니다. 링크가 수백~수천 개
+                                        수준으로 많아지자 갱신될 때마다 화면이 순간적으로 깜빡이고 버벅이는 문제가 발생했습니다.
+                                    </div>
+
+                                    <br>
+
+                                    <div class="section-title">실행 과정</div>
+
+                                    <div class="bullet-item">
+                                        • 해결 방안으로는
+                                        ① 기존처럼 매번 전체를 지우고 다시 그리는 방식,
+                                        ② 갱신 주기를 늘려 다시 그리는 횟수 자체를 줄이는 방식,
+                                        ③ 링크 ID로 Feature를 캐싱해두고 변경된 것만 갱신하는 방식
+                                        세 가지를 검토하였습니다.
+                                    </div>
+
+                                    <div class="bullet-item">
+                                        • ①번은 링크 수가 늘어날수록 매번 좌표 변환과 Feature 생성을 전부 반복해야 해서
+                                        근본적인 해결이 되지 않았습니다.
+                                    </div>
+
+                                    <div class="bullet-item">
+                                        • ②번 갱신 주기를 늘리는 방식은 깜빡임은 줄일 수 있어도, 정체 상황을
+                                        실시간으로 보여줘야 하는 상황판의 목적과 맞지 않아 실시간성을 포기하는 셈이었습니다.
+                                    </div>
+
+                                    <div class="bullet-item">
+                                        • 따라서 링크 ID를 키로 Feature를 Map에 캐싱해두는 방식(③번)을 선택했습니다.
+                                        데이터가 새로 오면 처음 보는 링크는 Feature를 새로 만들어 추가하고,
+                                        이미 있는 링크는 이전 등급과 비교해 등급이 바뀐 경우에만 색상 속성을 바꾸고
+                                        changed()를 호출해 다시 그리도록 했습니다. 등급이 그대로인 링크는
+                                        아무 작업도 하지 않고, 이번 데이터에 없는 링크는 Feature를 제거했습니다.
+                                    </div>
+
+                                    <div class="bullet-item">
+                                        • 핵심은 도로의 좌표(geometry)는 모양이 바뀌지 않는다는 점이었습니다.
+                                        색만 바뀌는 것이므로 좌표 변환은 최초 1회만 수행하고, 이후에는 재사용하도록 했습니다.
+                                    </div>
+
+                                    <div class="bullet-item">
+                                        • 스타일 객체도 매번 새로 만들면 생성 비용이 쌓이기 때문에, 스타일 캐싱 유틸을
+                                        따로 만들어 같은 설정이면 이미 만든 Style 객체를 재사용하도록 했습니다.
+                                    </div>
+
+                                    <br>
+
+                                    <div class="section-title">결과</div>
+                                    <div class="bullet-item">
+                                        • 갱신될 때 실제로 등급이 바뀐 링크만 다시 그리게 되면서 화면 깜빡임이 사라지고
+                                        렌더링 부하가 크게 줄었습니다.
+                                    </div>
+                                    <div class="bullet-item">
+                                        • 실시간성을 포기하지 않으면서도 링크 수가 늘어나도 안정적으로 동작하는 구조를
+                                        확보했습니다.
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    문제 4. 공공 API 호출 제한 및 구조적 비효율 문제
                                 </div>
                                 <div class="accordion-content">
 
@@ -3531,7 +3601,7 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                                    문제 4. 잦은 요구사항 변경 속 설계 일관성 유지 문제
+                                    문제 5. 잦은 요구사항 변경 속 설계 일관성 유지 문제
                                 </div>
                                 <div class="accordion-content">
 
@@ -4011,7 +4081,7 @@
                 <div  class="modal-main-image">
                     <img class="modal-image-image" src="../public/assets/img/portfolio/numiBridgeGas.png"  alt=""/>
                     <div class="modal-main-text">
-                        <div class="modal-title">크로스체인 브릿지 가스비 충전 서버</div>
+                        <div class="modal-title">브릿지 가스비 충전 서버</div>
                         <div class="modal-button">
                             <div class="modal-back"><div class="modal-button2">엠게임</div>
                             </div>
@@ -4041,6 +4111,11 @@
                             <div class="modal-content-detail">회사 지갑 입금 실시간 감지, 입금 컨펌 확인, 목적 체인 가스비 자동 지급, 시세·운영비 반영 수수료 산정</div>
                         </div>
 
+                        <div class="text-title-detail portfront">
+                            <div class="modal-content-title">Front-End</div>
+                            <div class="modal-back"><div class="modal-button2">React</div>
+                            </div>
+                        </div>
                         <div class="text-title-detail portfront">
                             <div class="modal-content-title">Back-End</div>
                             <div class="modal-back"><div class="modal-button2">Go</div>

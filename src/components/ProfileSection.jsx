@@ -81,7 +81,7 @@ export default function ProfileSection() {
                 </div>
               </div>
 
-              <div className="profile-updated">updated, on 2026.10.24</div>
+              <div className="profile-updated">updated, on 2026.10.25</div>
             </div>
           </div>
 

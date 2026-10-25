@@ -182,7 +182,7 @@ export default function Aboutme() {
           <div className="upper-sub">
             <div className="aboutMe-title rocket">
               <div className="about-main main-awards">
-                <span className="break-point">제21회 </span>로켓피치 경진대회
+                <span className="break-point">제21회 </span>로켓피치 경연대회
               </div>
               <div className="about-title cetificatebutton">
                 <div className="button-text">특별상</div>
