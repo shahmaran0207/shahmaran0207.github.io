@@ -20,10 +20,10 @@ const SECTIONS = [
     labelClass: 'AboutMe-title',
     gap: 40,
     items: [
+      { name: 'Go', img: 'assets/img/Skills/Back-End/go.png' },
       { name: 'JAVA', img: 'assets/img/aboutme/JAVA.svg' },
       { name: 'Spring', img: 'assets/img/aboutme/Spring.svg' },
       { name: 'SpringBoot', img: 'assets/img/aboutme/Spring.svg' },
-      { name: 'Go', img: 'assets/img/Skills/Back-End/go.png' },
     ],
   },
   {
@@ -46,8 +46,9 @@ const SECTIONS = [
       { name: 'Linux', img: 'https://cdn.simpleicons.org/linux' },
       { name: 'DOCKER', img: 'assets/img/aboutme/Docker.svg' },
       { name: 'AWS', img: 'assets/img/aboutme/AWS.svg' },
-      { name: 'Intellij IDEA', img: 'assets/img/aboutme/IngelliJ%20IDEA.svg' },
+      { name: 'Claude Code', img: 'https://cdn.simpleicons.org/claude' },
       { name: 'KIRO', img: 'assets/img/Skills/Development/kiro.jpg' },
+      { name: 'Intellij IDEA', img: 'assets/img/aboutme/IngelliJ%20IDEA.svg' },
     ],
   },
   {
