@@ -48,12 +48,12 @@ export default function Hero() {
             </motion.div>
             <motion.div className="second-title" {...rise(0.22)}>
               <div className="third-title">
-                <div id="various">라이브 서비스</div>
-                <div className="starter-content2">운영</div>
+                <div id="various">실시간</div>
+                <div className="starter-content2">데이터 수집</div>
                 <div className="starter-content">경험과</div>
               </div>
               <div className="fourth-title">
-                <div className="starter-content2">Go 서버 개발</div>
+                <div className="starter-content2">GIS 관제</div>
                 <div className="starter-content break">
                   경험을 지닌,{breakMobile && <br />}
                 </div>
